@@ -7,6 +7,8 @@ A KiCad Schematic for CellMan, A Cell Management Board for the Lafayette FSAE Ac
 
 - Address pins on DIP switches
 - ADC interrupt on button and/or pin
+- [Reverse Polarity Protection](http://www.ti.com/lit/an/slva139/slva139.pdf)
+
 
 - Add TSI Isolated OpAmp
 
