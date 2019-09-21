@@ -3,7 +3,7 @@ A KiCad Schematic for CellMan, A Cell Management Board for the Lafayette FSAE Ac
 
 
 
-## TODO:
+## To Do:
 
 - Address pins on DIP switches
 - ADC interrupt on button and/or pin
