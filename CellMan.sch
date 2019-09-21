@@ -1,0 +1,802 @@
+EESchema Schematic File Version 4
+LIBS:AMS-cache
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "CellMan Prototype"
+Date ""
+Rev "0.1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Lafayette_Electric_Car_Internals:ADC128D818 U1
+U 1 1 5D82D963
+P 3700 5400
+F 0 "U1" H 3950 5900 50  0000 C CNN
+F 1 "ADC128D818" H 3600 5900 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 3900 6300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/adc128d818.pdf" H 3350 5750 50  0001 C CNN
+	1    3700 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 5D83B590
+P 1400 1800
+F 0 "J1" H 1400 2150 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 1550 2300 50  0000 C CNN
+F 2 "" H 1400 1800 50  0001 C CNN
+F 3 "~" H 1400 1800 50  0001 C CNN
+	1    1400 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 1800 2200 1800
+Wire Wire Line
+	1600 1900 2450 1900
+Text Label 1950 1800 2    50   ~ 0
+SDA
+Text Label 1950 1900 2    50   ~ 0
+SCL
+Entry Wire Line
+	2700 1800 2800 1900
+Entry Wire Line
+	2700 1900 2800 2000
+$Comp
+L Device:R R2
+U 1 1 5D841F29
+P 2200 1500
+F 0 "R2" H 2270 1546 50  0000 L CNN
+F 1 "R" H 2270 1455 50  0000 L CNN
+F 2 "" V 2130 1500 50  0001 C CNN
+F 3 "~" H 2200 1500 50  0001 C CNN
+	1    2200 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5D8425BB
+P 2450 1500
+F 0 "R3" H 2520 1546 50  0000 L CNN
+F 1 "R" H 2520 1455 50  0000 L CNN
+F 2 "" V 2380 1500 50  0001 C CNN
+F 3 "~" H 2450 1500 50  0001 C CNN
+	1    2450 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1650 2200 1800
+Connection ~ 2200 1800
+Wire Wire Line
+	2200 1800 2700 1800
+Wire Wire Line
+	2450 1650 2450 1900
+Connection ~ 2450 1900
+Wire Wire Line
+	2450 1900 2700 1900
+$Comp
+L power:+3.3V #PWR05
+U 1 1 5D842C61
+P 2200 1350
+F 0 "#PWR05" H 2200 1200 50  0001 C CNN
+F 1 "+3.3V" H 2215 1523 50  0000 C CNN
+F 2 "" H 2200 1350 50  0001 C CNN
+F 3 "" H 2200 1350 50  0001 C CNN
+	1    2200 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR06
+U 1 1 5D843125
+P 2450 1350
+F 0 "#PWR06" H 2450 1200 50  0001 C CNN
+F 1 "+3.3V" H 2465 1523 50  0000 C CNN
+F 2 "" H 2450 1350 50  0001 C CNN
+F 3 "" H 2450 1350 50  0001 C CNN
+	1    2450 1350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3350 5050
+Text Label 3000 5150 0    50   ~ 0
+SDA
+Text Label 3000 5250 0    50   ~ 0
+SCL
+Wire Notes Line
+	8100 500  8100 6750
+Text Notes 8050 3050 1    50   ~ 0
+Segment Ground\n
+Text Notes 8200 3050 1    50   ~ 0
+Cell Ground
+Wire Wire Line
+	2900 5150 3350 5150
+Wire Wire Line
+	2900 5250 3350 5250
+Entry Wire Line
+	2800 5050 2900 5150
+Entry Wire Line
+	2800 5150 2900 5250
+$Comp
+L Device:R R9
+U 1 1 5D8CE48F
+P 7900 5400
+F 0 "R9" H 7970 5446 50  0000 L CNN
+F 1 "R" H 7970 5355 50  0000 L CNN
+F 2 "" V 7830 5400 50  0001 C CNN
+F 3 "~" H 7900 5400 50  0001 C CNN
+	1    7900 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR017
+U 1 1 5D8CF9BD
+P 7900 5450
+F 0 "#PWR017" H 7900 5200 50  0001 C CNN
+F 1 "GND" H 7905 5277 50  0000 C CNN
+F 2 "" H 7900 5450 50  0001 C CNN
+F 3 "" H 7900 5450 50  0001 C CNN
+	1    7900 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Lafayette_Electric_Car_Internals:HCNR200 U2
+U 1 1 5D90B9F3
+P 7900 4900
+F 0 "U2" H 7750 4650 50  0000 L CNN
+F 1 "HCNR200" H 7750 4750 50  0000 L CNN
+F 2 "" H 7800 4850 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/678/V02-0886EN_DS_HCNR200_2014-01-071-908546.pdf" H 7800 4850 50  0001 C CNN
+	1    7900 4900
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7900 5050 7900 5150
+Connection ~ 7900 5150
+Wire Wire Line
+	7900 5150 7900 5250
+$Comp
+L power:+3.3V #PWR016
+U 1 1 5D92B64D
+P 7900 4750
+F 0 "#PWR016" H 7900 4600 50  0001 C CNN
+F 1 "+3.3V" H 7915 4923 50  0000 C CNN
+F 2 "" H 7900 4750 50  0001 C CNN
+F 3 "" H 7900 4750 50  0001 C CNN
+	1    7900 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Thermistor TH1
+U 1 1 5D937593
+P 6850 4500
+F 0 "TH1" H 6950 4350 50  0000 L CNN
+F 1 "Thermistor" H 6950 4250 50  0000 L CNN
+F 2 "" H 6850 4500 50  0001 C CNN
+F 3 "~" H 6850 4500 50  0001 C CNN
+	1    6850 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 4200 6850 4300
+$Comp
+L power:+3.3V #PWR014
+U 1 1 5D93BF2F
+P 6850 3800
+F 0 "#PWR014" H 6850 3650 50  0001 C CNN
+F 1 "+3.3V" H 6865 3973 50  0000 C CNN
+F 2 "" H 6850 3800 50  0001 C CNN
+F 3 "" H 6850 3800 50  0001 C CNN
+	1    6850 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 4100 6850 4200
+Connection ~ 6850 4200
+$Comp
+L power:GND #PWR015
+U 1 1 5D93F969
+P 6850 4700
+F 0 "#PWR015" H 6850 4450 50  0001 C CNN
+F 1 "GND" H 6855 4527 50  0000 C CNN
+F 2 "" H 6850 4700 50  0001 C CNN
+F 3 "" H 6850 4700 50  0001 C CNN
+	1    6850 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J2
+U 1 1 5D943589
+P 1400 6550
+F 0 "J2" H 1950 5950 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 1700 6050 50  0000 C CNN
+F 2 "" H 1400 6550 50  0001 C CNN
+F 3 "~" H 1400 6550 50  0001 C CNN
+	1    1400 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR07
+U 1 1 5D94BDEB
+P 1700 6400
+F 0 "#PWR07" H 1700 6250 50  0001 C CNN
+F 1 "+3.3V" H 1715 6573 50  0000 C CNN
+F 2 "" H 1700 6400 50  0001 C CNN
+F 3 "" H 1700 6400 50  0001 C CNN
+	1    1700 6400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5D94C650
+P 1700 6800
+F 0 "#PWR08" H 1700 6550 50  0001 C CNN
+F 1 "GND" H 1705 6627 50  0000 C CNN
+F 2 "" H 1700 6800 50  0001 C CNN
+F 3 "" H 1700 6800 50  0001 C CNN
+	1    1700 6800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 6550 2700 6550
+Wire Wire Line
+	1600 6650 2700 6650
+Text Label 1850 6550 2    50   ~ 0
+SDA
+Text Label 1850 6650 2    50   ~ 0
+SCL
+Entry Wire Line
+	2800 6550 2700 6650
+Entry Wire Line
+	2800 6450 2700 6550
+$Comp
+L Device:R R8
+U 1 1 5D96C573
+P 6850 3950
+F 0 "R8" H 6920 3996 50  0000 L CNN
+F 1 "R" H 6920 3905 50  0000 L CNN
+F 2 "" V 6780 3950 50  0001 C CNN
+F 3 "~" H 6850 3950 50  0001 C CNN
+	1    6850 3950
+	1    0    0    -1  
+$EndComp
+Text GLabel 2550 2300 0    50   Input ~ 0
+I2C
+$Comp
+L Device:R R7
+U 1 1 5D847028
+P 5100 1550
+F 0 "R7" H 5170 1596 50  0000 L CNN
+F 1 "R" H 5170 1505 50  0000 L CNN
+F 2 "" V 5030 1550 50  0001 C CNN
+F 3 "~" H 5100 1550 50  0001 C CNN
+	1    5100 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5D8484C6
+P 5100 1150
+F 0 "R6" H 4950 1200 50  0000 L CNN
+F 1 "R" H 4950 1100 50  0000 L CNN
+F 2 "" V 5030 1150 50  0001 C CNN
+F 3 "~" H 5100 1150 50  0001 C CNN
+	1    5100 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5D849186
+P 4550 1550
+F 0 "R5" H 4620 1596 50  0000 L CNN
+F 1 "R" H 4620 1505 50  0000 L CNN
+F 2 "" V 4480 1550 50  0001 C CNN
+F 3 "~" H 4550 1550 50  0001 C CNN
+	1    4550 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5D849190
+P 4550 1150
+F 0 "R4" H 4400 1200 50  0000 L CNN
+F 1 "R" H 4400 1100 50  0000 L CNN
+F 2 "" V 4480 1150 50  0001 C CNN
+F 3 "~" H 4550 1150 50  0001 C CNN
+	1    4550 1150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2450 5450 2450 5550
+Wire Wire Line
+	2450 5350 2450 5250
+$Comp
+L power:+3.3V #PWR01
+U 1 1 5D860E96
+P 2450 5550
+F 0 "#PWR01" H 2450 5400 50  0001 C CNN
+F 1 "+3.3V" H 2465 5723 50  0000 C CNN
+F 2 "" H 2450 5550 50  0001 C CNN
+F 3 "" H 2450 5550 50  0001 C CNN
+	1    2450 5550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5D860871
+P 2450 5250
+F 0 "#PWR02" H 2450 5000 50  0001 C CNN
+F 1 "GND" H 2455 5077 50  0000 C CNN
+F 2 "" H 2450 5250 50  0001 C CNN
+F 3 "" H 2450 5250 50  0001 C CNN
+	1    2450 5250
+	-1   0    0    1   
+$EndComp
+Text Notes 4400 2150 0    50   ~ 0
+Address Select Resistors for ADC\n(Pull Up, Pull Down, or Float)
+Wire Wire Line
+	1600 2000 1700 2000
+$Comp
+L power:GND #PWR04
+U 1 1 5D83CD2A
+P 1700 2050
+F 0 "#PWR04" H 1700 1800 50  0001 C CNN
+F 1 "GND" H 1705 1877 50  0000 C CNN
+F 2 "" H 1700 2050 50  0001 C CNN
+F 3 "" H 1700 2050 50  0001 C CNN
+	1    1700 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR03
+U 1 1 5D83C866
+P 1700 1650
+F 0 "#PWR03" H 1700 1500 50  0001 C CNN
+F 1 "+3.3V" H 1715 1823 50  0000 C CNN
+F 2 "" H 1700 1650 50  0001 C CNN
+F 3 "" H 1700 1650 50  0001 C CNN
+	1    1700 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 5350 3350 5350
+Wire Wire Line
+	2450 5450 3350 5450
+Wire Wire Line
+	3350 5650 2900 5650
+Text Label 2900 5650 0    50   ~ 0
+Address_A0
+Text Label 2900 5750 0    50   ~ 0
+Address_A1
+Wire Wire Line
+	2900 5750 3350 5750
+Wire Wire Line
+	4550 1300 4550 1350
+Wire Wire Line
+	5100 1300 5100 1350
+$Comp
+L power:GND #PWR012
+U 1 1 5D98D4D1
+P 5100 1700
+F 0 "#PWR012" H 5100 1450 50  0001 C CNN
+F 1 "GND" H 5105 1527 50  0000 C CNN
+F 2 "" H 5100 1700 50  0001 C CNN
+F 3 "" H 5100 1700 50  0001 C CNN
+	1    5100 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5D98D862
+P 4550 1700
+F 0 "#PWR010" H 4550 1450 50  0001 C CNN
+F 1 "GND" H 4555 1527 50  0000 C CNN
+F 2 "" H 4550 1700 50  0001 C CNN
+F 3 "" H 4550 1700 50  0001 C CNN
+	1    4550 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR09
+U 1 1 5D98DD1B
+P 4550 1000
+F 0 "#PWR09" H 4550 850 50  0001 C CNN
+F 1 "+3.3V" H 4565 1173 50  0000 C CNN
+F 2 "" H 4550 1000 50  0001 C CNN
+F 3 "" H 4550 1000 50  0001 C CNN
+	1    4550 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR011
+U 1 1 5D98EB02
+P 5100 1000
+F 0 "#PWR011" H 5100 850 50  0001 C CNN
+F 1 "+3.3V" H 5115 1173 50  0000 C CNN
+F 2 "" H 5100 1000 50  0001 C CNN
+F 3 "" H 5100 1000 50  0001 C CNN
+	1    5100 1000
+	1    0    0    -1  
+$EndComp
+Connection ~ 4550 1350
+Wire Wire Line
+	4550 1350 4550 1400
+Text Label 4450 1750 1    50   ~ 0
+Address_A0
+Wire Wire Line
+	5100 1350 5550 1350
+Connection ~ 5100 1350
+Wire Wire Line
+	5100 1350 5100 1400
+Text Label 5550 1350 2    50   ~ 0
+Address_A1
+Text Notes 1300 2200 1    50   ~ 0
+I2C and Power In
+Text Notes 1300 6950 1    50   ~ 0
+I2C and Power Out
+Wire Wire Line
+	1600 6450 1700 6450
+Wire Wire Line
+	1700 6450 1700 6400
+Wire Wire Line
+	1700 6750 1700 6800
+Wire Wire Line
+	1700 6750 1600 6750
+Wire Wire Line
+	3350 5550 2900 5550
+Text Label 2900 5550 0    50   ~ 0
+~Interrupt
+Text Label 4050 1500 2    50   ~ 0
+~Interrupt
+$Comp
+L Device:R R1
+U 1 1 5D9CE14A
+P 3600 1250
+F 0 "R1" H 3450 1300 50  0000 L CNN
+F 1 "R" H 3450 1200 50  0000 L CNN
+F 2 "" V 3530 1250 50  0001 C CNN
+F 3 "~" H 3600 1250 50  0001 C CNN
+	1    3600 1250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3600 1400 3600 1500
+$Comp
+L power:+3.3V #PWR013
+U 1 1 5D9CE15F
+P 3600 1100
+F 0 "#PWR013" H 3600 950 50  0001 C CNN
+F 1 "+3.3V" H 3615 1273 50  0000 C CNN
+F 2 "" H 3600 1100 50  0001 C CNN
+F 3 "" H 3600 1100 50  0001 C CNN
+	1    3600 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 1500 4050 1500
+Text Notes 3450 1750 0    50   ~ 0
+ADC Interrupt Pin\nPull up to not use
+Wire Wire Line
+	1700 2000 1700 2050
+Wire Wire Line
+	1600 1700 1700 1700
+Wire Wire Line
+	1700 1700 1700 1650
+Wire Bus Line
+	2550 2300 2800 2300
+Connection ~ 2800 2300
+Text Label 6700 4200 2    50   ~ 0
+Temperature
+Text Label 7500 5350 2    50   ~ 0
+CellVoltage
+NoConn ~ 4050 5250
+NoConn ~ 4050 5350
+NoConn ~ 4050 5450
+NoConn ~ 4050 5550
+NoConn ~ 4050 5650
+NoConn ~ 4050 5750
+Wire Wire Line
+	4050 5050 6000 5050
+Wire Wire Line
+	6000 4200 6850 4200
+Wire Wire Line
+	6000 5050 6000 4200
+$Comp
+L Lafayette_Electric_Car_Internals:HCNR200 U2
+U 2 1 5D8B5F56
+P 8300 4900
+F 0 "U2" H 8350 4750 50  0000 C CNN
+F 1 "HCNR200" H 8250 4650 50  0000 C CNN
+F 2 "" H 8200 5550 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/678/V02-0886EN_DS_HCNR200_2014-01-071-908546.pdf" H 8200 5550 50  0001 C CNN
+	2    8300 4900
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	8300 5050 8300 5250
+Wire Wire Line
+	8300 4750 8300 4600
+Wire Wire Line
+	8300 5550 8300 5650
+Wire Wire Line
+	8300 5650 8900 5650
+Wire Wire Line
+	8300 4600 8950 4600
+$Comp
+L Device:R R10
+U 1 1 5D8D753D
+P 8300 5400
+F 0 "R10" H 8370 5446 50  0000 L CNN
+F 1 "R" H 8370 5355 50  0000 L CNN
+F 2 "" V 8230 5400 50  0001 C CNN
+F 3 "~" H 8300 5400 50  0001 C CNN
+	1    8300 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5D8A8BDE
+P 9000 5650
+F 0 "H2" V 8954 5800 50  0000 L CNN
+F 1 "MountingHole_Pad" V 9045 5800 50  0000 L CNN
+F 2 "" H 9000 5650 50  0001 C CNN
+F 3 "~" H 9000 5650 50  0001 C CNN
+	1    9000 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5D8A3883
+P 9050 4600
+F 0 "H1" V 9004 4750 50  0000 L CNN
+F 1 "MountingHole_Pad" V 9095 4750 50  0000 L CNN
+F 2 "" H 9050 4600 50  0001 C CNN
+F 3 "~" H 9050 4600 50  0001 C CNN
+	1    9050 4600
+	0    1    1    0   
+$EndComp
+Text Label 8850 5650 2    50   ~ 0
+Cell-
+Text Label 8850 4600 2    50   ~ 0
+Cell+
+Wire Wire Line
+	4050 5150 7900 5150
+$Comp
+L Lafayette_Electric_Car_Internals:MCP9808 U?
+U 1 1 5DA1AAE1
+P 3700 4150
+F 0 "U?" H 3900 4450 50  0000 C CNN
+F 1 "MCP9808" H 3600 4450 50  0000 C CNN
+F 2 "" H 3550 4550 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/25095A.pdf" H 3550 4550 50  0001 C CNN
+	1    3700 4150
+	1    0    0    -1  
+$EndComp
+Text Label 3000 4000 0    50   ~ 0
+SDA
+Text Label 3000 4100 0    50   ~ 0
+SCL
+Wire Wire Line
+	2900 4000 3350 4000
+Wire Wire Line
+	2900 4100 3350 4100
+Entry Wire Line
+	2800 3900 2900 4000
+Entry Wire Line
+	2800 4000 2900 4100
+Wire Wire Line
+	3350 4300 3300 4300
+Wire Wire Line
+	3300 4300 3300 4350
+$Comp
+L power:GND #PWR?
+U 1 1 5DA1E634
+P 3300 4350
+F 0 "#PWR?" H 3300 4100 50  0001 C CNN
+F 1 "GND" H 3305 4177 50  0000 C CNN
+F 2 "" H 3300 4350 50  0001 C CNN
+F 3 "" H 3300 4350 50  0001 C CNN
+	1    3300 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 4000 4100 4000
+Wire Wire Line
+	4100 4000 4100 3950
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5DA22130
+P 4100 3950
+F 0 "#PWR?" H 4100 3800 50  0001 C CNN
+F 1 "+3.3V" H 4115 4123 50  0000 C CNN
+F 2 "" H 4100 3950 50  0001 C CNN
+F 3 "" H 4100 3950 50  0001 C CNN
+	1    4100 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 4200 4500 4200
+Text Label 4500 4200 2    50   ~ 0
+Address_T1
+Text Label 4500 4100 2    50   ~ 0
+Address_T0
+Wire Wire Line
+	4500 4100 4050 4100
+Wire Wire Line
+	4050 4300 4500 4300
+Text Label 4500 4300 2    50   ~ 0
+Address_T2
+$Comp
+L Device:R R?
+U 1 1 5DA2DA7A
+P 6650 1550
+F 0 "R?" H 6720 1596 50  0000 L CNN
+F 1 "R" H 6720 1505 50  0000 L CNN
+F 2 "" V 6580 1550 50  0001 C CNN
+F 3 "~" H 6650 1550 50  0001 C CNN
+	1    6650 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DA2DA80
+P 6650 1150
+F 0 "R?" H 6500 1200 50  0000 L CNN
+F 1 "R" H 6500 1100 50  0000 L CNN
+F 2 "" V 6580 1150 50  0001 C CNN
+F 3 "~" H 6650 1150 50  0001 C CNN
+	1    6650 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DA2DA86
+P 6100 1550
+F 0 "R?" H 6170 1596 50  0000 L CNN
+F 1 "R" H 6170 1505 50  0000 L CNN
+F 2 "" V 6030 1550 50  0001 C CNN
+F 3 "~" H 6100 1550 50  0001 C CNN
+	1    6100 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DA2DA8C
+P 6100 1150
+F 0 "R?" H 5950 1200 50  0000 L CNN
+F 1 "R" H 5950 1100 50  0000 L CNN
+F 2 "" V 6030 1150 50  0001 C CNN
+F 3 "~" H 6100 1150 50  0001 C CNN
+	1    6100 1150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6100 1300 6100 1350
+Wire Wire Line
+	6650 1300 6650 1350
+$Comp
+L power:GND #PWR?
+U 1 1 5DA2DA94
+P 6650 1700
+F 0 "#PWR?" H 6650 1450 50  0001 C CNN
+F 1 "GND" H 6655 1527 50  0000 C CNN
+F 2 "" H 6650 1700 50  0001 C CNN
+F 3 "" H 6650 1700 50  0001 C CNN
+	1    6650 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DA2DA9A
+P 6100 1700
+F 0 "#PWR?" H 6100 1450 50  0001 C CNN
+F 1 "GND" H 6105 1527 50  0000 C CNN
+F 2 "" H 6100 1700 50  0001 C CNN
+F 3 "" H 6100 1700 50  0001 C CNN
+	1    6100 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5DA2DAA0
+P 6100 1000
+F 0 "#PWR?" H 6100 850 50  0001 C CNN
+F 1 "+3.3V" H 6115 1173 50  0000 C CNN
+F 2 "" H 6100 1000 50  0001 C CNN
+F 3 "" H 6100 1000 50  0001 C CNN
+	1    6100 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5DA2DAA6
+P 6650 1000
+F 0 "#PWR?" H 6650 850 50  0001 C CNN
+F 1 "+3.3V" H 6665 1173 50  0000 C CNN
+F 2 "" H 6650 1000 50  0001 C CNN
+F 3 "" H 6650 1000 50  0001 C CNN
+	1    6650 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 1350 6550 1350
+Connection ~ 6100 1350
+Wire Wire Line
+	6100 1350 6100 1400
+Text Label 6550 1350 2    50   ~ 0
+Address_T0
+Connection ~ 6650 1350
+Wire Wire Line
+	6650 1350 6650 1400
+Text Label 7100 1350 2    50   ~ 0
+Address_T1
+Wire Wire Line
+	6650 1350 7100 1350
+$Comp
+L Device:R R?
+U 1 1 5DA3B581
+P 7200 1550
+F 0 "R?" H 7270 1596 50  0000 L CNN
+F 1 "R" H 7270 1505 50  0000 L CNN
+F 2 "" V 7130 1550 50  0001 C CNN
+F 3 "~" H 7200 1550 50  0001 C CNN
+	1    7200 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DA3B587
+P 7200 1150
+F 0 "R?" H 7050 1200 50  0000 L CNN
+F 1 "R" H 7050 1100 50  0000 L CNN
+F 2 "" V 7130 1150 50  0001 C CNN
+F 3 "~" H 7200 1150 50  0001 C CNN
+	1    7200 1150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7200 1300 7200 1350
+$Comp
+L power:GND #PWR?
+U 1 1 5DA3B58E
+P 7200 1700
+F 0 "#PWR?" H 7200 1450 50  0001 C CNN
+F 1 "GND" H 7205 1527 50  0000 C CNN
+F 2 "" H 7200 1700 50  0001 C CNN
+F 3 "" H 7200 1700 50  0001 C CNN
+	1    7200 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5DA3B594
+P 7200 1000
+F 0 "#PWR?" H 7200 850 50  0001 C CNN
+F 1 "+3.3V" H 7215 1173 50  0000 C CNN
+F 2 "" H 7200 1000 50  0001 C CNN
+F 3 "" H 7200 1000 50  0001 C CNN
+	1    7200 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 1350 7700 1350
+Connection ~ 7200 1350
+Wire Wire Line
+	7200 1350 7200 1400
+Text Label 7700 1350 2    50   ~ 0
+Address_T2
+Text Notes 6000 2100 0    50   ~ 0
+Address Select Resistors for TempSensor\n(Pull Up or Pull Down)
+Wire Wire Line
+	4450 1750 4450 1350
+Wire Wire Line
+	4450 1350 4550 1350
+Wire Bus Line
+	2800 1900 2800 2300
+Wire Bus Line
+	2800 2300 2800 6550
+$EndSCHEMATC
