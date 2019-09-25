@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:CellMan-cache
-EELAYER 30 0
+EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
@@ -119,8 +118,8 @@ $Comp
 L Connector:Conn_01x04_Male J3
 U 1 1 5D943589
 P 1100 5200
-F 0 "J3" H 1850 4850 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 1400 4850 50  0000 C CNN
+F 0 "J3" H 1400 5700 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 950 5700 50  0000 C CNN
 F 2 "" H 1100 5200 50  0001 C CNN
 F 3 "~" H 1100 5200 50  0001 C CNN
 	1    1100 5200
@@ -234,12 +233,12 @@ CellVoltage
 $Comp
 L Mechanical:MountingHole_Pad H7
 U 1 1 5D8A8BDE
-P 9950 2600
-F 0 "H7" V 9904 2750 50  0000 L CNN
-F 1 "MountingHole_Pad" V 9800 2300 50  0000 L CNN
-F 2 "" H 9950 2600 50  0001 C CNN
-F 3 "~" H 9950 2600 50  0001 C CNN
-	1    9950 2600
+P 9900 1700
+F 0 "H7" V 9854 1850 50  0000 L CNN
+F 1 "MountingHole_Pad" V 9750 1400 50  0000 L CNN
+F 2 "" H 9900 1700 50  0001 C CNN
+F 3 "~" H 9900 1700 50  0001 C CNN
+	1    9900 1700
 	0    1    1    0   
 $EndComp
 $Comp
@@ -562,7 +561,7 @@ Entry Wire Line
 Entry Wire Line
 	2500 3350 2600 3450
 NoConn ~ 3050 3550
-Text Label 6250 2650 0    50   ~ 0
+Text Label 6250 2950 0    50   ~ 0
 Balance_ctl
 $Comp
 L power:GND #PWR034
@@ -578,12 +577,12 @@ $EndComp
 $Comp
 L Device:R R16
 U 1 1 5DB4016C
-P 7050 3000
-F 0 "R16" H 7120 3046 50  0000 L CNN
-F 1 "R" H 7120 2955 50  0000 L CNN
-F 2 "" V 6980 3000 50  0001 C CNN
-F 3 "~" H 7050 3000 50  0001 C CNN
-	1    7050 3000
+P 7050 2600
+F 0 "R16" H 7120 2646 50  0000 L CNN
+F 1 "R" H 7120 2555 50  0000 L CNN
+F 2 "" V 6980 2600 50  0001 C CNN
+F 3 "~" H 7050 2600 50  0001 C CNN
+	1    7050 2600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -604,8 +603,8 @@ $Comp
 L Connector:Conn_01x02_Female J4
 U 1 1 5D8D1490
 P 8350 800
-F 0 "J4" H 8900 500 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 8100 500 50  0000 L CNN
+F 0 "J4" H 8150 600 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 7800 1000 50  0000 L CNN
 F 2 "" H 8350 800 50  0001 C CNN
 F 3 "~" H 8350 800 50  0001 C CNN
 	1    8350 800 
@@ -743,108 +742,108 @@ Wire Notes Line
 $Comp
 L Mechanical:MountingHole_Pad H8
 U 1 1 5DCD9FCA
-P 9950 2900
-F 0 "H8" V 9904 3050 50  0000 L CNN
-F 1 "MountingHole_Pad" V 10100 2600 50  0000 L CNN
-F 2 "" H 9950 2900 50  0001 C CNN
-F 3 "~" H 9950 2900 50  0001 C CNN
-	1    9950 2900
+P 9900 2000
+F 0 "H8" V 9854 2150 50  0000 L CNN
+F 1 "MountingHole_Pad" V 10050 1700 50  0000 L CNN
+F 2 "" H 9900 2000 50  0001 C CNN
+F 3 "~" H 9900 2000 50  0001 C CNN
+	1    9900 2000
 	0    1    1    0   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H3
 U 1 1 5DCDA27D
-P 9400 2600
-F 0 "H3" V 9354 2750 50  0000 L CNN
-F 1 "MountingHole_Pad" V 9550 2400 50  0000 L CNN
-F 2 "" H 9400 2600 50  0001 C CNN
-F 3 "~" H 9400 2600 50  0001 C CNN
-	1    9400 2600
+P 9350 1700
+F 0 "H3" V 9304 1850 50  0000 L CNN
+F 1 "MountingHole_Pad" V 9500 1500 50  0000 L CNN
+F 2 "" H 9350 1700 50  0001 C CNN
+F 3 "~" H 9350 1700 50  0001 C CNN
+	1    9350 1700
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H4
 U 1 1 5DCEB68E
-P 9400 2900
-F 0 "H4" V 9354 3050 50  0000 L CNN
-F 1 "MountingHole_Pad" V 9250 2700 50  0000 L CNN
-F 2 "" H 9400 2900 50  0001 C CNN
-F 3 "~" H 9400 2900 50  0001 C CNN
-	1    9400 2900
+P 9350 2000
+F 0 "H4" V 9304 2150 50  0000 L CNN
+F 1 "MountingHole_Pad" V 9200 1800 50  0000 L CNN
+F 2 "" H 9350 2000 50  0001 C CNN
+F 3 "~" H 9350 2000 50  0001 C CNN
+	1    9350 2000
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	9500 2600 9500 2900
-Connection ~ 9500 2600
-Connection ~ 9500 2900
-Text Label 9550 2600 0    50   ~ 0
+	9450 1700 9450 2000
+Connection ~ 9450 1700
+Connection ~ 9450 2000
+Text Label 9500 1700 0    50   ~ 0
 Cell-
 Wire Wire Line
-	9500 2900 9850 2900
+	9450 2000 9800 2000
 Wire Wire Line
-	9500 2600 9850 2600
+	9450 1700 9800 1700
 Wire Wire Line
-	9850 2600 9850 2900
-Connection ~ 9850 2600
-Connection ~ 9850 2900
+	9800 1700 9800 2000
+Connection ~ 9800 1700
+Connection ~ 9800 2000
 $Comp
 L Mechanical:MountingHole_Pad H5
 U 1 1 5DD275E2
-P 9950 1750
-F 0 "H5" V 9904 1900 50  0000 L CNN
-F 1 "MountingHole_Pad" V 9750 1450 50  0000 L CNN
-F 2 "" H 9950 1750 50  0001 C CNN
-F 3 "~" H 9950 1750 50  0001 C CNN
-	1    9950 1750
+P 9900 850
+F 0 "H5" V 9854 1000 50  0000 L CNN
+F 1 "MountingHole_Pad" V 9700 550 50  0000 L CNN
+F 2 "" H 9900 850 50  0001 C CNN
+F 3 "~" H 9900 850 50  0001 C CNN
+	1    9900 850 
 	0    1    1    0   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H6
 U 1 1 5DD275EC
-P 9950 2050
-F 0 "H6" V 9904 2200 50  0000 L CNN
-F 1 "MountingHole_Pad" V 10150 1750 50  0000 L CNN
-F 2 "" H 9950 2050 50  0001 C CNN
-F 3 "~" H 9950 2050 50  0001 C CNN
-	1    9950 2050
+P 9900 1150
+F 0 "H6" V 9854 1300 50  0000 L CNN
+F 1 "MountingHole_Pad" V 10100 850 50  0000 L CNN
+F 2 "" H 9900 1150 50  0001 C CNN
+F 3 "~" H 9900 1150 50  0001 C CNN
+	1    9900 1150
 	0    1    1    0   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 5DD275F6
-P 9400 1750
-F 0 "H1" V 9354 1900 50  0000 L CNN
-F 1 "MountingHole_Pad" V 9600 1550 50  0000 L CNN
-F 2 "" H 9400 1750 50  0001 C CNN
-F 3 "~" H 9400 1750 50  0001 C CNN
-	1    9400 1750
+P 9350 850
+F 0 "H1" V 9304 1000 50  0000 L CNN
+F 1 "MountingHole_Pad" V 9550 650 50  0000 L CNN
+F 2 "" H 9350 850 50  0001 C CNN
+F 3 "~" H 9350 850 50  0001 C CNN
+	1    9350 850 
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H2
 U 1 1 5DD27600
-P 9400 2050
-F 0 "H2" V 9354 2200 50  0000 L CNN
-F 1 "MountingHole_Pad" V 9200 1850 50  0000 L CNN
-F 2 "" H 9400 2050 50  0001 C CNN
-F 3 "~" H 9400 2050 50  0001 C CNN
-	1    9400 2050
+P 9350 1150
+F 0 "H2" V 9304 1300 50  0000 L CNN
+F 1 "MountingHole_Pad" V 9150 950 50  0000 L CNN
+F 2 "" H 9350 1150 50  0001 C CNN
+F 3 "~" H 9350 1150 50  0001 C CNN
+	1    9350 1150
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	9500 1750 9500 2050
-Connection ~ 9500 1750
-Connection ~ 9500 2050
-Text Label 9550 1750 0    50   ~ 0
+	9450 850  9450 1150
+Connection ~ 9450 850 
+Connection ~ 9450 1150
+Text Label 9500 850  0    50   ~ 0
 Cell+
 Wire Wire Line
-	9500 2050 9850 2050
+	9450 1150 9800 1150
 Wire Wire Line
-	9500 1750 9850 1750
+	9450 850  9800 850 
 Wire Wire Line
-	9850 1750 9850 2050
-Connection ~ 9850 1750
-Connection ~ 9850 2050
+	9800 850  9800 1150
+Connection ~ 9800 850 
+Connection ~ 9800 1150
 Wire Wire Line
 	3750 4300 5800 4300
 Wire Wire Line
@@ -1047,38 +1046,38 @@ Reverse Polarity Bypass
 Text Label 8150 3300 1    50   ~ 0
 Cell-
 Wire Wire Line
-	9850 5050 9850 5250
+	9700 4800 9700 5000
 $Comp
 L Device:LED D4
 U 1 1 5DB4E3D0
-P 9850 5400
-F 0 "D4" H 10000 5300 50  0000 C CNN
-F 1 "LED" H 9850 5300 50  0000 C CNN
-F 2 "" H 9850 5400 50  0001 C CNN
-F 3 "~" H 9850 5400 50  0001 C CNN
-	1    9850 5400
+P 9700 5150
+F 0 "D4" H 9850 5050 50  0000 C CNN
+F 1 "LED" H 9700 5050 50  0000 C CNN
+F 2 "" H 9700 5150 50  0001 C CNN
+F 3 "~" H 9700 5150 50  0001 C CNN
+	1    9700 5150
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R22
 U 1 1 5DB4E3DA
-P 9850 5750
-F 0 "R22" V 9750 5750 50  0000 C CNN
-F 1 "R" V 9850 5750 50  0000 C CNN
-F 2 "" V 9780 5750 50  0001 C CNN
-F 3 "~" H 9850 5750 50  0001 C CNN
-	1    9850 5750
+P 9700 5500
+F 0 "R22" V 9600 5500 50  0000 C CNN
+F 1 "R" V 9700 5500 50  0000 C CNN
+F 2 "" V 9630 5500 50  0001 C CNN
+F 3 "~" H 9700 5500 50  0001 C CNN
+	1    9700 5500
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	9850 5550 9850 5600
+	9700 5300 9700 5350
 Wire Wire Line
-	9850 5900 9850 6150
-Text Notes 10200 5950 1    50   ~ 0
+	9700 5650 9700 5900
+Text Notes 10050 5700 1    50   ~ 0
 Reverse Polarity Indicator\n(Make this an angry color)
-Text Label 9850 5050 3    50   ~ 0
+Text Label 9700 4800 3    50   ~ 0
 Cell-
-Text Label 9850 6150 1    50   ~ 0
+Text Label 9700 5900 1    50   ~ 0
 Cell+
 Wire Wire Line
 	5600 7100 5650 7100
@@ -1189,12 +1188,12 @@ $EndComp
 $Comp
 L Transistor_FET:QM6006D Q3
 U 1 1 5DD6BD30
-P 6950 2650
-F 0 "Q3" H 6550 2450 50  0000 C CNN
-F 1 "QM6006D" H 6800 2450 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2" H 7150 2575 50  0001 L CIN
-F 3 "http://www.jaolen.com/images/pdf/QM6006D.pdf" H 6750 2950 50  0001 L CNN
-	1    6950 2650
+P 6950 2950
+F 0 "Q3" H 6550 2750 50  0000 C CNN
+F 1 "QM6006D" H 6800 2750 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 7150 2875 50  0001 L CIN
+F 3 "http://www.jaolen.com/images/pdf/QM6006D.pdf" H 6750 3250 50  0001 L CNN
+	1    6950 2950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1215,7 +1214,7 @@ F 3 "" H 7100 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5100 2650 6750 2650
+	5100 2950 6750 2950
 Text Notes 2350 6300 0    50   ~ 0
 Near U1
 Text Notes 2750 6300 0    50   ~ 0
@@ -1324,53 +1323,53 @@ Wire Wire Line
 $Comp
 L Transistor_FET:QM6006D Q5
 U 1 1 5DF29C13
-P 9450 6150
-F 0 "Q5" H 9000 6000 50  0000 C CNN
-F 1 "QM6006D" H 9250 6000 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2" H 9650 6075 50  0001 L CIN
-F 3 "http://www.jaolen.com/images/pdf/QM6006D.pdf" H 9250 6450 50  0001 L CNN
-	1    9450 6150
+P 9300 5900
+F 0 "Q5" H 8850 5750 50  0000 C CNN
+F 1 "QM6006D" H 9100 5750 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 9500 5825 50  0001 L CIN
+F 3 "http://www.jaolen.com/images/pdf/QM6006D.pdf" H 9100 6200 50  0001 L CNN
+	1    9300 5900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D3
 U 1 1 5DF2AADC
-P 9550 5400
-F 0 "D3" H 9700 5300 50  0000 C CNN
-F 1 "LED" H 9550 5300 50  0000 C CNN
-F 2 "" H 9550 5400 50  0001 C CNN
-F 3 "~" H 9550 5400 50  0001 C CNN
-	1    9550 5400
+P 9400 5150
+F 0 "D3" H 9550 5050 50  0000 C CNN
+F 1 "LED" H 9400 5050 50  0000 C CNN
+F 2 "" H 9400 5150 50  0001 C CNN
+F 3 "~" H 9400 5150 50  0001 C CNN
+	1    9400 5150
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R21
 U 1 1 5DF2B4C3
-P 9550 5750
-F 0 "R21" V 9450 5750 50  0000 C CNN
-F 1 "R" V 9550 5750 50  0000 C CNN
-F 2 "" V 9480 5750 50  0001 C CNN
-F 3 "~" H 9550 5750 50  0001 C CNN
-	1    9550 5750
+P 9400 5500
+F 0 "R21" V 9300 5500 50  0000 C CNN
+F 1 "R" V 9400 5500 50  0000 C CNN
+F 2 "" V 9330 5500 50  0001 C CNN
+F 3 "~" H 9400 5500 50  0001 C CNN
+	1    9400 5500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9550 5550 9550 5600
+	9400 5300 9400 5350
 Wire Wire Line
-	9550 5900 9550 5950
+	9400 5650 9400 5700
 Wire Wire Line
-	9550 6350 9550 6600
-Text Label 9550 6600 1    50   ~ 0
+	9400 6100 9400 6350
+Text Label 9400 6350 1    50   ~ 0
 Cell-
 Wire Wire Line
-	9250 6150 8850 6150
-Text Label 8850 6150 0    50   ~ 0
+	9100 5900 8700 5900
+Text Label 8700 5900 0    50   ~ 0
 Balancing
-Text Label 9550 5050 3    50   ~ 0
+Text Label 9400 4800 3    50   ~ 0
 Cell+
 Wire Wire Line
-	9550 5050 9550 5250
-Text Notes 9350 5950 1    50   ~ 0
+	9400 4800 9400 5000
+Text Notes 9200 5700 1    50   ~ 0
 Balancing Indicator
 Wire Wire Line
 	3750 4500 4550 4500
@@ -1496,7 +1495,7 @@ F 3 "~" H 5350 1450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5100 2000 5100 2650
+	5100 2000 5100 2950
 Wire Wire Line
 	3750 1900 5050 1900
 $Comp
@@ -1547,17 +1546,6 @@ Text Label 7700 3950 0    50   ~ 0
 Cell+
 Wire Wire Line
 	7650 4400 7750 4400
-$Comp
-L Lafayette_Electric_Car_Internals:HCNR200 ISO?
-U 2 1 5E322417
-P 8700 4400
-F 0 "ISO?" V 8750 4250 50  0000 R CNN
-F 1 "HCNR200" V 8650 4200 50  0000 R CNN
-F 2 "" H 8600 4350 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/678/V02-0886EN_DS_HCNR200_2014-01-071-908546.pdf" V 8117 4122 50  0001 R CNN
-	2    8700 4400
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	8350 4300 8450 4300
 Wire Wire Line
@@ -1633,8 +1621,6 @@ F 3 "" H 6850 3900 50  0001 C CNN
 	1    6850 3900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6450 4200 6400 4200
 Wire Wire Line
 	7250 3950 7250 4050
 Wire Wire Line
@@ -1855,10 +1841,6 @@ Text Label 8050 5750 2    50   ~ 0
 Cell-
 Wire Wire Line
 	8050 5750 7800 5750
-Text Label 8150 5350 0    50   ~ 0
-Scaled_Cell+
-Text Label 8300 5450 0    50   ~ 0
-Scaled_Cell-
 Wire Wire Line
 	3750 4700 6200 4700
 Wire Wire Line
@@ -1951,6 +1933,86 @@ Wire Wire Line
 	5450 4450 5450 4400
 Wire Wire Line
 	5450 4400 5900 4400
+Wire Wire Line
+	6450 4200 6400 4200
+$Comp
+L Device:C C?
+U 1 1 5D8F7B05
+P 1350 2100
+F 0 "C?" H 1465 2146 50  0000 L CNN
+F 1 "C" H 1465 2055 50  0000 L CNN
+F 2 "" H 1388 1950 50  0001 C CNN
+F 3 "~" H 1350 2100 50  0001 C CNN
+	1    1350 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5D8FA3FC
+P 1350 1950
+F 0 "#PWR?" H 1350 1800 50  0001 C CNN
+F 1 "+3.3V" H 1365 2123 50  0000 C CNN
+F 2 "" H 1350 1950 50  0001 C CNN
+F 3 "" H 1350 1950 50  0001 C CNN
+	1    1350 1950
+	1    0    0    -1  
+$EndComp
+Text Label 1200 2350 2    50   ~ 0
+Power_rtn
+Wire Wire Line
+	1200 2350 1350 2350
+Wire Wire Line
+	1350 2350 1350 2250
+$Comp
+L Device:C C?
+U 1 1 5D91BD8F
+P 1450 5850
+F 0 "C?" H 1565 5896 50  0000 L CNN
+F 1 "C" H 1565 5805 50  0000 L CNN
+F 2 "" H 1488 5700 50  0001 C CNN
+F 3 "~" H 1450 5850 50  0001 C CNN
+	1    1450 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5D91BD99
+P 1450 5700
+F 0 "#PWR?" H 1450 5550 50  0001 C CNN
+F 1 "+3.3V" H 1465 5873 50  0000 C CNN
+F 2 "" H 1450 5700 50  0001 C CNN
+F 3 "" H 1450 5700 50  0001 C CNN
+	1    1450 5700
+	1    0    0    -1  
+$EndComp
+Text Label 1300 6100 2    50   ~ 0
+Power_rtn
+Wire Wire Line
+	1300 6100 1450 6100
+Wire Wire Line
+	1450 6100 1450 6000
+NoConn ~ 3750 4800
+NoConn ~ 3750 4900
+Wire Wire Line
+	9600 2750 9300 2750
+Wire Wire Line
+	9600 2850 9300 2850
+Text Label 9300 2750 0    50   ~ 0
+Cell+
+Text Label 9300 2850 0    50   ~ 0
+Cell-
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 5D9A4E3A
+P 9800 2850
+F 0 "J?" H 9772 2874 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 10300 2650 50  0000 R CNN
+F 2 "" H 9800 2850 50  0001 C CNN
+F 3 "~" H 9800 2850 50  0001 C CNN
+	1    9800 2850
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 9600 2950
 Wire Bus Line
 	2500 1500 2500 2300
 Wire Bus Line
