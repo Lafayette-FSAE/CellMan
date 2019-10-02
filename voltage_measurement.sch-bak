@@ -30,14 +30,14 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 5FDA64CF
-P 6650 4400
+P 6800 4400
 AR Path="/5FDA64CF" Ref="R?"  Part="1" 
 AR Path="/5FDA3FDE/5FDA64CF" Ref="R29"  Part="1" 
-F 0 "R29" V 6550 4400 50  0000 C CNN
-F 1 "R" V 6650 4400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6580 4400 50  0001 C CNN
-F 3 "~" H 6650 4400 50  0001 C CNN
-	1    6650 4400
+F 0 "R29" V 6700 4400 50  0000 C CNN
+F 1 "R" V 6800 4400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6730 4400 50  0001 C CNN
+F 3 "~" H 6800 4400 50  0001 C CNN
+	1    6800 4400
 	0    1    1    0   
 $EndComp
 $Comp
@@ -56,22 +56,22 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 5FDA64DC
-P 6650 4500
+P 6800 4500
 AR Path="/5FDA64DC" Ref="R?"  Part="1" 
 AR Path="/5FDA3FDE/5FDA64DC" Ref="R30"  Part="1" 
-F 0 "R30" V 6750 4500 50  0000 C CNN
-F 1 "R" V 6650 4500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6580 4500 50  0001 C CNN
-F 3 "~" H 6650 4500 50  0001 C CNN
-	1    6650 4500
+F 0 "R30" V 6900 4500 50  0000 C CNN
+F 1 "R" V 6800 4500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6730 4500 50  0001 C CNN
+F 3 "~" H 6800 4500 50  0001 C CNN
+	1    6800 4500
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	6050 4400 6050 4600
 Wire Wire Line
-	6800 4400 7050 4400
+	6950 4400 7200 4400
 Wire Wire Line
-	7050 4500 6800 4500
+	7200 4500 6950 4500
 Wire Wire Line
 	6150 4600 6150 4500
 Wire Wire Line
@@ -88,7 +88,7 @@ AR Path="/5FDA64F6" Ref="C?"  Part="1"
 AR Path="/5FDA3FDE/5FDA64F6" Ref="C9"  Part="1" 
 F 0 "C9" H 5750 4850 50  0000 L CNN
 F 1 "C" H 5750 4650 50  0000 L CNN
-F 2 "" H 5788 4600 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5788 4600 50  0001 C CNN
 F 3 "~" H 5750 4750 50  0001 C CNN
 	1    5750 4750
 	1    0    0    -1  
@@ -114,7 +114,7 @@ AR Path="/5FDA6506" Ref="C?"  Part="1"
 AR Path="/5FDA3FDE/5FDA6506" Ref="C8"  Part="1" 
 F 0 "C8" H 5450 4850 50  0000 L CNN
 F 1 "C" H 5450 4650 50  0000 L CNN
-F 2 "" H 5588 4600 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5588 4600 50  0001 C CNN
 F 3 "~" H 5550 4750 50  0001 C CNN
 	1    5550 4750
 	1    0    0    -1  
@@ -123,30 +123,28 @@ Wire Wire Line
 	5550 5000 5750 5000
 $Comp
 L Lafayette_Electric_Car_Internals:HCNR200 ISO?
-U 3 1 5FE3FC7E
+U 2 1 5FE3FC7E
 P 7700 2200
 AR Path="/5FE3FC7E" Ref="ISO?"  Part="3" 
-AR Path="/5FDA3FDE/5FE3FC7E" Ref="ISO2"  Part="3" 
+AR Path="/5FDA3FDE/5FE3FC7E" Ref="ISO2"  Part="2" 
 F 0 "ISO2" H 7500 2300 50  0000 R CNN
 F 1 "HCNR200" H 7850 2100 50  0000 R CNN
 F 2 "Package_DIP:DIP-8_W7.62mm" H 7600 2150 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/678/V02-0886EN_DS_HCNR200_2014-01-071-908546.pdf" V 7117 1922 50  0001 R CNN
-	3    7700 2200
+	2    7700 2200
 	0    1    -1   0   
 $EndComp
-Wire Wire Line
-	7150 2500 7150 2550
 $Comp
 L Lafayette_Electric_Car_Internals:HCNR200 ISO?
-U 2 1 5FE3FC8B
+U 1 1 5FE3FC8B
 P 6650 2000
 AR Path="/5FE3FC8B" Ref="ISO?"  Part="2" 
-AR Path="/5FDA3FDE/5FE3FC8B" Ref="ISO2"  Part="2" 
+AR Path="/5FDA3FDE/5FE3FC8B" Ref="ISO2"  Part="1" 
 F 0 "ISO2" H 6100 2050 50  0000 L CNN
 F 1 "HCNR200" H 5950 1950 50  0000 L CNN
 F 2 "Package_DIP:DIP-8_W7.62mm" H 6550 1950 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/678/V02-0886EN_DS_HCNR200_2014-01-071-908546.pdf" V 6249 2168 50  0001 L CNN
-	2    6650 2000
+	1    6650 2000
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
@@ -230,9 +228,9 @@ F 3 "http://www.ti.com/lit/ds/symlink/opa2347.pdf" H 7400 2550 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	4900 5350 5200 5350
+	4950 4900 5200 4900
 Wire Wire Line
-	5200 5350 5200 4500
+	5200 4900 5200 4500
 Wire Wire Line
 	5200 4500 5750 4500
 Wire Wire Line
@@ -240,40 +238,23 @@ Wire Wire Line
 Wire Wire Line
 	5200 4400 5550 4400
 Wire Wire Line
-	4300 5250 4150 5250
+	4150 4350 5000 4350
 Wire Wire Line
-	5750 5000 5850 5000
+	4150 3950 4150 3500
 Wire Wire Line
-	6050 4400 6500 4400
-Wire Wire Line
-	6150 4500 6500 4500
-Wire Wire Line
-	4150 5250 4150 4650
-Wire Wire Line
-	4150 4650 5000 4650
-Wire Wire Line
-	5000 4650 5000 5150
-Wire Wire Line
-	5000 5150 4900 5150
-Connection ~ 4150 5250
-Wire Wire Line
-	4150 5250 3800 5250
-Wire Wire Line
-	4150 3950 4150 3350
-Wire Wire Line
-	5000 3350 5000 3850
+	5000 3500 5000 3850
 Connection ~ 4150 3950
 Wire Wire Line
 	4150 3950 3800 3950
 $Comp
 L Device:R R25
 U 1 1 5FE84408
-P 3350 4550
-F 0 "R25" V 3250 4550 50  0000 C CNN
-F 1 "R" V 3350 4550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3280 4550 50  0001 C CNN
-F 3 "~" H 3350 4550 50  0001 C CNN
-	1    3350 4550
+P 3450 4450
+F 0 "R25" V 3350 4450 50  0000 C CNN
+F 1 "R" V 3450 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3380 4450 50  0001 C CNN
+F 3 "~" H 3450 4450 50  0001 C CNN
+	1    3450 4450
 	0    1    1    0   
 $EndComp
 $Comp
@@ -288,60 +269,56 @@ F 3 "~" H 3100 4800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3000 4550 3100 4550
+	3000 4450 3100 4450
 Wire Wire Line
-	3100 4550 3100 4650
+	3100 4450 3100 4650
 Wire Wire Line
-	3100 4550 3200 4550
-Connection ~ 3100 4550
+	3100 4450 3300 4450
+Connection ~ 3100 4450
 $Comp
 L Device:R R22
 U 1 1 5FE899CD
-P 2600 3800
-F 0 "R22" V 2393 3800 50  0000 C CNN
-F 1 "R" V 2484 3800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2530 3800 50  0001 C CNN
-F 3 "~" H 2600 3800 50  0001 C CNN
-	1    2600 3800
+P 2700 3850
+F 0 "R22" V 2493 3850 50  0000 C CNN
+F 1 "R" V 2584 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2630 3850 50  0001 C CNN
+F 3 "~" H 2700 3850 50  0001 C CNN
+	1    2700 3850
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R24
 U 1 1 5FE89D97
-P 3350 4350
-F 0 "R24" V 3250 4350 50  0000 C CNN
-F 1 "R" V 3350 4350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3280 4350 50  0001 C CNN
-F 3 "~" H 3350 4350 50  0001 C CNN
-	1    3350 4350
+P 3450 4250
+F 0 "R24" V 3350 4250 50  0000 C CNN
+F 1 "R" V 3450 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3380 4250 50  0001 C CNN
+F 3 "~" H 3450 4250 50  0001 C CNN
+	1    3450 4250
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3000 4350 3100 4350
+	3000 4250 3100 4250
 Wire Wire Line
-	3100 4350 3100 3800
+	3100 4250 3100 3850
 Wire Wire Line
-	3100 3800 2750 3800
-Connection ~ 3100 4350
+	3100 3850 2850 3850
+Connection ~ 3100 4250
 Wire Wire Line
-	3100 4350 3200 4350
+	3100 4250 3300 4250
 Wire Wire Line
-	2000 4450 2300 4450
+	2000 4350 2300 4350
 Wire Wire Line
-	2300 4450 2300 3800
+	2300 4350 2300 3850
 Wire Wire Line
-	2300 3800 2450 3800
-Connection ~ 2300 4450
+	2300 3850 2550 3850
+Connection ~ 2300 4350
 Wire Wire Line
-	2300 4450 2400 4450
+	2300 4350 2400 4350
 Wire Wire Line
-	3500 4550 3800 4550
+	3600 4450 3800 4450
 Wire Wire Line
-	3800 4550 3800 5250
-Wire Wire Line
-	3500 4350 3800 4350
-Wire Wire Line
-	3800 4350 3800 3950
+	3600 4250 3800 4250
 Wire Wire Line
 	4350 3950 4150 3950
 Wire Wire Line
@@ -351,34 +328,25 @@ Wire Wire Line
 $Comp
 L power:+3.3V #PWR035
 U 1 1 5FE46691
-P 3800 2500
-F 0 "#PWR035" H 3800 2350 50  0001 C CNN
-F 1 "+3.3V" H 3815 2673 50  0000 C CNN
-F 2 "" H 3800 2500 50  0001 C CNN
-F 3 "" H 3800 2500 50  0001 C CNN
-	1    3800 2500
+P 3700 2350
+F 0 "#PWR035" H 3700 2200 50  0001 C CNN
+F 1 "+3.3V" H 3715 2523 50  0000 C CNN
+F 2 "" H 3700 2350 50  0001 C CNN
+F 3 "" H 3700 2350 50  0001 C CNN
+	1    3700 2350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3800 3100 3800 3450
-Text Label 3800 3450 1    50   ~ 0
+	3700 2950 3700 3300
+Text Label 3700 3300 1    50   ~ 0
 SafeGND
-Text HLabel 2000 4450 0    50   Input ~ 0
+Text HLabel 2000 4350 0    50   Input ~ 0
 Divided
-Text Label 2950 5350 1    50   ~ 0
+Text Label 3100 5300 1    50   ~ 0
 SafeGND
 Wire Wire Line
-	3100 4950 3100 5000
-Wire Wire Line
-	3100 5000 2950 5000
-Wire Wire Line
-	2950 5000 2950 5350
-Wire Wire Line
-	5850 5000 5850 5450
-Connection ~ 5850 5000
-Wire Wire Line
-	5850 5000 6050 5000
-Text Label 5850 5450 1    50   ~ 0
+	5900 5000 5900 5450
+Text Label 5900 5450 1    50   ~ 0
 SafeGND
 Connection ~ 5400 2000
 Wire Wire Line
@@ -455,15 +423,15 @@ F 3 "http://www.ti.com/lit/ds/symlink/opa2347.pdf" H 6100 2250 50  0001 C CNN
 $EndComp
 $Comp
 L Lafayette_Electric_Car_Internals:HCNR200 ISO?
-U 1 1 5FF124E0
+U 3 1 5FF124E0
 P 6250 2000
 AR Path="/5FF124E0" Ref="ISO?"  Part="1" 
-AR Path="/5FDA3FDE/5FF124E0" Ref="ISO2"  Part="1" 
+AR Path="/5FDA3FDE/5FF124E0" Ref="ISO2"  Part="3" 
 F 0 "ISO2" H 6050 2100 50  0000 R CNN
 F 1 "HCNR200" H 6800 2100 50  0000 R CNN
 F 2 "Package_DIP:DIP-8_W7.62mm" H 6150 1950 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/678/V02-0886EN_DS_HCNR200_2014-01-071-908546.pdf" V 5667 1722 50  0001 R CNN
-	1    6250 2000
+	3    6250 2000
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
@@ -495,7 +463,7 @@ Connection ~ 6050 5000
 Connection ~ 6050 4400
 Connection ~ 6150 4500
 Wire Wire Line
-	4150 3350 5000 3350
+	4150 3500 5000 3500
 Connection ~ 5550 4400
 Connection ~ 5750 4500
 Text HLabel 8250 1950 2    50   Input ~ 0
@@ -504,63 +472,63 @@ Wire Wire Line
 	5050 2000 5400 2000
 Text HLabel 5050 2000 0    50   Input ~ 0
 Isolated
-Text HLabel 7050 4400 2    50   Input ~ 0
+Text HLabel 7200 4400 2    50   Input ~ 0
 Cell+
-Text HLabel 7050 4500 2    50   Input ~ 0
+Text HLabel 7200 4500 2    50   Input ~ 0
 Cell-
 $Comp
-L Amplifier_Operational:MCP6004 U?
+L Amplifier_Operational:MCP6004 U5
 U 1 1 6010C7DB
-P 2700 4450
-F 0 "U?" H 2700 4083 50  0000 C CNN
-F 1 "MCP6004" H 2700 4174 50  0000 C CNN
-F 2 "" H 2650 4550 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 2750 4650 50  0001 C CNN
-	1    2700 4450
+P 2700 4350
+F 0 "U5" H 2700 3983 50  0000 C CNN
+F 1 "MCP6004" H 2700 4074 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2650 4450 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 2750 4550 50  0001 C CNN
+	1    2700 4350
 	-1   0    0    1   
 $EndComp
 $Comp
-L Amplifier_Operational:MCP6004 U?
+L Amplifier_Operational:MCP6004 U5
 U 2 1 60111E69
 P 4650 3950
-F 0 "U?" H 4650 3583 50  0000 C CNN
+F 0 "U5" H 4650 3583 50  0000 C CNN
 F 1 "MCP6004" H 4650 3674 50  0000 C CNN
-F 2 "" H 4600 4050 50  0001 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4600 4050 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 4700 4150 50  0001 C CNN
 	2    4650 3950
 	-1   0    0    1   
 $EndComp
 $Comp
-L Amplifier_Operational:MCP6004 U?
+L Amplifier_Operational:MCP6004 U5
 U 3 1 601136F9
-P 4600 5250
-F 0 "U?" H 4600 4883 50  0000 C CNN
-F 1 "MCP6004" H 4600 4974 50  0000 C CNN
-F 2 "" H 4550 5350 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 4650 5450 50  0001 C CNN
-	3    4600 5250
+P 4650 4800
+F 0 "U5" H 4650 4433 50  0000 C CNN
+F 1 "MCP6004" H 4650 4524 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4600 4900 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 4700 5000 50  0001 C CNN
+	3    4650 4800
 	-1   0    0    1   
 $EndComp
 $Comp
-L Amplifier_Operational:MCP6004 U?
+L Amplifier_Operational:MCP6004 U5
 U 4 1 60114FB3
-P 2650 3000
-F 0 "U?" H 2650 2633 50  0000 C CNN
-F 1 "MCP6004" H 2650 2724 50  0000 C CNN
-F 2 "" H 2600 3100 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 2700 3200 50  0001 C CNN
-	4    2650 3000
+P 3050 2700
+F 0 "U5" H 3050 2333 50  0000 C CNN
+F 1 "MCP6004" H 3050 2424 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 3000 2800 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 3100 2900 50  0001 C CNN
+	4    3050 2700
 	-1   0    0    1   
 $EndComp
 $Comp
-L Amplifier_Operational:MCP6004 U?
+L Amplifier_Operational:MCP6004 U5
 U 5 1 6011B39B
-P 3700 2800
-F 0 "U?" H 3512 2754 50  0000 R CNN
-F 1 "MCP6004" H 3512 2845 50  0000 R CNN
-F 2 "" H 3650 2900 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 3750 3000 50  0001 C CNN
-	5    3700 2800
+P 3600 2650
+F 0 "U5" H 3412 2604 50  0000 R CNN
+F 1 "MCP6004" H 3412 2695 50  0000 R CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 3550 2750 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 3650 2850 50  0001 C CNN
+	5    3600 2650
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -577,5 +545,44 @@ F 3 "http://www.ti.com/lit/ds/symlink/opa2347.pdf" H 7400 2500 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	7150 2550 7150 2650
+	7150 2500 7150 2650
+Wire Wire Line
+	3100 4950 3100 5300
+$Comp
+L Lafayette_Electric_Car_Internals:HCNR200 ISO?
+U 4 1 60149ADC
+P 5700 900
+AR Path="/60149ADC" Ref="ISO?"  Part="2" 
+AR Path="/5FDA3FDE/60149ADC" Ref="ISO2"  Part="4" 
+F 0 "ISO2" H 5350 950 50  0000 L CNN
+F 1 "HCNR200" H 5250 850 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 5600 850 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/678/V02-0886EN_DS_HCNR200_2014-01-071-908546.pdf" V 5299 1068 50  0001 L CNN
+	4    5700 900 
+	-1   0    0    -1  
+$EndComp
+Connection ~ 5900 5000
+Wire Wire Line
+	5900 5000 6050 5000
+Wire Wire Line
+	5750 5000 5900 5000
+Wire Wire Line
+	6050 4400 6650 4400
+Wire Wire Line
+	6150 4500 6650 4500
+Wire Wire Line
+	3800 4800 4150 4800
+Wire Wire Line
+	4950 4700 5000 4700
+Wire Wire Line
+	5000 4700 5000 4350
+Wire Wire Line
+	4150 4350 4150 4800
+Connection ~ 4150 4800
+Wire Wire Line
+	4150 4800 4350 4800
+Wire Wire Line
+	3800 4250 3800 3950
+Wire Wire Line
+	3800 4450 3800 4800
 $EndSCHEMATC
