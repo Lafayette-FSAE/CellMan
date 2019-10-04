@@ -556,7 +556,7 @@ U 1 1 5D8D1490
 P 8350 800
 F 0 "J4" H 8150 600 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 7800 1000 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 8350 800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8350 800 50  0001 C CNN
 F 3 "~" H 8350 800 50  0001 C CNN
 	1    8350 800 
 	1    0    0    -1  
@@ -1041,7 +1041,7 @@ F 3 "https://www.mouser.com/datasheet/2/268/21919b-65915.pdf" H 3750 2900 50  00
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3750 2000 5200 2000
+	3750 2000 4450 2000
 Text Label 4300 2000 2    50   ~ 0
 Balance_ctl
 NoConn ~ 3050 2400
@@ -1110,7 +1110,7 @@ F 3 "" H 7100 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5200 2950 6750 2950
+	4450 2950 6750 2950
 Text Notes 1900 6300 0    50   ~ 0
 Near U1
 Text Notes 2300 6300 0    50   ~ 0
@@ -1298,64 +1298,40 @@ NoConn ~ 3750 2100
 Text Label 4450 1900 2    50   ~ 0
 IO_Sanity_Check
 $Comp
-L Transistor_FET:QM6006D Q2
-U 1 1 5E0D3CA9
-P 5250 1900
-F 0 "Q2" H 4850 2100 50  0000 C CNN
-F 1 "QM6006D" H 5100 2100 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 5450 1825 50  0001 L CIN
-F 3 "http://www.jaolen.com/images/pdf/QM6006D.pdf" H 5050 2200 50  0001 L CNN
-	1    5250 1900
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R15
 U 1 1 5E0E8CA6
-P 5350 1150
-F 0 "R15" H 5420 1196 50  0000 L CNN
-F 1 "R" H 5420 1105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5280 1150 50  0001 C CNN
-F 3 "~" H 5350 1150 50  0001 C CNN
-	1    5350 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR028
-U 1 1 5E0E8F3E
-P 5350 1000
-F 0 "#PWR028" H 5350 850 50  0001 C CNN
-F 1 "+3.3V" H 5365 1173 50  0000 C CNN
-F 2 "" H 5350 1000 50  0001 C CNN
-F 3 "" H 5350 1000 50  0001 C CNN
-	1    5350 1000
+P 5100 2100
+F 0 "R15" H 5170 2146 50  0000 L CNN
+F 1 "R" H 5170 2055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5030 2100 50  0001 C CNN
+F 3 "~" H 5100 2100 50  0001 C CNN
+	1    5100 2100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D1
 U 1 1 5E0EA3D5
-P 5350 1450
-F 0 "D1" V 5389 1333 50  0000 R CNN
-F 1 "LED" V 5298 1333 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 5350 1450 50  0001 C CNN
-F 3 "~" H 5350 1450 50  0001 C CNN
-	1    5350 1450
+P 5100 2400
+F 0 "D1" V 5139 2283 50  0000 R CNN
+F 1 "LED" V 5048 2283 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 5100 2400 50  0001 C CNN
+F 3 "~" H 5100 2400 50  0001 C CNN
+	1    5100 2400
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5200 2000 5200 2950
-Wire Wire Line
-	3750 1900 5050 1900
+	4450 2000 4450 2950
 Wire Wire Line
 	1300 3600 2100 3600
 Text Label 2100 3600 2    50   ~ 0
-IO_Sanity_Check
+Balance_ctl
 $Comp
 L Connector:Conn_01x04_Male J2
 U 1 1 5E17FAC3
 P 1100 3400
 F 0 "J2" H 1208 3681 50  0000 C CNN
 F 1 "Conn_01x04_Male" V 1000 3350 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 1100 3400 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1100 3400 50  0001 C CNN
 F 3 "~" H 1100 3400 50  0001 C CNN
 	1    1100 3400
 	1    0    0    -1  
@@ -1364,7 +1340,7 @@ Connection ~ 1450 3300
 Wire Wire Line
 	1450 3300 2100 3300
 Wire Wire Line
-	5350 1600 5350 1700
+	5100 2550 5100 2800
 Wire Wire Line
 	7750 2500 8300 2500
 Text Label 8250 2500 2    50   ~ 0
@@ -1402,7 +1378,7 @@ U 1 1 5D8F7B05
 P 900 1450
 F 0 "C1" H 950 1650 50  0000 L CNN
 F 1 "C" H 950 1550 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-3P-3_Horizontal_TabDown" H 938 1300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 938 1300 50  0001 C CNN
 F 3 "~" H 900 1450 50  0001 C CNN
 	1    900  1450
 	1    0    0    -1  
@@ -1534,8 +1510,8 @@ SafeGND
 Text Label 5450 7550 2    50   ~ 0
 SafeGND
 Wire Wire Line
-	5350 2100 5350 2450
-Text Label 5350 2450 1    50   ~ 0
+	5100 2800 5550 2800
+Text Label 5550 2800 2    50   ~ 0
 SafeGND
 Wire Wire Line
 	3050 2600 2650 2600
@@ -1692,10 +1668,6 @@ Wire Wire Line
 	8900 4300 9200 4300
 Wire Wire Line
 	8900 4600 9200 4600
-Wire Bus Line
-	2500 2300 2500 5200
-Wire Bus Line
-	2500 1500 2500 2300
 $Comp
 L Transistor_FET:IPD50R380CE Q5
 U 1 1 5D880C62
@@ -1710,12 +1682,20 @@ $EndComp
 $Comp
 L Connector:Conn_01x04_Male J1
 U 1 1 5D83B590
-P 1100 1400
-F 0 "J1" H 1100 1750 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 1250 1900 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 1100 1400 50  0001 C CNN
-F 3 "~" H 1100 1400 50  0001 C CNN
-	1    1100 1400
-	1    0    0    -1  
+P 1100 1500
+F 0 "J1" H 1100 1850 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 1250 2000 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 1100 1500 50  0001 C CNN
+F 3 "~" H 1100 1500 50  0001 C CNN
+	1    1100 1500
+	1    0    0    1   
 $EndComp
+Wire Wire Line
+	5100 1900 5100 1950
+Wire Wire Line
+	3750 1900 5100 1900
+Wire Bus Line
+	2500 1500 2500 2300
+Wire Bus Line
+	2500 2300 2500 5200
 $EndSCHEMATC
