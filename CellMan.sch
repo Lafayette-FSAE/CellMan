@@ -107,13 +107,13 @@ Entry Wire Line
 $Comp
 L Connector:Conn_01x04_Male J3
 U 1 1 5D943589
-P 1100 5200
-F 0 "J3" H 1400 5700 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 950 5700 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 1100 5200 50  0001 C CNN
-F 3 "~" H 1100 5200 50  0001 C CNN
-	1    1100 5200
-	1    0    0    -1  
+P 1100 5300
+F 0 "J3" H 1400 5800 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 950 5800 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 1100 5300 50  0001 C CNN
+F 3 "~" H 1100 5300 50  0001 C CNN
+	1    1100 5300
+	1    0    0    1   
 $EndComp
 $Comp
 L power:+3.3V #PWR08
@@ -213,7 +213,7 @@ U 1 1 5D8A8BDE
 P 10000 1500
 F 0 "H7" V 9954 1650 50  0000 L CNN
 F 1 "MountingHole_Pad" V 9850 1200 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm_Pad" H 10000 1500 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.5mm_Pad" H 10000 1500 50  0001 C CNN
 F 3 "~" H 10000 1500 50  0001 C CNN
 	1    10000 1500
 	0    1    1    0   
@@ -674,7 +674,7 @@ U 1 1 5DCD9FCA
 P 10000 1800
 F 0 "H8" V 9954 1950 50  0000 L CNN
 F 1 "MountingHole_Pad" V 10150 1500 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm_Pad" H 10000 1800 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.5mm_Pad" H 10000 1800 50  0001 C CNN
 F 3 "~" H 10000 1800 50  0001 C CNN
 	1    10000 1800
 	0    1    1    0   
@@ -685,7 +685,7 @@ U 1 1 5DCDA27D
 P 9450 1500
 F 0 "H3" V 9404 1650 50  0000 L CNN
 F 1 "MountingHole_Pad" V 9600 1300 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm_Pad" H 9450 1500 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.5mm_Pad" H 9450 1500 50  0001 C CNN
 F 3 "~" H 9450 1500 50  0001 C CNN
 	1    9450 1500
 	0    -1   -1   0   
@@ -696,7 +696,7 @@ U 1 1 5DCEB68E
 P 9450 1800
 F 0 "H4" V 9404 1950 50  0000 L CNN
 F 1 "MountingHole_Pad" V 9600 2150 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm_Pad" H 9450 1800 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.5mm_Pad" H 9450 1800 50  0001 C CNN
 F 3 "~" H 9450 1800 50  0001 C CNN
 	1    9450 1800
 	0    -1   -1   0   
@@ -721,7 +721,7 @@ U 1 1 5DD275E2
 P 10000 650
 F 0 "H5" V 9954 800 50  0000 L CNN
 F 1 "MountingHole_Pad" V 9800 350 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm_Pad" H 10000 650 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.5mm_Pad" H 10000 650 50  0001 C CNN
 F 3 "~" H 10000 650 50  0001 C CNN
 	1    10000 650 
 	0    1    1    0   
@@ -732,7 +732,7 @@ U 1 1 5DD275EC
 P 10000 950
 F 0 "H6" V 9954 1100 50  0000 L CNN
 F 1 "MountingHole_Pad" V 10200 650 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm_Pad" H 10000 950 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.5mm_Pad" H 10000 950 50  0001 C CNN
 F 3 "~" H 10000 950 50  0001 C CNN
 	1    10000 950 
 	0    1    1    0   
@@ -743,7 +743,7 @@ U 1 1 5DD275F6
 P 9450 650
 F 0 "H1" V 9404 800 50  0000 L CNN
 F 1 "MountingHole_Pad" V 9650 450 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm_Pad" H 9450 650 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.5mm_Pad" H 9450 650 50  0001 C CNN
 F 3 "~" H 9450 650 50  0001 C CNN
 	1    9450 650 
 	0    -1   -1   0   
@@ -754,7 +754,7 @@ U 1 1 5DD27600
 P 9450 950
 F 0 "H2" V 9404 1100 50  0000 L CNN
 F 1 "MountingHole_Pad" V 9250 750 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm_Pad" H 9450 950 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.5mm_Pad" H 9450 950 50  0001 C CNN
 F 3 "~" H 9450 950 50  0001 C CNN
 	1    9450 950 
 	0    -1   -1   0   
@@ -1634,13 +1634,13 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x04_Male J1
 U 1 1 5D83B590
-P 1100 1500
-F 0 "J1" H 1100 1850 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 1250 2000 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 1100 1500 50  0001 C CNN
-F 3 "~" H 1100 1500 50  0001 C CNN
-	1    1100 1500
-	1    0    0    1   
+P 1100 1400
+F 0 "J1" H 1100 1750 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 1250 1900 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 1100 1400 50  0001 C CNN
+F 3 "~" H 1100 1400 50  0001 C CNN
+	1    1100 1400
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3750 1900 4700 1900
