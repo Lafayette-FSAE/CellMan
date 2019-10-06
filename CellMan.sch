@@ -326,7 +326,7 @@ U 1 1 5D9A4F80
 P 3400 7250
 F 0 "SW2" H 3400 7717 50  0000 C CNN
 F 1 "SW_DIP_x04" H 3400 7626 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx04_Slide_Copal_CHS-04A_W5.08mm_P1.27mm_JPin" H 3400 7250 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx04_Slide_Copal_CHS-04B_W7.62mm_P1.27mm" H 3400 7250 50  0001 C CNN
 F 3 "~" H 3400 7250 50  0001 C CNN
 	1    3400 7250
 	1    0    0    -1  
@@ -337,7 +337,7 @@ U 1 1 5D9B6081
 P 2050 7200
 F 0 "SW1" H 2050 7767 50  0000 C CNN
 F 1 "SW_DIP_x06" H 2050 7676 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx06_Slide_Copal_CHS-06A_W5.08mm_P1.27mm_JPin" H 2050 7200 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx06_Slide_Copal_CHS-06B_W7.62mm_P1.27mm" H 2050 7200 50  0001 C CNN
 F 3 "~" H 2050 7200 50  0001 C CNN
 	1    2050 7200
 	1    0    0    -1  
@@ -1301,17 +1301,6 @@ Wire Wire Line
 	1300 3600 2100 3600
 Text Label 2100 3600 2    50   ~ 0
 Balance_ctl
-$Comp
-L Connector:Conn_01x04_Male J2
-U 1 1 5E17FAC3
-P 1100 3400
-F 0 "J2" H 1208 3681 50  0000 C CNN
-F 1 "Conn_01x04_Male" V 1000 3350 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1100 3400 50  0001 C CNN
-F 3 "~" H 1100 3400 50  0001 C CNN
-	1    1100 3400
-	1    0    0    -1  
-$EndComp
 Connection ~ 1450 3300
 Wire Wire Line
 	1450 3300 2100 3300
@@ -1408,7 +1397,7 @@ U 1 1 5D9A4E3A
 P 10000 3400
 F 0 "J5" H 9972 3424 50  0000 R CNN
 F 1 "Conn_01x03_Male" H 10500 3200 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 10000 3400 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10000 3400 50  0001 C CNN
 F 3 "~" H 10000 3400 50  0001 C CNN
 	1    10000 3400
 	-1   0    0    -1  
@@ -1738,6 +1727,17 @@ Wire Wire Line
 	5000 1900 5100 1900
 Wire Wire Line
 	5100 1900 5100 2000
+$Comp
+L Connector:Conn_01x04_Male J2
+U 1 1 5E17FAC3
+P 1100 3400
+F 0 "J2" H 1208 3681 50  0000 C CNN
+F 1 "Conn_01x04_Male" V 1000 3350 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1100 3400 50  0001 C CNN
+F 3 "~" H 1100 3400 50  0001 C CNN
+	1    1100 3400
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	2500 1500 2500 2300
 Wire Bus Line
