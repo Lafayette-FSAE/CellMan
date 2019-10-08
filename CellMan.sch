@@ -181,9 +181,9 @@ Wire Wire Line
 	2300 4700 3050 4700
 Wire Wire Line
 	3050 4900 2600 4900
-Text Label 2600 4900 0    50   ~ 0
-Address_A0
 Text Label 2600 5000 0    50   ~ 0
+Address_A0
+Text Label 2600 4900 0    50   ~ 0
 Address_A1
 Wire Wire Line
 	2600 5000 3050 5000
@@ -205,7 +205,7 @@ Wire Wire Line
 	1400 1300 1400 1250
 Wire Bus Line
 	2050 2300 2500 2300
-Text Label 4600 4400 2    50   ~ 0
+Text Label 4400 4400 2    50   ~ 0
 CellVoltage_01
 $Comp
 L Mechanical:MountingHole_Pad H7
@@ -256,10 +256,8 @@ Wire Wire Line
 	3750 3650 4200 3650
 Text Label 4200 3650 2    50   ~ 0
 Address_T2
-Text Label 4550 5000 2    50   ~ 0
+Text Label 4900 4600 0    50   ~ 0
 Temperature
-Text Label 4600 4300 2    50   ~ 0
-BalanceCurrent
 Text Label 2600 7100 0    50   ~ 0
 Address_A0
 Wire Wire Line
@@ -632,34 +630,34 @@ $EndComp
 $Comp
 L Device:R R13
 U 1 1 5D96C573
-P 4800 5000
-F 0 "R13" V 4700 4950 50  0000 L CNN
-F 1 "R" H 4850 4950 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4730 5000 50  0001 C CNN
-F 3 "~" H 4800 5000 50  0001 C CNN
-	1    4800 5000
-	0    1    1    0   
+P 7300 5250
+F 0 "R13" V 7200 5200 50  0000 L CNN
+F 1 "R" H 7350 5200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7230 5250 50  0001 C CNN
+F 3 "~" H 7300 5250 50  0001 C CNN
+	1    7300 5250
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:+3.3V #PWR027
 U 1 1 5D93BF2F
-P 5000 4950
-F 0 "#PWR027" H 5000 4800 50  0001 C CNN
-F 1 "+3.3V" H 5015 5123 50  0000 C CNN
-F 2 "" H 5000 4950 50  0001 C CNN
-F 3 "" H 5000 4950 50  0001 C CNN
-	1    5000 4950
+P 7300 5100
+F 0 "#PWR027" H 7300 4950 50  0001 C CNN
+F 1 "+3.3V" H 7315 5273 50  0000 C CNN
+F 2 "" H 7300 5100 50  0001 C CNN
+F 3 "" H 7300 5100 50  0001 C CNN
+	1    7300 5100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Thermistor TH1
 U 1 1 5D937593
-P 4600 5250
-F 0 "TH1" H 4300 5300 50  0000 L CNN
-F 1 "Thermistor" H 4050 5200 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4600 5250 50  0001 C CNN
-F 3 "~" H 4600 5250 50  0001 C CNN
-	1    4600 5250
+P 7300 5700
+F 0 "TH1" H 7000 5750 50  0000 L CNN
+F 1 "Thermistor" H 6750 5650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7300 5700 50  0001 C CNN
+F 3 "~" H 7300 5700 50  0001 C CNN
+	1    7300 5700
 	1    0    0    -1  
 $EndComp
 Text Notes 7550 3300 1    50   ~ 0
@@ -773,8 +771,6 @@ Wire Wire Line
 	9900 650  9900 950 
 Connection ~ 9900 650 
 Connection ~ 9900 950 
-Wire Wire Line
-	3750 4300 5800 4300
 Wire Wire Line
 	5800 1400 7000 1400
 Text Label 6350 1400 0    50   ~ 0
@@ -1195,8 +1191,8 @@ Wire Wire Line
 Text Notes 9500 5700 1    50   ~ 0
 Balancing Indicator
 Wire Wire Line
-	3750 4700 4650 4700
-Text Label 4650 4700 2    50   ~ 0
+	3750 4700 4550 4700
+Text Label 4550 4700 2    50   ~ 0
 ADC_Sanity_Check
 Wire Wire Line
 	1300 3500 2100 3500
@@ -1328,15 +1324,6 @@ Wire Wire Line
 	7750 2500 7750 2650
 Wire Wire Line
 	8600 1950 8600 2200
-Wire Wire Line
-	4600 5000 4600 5050
-Wire Wire Line
-	4650 5000 4600 5000
-Connection ~ 4600 5000
-Wire Wire Line
-	4950 5000 5000 5000
-Wire Wire Line
-	5000 5000 5000 4950
 $Comp
 L Device:C C1
 U 1 1 5D8F7B05
@@ -1556,18 +1543,12 @@ Wire Wire Line
 	6650 1850 6800 1850
 Text Label 6650 2250 1    50   ~ 0
 SafeGND
-Text Label 4600 5800 1    50   ~ 0
+Text Label 7300 6250 1    50   ~ 0
 SafeGND
 Wire Wire Line
-	4600 5450 4600 5800
-Text Label 4600 4500 2    50   ~ 0
+	7300 5900 7300 6250
+Text Label 4400 4500 2    50   ~ 0
 CellVoltage_02
-Wire Wire Line
-	3750 5000 4600 5000
-Wire Wire Line
-	3750 4400 7050 4400
-Wire Wire Line
-	3750 4500 7050 4500
 Wire Wire Line
 	7800 4400 8250 4400
 Wire Wire Line
@@ -1738,8 +1719,43 @@ F 3 "~" H 1100 3400 50  0001 C CNN
 	1    1100 3400
 	1    0    0    -1  
 $EndComp
+Text Label 4900 4400 0    50   ~ 0
+CellVoltage_01
+Text Label 4900 4500 0    50   ~ 0
+CellVoltage_02
+Wire Wire Line
+	3750 4300 4400 4300
+Wire Wire Line
+	3750 4400 4400 4400
+Wire Wire Line
+	3750 4500 4400 4500
+Wire Wire Line
+	3750 5000 4400 5000
+Wire Wire Line
+	7050 4400 4900 4400
+Wire Wire Line
+	7050 4500 4900 4500
+Wire Wire Line
+	5800 4300 4900 4300
+Wire Wire Line
+	7300 5400 7300 5450
+Wire Wire Line
+	7300 5450 5800 5450
+Wire Wire Line
+	5800 5450 5800 4600
+Connection ~ 7300 5450
+Wire Wire Line
+	7300 5450 7300 5500
+Wire Wire Line
+	4900 4600 5800 4600
 Wire Bus Line
 	2500 1500 2500 2300
 Wire Bus Line
 	2500 2300 2500 5200
+Text Label 4900 4300 0    50   ~ 0
+BalanceCurrent
+Text Label 4400 4300 2    50   ~ 0
+Temperature
+Text Label 4400 5000 2    50   ~ 0
+BalanceCurrent
 $EndSCHEMATC
