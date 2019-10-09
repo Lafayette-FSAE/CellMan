@@ -131,6 +131,7 @@ F 0 "ISO2" H 7500 2300 50  0000 R CNN
 F 1 "HCNR200" H 7850 2100 50  0000 R CNN
 F 2 "Package_DIP:DIP-8_W7.62mm" H 7600 2150 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/678/V02-0886EN_DS_HCNR200_2014-01-071-908546.pdf" V 7117 1922 50  0001 R CNN
+F 4 "516-1522-5-ND" H 0   0   50  0001 C CNN "Digikey-Part"
 	2    7700 2200
 	0    1    -1   0   
 $EndComp
@@ -144,6 +145,7 @@ F 0 "ISO2" H 6100 2050 50  0000 L CNN
 F 1 "HCNR200" H 5950 1950 50  0000 L CNN
 F 2 "Package_DIP:DIP-8_W7.62mm" H 6550 1950 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/678/V02-0886EN_DS_HCNR200_2014-01-071-908546.pdf" V 6249 2168 50  0001 L CNN
+F 4 "516-1522-5-ND" H 0   0   50  0001 C CNN "Digikey-Part"
 	1    6650 2000
 	0    -1   1    0   
 $EndComp
@@ -224,6 +226,7 @@ F 0 "U9" H 7400 2050 50  0001 C CNN
 F 1 "OPA347" H 7450 2150 50  0001 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 7850 2650 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/opa2347.pdf" H 7400 2550 50  0001 C CNN
+F 4 "296-13469-1-ND" H 0   0   50  0001 C CNN "Digikey-Part"
 	1    7150 2250
 	-1   0    0    -1  
 $EndComp
@@ -418,6 +421,7 @@ F 0 "U8" H 6050 2200 50  0000 C CNN
 F 1 "OPA347" H 6300 2200 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6550 2350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/opa2347.pdf" H 6100 2250 50  0001 C CNN
+F 4 "296-13469-1-ND" H 0   0   50  0001 C CNN "Digikey-Part"
 	1    5850 1950
 	-1   0    0    1   
 $EndComp
@@ -431,6 +435,7 @@ F 0 "ISO2" H 6050 2100 50  0000 R CNN
 F 1 "HCNR200" H 6800 2100 50  0000 R CNN
 F 2 "Package_DIP:DIP-8_W7.62mm" H 6150 1950 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/678/V02-0886EN_DS_HCNR200_2014-01-071-908546.pdf" V 5667 1722 50  0001 R CNN
+F 4 "516-1522-5-ND" H 6250 2000 50  0001 C CNN "Digikey-Part"
 	3    6250 2000
 	0    1    -1   0   
 $EndComp
@@ -448,6 +453,7 @@ F 0 "U8" H 5600 2250 50  0001 L CNN
 F 1 "OPA347" H 5500 2350 50  0001 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6550 2400 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/opa2347.pdf" H 6100 2300 50  0001 C CNN
+F 4 "296-13469-1-ND" H 0   0   50  0001 C CNN "Digikey-Part"
 	2    5850 2000
 	1    0    0    -1  
 $EndComp
@@ -477,61 +483,6 @@ Cell+
 Text HLabel 7200 4500 2    50   Input ~ 0
 Cell-
 $Comp
-L Amplifier_Operational:MCP6004 U5
-U 1 1 6010C7DB
-P 2700 4350
-F 0 "U5" H 2700 3983 50  0000 C CNN
-F 1 "MCP6004" H 2700 4074 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2650 4450 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 2750 4550 50  0001 C CNN
-	1    2700 4350
-	-1   0    0    1   
-$EndComp
-$Comp
-L Amplifier_Operational:MCP6004 U5
-U 2 1 60111E69
-P 4650 3950
-F 0 "U5" H 4650 3583 50  0000 C CNN
-F 1 "MCP6004" H 4650 3674 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4600 4050 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 4700 4150 50  0001 C CNN
-	2    4650 3950
-	-1   0    0    1   
-$EndComp
-$Comp
-L Amplifier_Operational:MCP6004 U5
-U 3 1 601136F9
-P 4650 4800
-F 0 "U5" H 4650 4433 50  0000 C CNN
-F 1 "MCP6004" H 4650 4524 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4600 4900 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 4700 5000 50  0001 C CNN
-	3    4650 4800
-	-1   0    0    1   
-$EndComp
-$Comp
-L Amplifier_Operational:MCP6004 U5
-U 4 1 60114FB3
-P 3050 2700
-F 0 "U5" H 3050 2333 50  0000 C CNN
-F 1 "MCP6004" H 3050 2424 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 3000 2800 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 3100 2900 50  0001 C CNN
-	4    3050 2700
-	-1   0    0    1   
-$EndComp
-$Comp
-L Amplifier_Operational:MCP6004 U5
-U 5 1 6011B39B
-P 3600 2650
-F 0 "U5" H 3412 2604 50  0000 R CNN
-F 1 "MCP6004" H 3412 2695 50  0000 R CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 3550 2750 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 3650 2850 50  0001 C CNN
-	5    3600 2650
-	-1   0    0    1   
-$EndComp
-$Comp
 L Lafayette_Electric_Car_Internals:OPA347 U?
 U 2 1 5FE3FC85
 P 7150 2200
@@ -541,6 +492,7 @@ F 0 "U9" H 7400 2100 50  0000 L CNN
 F 1 "OPA347" H 7250 2450 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 7850 2600 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/opa2347.pdf" H 7400 2500 50  0001 C CNN
+F 4 "296-13469-1-ND" H 0   0   50  0001 C CNN "Digikey-Part"
 	2    7150 2200
 	-1   0    0    -1  
 $EndComp
@@ -558,6 +510,7 @@ F 0 "ISO2" H 5350 950 50  0000 L CNN
 F 1 "HCNR200" H 5250 850 50  0000 L CNN
 F 2 "Package_DIP:DIP-8_W7.62mm" H 5600 850 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/678/V02-0886EN_DS_HCNR200_2014-01-071-908546.pdf" V 5299 1068 50  0001 L CNN
+F 4 "516-1522-5-ND" H 0   0   50  0001 C CNN "Digikey-Part"
 	4    5700 900 
 	-1   0    0    -1  
 $EndComp
@@ -585,4 +538,64 @@ Wire Wire Line
 	3800 4250 3800 3950
 Wire Wire Line
 	3800 4450 3800 4800
+$Comp
+L Lafayette_Electric_Car_Internals:MCP6004 U5
+U 4 1 5DC0A412
+P 4650 3950
+F 0 "U5" H 4650 3583 50  0000 C CNN
+F 1 "MCP6004" H 4650 3674 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4600 4050 50  0001 C CNN
+F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 4700 4150 50  0001 C CNN
+F 4 "MCP6004T-I/STCT-ND" H 0   0   50  0001 C CNN "Digikey-Part"
+	4    4650 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Lafayette_Electric_Car_Internals:MCP6004 U5
+U 3 1 5DC0CD56
+P 4650 4800
+F 0 "U5" H 4650 4433 50  0000 C CNN
+F 1 "MCP6004" H 4650 4524 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4600 4900 50  0001 C CNN
+F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 4700 5000 50  0001 C CNN
+F 4 "MCP6004T-I/STCT-ND" H 0   0   50  0001 C CNN "Digikey-Part"
+	3    4650 4800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Lafayette_Electric_Car_Internals:MCP6004 U5
+U 1 1 5DC0E25C
+P 2700 4350
+F 0 "U5" H 2700 3983 50  0000 C CNN
+F 1 "MCP6004" H 2700 4074 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2650 4450 50  0001 C CNN
+F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 2750 4550 50  0001 C CNN
+F 4 "MCP6004T-I/STCT-ND" H 0   0   50  0001 C CNN "Digikey-Part"
+	1    2700 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Lafayette_Electric_Car_Internals:MCP6004 U5
+U 2 1 5DC0F6E8
+P 3100 2700
+F 0 "U5" H 3100 2333 50  0000 C CNN
+F 1 "MCP6004" H 3100 2424 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 3050 2800 50  0001 C CNN
+F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 3150 2900 50  0001 C CNN
+F 4 "MCP6004T-I/STCT-ND" H 0   0   50  0001 C CNN "Digikey-Part"
+	2    3100 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Lafayette_Electric_Car_Internals:MCP6004 U5
+U 5 1 5DC132CE
+P 3800 2650
+F 0 "U5" H 3758 2696 50  0000 L CNN
+F 1 "MCP6004" H 3758 2605 50  0000 L CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 3750 2750 50  0001 C CNN
+F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 3850 2850 50  0001 C CNN
+F 4 "MCP6004T-I/STCT-ND" H 0   0   50  0001 C CNN "Digikey-Part"
+	5    3800 2650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

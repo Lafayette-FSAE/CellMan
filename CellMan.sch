@@ -22,6 +22,7 @@ F 0 "U3" H 3650 5150 50  0000 C CNN
 F 1 "ADC128D818" H 3300 5150 50  0000 C CNN
 F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 3600 5550 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/adc128d818.pdf" H 3600 5250 50  0000 C CNN
+F 4 "296-41182-1-ND" H 0   0   50  0001 C CNN "Digikey-Part"
 	1    3400 4650
 	1    0    0    -1  
 $EndComp
@@ -205,7 +206,7 @@ Wire Wire Line
 	1400 1300 1400 1250
 Wire Bus Line
 	2050 2300 2500 2300
-Text Label 4400 4400 2    50   ~ 0
+Text Label 4550 4700 2    50   ~ 0
 CellVoltage_01
 $Comp
 L Mechanical:MountingHole_Pad H7
@@ -213,7 +214,7 @@ U 1 1 5D8A8BDE
 P 10000 1500
 F 0 "H7" V 9954 1650 50  0000 L CNN
 F 1 "MountingHole_Pad" V 9850 1200 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.5mm_Pad" H 10000 1500 50  0001 C CNN
+F 2 "" H 10000 1500 50  0001 C CNN
 F 3 "~" H 10000 1500 50  0001 C CNN
 	1    10000 1500
 	0    1    1    0   
@@ -224,8 +225,9 @@ U 1 1 5DA1AAE1
 P 3400 3500
 F 0 "U2" H 3600 3800 50  0000 C CNN
 F 1 "MCP9808" H 3300 3800 50  0000 C CNN
-F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 3250 3900 50  0001 C CNN
+F 2 "Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.73x1.85mm" H 3250 3900 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/25095A.pdf" H 3850 3950 50  0000 C CNN
+F 4 "MCP9808T-E/MSCT-ND" H 0   0   50  0001 C CNN "Digikey-Part"
 	1    3400 3500
 	1    0    0    -1  
 $EndComp
@@ -318,28 +320,6 @@ Wire Wire Line
 Text Label 2600 7300 0    50   ~ 0
 Address_A1
 Connection ~ 3050 7300
-$Comp
-L Switch:SW_DIP_x04 SW2
-U 1 1 5D9A4F80
-P 3400 7250
-F 0 "SW2" H 3400 7717 50  0000 C CNN
-F 1 "SW_DIP_x04" H 3400 7626 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx04_Slide_Copal_CHS-04B_W7.62mm_P1.27mm" H 3400 7250 50  0001 C CNN
-F 3 "~" H 3400 7250 50  0001 C CNN
-	1    3400 7250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_DIP_x06 SW1
-U 1 1 5D9B6081
-P 2050 7200
-F 0 "SW1" H 2050 7767 50  0000 C CNN
-F 1 "SW_DIP_x06" H 2050 7676 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx06_Slide_Copal_CHS-06B_W7.62mm_P1.27mm" H 2050 7200 50  0001 C CNN
-F 3 "~" H 2050 7200 50  0001 C CNN
-	1    2050 7200
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R R4
 U 1 1 5D9CB12E
@@ -491,19 +471,6 @@ Wire Wire Line
 Wire Wire Line
 	2350 7400 2450 7400
 Connection ~ 2450 7400
-Wire Wire Line
-	2450 7400 2450 7500
-$Comp
-L power:GND #PWR017
-U 1 1 5DA97570
-P 2450 7500
-F 0 "#PWR017" H 2450 7250 50  0001 C CNN
-F 1 "GND" H 2455 7327 50  0000 C CNN
-F 2 "" H 2450 7500 50  0001 C CNN
-F 3 "" H 2450 7500 50  0001 C CNN
-	1    2450 7500
-	1    0    0    -1  
-$EndComp
 Text Notes 1000 7800 0    50   ~ 0
 Address Select for TempSensor\n and IO expander\n(Pull Up or Pull Down)
 Text Notes 2800 7750 0    50   ~ 0
@@ -554,7 +521,7 @@ U 1 1 5D8D1490
 P 8350 800
 F 0 "J4" H 8150 600 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 7800 1000 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8350 800 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 8350 800 50  0001 C CNN
 F 3 "~" H 8350 800 50  0001 C CNN
 	1    8350 800 
 	1    0    0    -1  
@@ -621,9 +588,9 @@ U 1 1 5D86A77F
 P 7450 1450
 F 0 "U4" H 7072 1541 50  0000 R CNN
 F 1 "ACHS-7121" H 7072 1450 50  0000 R CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" V 7300 1600 50  0001 C CNN
+F 2 "" V 7300 1600 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/678/ACHS-712x-DS101_2018-02-28-1386725.pdf" H 11050 2100 50  0001 R CNN
-F 4 "516-4080-ND" H 7750 1100 50  0001 C CNN "Digikey Part"
+F 4 "516-4080-ND" H 0   0   50  0001 C CNN "Digikey-Part"
 	1    7450 1450
 	-1   0    0    -1  
 $EndComp
@@ -655,14 +622,14 @@ U 1 1 5D937593
 P 7300 5700
 F 0 "TH1" H 7000 5750 50  0000 L CNN
 F 1 "Thermistor" H 6750 5650 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7300 5700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7300 5700 50  0001 C CNN
 F 3 "~" H 7300 5700 50  0001 C CNN
 	1    7300 5700
 	1    0    0    -1  
 $EndComp
-Text Notes 7550 3300 1    50   ~ 0
+Text Notes 7550 4000 1    50   ~ 0
 Cell Ground
-Text Notes 7400 3300 1    50   ~ 0
+Text Notes 7400 4000 1    50   ~ 0
 Segment Ground\n
 Wire Notes Line
 	7450 500  7450 6750
@@ -672,7 +639,7 @@ U 1 1 5DCD9FCA
 P 10000 1800
 F 0 "H8" V 9954 1950 50  0000 L CNN
 F 1 "MountingHole_Pad" V 10150 1500 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.5mm_Pad" H 10000 1800 50  0001 C CNN
+F 2 "" H 10000 1800 50  0001 C CNN
 F 3 "~" H 10000 1800 50  0001 C CNN
 	1    10000 1800
 	0    1    1    0   
@@ -683,7 +650,7 @@ U 1 1 5DCDA27D
 P 9450 1500
 F 0 "H3" V 9404 1650 50  0000 L CNN
 F 1 "MountingHole_Pad" V 9600 1300 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.5mm_Pad" H 9450 1500 50  0001 C CNN
+F 2 "" H 9450 1500 50  0001 C CNN
 F 3 "~" H 9450 1500 50  0001 C CNN
 	1    9450 1500
 	0    -1   -1   0   
@@ -694,7 +661,7 @@ U 1 1 5DCEB68E
 P 9450 1800
 F 0 "H4" V 9404 1950 50  0000 L CNN
 F 1 "MountingHole_Pad" V 9600 2150 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.5mm_Pad" H 9450 1800 50  0001 C CNN
+F 2 "" H 9450 1800 50  0001 C CNN
 F 3 "~" H 9450 1800 50  0001 C CNN
 	1    9450 1800
 	0    -1   -1   0   
@@ -719,7 +686,7 @@ U 1 1 5DD275E2
 P 10000 650
 F 0 "H5" V 9954 800 50  0000 L CNN
 F 1 "MountingHole_Pad" V 9800 350 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.5mm_Pad" H 10000 650 50  0001 C CNN
+F 2 "" H 10000 650 50  0001 C CNN
 F 3 "~" H 10000 650 50  0001 C CNN
 	1    10000 650 
 	0    1    1    0   
@@ -730,7 +697,7 @@ U 1 1 5DD275EC
 P 10000 950
 F 0 "H6" V 9954 1100 50  0000 L CNN
 F 1 "MountingHole_Pad" V 10200 650 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.5mm_Pad" H 10000 950 50  0001 C CNN
+F 2 "" H 10000 950 50  0001 C CNN
 F 3 "~" H 10000 950 50  0001 C CNN
 	1    10000 950 
 	0    1    1    0   
@@ -741,7 +708,7 @@ U 1 1 5DD275F6
 P 9450 650
 F 0 "H1" V 9404 800 50  0000 L CNN
 F 1 "MountingHole_Pad" V 9650 450 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.5mm_Pad" H 9450 650 50  0001 C CNN
+F 2 "" H 9450 650 50  0001 C CNN
 F 3 "~" H 9450 650 50  0001 C CNN
 	1    9450 650 
 	0    -1   -1   0   
@@ -752,7 +719,7 @@ U 1 1 5DD27600
 P 9450 950
 F 0 "H2" V 9404 1100 50  0000 L CNN
 F 1 "MountingHole_Pad" V 9250 750 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.5mm_Pad" H 9450 950 50  0001 C CNN
+F 2 "" H 9450 950 50  0001 C CNN
 F 3 "~" H 9450 950 50  0001 C CNN
 	1    9450 950 
 	0    -1   -1   0   
@@ -791,22 +758,9 @@ Wire Wire Line
 Wire Wire Line
 	4200 7250 4200 7050
 Connection ~ 4200 7050
-$Comp
-L power:GND #PWR022
-U 1 1 5DDDD535
-P 4150 7450
-F 0 "#PWR022" H 4150 7200 50  0001 C CNN
-F 1 "GND" H 4155 7277 50  0000 C CNN
-F 2 "" H 4150 7450 50  0001 C CNN
-F 3 "" H 4150 7450 50  0001 C CNN
-	1    4150 7450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4150 7150 4150 7350
 Connection ~ 4150 7350
-Wire Wire Line
-	4150 7350 4150 7450
 Text Label 1300 7200 0    50   ~ 0
 Address_G0
 Text Label 1300 7300 0    50   ~ 0
@@ -861,17 +815,6 @@ F 3 "~" H 3250 5800 50  0001 C CNN
 $EndComp
 Text Notes 2800 5400 0    50   ~ 0
 Bypass Capacitors
-$Comp
-L Transistor_FET:QM6006D Q1
-U 1 1 5D99866A
-P 4850 6900
-F 0 "Q1" V 4800 6750 50  0000 C CNN
-F 1 "QM6006D" V 4700 7250 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 5050 6825 50  0001 L CIN
-F 3 "http://www.jaolen.com/images/pdf/QM6006D.pdf" H 4650 7200 50  0001 L CNN
-	1    4850 6900
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	1300 5400 1400 5400
 Wire Wire Line
@@ -895,7 +838,7 @@ U 1 1 5DA135DB
 P 5950 7300
 F 0 "D2" H 6100 7200 50  0000 C CNN
 F 1 "LED" H 5950 7200 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 5950 7300 50  0001 C CNN
+F 2 "" H 5950 7300 50  0001 C CNN
 F 3 "~" H 5950 7300 50  0001 C CNN
 	1    5950 7300
 	0    1    1    0   
@@ -962,7 +905,7 @@ U 1 1 5DB4E3D0
 P 10000 5150
 F 0 "D4" H 10150 5050 50  0000 C CNN
 F 1 "LED" H 10000 5050 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 10000 5150 50  0001 C CNN
+F 2 "" H 10000 5150 50  0001 C CNN
 F 3 "~" H 10000 5150 50  0001 C CNN
 	1    10000 5150
 	0    -1   -1   0   
@@ -1011,11 +954,11 @@ Wire Notes Line
 NoConn ~ 3750 2600
 NoConn ~ 3750 2500
 NoConn ~ 3750 2400
-Text Label 2600 2200 0    50   ~ 0
+Text Label 2600 2000 0    50   ~ 0
 Address_G2
 Text Label 2600 2100 0    50   ~ 0
 Address_G1
-Text Label 2600 2000 0    50   ~ 0
+Text Label 2600 2200 0    50   ~ 0
 Address_G0
 Wire Wire Line
 	3050 2200 2600 2200
@@ -1031,6 +974,7 @@ F 0 "U1" H 3550 2700 50  0000 C CNN
 F 1 "MCP23008" H 3300 2700 50  0000 C CNN
 F 2 "Package_SO:SSOP-20_5.3x7.2mm_P0.65mm" H 3500 2500 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/268/21919b-65915.pdf" H 3750 2900 50  0000 C CNN
+F 4 "MCP23008T-E/SOCT-ND" H 0   0   50  0001 C CNN "Digikey-Part"
 	1    3400 2150
 	1    0    0    -1  
 $EndComp
@@ -1038,7 +982,6 @@ Wire Wire Line
 	3750 2000 4950 2000
 Text Label 4300 2000 2    50   ~ 0
 Balance_ctl
-NoConn ~ 3050 2400
 Wire Wire Line
 	3800 1800 3750 1800
 Wire Wire Line
@@ -1072,6 +1015,7 @@ F 0 "ISO1" H 7450 2325 50  0000 C CNN
 F 1 "VOM617A" H 7450 2234 50  0000 C CNN
 F 2 "Package_SO:SOP-4_3.8x4.1mm_P2.54mm" H 7500 1750 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/427/vom617a-67135.pdf" H 7500 2150 50  0001 C CNN
+F 4 "VOM617A-3CT-ND" H 0   0   50  0001 C CNN "Digikey-Part"
 	1    7450 2150
 	1    0    0    -1  
 $EndComp
@@ -1156,7 +1100,7 @@ U 1 1 5DF2AADC
 P 9700 5150
 F 0 "D3" H 9850 5050 50  0000 C CNN
 F 1 "LED" H 9700 5050 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 9700 5150 50  0001 C CNN
+F 2 "" H 9700 5150 50  0001 C CNN
 F 3 "~" H 9700 5150 50  0001 C CNN
 	1    9700 5150
 	0    -1   -1   0   
@@ -1190,15 +1134,13 @@ Wire Wire Line
 	9700 4800 9700 5000
 Text Notes 9500 5700 1    50   ~ 0
 Balancing Indicator
-Wire Wire Line
-	3750 4700 4550 4700
-Text Label 4550 4700 2    50   ~ 0
+Text Label 4550 5000 2    50   ~ 0
 ADC_Sanity_Check
 Wire Wire Line
 	1300 3500 2100 3500
 Text Label 2100 3500 2    50   ~ 0
 ADC_Sanity_Check
-Text Label 2100 3300 2    50   ~ 0
+Text Label 2100 3400 2    50   ~ 0
 ~ADC_INT
 $Comp
 L Device:R R7
@@ -1225,7 +1167,7 @@ $EndComp
 Connection ~ 2500 2300
 Wire Wire Line
 	2100 3400 1700 3400
-Text Label 2100 3400 2    50   ~ 0
+Text Label 2100 3300 2    50   ~ 0
 ~IO_RST
 Wire Wire Line
 	1700 3400 1700 3250
@@ -1286,7 +1228,7 @@ U 1 1 5E0EA3D5
 P 4850 1900
 F 0 "D1" V 4889 1783 50  0000 R CNN
 F 1 "LED" V 4798 1783 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 4850 1900 50  0001 C CNN
+F 2 "" H 4850 1900 50  0001 C CNN
 F 3 "~" H 4850 1900 50  0001 C CNN
 	1    4850 1900
 	-1   0    0    1   
@@ -1309,19 +1251,19 @@ Balancing
 $Comp
 L Device:R R18
 U 1 1 5D944BC7
-P 7750 2800
-F 0 "R18" H 7820 2846 50  0000 L CNN
-F 1 "R" H 7820 2755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7680 2800 50  0001 C CNN
-F 3 "~" H 7750 2800 50  0001 C CNN
-	1    7750 2800
+P 7750 2750
+F 0 "R18" H 7820 2796 50  0000 L CNN
+F 1 "R" H 7820 2705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7680 2750 50  0001 C CNN
+F 3 "~" H 7750 2750 50  0001 C CNN
+	1    7750 2750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	7750 2400 7750 2500
 Connection ~ 7750 2500
 Wire Wire Line
-	7750 2500 7750 2650
+	7750 2500 7750 2600
 Wire Wire Line
 	8600 1950 8600 2200
 $Comp
@@ -1368,8 +1310,6 @@ F 3 "" H 900 5100 50  0001 C CNN
 	1    900  5100
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3750 4800
-NoConn ~ 3750 4900
 Wire Wire Line
 	9800 3400 9500 3400
 Wire Wire Line
@@ -1384,7 +1324,7 @@ U 1 1 5D9A4E3A
 P 10000 3400
 F 0 "J5" H 9972 3424 50  0000 R CNN
 F 1 "Conn_01x03_Male" H 10500 3200 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10000 3400 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 10000 3400 50  0001 C CNN
 F 3 "~" H 10000 3400 50  0001 C CNN
 	1    10000 3400
 	-1   0    0    -1  
@@ -1425,10 +1365,10 @@ SafeCell-
 Text Label 7850 6450 0    50   ~ 0
 Cell-
 Wire Wire Line
-	7750 2950 7750 3350
+	7750 2900 7750 3300
 Wire Wire Line
 	8600 2700 8600 2950
-Text Label 7750 3350 1    50   ~ 0
+Text Label 7750 3300 1    50   ~ 0
 SafeCell-
 NoConn ~ 9800 3300
 $Comp
@@ -1531,8 +1471,8 @@ F 3 "" H 900 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7050 2850 7050 3550
-Text Label 7050 3550 1    50   ~ 0
+	7050 2850 7050 3300
+Text Label 7050 3300 1    50   ~ 0
 SafeGND
 Wire Wire Line
 	6500 1850 6650 1850
@@ -1547,15 +1487,11 @@ Text Label 7300 6250 1    50   ~ 0
 SafeGND
 Wire Wire Line
 	7300 5900 7300 6250
-Text Label 4400 4500 2    50   ~ 0
+Text Label 4550 4800 2    50   ~ 0
 CellVoltage_02
-Wire Wire Line
-	7800 4400 8250 4400
-Wire Wire Line
-	7800 4500 8250 4500
-Text Label 9200 4300 2    50   ~ 0
+Text Label 8600 4400 2    50   ~ 0
 Cell+
-Text Label 9200 4600 2    50   ~ 0
+Text Label 8600 4500 2    50   ~ 0
 Cell-
 $Sheet
 S 7050 4250 750  400 
@@ -1567,40 +1503,6 @@ F3 "Cell+" I R 7800 4400 50
 F4 "Isolated" I L 7050 4400 50 
 F5 "Divided" I L 7050 4500 50 
 $EndSheet
-$Comp
-L Device:Jumper JP1
-U 1 1 6005510E
-P 8600 4300
-F 0 "JP1" H 8600 4564 50  0000 C CNN
-F 1 "Jumper" H 8600 4473 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8600 4300 50  0001 C CNN
-F 3 "~" H 8600 4300 50  0001 C CNN
-	1    8600 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper JP2
-U 1 1 6005617D
-P 8600 4600
-F 0 "JP2" H 8850 4500 50  0000 C CNN
-F 1 "Jumper" H 8600 4500 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8600 4600 50  0001 C CNN
-F 3 "~" H 8600 4600 50  0001 C CNN
-	1    8600 4600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8250 4400 8250 4300
-Wire Wire Line
-	8250 4300 8300 4300
-Wire Wire Line
-	8250 4500 8250 4600
-Wire Wire Line
-	8250 4600 8300 4600
-Wire Wire Line
-	8900 4300 9200 4300
-Wire Wire Line
-	8900 4600 9200 4600
 $Comp
 L Connector:Conn_01x04_Male J1
 U 1 1 5D83B590
@@ -1622,7 +1524,7 @@ F 0 "Q2" H 8300 2800 50  0000 L CNN
 F 1 "STS8DN6LF6AG" H 7950 2700 50  0000 L CNN
 F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 8250 3000 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/389/sts8dn6lf6ag-1114209.pdf" H 8700 2600 50  0001 C CNN
-F 4 "497-17309-1-ND" H 7850 2850 50  0001 C CNN "Digikey Part"
+F 4 "497-17309-1-ND" H 0   0   50  0001 C CNN "Digikey-Part"
 	1    8550 2500
 	1    0    0    -1  
 $EndComp
@@ -1641,7 +1543,7 @@ F 0 "Q2" H 9650 2500 50  0000 L CNN
 F 1 "STS8DN6LF6AG" H 9400 2350 50  0000 L CNN
 F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 8850 3000 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/389/sts8dn6lf6ag-1114209.pdf" H 9300 2600 50  0001 C CNN
-F 4 "497-17309-1-ND" H 8450 2850 50  0001 C CNN "Digikey Part"
+F 4 "497-17309-1-ND" H 0   0   50  0001 C CNN "Digikey-Part"
 	2    9150 2500
 	1    0    0    -1  
 $EndComp
@@ -1677,8 +1579,9 @@ U 1 1 60549B99
 P 7050 2650
 F 0 "Q3" H 6750 2850 50  0000 L CNN
 F 1 "BSS138W" V 7200 2500 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7150 3150 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70_Handsoldering" H 7150 3150 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/308/BSS138W-1305267.pdf" H 7050 2650 50  0001 C CNN
+F 4 "BSS138WH6327XTSA1CT-ND" H 0   0   50  0001 C CNN "Digikey-Part"
 	1    7050 2650
 	1    0    0    -1  
 $EndComp
@@ -1688,21 +1591,11 @@ U 1 1 60562DC2
 P 8300 6200
 F 0 "Q4" V 8050 5600 50  0000 L CNN
 F 1 "BSS138W" V 8050 5700 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 8400 6700 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70_Handsoldering" H 8400 6700 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/308/BSS138W-1305267.pdf" H 8300 6200 50  0001 C CNN
+F 4 "BSS138WH6327XTSA1CT-ND" H 0   0   50  0001 C CNN "Digikey-Part"
 	1    8300 6200
 	0    1    1    0   
-$EndComp
-$Comp
-L Lafayette_Electric_Car_Internals:BSS138W Q5
-U 1 1 6057C7D0
-P 9700 5900
-F 0 "Q5" V 9450 5300 50  0000 L CNN
-F 1 "BSS138W" V 9450 5400 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 9800 6400 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/308/BSS138W-1305267.pdf" H 9700 5900 50  0001 C CNN
-	1    9700 5900
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5000 1900 5100 1900
@@ -1724,13 +1617,11 @@ CellVoltage_01
 Text Label 4900 4500 0    50   ~ 0
 CellVoltage_02
 Wire Wire Line
-	3750 4300 4400 4300
+	3750 4700 4550 4700
 Wire Wire Line
-	3750 4400 4400 4400
+	3750 4800 4550 4800
 Wire Wire Line
-	3750 4500 4400 4500
-Wire Wire Line
-	3750 5000 4400 5000
+	3750 5000 4550 5000
 Wire Wire Line
 	7050 4400 4900 4400
 Wire Wire Line
@@ -1748,14 +1639,78 @@ Wire Wire Line
 	7300 5450 7300 5500
 Wire Wire Line
 	4900 4600 5800 4600
+Text Label 4900 4300 0    50   ~ 0
+BalanceCurrent
+$Comp
+L Lafayette_Electric_Car_Internals:SW_DIP_x06 SW1
+U 1 1 5DBEBE55
+P 2050 7100
+F 0 "SW1" H 2050 7567 50  0000 C CNN
+F 1 "SW_DIP_x06" H 2050 7476 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx06_Slide_Omron_A6H-6101_W6.15mm_P1.27mm" H 1950 7500 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-a6h.pdf" H 1950 7500 50  0001 C CNN
+F 4 "SW1116-ND" H 0   0   50  0001 C CNN "Digikey-Part"
+	1    2050 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Lafayette_Electric_Car_Internals:SW_DIP_x04 SW2
+U 1 1 5DBED881
+P 3400 7200
+F 0 "SW2" H 3400 7617 50  0000 C CNN
+F 1 "SW_DIP_x04" H 3400 7526 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx04_Slide_Omron_A6H-4101_W6.15mm_P1.27mm" H 3300 7600 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-a6h.pdf" H 3300 7600 50  0001 C CNN
+F 4 "Z8443-ND" H 0   0   50  0001 C CNN "Digikey-Part"
+	1    3400 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Lafayette_Electric_Car_Internals:BSS138W Q5
+U 1 1 5DBF9900
+P 9700 5900
+F 0 "Q5" H 9400 6100 50  0000 L CNN
+F 1 "BSS138W" V 9850 5750 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70_Handsoldering" H 9800 6400 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/BSS138W-1305267.pdf" H 9700 5900 50  0001 C CNN
+F 4 "BSS138WH6327XTSA1CT-ND" H 2650 3250 50  0001 C CNN "Digikey-Part"
+	1    9700 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Lafayette_Electric_Car_Internals:BSS138W Q1
+U 1 1 5DBFEF6A
+P 4850 7000
+F 0 "Q1" V 4600 6400 50  0000 L CNN
+F 1 "BSS138W" V 4600 7150 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70_Handsoldering" H 4950 7500 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/BSS138W-1305267.pdf" H 4850 7000 50  0001 C CNN
+F 4 "BSS138WH6327XTSA1CT-ND" H -3450 800 50  0001 C CNN "Digikey-Part"
+	1    4850 7000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 7400 2450 7850
+Text Label 2450 7850 1    50   ~ 0
+SafeGND
+Wire Wire Line
+	4150 7350 4150 7800
+Text Label 4150 7800 1    50   ~ 0
+SafeGND
+Text Label 4550 4900 2    50   ~ 0
+BalanceCurrent
+Wire Wire Line
+	3750 4900 4550 4900
+Text Label 4550 4300 2    50   ~ 0
+Temperature
+Wire Wire Line
+	3750 4300 4550 4300
+Wire Wire Line
+	7800 4400 8600 4400
+Wire Wire Line
+	7800 4500 8600 4500
 Wire Bus Line
 	2500 1500 2500 2300
 Wire Bus Line
 	2500 2300 2500 5200
-Text Label 4900 4300 0    50   ~ 0
-BalanceCurrent
-Text Label 4400 4300 2    50   ~ 0
-Temperature
-Text Label 4400 5000 2    50   ~ 0
-BalanceCurrent
 $EndSCHEMATC
