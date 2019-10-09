@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:CellMan-cache
-EELAYER 30 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -598,4 +598,10 @@ F 4 "MCP6004T-I/STCT-ND" H 0   0   50  0001 C CNN "Digikey-Part"
 	5    3800 2650
 	1    0    0    -1  
 $EndComp
+Text Label 4150 5700 2    50   ~ 0
+SafeGND
+Wire Wire Line
+	4150 5700 3600 5700
+Text HLabel 3600 5700 0    50   Input ~ 0
+SafeGND
 $EndSCHEMATC

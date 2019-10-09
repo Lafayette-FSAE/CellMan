@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:CellMan-cache
-EELAYER 30 0
+EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
@@ -967,7 +967,7 @@ Wire Wire Line
 Wire Wire Line
 	3050 2000 2600 2000
 $Comp
-L Lafayette_Electric_Car_Internals:MCP23008 U1
+L CellMan-rescue:MCP23008-Lafayette_Electric_Car_Internals U1
 U 1 1 5D8994AD
 P 3400 2150
 F 0 "U1" H 3550 2700 50  0000 C CNN
@@ -1502,6 +1502,7 @@ F2 "Cell-" I R 7800 4500 50
 F3 "Cell+" I R 7800 4400 50 
 F4 "Isolated" I L 7050 4400 50 
 F5 "Divided" I L 7050 4500 50 
+F6 "SafeGND" I L 7050 4600 50 
 $EndSheet
 $Comp
 L Connector:Conn_01x04_Male J1
@@ -1709,6 +1710,10 @@ Wire Wire Line
 	7800 4400 8600 4400
 Wire Wire Line
 	7800 4500 8600 4500
+Wire Wire Line
+	7050 4600 6600 4600
+Text Label 6600 4600 0    50   ~ 0
+SafeGND
 Wire Bus Line
 	2500 1500 2500 2300
 Wire Bus Line
