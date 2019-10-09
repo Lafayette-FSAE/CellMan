@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:CellMan-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -604,4 +604,10 @@ Wire Wire Line
 	4150 5700 3600 5700
 Text HLabel 3600 5700 0    50   Input ~ 0
 SafeGND
+Text HLabel 8000 3400 2    50   Input ~ 0
+SafeCell-
+Text Label 7400 3400 0    50   ~ 0
+SafeCell-
+Wire Wire Line
+	7400 3400 8000 3400
 $EndSCHEMATC

@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:CellMan-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
@@ -967,7 +967,7 @@ Wire Wire Line
 Wire Wire Line
 	3050 2000 2600 2000
 $Comp
-L CellMan-rescue:MCP23008-Lafayette_Electric_Car_Internals U1
+L Lafayette_Electric_Car_Internals:MCP23008 U1
 U 1 1 5D8994AD
 P 3400 2150
 F 0 "U1" H 3550 2700 50  0000 C CNN
@@ -1494,15 +1494,16 @@ Cell+
 Text Label 8600 4500 2    50   ~ 0
 Cell-
 $Sheet
-S 7050 4250 750  400 
+S 7050 4250 950  450 
 U 5FDA3FDE
 F0 "voltage_measurement" 50
 F1 "voltage_measurement.sch" 50
-F2 "Cell-" I R 7800 4500 50 
-F3 "Cell+" I R 7800 4400 50 
+F2 "Cell-" I R 8000 4500 50 
+F3 "Cell+" I R 8000 4400 50 
 F4 "Isolated" I L 7050 4400 50 
 F5 "Divided" I L 7050 4500 50 
 F6 "SafeGND" I L 7050 4600 50 
+F7 "SafeCell-" I R 8000 4600 50 
 $EndSheet
 $Comp
 L Connector:Conn_01x04_Male J1
@@ -1707,15 +1708,19 @@ Temperature
 Wire Wire Line
 	3750 4300 4550 4300
 Wire Wire Line
-	7800 4400 8600 4400
-Wire Wire Line
-	7800 4500 8600 4500
-Wire Wire Line
 	7050 4600 6600 4600
 Text Label 6600 4600 0    50   ~ 0
 SafeGND
+Wire Wire Line
+	8000 4400 8600 4400
+Wire Wire Line
+	8600 4500 8000 4500
+Wire Wire Line
+	8000 4600 8600 4600
 Wire Bus Line
 	2500 1500 2500 2300
 Wire Bus Line
 	2500 2300 2500 5200
+Text Label 8600 4600 2    50   ~ 0
+SafeCell-
 $EndSCHEMATC
