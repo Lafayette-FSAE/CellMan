@@ -1,4 +1,4 @@
-update=10/8/2019 10:13:24 PM
+update=10/15/2019 2:08:15 PM
 version=1
 last_client=kicad
 [general]
@@ -15,7 +15,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=C:/Users/winiarcc/Desktop/CellMan/
+PlotDirectoryName=Production/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew
@@ -238,7 +238,7 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.2
+Clearance=0.254
 TrackWidth=0.25
 ViaDiameter=0.8
 ViaDrill=0.4

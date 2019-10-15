@@ -5,12 +5,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 2
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Title "Voltage Measurements"
+Date "2019-10-11"
+Rev "0.5"
+Comp "Lafayette College"
+Comment1 "CellMan Prototype Board"
+Comment2 "Connor Winiarczyk"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -129,7 +129,7 @@ AR Path="/5FE3FC7E" Ref="ISO?"  Part="3"
 AR Path="/5FDA3FDE/5FE3FC7E" Ref="ISO2"  Part="2" 
 F 0 "ISO2" H 7500 2300 50  0000 R CNN
 F 1 "HCNR200" H 7850 2100 50  0000 R CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 7600 2150 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W8.89mm_SMDSocket_LongPads" H 7600 2150 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/678/V02-0886EN_DS_HCNR200_2014-01-071-908546.pdf" V 7117 1922 50  0001 R CNN
 F 4 "516-1522-5-ND" H 0   0   50  0001 C CNN "Digikey-Part"
 	2    7700 2200
@@ -143,7 +143,7 @@ AR Path="/5FE3FC8B" Ref="ISO?"  Part="2"
 AR Path="/5FDA3FDE/5FE3FC8B" Ref="ISO2"  Part="1" 
 F 0 "ISO2" H 6100 2050 50  0000 L CNN
 F 1 "HCNR200" H 5950 1950 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 6550 1950 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W8.89mm_SMDSocket_LongPads" H 6550 1950 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/678/V02-0886EN_DS_HCNR200_2014-01-071-908546.pdf" V 6249 2168 50  0001 L CNN
 F 4 "516-1522-5-ND" H 0   0   50  0001 C CNN "Digikey-Part"
 	1    6650 2000
@@ -433,7 +433,7 @@ AR Path="/5FF124E0" Ref="ISO?"  Part="1"
 AR Path="/5FDA3FDE/5FF124E0" Ref="ISO2"  Part="3" 
 F 0 "ISO2" H 6050 2100 50  0000 R CNN
 F 1 "HCNR200" H 6800 2100 50  0000 R CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 6150 1950 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W8.89mm_SMDSocket_LongPads" H 6150 1950 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/678/V02-0886EN_DS_HCNR200_2014-01-071-908546.pdf" V 5667 1722 50  0001 R CNN
 F 4 "516-1522-5-ND" H 6250 2000 50  0001 C CNN "Digikey-Part"
 	3    6250 2000
@@ -508,7 +508,7 @@ AR Path="/60149ADC" Ref="ISO?"  Part="2"
 AR Path="/5FDA3FDE/60149ADC" Ref="ISO2"  Part="4" 
 F 0 "ISO2" H 5350 950 50  0000 L CNN
 F 1 "HCNR200" H 5250 850 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 5600 850 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W8.89mm_SMDSocket_LongPads" H 5600 850 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/678/V02-0886EN_DS_HCNR200_2014-01-071-908546.pdf" V 5299 1068 50  0001 L CNN
 F 4 "516-1522-5-ND" H 0   0   50  0001 C CNN "Digikey-Part"
 	4    5700 900 
