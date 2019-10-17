@@ -69,8 +69,6 @@ $EndComp
 Wire Wire Line
 	6050 4400 6050 4600
 Wire Wire Line
-	6950 4400 7200 4400
-Wire Wire Line
 	7200 4500 6950 4500
 Wire Wire Line
 	6150 4600 6150 4500
@@ -121,113 +119,61 @@ F 3 "~" H 5550 4750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5550 5000 5750 5000
-$Comp
-L Lafayette_Electric_Car_Internals:HCNR200 ISO?
-U 2 1 5FE3FC7E
-P 7700 2200
-AR Path="/5FE3FC7E" Ref="ISO?"  Part="3" 
-AR Path="/5FDA3FDE/5FE3FC7E" Ref="ISO2"  Part="2" 
-F 0 "ISO2" H 7500 2300 50  0000 R CNN
-F 1 "HCNR200" H 7850 2100 50  0000 R CNN
-F 2 "Package_DIP:DIP-8_W8.89mm_SMDSocket_LongPads" H 7600 2150 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/678/V02-0886EN_DS_HCNR200_2014-01-071-908546.pdf" V 7117 1922 50  0001 R CNN
-F 4 "516-1522-5-ND" H 0   0   50  0001 C CNN "Digikey-Part"
-	2    7700 2200
-	0    1    -1   0   
-$EndComp
-$Comp
-L Lafayette_Electric_Car_Internals:HCNR200 ISO?
-U 1 1 5FE3FC8B
-P 6650 2000
-AR Path="/5FE3FC8B" Ref="ISO?"  Part="2" 
-AR Path="/5FDA3FDE/5FE3FC8B" Ref="ISO2"  Part="1" 
-F 0 "ISO2" H 6100 2050 50  0000 L CNN
-F 1 "HCNR200" H 5950 1950 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W8.89mm_SMDSocket_LongPads" H 6550 1950 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/678/V02-0886EN_DS_HCNR200_2014-01-071-908546.pdf" V 6249 2168 50  0001 L CNN
-F 4 "516-1522-5-ND" H 0   0   50  0001 C CNN "Digikey-Part"
-	1    6650 2000
-	0    -1   1    0   
-$EndComp
 Wire Wire Line
-	7450 2650 7700 2650
-Connection ~ 7450 2650
-Wire Wire Line
-	7450 2750 7000 2750
-Wire Wire Line
-	7450 2650 7450 2750
-Wire Wire Line
-	6900 1750 6700 1750
-Wire Wire Line
-	6900 1800 7150 1800
-Connection ~ 6900 1800
-Wire Wire Line
-	6900 1750 6900 1800
-Wire Wire Line
-	7150 2650 7450 2650
-Wire Wire Line
-	6650 1800 6900 1800
-Wire Wire Line
-	6650 1850 6650 1800
+	7150 1300 6950 1300
 $Comp
 L Device:R R?
 U 1 1 5FE3FC9C
-P 8000 1950
+P 8000 1500
 AR Path="/5FE3FC9C" Ref="R?"  Part="1" 
 AR Path="/5FDA3FDE/5FE3FC9C" Ref="R31"  Part="1" 
-F 0 "R31" V 7793 1950 50  0000 C CNN
-F 1 "R" V 7884 1950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7930 1950 50  0001 C CNN
-F 3 "~" H 8000 1950 50  0001 C CNN
-	1    8000 1950
+F 0 "R31" V 7793 1500 50  0000 C CNN
+F 1 "R" V 7884 1500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7930 1500 50  0001 C CNN
+F 3 "~" H 8000 1500 50  0001 C CNN
+	1    8000 1500
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8150 1950 8250 1950
-Connection ~ 7700 1950
+	8150 1500 8250 1500
+Connection ~ 7700 1500
 Wire Wire Line
-	7700 1950 7850 1950
-Connection ~ 7700 2450
+	7700 1500 7850 1500
+Connection ~ 7700 2000
 Wire Wire Line
-	7700 2450 7700 2650
-Text Label 7000 2750 0    50   ~ 0
-SafeCell-
+	7700 2000 7700 2200
 Wire Wire Line
-	7700 2450 7700 2350
+	7700 2000 7700 1900
 Wire Wire Line
-	7450 2450 7700 2450
+	7450 2000 7700 2000
 Wire Wire Line
-	7450 2300 7450 2450
+	7450 1850 7450 2000
 Wire Wire Line
-	7700 1950 7700 2050
+	7700 1500 7700 1600
 Wire Wire Line
-	7450 1950 7700 1950
+	7450 1500 7700 1500
 Wire Wire Line
-	7450 2100 7450 1950
+	7450 1650 7450 1500
 Wire Wire Line
-	7350 2300 7450 2300
+	7350 1850 7450 1850
 Wire Wire Line
-	6650 2150 6650 2200
+	7350 1650 7450 1650
 Wire Wire Line
-	7350 2100 7450 2100
-Wire Wire Line
-	6650 2200 6750 2200
-Text Label 6700 1750 0    50   ~ 0
+	6650 1750 6750 1750
+Text Label 6950 1300 0    50   ~ 0
 Cell+
-Wire Wire Line
-	7150 1900 7150 1800
 $Comp
 L Lafayette_Electric_Car_Internals:OPA347 U?
 U 1 1 5FE3FCB5
-P 7150 2250
+P 7150 1800
 AR Path="/5FE3FCB5" Ref="U?"  Part="2" 
 AR Path="/5FDA3FDE/5FE3FCB5" Ref="U9"  Part="1" 
-F 0 "U9" H 7400 2050 50  0001 C CNN
-F 1 "OPA347" H 7450 2150 50  0001 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 7850 2650 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/opa2347.pdf" H 7400 2550 50  0001 C CNN
-F 4 "296-13469-1-ND" H 0   0   50  0001 C CNN "Digikey-Part"
-	1    7150 2250
+F 0 "U9" H 7400 1600 50  0001 C CNN
+F 1 "OPA347" H 7450 1700 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 7850 2200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa2347.pdf" H 7400 2100 50  0001 C CNN
+F 4 "296-13469-1-ND" H 0   -450 50  0001 C CNN "Digikey-Part"
+	1    7150 1800
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -276,7 +222,7 @@ Wire Wire Line
 Wire Wire Line
 	3100 4450 3100 4650
 Wire Wire Line
-	3100 4450 3300 4450
+	3100 4450 3200 4450
 Connection ~ 3100 4450
 $Comp
 L Device:R R22
@@ -328,20 +274,9 @@ Wire Wire Line
 	4950 3850 5000 3850
 Wire Wire Line
 	4950 4050 5200 4050
-$Comp
-L power:+3.3V #PWR035
-U 1 1 5FE46691
-P 3700 2350
-F 0 "#PWR035" H 3700 2200 50  0001 C CNN
-F 1 "+3.3V" H 3715 2523 50  0000 C CNN
-F 2 "" H 3700 2350 50  0001 C CNN
-F 3 "" H 3700 2350 50  0001 C CNN
-	1    3700 2350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	3700 2950 3700 3300
-Text Label 3700 3300 1    50   ~ 0
+	3650 3050 3650 3400
+Text Label 3650 3400 1    50   ~ 0
 SafeGND
 Text HLabel 2000 4350 0    50   Input ~ 0
 Divided
@@ -372,19 +307,6 @@ F 3 "~" H 5850 1400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5400 1400 5700 1400
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5FF124C6
-P 5850 1700
-AR Path="/5FF124C6" Ref="#PWR?"  Part="1" 
-AR Path="/5FDA3FDE/5FF124C6" Ref="#PWR036"  Part="1" 
-F 0 "#PWR036" H 5850 1550 50  0001 C CNN
-F 1 "+3.3V" H 5865 1873 50  0000 C CNN
-F 2 "" H 5850 1700 50  0001 C CNN
-F 3 "" H 5850 1700 50  0001 C CNN
-	1    5850 1700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6250 1750 6250 1850
 Wire Wire Line
@@ -472,32 +394,30 @@ Wire Wire Line
 	4150 3500 5000 3500
 Connection ~ 5550 4400
 Connection ~ 5750 4500
-Text HLabel 8250 1950 2    50   Input ~ 0
+Text HLabel 9850 3050 2    50   Input ~ 0
 Cell+
 Wire Wire Line
 	5050 2000 5400 2000
 Text HLabel 5050 2000 0    50   Input ~ 0
 Isolated
-Text HLabel 7200 4400 2    50   Input ~ 0
-Cell+
 Text HLabel 7200 4500 2    50   Input ~ 0
 Cell-
 $Comp
 L Lafayette_Electric_Car_Internals:OPA347 U?
 U 2 1 5FE3FC85
-P 7150 2200
+P 7150 1750
 AR Path="/5FE3FC85" Ref="U?"  Part="1" 
 AR Path="/5FDA3FDE/5FE3FC85" Ref="U9"  Part="2" 
-F 0 "U9" H 7400 2100 50  0000 L CNN
-F 1 "OPA347" H 7250 2450 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 7850 2600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/opa2347.pdf" H 7400 2500 50  0001 C CNN
-F 4 "296-13469-1-ND" H 0   0   50  0001 C CNN "Digikey-Part"
-	2    7150 2200
+F 0 "U9" H 7400 1650 50  0000 L CNN
+F 1 "OPA347" H 7250 2000 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 7850 2150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa2347.pdf" H 7400 2050 50  0001 C CNN
+F 4 "296-13469-1-ND" H 0   -450 50  0001 C CNN "Digikey-Part"
+	2    7150 1750
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	7150 2500 7150 2650
+	7150 2050 7150 2200
 Wire Wire Line
 	3100 4950 3100 5300
 $Comp
@@ -577,25 +497,25 @@ $EndComp
 $Comp
 L Lafayette_Electric_Car_Internals:MCP6004 U5
 U 2 1 5DC0F6E8
-P 3100 2700
-F 0 "U5" H 3100 2333 50  0000 C CNN
-F 1 "MCP6004" H 3100 2424 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 3050 2800 50  0001 C CNN
-F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 3150 2900 50  0001 C CNN
-F 4 "MCP6004T-I/STCT-ND" H 0   0   50  0001 C CNN "Digikey-Part"
-	2    3100 2700
+P 2650 3200
+F 0 "U5" H 2650 2833 50  0000 C CNN
+F 1 "MCP6004" H 2650 2924 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2600 3300 50  0001 C CNN
+F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 2700 3400 50  0001 C CNN
+F 4 "MCP6004T-I/STCT-ND" H -450 500 50  0001 C CNN "Digikey-Part"
+	2    2650 3200
 	-1   0    0    1   
 $EndComp
 $Comp
 L Lafayette_Electric_Car_Internals:MCP6004 U5
 U 5 1 5DC132CE
-P 3800 2650
-F 0 "U5" H 3758 2696 50  0000 L CNN
-F 1 "MCP6004" H 3758 2605 50  0000 L CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 3750 2750 50  0001 C CNN
-F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 3850 2850 50  0001 C CNN
-F 4 "MCP6004T-I/STCT-ND" H 0   0   50  0001 C CNN "Digikey-Part"
-	5    3800 2650
+P 3750 2750
+F 0 "U5" H 3708 2796 50  0000 L CNN
+F 1 "MCP6004" H 3708 2705 50  0000 L CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 3700 2850 50  0001 C CNN
+F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 3800 2950 50  0001 C CNN
+F 4 "MCP6004T-I/STCT-ND" H -50 100 50  0001 C CNN "Digikey-Part"
+	5    3750 2750
 	1    0    0    -1  
 $EndComp
 Text Label 4150 5700 2    50   ~ 0
@@ -604,10 +524,165 @@ Wire Wire Line
 	4150 5700 3600 5700
 Text HLabel 3600 5700 0    50   Input ~ 0
 SafeGND
-Text HLabel 8000 3400 2    50   Input ~ 0
+Text HLabel 8150 5350 2    50   Input ~ 0
 SafeCell-
-Text Label 7400 3400 0    50   ~ 0
+Text Label 7550 5350 0    50   ~ 0
 SafeCell-
 Wire Wire Line
-	7400 3400 8000 3400
+	7550 5350 8150 5350
+$Comp
+L power:+5V #PWR0123
+U 1 1 5DD2BF05
+P 3650 2450
+F 0 "#PWR0123" H 3650 2300 50  0001 C CNN
+F 1 "+5V" H 3665 2623 50  0000 C CNN
+F 2 "" H 3650 2450 50  0001 C CNN
+F 3 "" H 3650 2450 50  0001 C CNN
+	1    3650 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 2750 3050 3100
+Wire Wire Line
+	3050 3100 2950 3100
+Wire Wire Line
+	2350 3200 2300 3200
+Wire Wire Line
+	2300 3200 2300 2750
+Wire Wire Line
+	2300 2750 3050 2750
+Wire Wire Line
+	3200 4450 3200 3300
+Wire Wire Line
+	3200 3300 2950 3300
+Connection ~ 3200 4450
+Wire Wire Line
+	3200 4450 3300 4450
+Text Notes 2350 3500 0    50   ~ 0
+Unused OpAmp
+$Comp
+L power:+5V #PWR0124
+U 1 1 5DD89CE2
+P 5850 1700
+F 0 "#PWR0124" H 5850 1550 50  0001 C CNN
+F 1 "+5V" H 5865 1873 50  0000 C CNN
+F 2 "" H 5850 1700 50  0001 C CNN
+F 3 "" H 5850 1700 50  0001 C CNN
+	1    5850 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper JP?
+U 1 1 5DF4F8BE
+P 8850 2850
+AR Path="/5DF4F8BE" Ref="JP?"  Part="1" 
+AR Path="/5FDA3FDE/5DF4F8BE" Ref="JP1"  Part="1" 
+F 0 "JP1" H 9100 3050 50  0000 C CNN
+F 1 "Jumper" H 8850 3050 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 8850 2850 50  0001 C CNN
+F 3 "~" H 8850 2850 50  0001 C CNN
+	1    8850 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 1300 7150 1450
+Wire Wire Line
+	6650 1750 6650 1850
+Wire Wire Line
+	6650 2150 6650 2200
+Wire Wire Line
+	6650 2200 7150 2200
+Connection ~ 7150 2200
+$Comp
+L Lafayette_Electric_Car_Internals:HCNR200 ISO?
+U 2 1 5FE3FC7E
+P 7700 1750
+AR Path="/5FE3FC7E" Ref="ISO?"  Part="3" 
+AR Path="/5FDA3FDE/5FE3FC7E" Ref="ISO2"  Part="2" 
+F 0 "ISO2" H 7500 1850 50  0000 R CNN
+F 1 "HCNR200" H 7850 1650 50  0000 R CNN
+F 2 "Package_DIP:DIP-8_W8.89mm_SMDSocket_LongPads" H 7600 1700 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/678/V02-0886EN_DS_HCNR200_2014-01-071-908546.pdf" V 7117 1472 50  0001 R CNN
+F 4 "516-1522-5-ND" H 0   -450 50  0001 C CNN "Digikey-Part"
+	2    7700 1750
+	0    1    -1   0   
+$EndComp
+Text Label 6750 2350 0    50   ~ 0
+SafeCell-
+$Comp
+L Lafayette_Electric_Car_Internals:HCNR200 ISO?
+U 1 1 5FE3FC8B
+P 6650 2000
+AR Path="/5FE3FC8B" Ref="ISO?"  Part="2" 
+AR Path="/5FDA3FDE/5FE3FC8B" Ref="ISO2"  Part="1" 
+F 0 "ISO2" H 6300 2100 50  0000 L CNN
+F 1 "HCNR200" H 5900 2100 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W8.89mm_SMDSocket_LongPads" H 6550 1950 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/678/V02-0886EN_DS_HCNR200_2014-01-071-908546.pdf" V 6249 2168 50  0001 L CNN
+F 4 "516-1522-5-ND" H 0   0   50  0001 C CNN "Digikey-Part"
+	1    6650 2000
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	7150 2200 7250 2200
+Wire Wire Line
+	7250 2350 7250 2200
+Wire Wire Line
+	6750 2350 7250 2350
+Connection ~ 7250 2200
+Wire Wire Line
+	7250 2200 7700 2200
+Wire Wire Line
+	8250 1500 8250 3050
+Wire Wire Line
+	8250 3050 8450 3050
+Wire Wire Line
+	6950 4400 8250 4400
+Wire Wire Line
+	9700 3050 9850 3050
+Connection ~ 8250 3050
+Wire Wire Line
+	8250 3050 8250 4400
+Wire Wire Line
+	8450 3250 8450 3050
+Connection ~ 8450 3050
+Wire Wire Line
+	9250 3250 9250 3050
+Connection ~ 9250 3050
+Wire Wire Line
+	9250 3050 9400 3050
+Wire Wire Line
+	8450 3050 8450 2850
+Wire Wire Line
+	8450 2850 8550 2850
+Wire Wire Line
+	9150 2850 9250 2850
+Wire Wire Line
+	9250 2850 9250 3050
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 5E024608
+P 8850 3250
+F 0 "JP2" H 8850 3400 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 8900 3050 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8850 3250 50  0001 C CNN
+F 3 "~" H 8850 3250 50  0001 C CNN
+	1    8850 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 3250 8700 3250
+Wire Wire Line
+	9000 3250 9250 3250
+$Comp
+L Device:R R32
+U 1 1 5E045130
+P 9550 3050
+F 0 "R32" V 9450 3050 50  0000 C CNN
+F 1 "61" V 9550 3050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9480 3050 50  0001 C CNN
+F 3 "~" H 9550 3050 50  0001 C CNN
+	1    9550 3050
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
