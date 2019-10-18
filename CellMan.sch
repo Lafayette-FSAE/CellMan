@@ -6,8 +6,8 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 1 2
 Title "CellMan Prototype"
-Date "2019-10-16"
-Rev "0.6"
+Date "2019-10-17"
+Rev "0.7"
 Comp "Lafayette College"
 Comment1 "CellMan Prototype Board"
 Comment2 "Connor Winiarczyk"

@@ -529,7 +529,7 @@ U 1 1 5DCDA27D
 P 9450 1500
 F 0 "H3" V 9404 1650 50  0000 L CNN
 F 1 "MountingHole_Pad" V 9600 1300 50  0000 L CNN
-F 2 "" H 9450 1500 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4mm_Pad" H 9450 1500 50  0001 C CNN
 F 3 "~" H 9450 1500 50  0001 C CNN
 	1    9450 1500
 	0    -1   -1   0   
@@ -540,7 +540,7 @@ U 1 1 5DCEB68E
 P 9450 1800
 F 0 "H4" V 9404 1950 50  0000 L CNN
 F 1 "MountingHole_Pad" V 9600 2150 50  0000 L CNN
-F 2 "" H 9450 1800 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4mm_Pad" H 9450 1800 50  0001 C CNN
 F 3 "~" H 9450 1800 50  0001 C CNN
 	1    9450 1800
 	0    -1   -1   0   
@@ -563,7 +563,7 @@ U 1 1 5DD275EC
 P 10000 950
 F 0 "H6" V 9954 1100 50  0000 L CNN
 F 1 "MountingHole_Pad" V 10200 650 50  0000 L CNN
-F 2 "" H 10000 950 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4mm_Pad" H 10000 950 50  0001 C CNN
 F 3 "~" H 10000 950 50  0001 C CNN
 	1    10000 950 
 	0    1    1    0   
@@ -574,7 +574,7 @@ U 1 1 5DD27600
 P 9450 950
 F 0 "H2" V 9404 1100 50  0000 L CNN
 F 1 "MountingHole_Pad" V 9250 750 50  0000 L CNN
-F 2 "" H 9450 950 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4mm_Pad" H 9450 950 50  0001 C CNN
 F 3 "~" H 9450 950 50  0001 C CNN
 	1    9450 950 
 	0    -1   -1   0   
