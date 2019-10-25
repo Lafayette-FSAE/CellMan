@@ -1,4 +1,4 @@
-16312027841345416
+16321456601215035
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -49623,6 +49623,13 @@ Yellow 5381 Series LED
 2
 2
 Lafayette_Electric_Car_Footprints
+0154.500DRL
+
+
+0
+2
+2
+Lafayette_Electric_Car_Footprints
 0451.125MRL
 
 
@@ -49651,12 +49658,26 @@ ECE_Logo
 0
 0
 Lafayette_Electric_Car_Footprints
+ECE_Logo_Jon
+
+
+0
+0
+0
+Lafayette_Electric_Car_Footprints
 NodeMCUESP8266
 
 
 0
 30
 30
+Lafayette_Electric_Car_Footprints
+Paw
+
+
+0
+0
+0
 Lafayette_Electric_Car_Footprints
 T9AS1D12
 
@@ -49665,7 +49686,28 @@ T9AS1D12
 4
 4
 Lafayette_Electric_Car_Footprints
+highvoltage
+
+
+0
+0
+0
+Lafayette_Electric_Car_Footprints
+highvoltagesmall
+
+
+0
+0
+0
+Lafayette_Electric_Car_Footprints
 paw_solder_mask
+
+
+0
+0
+0
+Lafayette_Electric_Car_Footprints
+segment
 
 
 0
