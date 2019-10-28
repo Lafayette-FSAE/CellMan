@@ -119,9 +119,9 @@ Wire Wire Line
 	2050 3350 3150 3350
 Wire Wire Line
 	3150 3550 2600 3550
-Text Label 2600 3650 0    50   ~ 0
-Address_A0
 Text Label 2600 3550 0    50   ~ 0
+Address_A0
+Text Label 2600 3650 0    50   ~ 0
 Address_A1
 Wire Wire Line
 	2600 3650 3150 3650
@@ -909,13 +909,13 @@ Wire Notes Line
 	6900 700  6900 1750
 Text Notes 7500 2000 0    50   ~ 0
 Connectors for potential future\ncell balancing daughter board
-Text Label 6300 1000 0    50   ~ 0
+Text Label 6300 1400 0    50   ~ 0
 Power
-Text Label 6300 1100 0    50   ~ 0
+Text Label 6300 1500 0    50   ~ 0
 SafeGND
 Text Label 6300 1200 0    50   ~ 0
 Balance_ctl
-Text Label 6300 1300 0    50   ~ 0
+Text Label 6300 1100 0    50   ~ 0
 Feedback
 $Comp
 L Connector:Conn_01x06_Female J4
@@ -929,32 +929,28 @@ F 3 "~" H 7250 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6300 1100 7050 1100
+	6300 1500 7050 1500
 Wire Wire Line
 	6300 1200 7050 1200
 Wire Wire Line
-	6300 1300 7050 1300
+	6300 1100 7050 1100
 Wire Wire Line
-	7050 1400 6300 1400
-Text Label 6300 1400 0    50   ~ 0
+	7050 1000 6300 1000
+Text Label 6300 1000 0    50   ~ 0
 BalanceCurrent
 Wire Wire Line
-	7050 1500 6300 1500
-Text Label 6300 1500 0    50   ~ 0
+	7050 1300 6300 1300
+Text Label 6300 1300 0    50   ~ 0
 Extra
-Wire Wire Line
-	6250 1000 6250 900 
-Wire Wire Line
-	6250 1000 7050 1000
 $Comp
 L power:+3.3V #PWR027
 U 1 1 5DC44F7B
-P 6250 900
-F 0 "#PWR027" H 6250 750 50  0001 C CNN
-F 1 "+3.3V" H 6265 1073 50  0000 C CNN
-F 2 "" H 6250 900 50  0001 C CNN
-F 3 "" H 6250 900 50  0001 C CNN
-	1    6250 900 
+P 6100 1250
+F 0 "#PWR027" H 6100 1100 50  0001 C CNN
+F 1 "+3.3V" H 6115 1423 50  0000 C CNN
+F 2 "" H 6100 1250 50  0001 C CNN
+F 3 "" H 6100 1250 50  0001 C CNN
+	1    6100 1250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1246,8 +1242,8 @@ Wire Wire Line
 Text Label 2750 1700 0    50   ~ 0
 Feedback
 Wire Wire Line
-	3150 1800 2850 1800
-Text Label 2850 1800 0    50   ~ 0
+	3150 1800 2750 1800
+Text Label 2750 1800 0    50   ~ 0
 SWIM
 Wire Wire Line
 	3850 1900 4300 1900
@@ -1259,7 +1255,7 @@ U 1 1 5DCA918D
 P 750 2400
 F 0 "J1" H 642 2685 50  0000 C CNN
 F 1 "Conn_01x04_Female" V 850 2350 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 750 2400 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 750 2400 50  0001 C CNN
 F 3 "~" H 750 2400 50  0001 C CNN
 	1    750  2400
 	-1   0    0    -1  
@@ -1331,6 +1327,50 @@ Wire Wire Line
 	3850 1600 4550 1600
 Text Label 4550 1600 2    50   ~ 0
 Balance_ctl
+Wire Wire Line
+	2750 1600 3150 1600
+Text Label 2750 1600 0    50   ~ 0
+Extra
+Wire Wire Line
+	6100 1250 6100 1400
+Wire Wire Line
+	6100 1400 7050 1400
+Wire Wire Line
+	3150 1900 2750 1900
+Text Label 2750 1900 0    50   ~ 0
+Indicator
+Text Label 6200 1650 3    50   ~ 0
+Indicator
+$Comp
+L Device:R R15
+U 1 1 5DED3513
+P 6200 2150
+F 0 "R15" H 6270 2196 50  0000 L CNN
+F 1 "R" H 6270 2105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6130 2150 50  0001 C CNN
+F 3 "~" H 6200 2150 50  0001 C CNN
+	1    6200 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5DED3760
+P 6200 2550
+F 0 "D3" V 6239 2433 50  0000 R CNN
+F 1 "LED" V 6148 2433 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 6200 2550 50  0001 C CNN
+F 3 "~" H 6200 2550 50  0001 C CNN
+	1    6200 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6200 1650 6200 2000
+Wire Wire Line
+	6200 2700 6200 3050
+Text Label 6200 3050 1    50   ~ 0
+SafeGND
+Wire Wire Line
+	6200 2300 6200 2400
 Wire Bus Line
 	2500 4950 2500 5200
 Wire Bus Line

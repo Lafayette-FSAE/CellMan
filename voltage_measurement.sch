@@ -361,7 +361,7 @@ AR Path="/5DF4F8BE" Ref="JP?"  Part="1"
 AR Path="/5FDA3FDE/5DF4F8BE" Ref="JP1"  Part="1" 
 F 0 "JP1" H 9100 4400 50  0000 C CNN
 F 1 "Jumper" H 8850 4400 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 8850 4200 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8850 4200 50  0001 C CNN
 F 3 "~" H 8850 4200 50  0001 C CNN
 	1    8850 4200
 	1    0    0    -1  
