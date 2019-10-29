@@ -69,8 +69,6 @@ $EndComp
 Wire Wire Line
 	6050 4400 6050 4600
 Wire Wire Line
-	7200 4500 6950 4500
-Wire Wire Line
 	6150 4600 6150 4500
 Wire Wire Line
 	6150 4900 6150 5000
@@ -222,7 +220,7 @@ Wire Wire Line
 Text Label 3650 3400 1    50   ~ 0
 SafeGND
 Text HLabel 2000 4350 0    50   Input ~ 0
-Divided
+CellVoltage
 Text Label 3100 5300 1    50   ~ 0
 SafeGND
 Wire Wire Line
@@ -238,10 +236,6 @@ Wire Wire Line
 	4150 3500 5000 3500
 Connection ~ 5550 4400
 Connection ~ 5750 4500
-Text HLabel 9850 4400 2    50   Input ~ 0
-Cell+
-Text HLabel 7200 4500 2    50   Input ~ 0
-Cell-
 Wire Wire Line
 	3100 4950 3100 5300
 Connection ~ 5900 5000
@@ -354,63 +348,6 @@ Wire Wire Line
 Text Notes 2350 3500 0    50   ~ 0
 Unused OpAmp
 $Comp
-L Device:Jumper JP?
-U 1 1 5DF4F8BE
-P 8850 4200
-AR Path="/5DF4F8BE" Ref="JP?"  Part="1" 
-AR Path="/5FDA3FDE/5DF4F8BE" Ref="JP1"  Part="1" 
-F 0 "JP1" H 9100 4400 50  0000 C CNN
-F 1 "Jumper" H 8850 4400 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8850 4200 50  0001 C CNN
-F 3 "~" H 8850 4200 50  0001 C CNN
-	1    8850 4200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9700 4400 9850 4400
-Wire Wire Line
-	8450 4600 8450 4400
-Connection ~ 8450 4400
-Wire Wire Line
-	9250 4600 9250 4400
-Connection ~ 9250 4400
-Wire Wire Line
-	9250 4400 9400 4400
-Wire Wire Line
-	8450 4400 8450 4200
-Wire Wire Line
-	8450 4200 8550 4200
-Wire Wire Line
-	9150 4200 9250 4200
-Wire Wire Line
-	9250 4200 9250 4400
-$Comp
-L Jumper:SolderJumper_2_Open JP2
-U 1 1 5E024608
-P 8850 4600
-F 0 "JP2" H 8850 4750 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 8900 4400 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8850 4600 50  0001 C CNN
-F 3 "~" H 8850 4600 50  0001 C CNN
-	1    8850 4600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8450 4600 8700 4600
-Wire Wire Line
-	9000 4600 9250 4600
-$Comp
-L Device:R R27
-U 1 1 5E045130
-P 9550 4400
-F 0 "R27" V 9450 4400 50  0000 C CNN
-F 1 "61" V 9550 4400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9480 4400 50  0001 C CNN
-F 3 "~" H 9550 4400 50  0001 C CNN
-	1    9550 4400
-	0    1    1    0   
-$EndComp
-$Comp
 L power:+3.3V #PWR0109
 U 1 1 5DCFEEC0
 P 3650 2450
@@ -421,6 +358,12 @@ F 3 "" H 3650 2450 50  0001 C CNN
 	1    3650 2450
 	1    0    0    -1  
 $EndComp
+Text HLabel 7050 4500 2    50   Input ~ 0
+Cell-
 Wire Wire Line
-	6950 4400 8450 4400
+	7050 4500 6950 4500
+Text HLabel 7050 4400 2    50   Input ~ 0
+Cell+
+Wire Wire Line
+	6950 4400 7050 4400
 $EndSCHEMATC
