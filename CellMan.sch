@@ -20,7 +20,7 @@ Entry Wire Line
 	2200 3200 2300 3300
 Text Label 4950 4700 0    50   ~ 0
 Temperature
-Text Label 1300 7350 0    50   ~ 0
+Text Label 1300 7150 0    50   ~ 0
 Address_0
 $Comp
 L Device:R R3
@@ -63,7 +63,7 @@ Wire Wire Line
 	1250 7350 1750 7350
 Text Label 1300 7250 0    50   ~ 0
 Address_1
-Text Label 1300 7150 0    50   ~ 0
+Text Label 1300 7350 0    50   ~ 0
 Address_2
 Wire Wire Line
 	950  7350 850  7350
@@ -76,9 +76,6 @@ Wire Wire Line
 	850  7250 850  7150
 Wire Wire Line
 	950  7150 850  7150
-Connection ~ 850  7150
-Wire Wire Line
-	850  7150 850  7050
 Wire Wire Line
 	2350 7150 2450 7150
 Wire Wire Line
@@ -95,7 +92,7 @@ Wire Wire Line
 	2450 7350 2450 7450
 Wire Wire Line
 	2350 7450 2450 7450
-Text Notes 850  7750 0    50   ~ 0
+Text Notes 950  7750 0    50   ~ 0
 I2C Address Select\n(Pull Up or Pull Down)
 $Comp
 L Device:Thermistor TH1
@@ -240,39 +237,39 @@ F 4 "BSS138WH6327XTSA1CT-ND" H -4950 850 50  0001 C CNN "Digikey-Part"
 	1    3350 7050
 	0    1    1    0   
 $EndComp
-Text Label 2450 7900 1    50   ~ 0
+Text Label 850  7800 1    50   ~ 0
 SafeGND
 Text Label 6550 4700 0    50   ~ 0
 SafeGND
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 5DB637B7
-P 9950 1950
-F 0 "H1" V 10187 1953 50  0000 C CNN
-F 1 "MountingHole_Pad" V 10096 1953 50  0000 C CNN
-F 2 "Lafayette_Electric_Car_Footprints:SlottedHole" H 9950 1950 50  0001 C CNN
-F 3 "~" H 9950 1950 50  0001 C CNN
-	1    9950 1950
+P 9950 2650
+F 0 "H1" V 10187 2653 50  0000 C CNN
+F 1 "MountingHole_Pad" V 10096 2653 50  0000 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:SlottedHole" H 9950 2650 50  0001 C CNN
+F 3 "~" H 9950 2650 50  0001 C CNN
+	1    9950 2650
 	0    1    -1   0   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H2
 U 1 1 5DB6463C
 P 9950 2200
-F 0 "H2" V 9700 2200 50  0000 C CNN
-F 1 "MountingHole_Pad" V 9800 2200 50  0000 C CNN
+F 0 "H2" V 10150 2550 50  0000 C CNN
+F 1 "MountingHole_Pad" V 10150 2100 50  0000 C CNN
 F 2 "Lafayette_Electric_Car_Footprints:SlottedHole" H 9950 2200 50  0001 C CNN
 F 3 "~" H 9950 2200 50  0001 C CNN
 	1    9950 2200
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	9850 1950 9400 1950
+	9850 2650 9400 2650
 Wire Wire Line
 	9850 2200 9400 2200
-Text Label 8900 1950 0    50   ~ 0
-Cell+
 Text Label 8900 2200 0    50   ~ 0
+Cell+
+Text Label 8900 2650 0    50   ~ 0
 Cell-
 Text Label 4400 3400 2    50   ~ 0
 CellVoltage
@@ -351,8 +348,6 @@ F 3 "~" H 7250 1200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6300 1500 7050 1500
-Wire Wire Line
-	6300 1100 7050 1100
 Wire Wire Line
 	7050 1000 6300 1000
 Text Label 6300 1200 0    50   ~ 0
@@ -442,17 +437,6 @@ F 3 "" H 5800 7000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR0113
-U 1 1 5DF18EF2
-P 850 7050
-F 0 "#PWR0113" H 850 6900 50  0001 C CNN
-F 1 "+3.3V" H 865 7223 50  0000 C CNN
-F 2 "" H 850 7050 50  0001 C CNN
-F 3 "" H 850 7050 50  0001 C CNN
-	1    850  7050
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3.3V #PWR0115
 U 1 1 5DF2702E
 P 3350 6750
@@ -476,7 +460,7 @@ Entry Wire Line
 Entry Wire Line
 	2300 4100 2400 4200
 Wire Wire Line
-	3700 3500 4950 3500
+	3700 3500 4400 3500
 Wire Wire Line
 	3700 3900 4100 3900
 Text Label 4100 3900 2    50   ~ 0
@@ -686,110 +670,110 @@ F7 "Cell-(DIV)" I L 6900 4450 50
 $EndSheet
 Wire Wire Line
 	6550 4700 6900 4700
-Text Label 2400 1250 0    50   ~ 0
+Text Label 2250 1600 0    50   ~ 0
 Seg+
-Text Label 2400 1750 0    50   ~ 0
+Text Label 2250 2100 0    50   ~ 0
 Seg-
 Wire Wire Line
-	3100 1350 3000 1350
+	2950 1700 2850 1700
 Wire Wire Line
-	3000 1350 3000 1450
+	2850 1700 2850 1800
 Wire Wire Line
-	3100 1450 3000 1450
+	2950 1800 2850 1800
 Wire Wire Line
-	3800 1350 3900 1350
+	3650 1700 3750 1700
 Wire Wire Line
-	3800 1450 3900 1450
+	3650 1800 3750 1800
 $Comp
 L Lafayette_Electric_Car_Internals:L7833CD-TR U1
 U 1 1 5E31799D
-P 3450 1050
-F 0 "U1" H 3450 1115 50  0000 C CNN
-F 1 "L7833CD-TR" H 3450 1024 50  0000 C CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 3600 1000 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/389/l78l-974102.pdf" H 3600 1000 50  0001 C CNN
-F 4 "Digikey" H 3450 1050 50  0001 C CNN "Vendor"
-F 5 "497-15652-1-ND" H 3450 1050 50  0001 C CNN "Vendor #"
-F 6 "STMicroelectronics" H 3450 1050 50  0001 C CNN "Manufacturer"
-F 7 "L78L33CD-TR" H 3450 1050 50  0001 C CNN "Manufacturer #"
-	1    3450 1050
+P 3300 1400
+F 0 "U1" H 3300 1465 50  0000 C CNN
+F 1 "L7833CD-TR" H 3300 1374 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 3450 1350 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/389/l78l-974102.pdf" H 3450 1350 50  0001 C CNN
+F 4 "Digikey" H 3300 1400 50  0001 C CNN "Vendor"
+F 5 "497-15652-1-ND" H 3300 1400 50  0001 C CNN "Vendor #"
+F 6 "STMicroelectronics" H 3300 1400 50  0001 C CNN "Manufacturer"
+F 7 "L78L33CD-TR" H 3300 1400 50  0001 C CNN "Manufacturer #"
+	1    3300 1400
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:C C1
 U 1 1 5E32E0B8
-P 2800 1500
-F 0 "C1" H 2600 1600 50  0000 L CNN
-F 1 "0.33uF" H 2400 1500 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2838 1350 50  0001 C CNN
-F 3 "~" H 2800 1500 50  0001 C CNN
-	1    2800 1500
+P 2650 1850
+F 0 "C1" H 2450 1950 50  0000 L CNN
+F 1 "0.33uF" H 2250 1850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2688 1700 50  0001 C CNN
+F 3 "~" H 2650 1850 50  0001 C CNN
+	1    2650 1850
 	1    0    0    -1  
 $EndComp
-Connection ~ 3000 1450
+Connection ~ 2850 1800
 Wire Wire Line
-	3900 1350 3900 1450
+	3750 1700 3750 1800
 $Comp
 L Device:C C2
 U 1 1 5E36A335
-P 4150 1500
-F 0 "C2" H 4250 1550 50  0000 L CNN
-F 1 "0.1uF" H 4250 1450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4188 1350 50  0001 C CNN
-F 3 "~" H 4150 1500 50  0001 C CNN
-	1    4150 1500
+P 4000 1850
+F 0 "C2" H 4100 1900 50  0000 L CNN
+F 1 "0.1uF" H 4100 1800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4038 1700 50  0001 C CNN
+F 3 "~" H 4000 1850 50  0001 C CNN
+	1    4000 1850
 	1    0    0    -1  
 $EndComp
-Text Label 4450 1250 2    50   ~ 0
+Text Label 4300 1600 2    50   ~ 0
 Power
 $Comp
 L power:+3.3V #PWR0101
 U 1 1 5E3C6A5F
-P 4500 1150
-F 0 "#PWR0101" H 4500 1000 50  0001 C CNN
-F 1 "+3.3V" H 4515 1323 50  0000 C CNN
-F 2 "" H 4500 1150 50  0001 C CNN
-F 3 "" H 4500 1150 50  0001 C CNN
-	1    4500 1150
+P 4350 1500
+F 0 "#PWR0101" H 4350 1350 50  0001 C CNN
+F 1 "+3.3V" H 4365 1673 50  0000 C CNN
+F 2 "" H 4350 1500 50  0001 C CNN
+F 3 "" H 4350 1500 50  0001 C CNN
+	1    4350 1500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4500 1150 4500 1250
+	4350 1500 4350 1600
 Wire Wire Line
-	3800 1250 4150 1250
-Connection ~ 3900 1450
+	3650 1600 4000 1600
+Connection ~ 3750 1800
 Wire Wire Line
-	3900 1750 4150 1750
-Connection ~ 4150 1250
+	3750 2100 4000 2100
+Connection ~ 4000 1600
 Wire Wire Line
-	4150 1250 4500 1250
+	4000 1600 4350 1600
 Wire Wire Line
-	3900 1450 3900 1750
-Connection ~ 3900 1750
+	3750 1800 3750 2100
+Connection ~ 3750 2100
 Wire Wire Line
-	3000 1450 3000 1750
-Connection ~ 3000 1750
+	2850 1800 2850 2100
+Connection ~ 2850 2100
 Wire Wire Line
-	3000 1750 3900 1750
+	2850 2100 3750 2100
 Wire Wire Line
-	4150 1250 4150 1350
+	4000 1600 4000 1700
 Wire Wire Line
-	4150 1650 4150 1750
+	4000 2000 4000 2100
 Wire Wire Line
-	2800 1250 2800 1350
+	2650 1600 2650 1700
 Wire Wire Line
-	2800 1650 2800 1750
+	2650 2000 2650 2100
 Wire Wire Line
-	1550 1450 1800 1450
+	1600 1600 1850 1600
 Wire Wire Line
-	1550 1550 1800 1550
-Text Label 1800 1450 2    50   ~ 0
+	1600 1700 1850 1700
+Text Label 1850 1600 2    50   ~ 0
 Seg+
-Text Label 1800 1550 2    50   ~ 0
+Text Label 1850 1700 2    50   ~ 0
 Seg-
 Wire Wire Line
-	1050 1450 850  1450
-Text Notes 2450 1050 0    50   ~ 0
+	1100 1600 900  1600
+Text Notes 2300 1400 0    50   ~ 0
 Voltage Regulator\n24V -> 3.3V
 Wire Notes Line
 	550  6700 2600 6700
@@ -812,12 +796,12 @@ Seg-
 Text Notes 3000 7250 0    50   ~ 0
 Reverse Polarity Protection
 Wire Wire Line
-	1050 1550 850  1550
-Text Label 850  1450 0    50   ~ 0
+	1100 1700 900  1700
+Text Label 900  1600 0    50   ~ 0
 SCL
-Text Label 850  1550 0    50   ~ 0
+Text Label 900  1700 0    50   ~ 0
 SDA
-NoConn ~ 1050 1650
+NoConn ~ 1100 1800
 Text Label 1950 3100 0    50   ~ 0
 SCL
 Text Label 1950 3200 0    50   ~ 0
@@ -833,26 +817,22 @@ Wire Wire Line
 Wire Wire Line
 	3700 3400 5050 3400
 Wire Wire Line
-	5050 1200 5050 3300
-Wire Wire Line
-	5050 1200 7050 1200
-Wire Wire Line
 	3700 3300 5050 3300
-Text Notes 850  1300 0    50   ~ 0
+Text Notes 900  1450 0    50   ~ 0
 Seg+ is 24V Nominal
 Text Label 4100 4100 2    50   ~ 0
 Power
-Connection ~ 2800 1250
+Connection ~ 2650 1600
 Wire Wire Line
-	2800 1250 3100 1250
-Connection ~ 2800 1750
+	2650 1600 2950 1600
+Connection ~ 2650 2100
 Wire Wire Line
-	2800 1750 3000 1750
+	2650 2100 2850 2100
 Wire Wire Line
-	2400 1250 2800 1250
+	2250 1600 2650 1600
 Wire Wire Line
-	2400 1750 2800 1750
-NoConn ~ 1550 1650
+	2250 2100 2650 2100
+NoConn ~ 1600 1800
 $Comp
 L Lafayette_Electric_Car_Internals:SW_DIP_x04 SW1
 U 1 1 5E7551C1
@@ -866,8 +846,7 @@ F 4 "Z8443-ND" H 2050 7300 50  0001 C CNN "Digikey-Part"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2450 7450 2450 7900
-Connection ~ 2450 7450
+	850  7350 850  7800
 NoConn ~ 1750 7450
 Text Label 6550 2150 3    50   ~ 0
 User_LED
@@ -927,27 +906,27 @@ $EndComp
 $Comp
 L Lafayette_Electric_Car_Internals:Fuse F2
 U 1 1 5E971C81
-P 9150 1950
-F 0 "F2" H 9150 2050 50  0000 C CNN
-F 1 "Fuse" H 9400 2050 50  0000 C CNN
-F 2 "Lafayette_Electric_Car_Footprints:fuse_holder_smd_littelfuse" H 9150 1950 50  0001 C CNN
-F 3 "" H 9150 1950 50  0001 C CNN
-	1    9150 1950
+P 9150 2650
+F 0 "F2" H 9200 2800 50  0000 C CNN
+F 1 "Fuse" H 9400 2800 50  0000 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:fuse_holder_smd_littelfuse" H 9150 2650 50  0001 C CNN
+F 3 "" H 9150 2650 50  0001 C CNN
+	1    9150 2650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	9150 2200 8900 2200
 Wire Wire Line
-	9150 1950 8900 1950
+	9150 2650 8900 2650
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J2
 U 1 1 5E9FF901
-P 1250 1550
-F 0 "J2" H 1750 1300 50  0000 C CNN
-F 1 "Conn_02x03_Odd_Even" H 1200 1300 50  0000 C CNN
-F 2 "Connector_IDC:IDC-Header_2x03_P2.54mm_Vertical" H 1250 1550 50  0001 C CNN
-F 3 "~" H 1250 1550 50  0001 C CNN
-	1    1250 1550
+P 1300 1700
+F 0 "J2" H 1800 1450 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 1250 1450 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x03_P2.54mm_Vertical" H 1300 1700 50  0001 C CNN
+F 3 "~" H 1300 1700 50  0001 C CNN
+	1    1300 1700
 	1    0    0    -1  
 $EndComp
 Text Label 4100 3700 2    50   ~ 0
@@ -958,6 +937,27 @@ Wire Wire Line
 	9250 4450 9700 4450
 Wire Wire Line
 	7950 4600 9700 4600
+Connection ~ 850  7350
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 5EBAC70F
+P 2450 7050
+F 0 "#PWR0102" H 2450 6900 50  0001 C CNN
+F 1 "+3.3V" H 2465 7223 50  0000 C CNN
+F 2 "" H 2450 7050 50  0001 C CNN
+F 3 "" H 2450 7050 50  0001 C CNN
+	1    2450 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 7050 2450 7150
+Connection ~ 2450 7150
+Wire Wire Line
+	6300 1200 7050 1200
+Wire Wire Line
+	5050 1100 7050 1100
+Wire Wire Line
+	5050 1100 5050 3300
 Wire Bus Line
 	2300 3200 2300 4100
 $EndSCHEMATC
