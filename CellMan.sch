@@ -244,32 +244,28 @@ SafeGND
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 5DB637B7
-P 9950 2650
-F 0 "H1" V 10187 2653 50  0000 C CNN
-F 1 "MountingHole_Pad" V 10096 2653 50  0000 C CNN
-F 2 "Lafayette_Electric_Car_Footprints:SlottedHole" H 9950 2650 50  0001 C CNN
-F 3 "~" H 9950 2650 50  0001 C CNN
-	1    9950 2650
+P 12500 2250
+F 0 "H1" V 12737 2253 50  0000 C CNN
+F 1 "MountingHole_Pad" V 12646 2253 50  0000 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:CellMan_Mount_InHouse" H 12500 2250 50  0001 C CNN
+F 3 "~" H 12500 2250 50  0001 C CNN
+	1    12500 2250
 	0    1    -1   0   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H2
 U 1 1 5DB6463C
-P 9950 2200
-F 0 "H2" V 10150 2550 50  0000 C CNN
-F 1 "MountingHole_Pad" V 10150 2100 50  0000 C CNN
-F 2 "Lafayette_Electric_Car_Footprints:SlottedHole" H 9950 2200 50  0001 C CNN
-F 3 "~" H 9950 2200 50  0001 C CNN
-	1    9950 2200
+P 12050 1450
+F 0 "H2" V 12250 1800 50  0000 C CNN
+F 1 "MountingHole_Pad" V 12250 1350 50  0000 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:CellMan_Mount_InHouse" H 12050 1450 50  0001 C CNN
+F 3 "~" H 12050 1450 50  0001 C CNN
+	1    12050 1450
 	0    1    -1   0   
 $EndComp
-Wire Wire Line
-	9850 2650 9400 2650
-Wire Wire Line
-	9850 2200 9400 2200
-Text Label 8900 2200 0    50   ~ 0
+Text Label 8800 2200 0    50   ~ 0
 Cell+
-Text Label 8900 2650 0    50   ~ 0
+Text Label 8800 2650 0    50   ~ 0
 Cell-
 Text Label 4400 3400 2    50   ~ 0
 CellVoltage
@@ -895,29 +891,29 @@ NoConn ~ 6400 4350
 $Comp
 L Lafayette_Electric_Car_Internals:Fuse F1
 U 1 1 5E93167B
-P 9150 2200
-F 0 "F1" H 9200 2050 50  0000 C CNN
-F 1 "Fuse" H 9400 2050 50  0000 C CNN
-F 2 "Lafayette_Electric_Car_Footprints:fuse_holder_smd_littelfuse" H 9150 2200 50  0001 C CNN
-F 3 "" H 9150 2200 50  0001 C CNN
-	1    9150 2200
+P 9100 2200
+F 0 "F1" H 9150 2050 50  0000 C CNN
+F 1 "Fuse" H 9350 2050 50  0000 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:fuse_holder_smd_littelfuse" H 9100 2200 50  0001 C CNN
+F 3 "" H 9100 2200 50  0001 C CNN
+	1    9100 2200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Lafayette_Electric_Car_Internals:Fuse F2
 U 1 1 5E971C81
-P 9150 2650
-F 0 "F2" H 9200 2800 50  0000 C CNN
-F 1 "Fuse" H 9400 2800 50  0000 C CNN
-F 2 "Lafayette_Electric_Car_Footprints:fuse_holder_smd_littelfuse" H 9150 2650 50  0001 C CNN
-F 3 "" H 9150 2650 50  0001 C CNN
-	1    9150 2650
+P 9100 2650
+F 0 "F2" H 9150 2800 50  0000 C CNN
+F 1 "Fuse" H 9350 2800 50  0000 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:fuse_holder_smd_littelfuse" H 9100 2650 50  0001 C CNN
+F 3 "" H 9100 2650 50  0001 C CNN
+	1    9100 2650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9150 2200 8900 2200
+	9100 2200 8800 2200
 Wire Wire Line
-	9150 2650 8900 2650
+	9100 2650 8800 2650
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J2
 U 1 1 5E9FF901
@@ -958,6 +954,29 @@ Wire Wire Line
 	5050 1100 7050 1100
 Wire Wire Line
 	5050 1100 5050 3300
+Text Label 9450 2200 0    50   ~ 0
+Cell+(RAW)
+Text Label 9450 2650 0    50   ~ 0
+Cell-(RAW)
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5EC528A6
+P 10000 2450
+F 0 "BT?" H 10118 2546 50  0000 L CNN
+F 1 "Battery_Cell" H 10118 2455 50  0000 L CNN
+F 2 "" V 10000 2510 50  0001 C CNN
+F 3 "~" V 10000 2510 50  0001 C CNN
+	1    10000 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 2200 10000 2250
+Wire Wire Line
+	9350 2200 10000 2200
+Wire Wire Line
+	10000 2650 10000 2550
+Wire Wire Line
+	9350 2650 10000 2650
 Wire Bus Line
 	2300 3200 2300 4100
 $EndSCHEMATC
