@@ -128,14 +128,14 @@ Wire Wire Line
 Wire Wire Line
 	5200 4400 5550 4400
 Wire Wire Line
-	4150 4350 5000 4350
+	4250 4350 5000 4350
 Wire Wire Line
-	4150 3950 4150 3500
+	4250 3950 4250 3500
 Wire Wire Line
 	5000 3500 5000 3850
-Connection ~ 4150 3950
+Connection ~ 4250 3950
 Wire Wire Line
-	4150 3950 3800 3950
+	4250 3950 3750 3950
 $Comp
 L Device:R R20
 U 1 1 5FE84408
@@ -206,11 +206,11 @@ Connection ~ 2300 4350
 Wire Wire Line
 	2300 4350 2400 4350
 Wire Wire Line
-	3600 4450 3800 4450
+	3600 4450 3750 4450
 Wire Wire Line
-	3600 4250 3800 4250
+	3600 4250 3750 4250
 Wire Wire Line
-	4350 3950 4150 3950
+	4350 3950 4250 3950
 Wire Wire Line
 	4950 3850 5000 3850
 Wire Wire Line
@@ -233,7 +233,7 @@ Connection ~ 6050 5000
 Connection ~ 6050 4400
 Connection ~ 6150 4500
 Wire Wire Line
-	4150 3500 5000 3500
+	4250 3500 5000 3500
 Connection ~ 5550 4400
 Connection ~ 5750 4500
 Wire Wire Line
@@ -248,20 +248,20 @@ Wire Wire Line
 Wire Wire Line
 	6150 4500 6650 4500
 Wire Wire Line
-	3800 4800 4150 4800
+	3750 4800 4250 4800
 Wire Wire Line
 	4950 4700 5000 4700
 Wire Wire Line
 	5000 4700 5000 4350
 Wire Wire Line
-	4150 4350 4150 4800
-Connection ~ 4150 4800
+	4250 4350 4250 4800
+Connection ~ 4250 4800
 Wire Wire Line
-	4150 4800 4350 4800
+	4250 4800 4350 4800
 Wire Wire Line
-	3800 4250 3800 3950
+	3750 4250 3750 3950
 Wire Wire Line
-	3800 4450 3800 4800
+	3750 4450 3750 4800
 $Comp
 L Lafayette_Electric_Car_Internals:MCP6004 U3
 U 4 1 5DC0A412
@@ -322,11 +322,11 @@ F 4 "MCP6004T-I/STCT-ND" H -50 100 50  0001 C CNN "Digikey-Part"
 	5    3750 2750
 	1    0    0    -1  
 $EndComp
-Text Label 4700 5550 2    50   ~ 0
+Text Label 2400 5450 2    50   ~ 0
 SafeGND
 Wire Wire Line
-	4700 5550 4150 5550
-Text HLabel 4150 5550 0    50   Input ~ 0
+	2400 5450 1850 5450
+Text HLabel 1850 5450 0    50   Input ~ 0
 SafeGND
 Wire Wire Line
 	3050 2750 3050 3100
@@ -359,11 +359,27 @@ F 3 "" H 3650 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 7050 4500 2    50   Input ~ 0
-Cell-
+Prot_Cell-
 Wire Wire Line
 	7050 4500 6950 4500
 Text HLabel 7050 4400 2    50   Input ~ 0
-Cell+
+Prot_Cell+
 Wire Wire Line
 	6950 4400 7050 4400
+Text Label 3800 3950 0    50   ~ 0
+Cell+(DIV)
+Text Label 3800 4800 0    50   ~ 0
+Cell-(DIV)
+Text HLabel 1850 5300 0    50   Input ~ 0
+Cell-(DIV)
+Text HLabel 1850 5150 0    50   Input ~ 0
+Cell+(DIV)
+Wire Wire Line
+	1850 5300 2400 5300
+Wire Wire Line
+	1850 5150 2400 5150
+Text Label 2400 5150 2    50   ~ 0
+Cell+(DIV)
+Text Label 2400 5300 2    50   ~ 0
+Cell-(DIV)
 $EndSCHEMATC
