@@ -6,8 +6,8 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 1 2
 Title "CellMan Prototype"
-Date "2019-10-31"
-Rev "1.3"
+Date "2019-11-03"
+Rev "1.4"
 Comp "Lafayette College"
 Comment1 "CellMan Prototype Board"
 Comment2 "Connor Winiarczyk"
@@ -18,7 +18,7 @@ Entry Wire Line
 	2200 3100 2300 3200
 Entry Wire Line
 	2200 3200 2300 3300
-Text Label 4950 4700 0    50   ~ 0
+Text Label 5900 5600 0    50   ~ 0
 Temperature
 Text Label 1300 7150 0    50   ~ 0
 Address_0
@@ -97,177 +97,71 @@ I2C Address Select\n(Pull Up or Pull Down)
 $Comp
 L Device:Thermistor TH1
 U 1 1 5D937593
-P 7300 5300
-F 0 "TH1" H 7000 5350 50  0000 L CNN
-F 1 "Thermistor" H 6750 5250 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7300 5300 50  0001 C CNN
-F 3 "~" H 7300 5300 50  0001 C CNN
-	1    7300 5300
+P 7300 5350
+F 0 "TH1" H 7000 5400 50  0000 L CNN
+F 1 "Thermistor" H 6750 5300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7300 5350 50  0001 C CNN
+F 3 "~" H 7300 5350 50  0001 C CNN
+	1    7300 5350
 	1    0    0    -1  
 $EndComp
-Text Notes 7550 4000 1    50   ~ 0
+Text Notes 7550 3550 1    50   ~ 0
 Cell Ground
-Text Notes 7400 4000 1    50   ~ 0
+Text Notes 7400 3550 1    50   ~ 0
 Segment Ground\n
 Wire Notes Line
 	7450 500  7450 6750
-$Comp
-L Device:C C5
-U 1 1 5D978D13
-P 5800 7150
-F 0 "C5" H 5915 7196 50  0000 L CNN
-F 1 "1uF" H 5915 7105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5838 7000 50  0001 C CNN
-F 3 "~" H 5800 7150 50  0001 C CNN
-	1    5800 7150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D1
-U 1 1 5DA135DB
-P 4350 7350
-F 0 "D1" H 4400 7200 50  0000 C CNN
-F 1 "LED" H 4250 7200 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 4350 7350 50  0001 C CNN
-F 3 "~" H 4350 7350 50  0001 C CNN
-	1    4350 7350
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R13
-U 1 1 5DA13D44
-P 4350 7000
-F 0 "R13" V 4250 7000 50  0000 C CNN
-F 1 "R" V 4350 7000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4280 7000 50  0001 C CNN
-F 3 "~" H 4350 7000 50  0001 C CNN
-	1    4350 7000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	4350 7200 4350 7150
-Wire Wire Line
-	4350 6850 4350 6600
-Text Notes 4550 7700 1    50   ~ 0
-Reverse Polarity Indicator
-$Comp
-L Device:R R12
-U 1 1 5DA57AD1
-P 3350 7550
-F 0 "R12" V 3450 7500 50  0000 L CNN
-F 1 "0" V 3350 7550 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3280 7550 50  0001 C CNN
-F 3 "~" H 3350 7550 50  0001 C CNN
-	1    3350 7550
-	0    -1   -1   0   
-$EndComp
-Text Notes 3000 7700 0    50   ~ 0
-Reverse Polarity Bypass
-Wire Wire Line
-	9800 5400 9800 5600
+	9800 5100 9800 5300
 $Comp
 L Device:LED D2
 U 1 1 5DB4E3D0
-P 9800 5750
-F 0 "D2" H 9950 5650 50  0000 C CNN
-F 1 "LED" H 9800 5650 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 9800 5750 50  0001 C CNN
-F 3 "~" H 9800 5750 50  0001 C CNN
-	1    9800 5750
+P 9800 5450
+F 0 "D2" H 9950 5350 50  0000 C CNN
+F 1 "LED" H 9800 5350 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 9800 5450 50  0001 C CNN
+F 3 "~" H 9800 5450 50  0001 C CNN
+	1    9800 5450
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R16
 U 1 1 5DB4E3DA
-P 9800 6100
-F 0 "R16" V 9700 6100 50  0000 C CNN
-F 1 "R" V 9800 6100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9730 6100 50  0001 C CNN
-F 3 "~" H 9800 6100 50  0001 C CNN
-	1    9800 6100
+P 9800 5800
+F 0 "R16" V 9700 5800 50  0000 C CNN
+F 1 "R" V 9800 5800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9730 5800 50  0001 C CNN
+F 3 "~" H 9800 5800 50  0001 C CNN
+	1    9800 5800
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	9800 5900 9800 5950
+	9800 5600 9800 5650
 Wire Wire Line
-	9800 6250 9800 6500
-Text Notes 10200 6500 1    50   ~ 0
+	9800 5950 9800 6200
+Text Notes 10200 6200 1    50   ~ 0
 Reverse Polarity Indicator\n(Make this an angry color)
-Text Label 9800 5400 3    50   ~ 0
+Text Label 9800 5100 3    50   ~ 0
 Cell-
-Text Label 9800 6500 1    50   ~ 0
+Text Label 9800 6200 1    50   ~ 0
 Cell+
-Wire Wire Line
-	3500 7550 3950 7550
-Wire Notes Line
-	2700 7950 2700 6400
-Wire Notes Line
-	4700 6400 4700 7950
 Wire Notes Line
 	2600 6700 2600 7950
 Wire Notes Line
 	2600 7950 550  7950
 Wire Notes Line
 	550  6700 550  7950
-Wire Wire Line
-	3550 7050 3950 7050
-Text Label 3950 7050 2    50   ~ 0
-SafeGND
-Text Label 3950 7550 2    50   ~ 0
-SafeGND
-Wire Wire Line
-	5800 7300 5800 7400
-Text Label 9700 4450 2    50   ~ 0
+Text Label 9700 4050 2    50   ~ 0
 Cell+
-Text Label 5350 4600 0    50   ~ 0
+Text Label 5350 4200 0    50   ~ 0
 CellVoltage
-Wire Wire Line
-	7300 5550 6050 5550
-Wire Wire Line
-	6050 5550 6050 4700
-$Comp
-L Lafayette_Electric_Car_Internals:BSS138W Q1
-U 1 1 5DBFEF6A
-P 3350 7050
-F 0 "Q1" V 3150 6850 50  0000 L CNN
-F 1 "BSS138W" V 3100 7200 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-323_SC-70_Handsoldering" H 3450 7550 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/308/BSS138W-1305267.pdf" H 3350 7050 50  0001 C CNN
-F 4 "BSS138WH6327XTSA1CT-ND" H -4950 850 50  0001 C CNN "Digikey-Part"
-	1    3350 7050
-	0    1    1    0   
-$EndComp
-Text Label 850  7800 1    50   ~ 0
-SafeGND
-Text Label 6550 4700 0    50   ~ 0
-SafeGND
-$Comp
-L Mechanical:MountingHole_Pad H1
-U 1 1 5DB637B7
-P 12500 2250
-F 0 "H1" V 12737 2253 50  0000 C CNN
-F 1 "MountingHole_Pad" V 12646 2253 50  0000 C CNN
-F 2 "Lafayette_Electric_Car_Footprints:CellMan_Mount_InHouse" H 12500 2250 50  0001 C CNN
-F 3 "~" H 12500 2250 50  0001 C CNN
-	1    12500 2250
-	0    1    -1   0   
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H2
-U 1 1 5DB6463C
-P 12050 1450
-F 0 "H2" V 12250 1800 50  0000 C CNN
-F 1 "MountingHole_Pad" V 12250 1350 50  0000 C CNN
-F 2 "Lafayette_Electric_Car_Footprints:CellMan_Mount_InHouse" H 12050 1450 50  0001 C CNN
-F 3 "~" H 12050 1450 50  0001 C CNN
-	1    12050 1450
-	0    1    -1   0   
-$EndComp
-Text Label 8800 2200 0    50   ~ 0
+Text Label 850  7700 1    50   ~ 0
+Seg-
+Text Label 7750 5450 0    50   ~ 0
 Cell+
-Text Label 8800 2650 0    50   ~ 0
+Text Label 7750 5900 0    50   ~ 0
 Cell-
-Text Label 4400 3400 2    50   ~ 0
+Text Label 4400 3500 2    50   ~ 0
 CellVoltage
 $Comp
 L Connector:Conn_01x02_Female J5
@@ -325,8 +219,6 @@ Text Notes 7500 2000 0    50   ~ 0
 Connectors for potential future\ncell balancing daughter board
 Text Label 6300 1400 0    50   ~ 0
 Power
-Text Label 6300 1500 0    50   ~ 0
-SafeGND
 Text Label 6300 1100 0    50   ~ 0
 Balance_ctl
 Text Label 6300 1000 0    50   ~ 0
@@ -355,43 +247,43 @@ Extra
 $Comp
 L power:+3.3V #PWR027
 U 1 1 5DC44F7B
-P 5850 1250
-F 0 "#PWR027" H 5850 1100 50  0001 C CNN
-F 1 "+3.3V" H 5865 1423 50  0000 C CNN
-F 2 "" H 5850 1250 50  0001 C CNN
-F 3 "" H 5850 1250 50  0001 C CNN
-	1    5850 1250
+P 5850 1350
+F 0 "#PWR027" H 5850 1200 50  0001 C CNN
+F 1 "+3.3V" H 5865 1523 50  0000 C CNN
+F 2 "" H 5850 1350 50  0001 C CNN
+F 3 "" H 5850 1350 50  0001 C CNN
+	1    5850 1350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7300 5900 7300 6300
-Text Label 7300 6300 1    50   ~ 0
-SafeGND
+	7300 5950 7300 6350
+Text Label 7300 6350 1    50   ~ 0
+Seg-
 $Comp
 L Device:R R14
 U 1 1 5D96C573
-P 7300 5750
-F 0 "R14" V 7200 5700 50  0000 L CNN
-F 1 "R" H 7350 5700 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7230 5750 50  0001 C CNN
-F 3 "~" H 7300 5750 50  0001 C CNN
-	1    7300 5750
+P 7300 5800
+F 0 "R14" V 7200 5750 50  0000 L CNN
+F 1 "R" H 7350 5750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7230 5800 50  0001 C CNN
+F 3 "~" H 7300 5800 50  0001 C CNN
+	1    7300 5800
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7300 5500 7300 5550
-Connection ~ 7300 5550
-Wire Wire Line
 	7300 5550 7300 5600
+Connection ~ 7300 5600
+Wire Wire Line
+	7300 5600 7300 5650
 $Comp
 L power:+3.3V #PWR028
 U 1 1 5DCAEF16
-P 7300 5100
-F 0 "#PWR028" H 7300 4950 50  0001 C CNN
-F 1 "+3.3V" H 7315 5273 50  0000 C CNN
-F 2 "" H 7300 5100 50  0001 C CNN
-F 3 "" H 7300 5100 50  0001 C CNN
-	1    7300 5100
+P 7300 5150
+F 0 "#PWR028" H 7300 5000 50  0001 C CNN
+F 1 "+3.3V" H 7315 5323 50  0000 C CNN
+F 2 "" H 7300 5150 50  0001 C CNN
+F 3 "" H 7300 5150 50  0001 C CNN
+	1    7300 5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -401,48 +293,22 @@ Wire Wire Line
 Text Label 2450 3300 0    50   ~ 0
 Temperature
 Wire Wire Line
-	1000 5800 1500 5800
+	3450 7250 3950 7250
 Wire Wire Line
-	1500 5900 1000 5900
+	3950 7350 3450 7350
 $Comp
 L power:+3.3V #PWR0108
 U 1 1 5DDF8E14
-P 1500 5700
-F 0 "#PWR0108" H 1500 5550 50  0001 C CNN
-F 1 "+3.3V" H 1450 5850 50  0000 C CNN
-F 2 "" H 1500 5700 50  0001 C CNN
-F 3 "" H 1500 5700 50  0001 C CNN
-	1    1500 5700
+P 3950 7150
+F 0 "#PWR0108" H 3950 7000 50  0001 C CNN
+F 1 "+3.3V" H 3900 7300 50  0000 C CNN
+F 2 "" H 3950 7150 50  0001 C CNN
+F 3 "" H 3950 7150 50  0001 C CNN
+	1    3950 7150
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1500 6000 1000 6000
-Text Label 1500 6000 2    50   ~ 0
-SafeGND
-Text Label 5800 7400 0    50   ~ 0
-SafeGND
-$Comp
-L power:+3.3V #PWR0112
-U 1 1 5DEDEB02
-P 5800 7000
-F 0 "#PWR0112" H 5800 6850 50  0001 C CNN
-F 1 "+3.3V" H 5815 7173 50  0000 C CNN
-F 2 "" H 5800 7000 50  0001 C CNN
-F 3 "" H 5800 7000 50  0001 C CNN
-	1    5800 7000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0115
-U 1 1 5DF2702E
-P 3350 6750
-F 0 "#PWR0115" H 3350 6600 50  0001 C CNN
-F 1 "+3.3V" H 3365 6923 50  0000 C CNN
-F 2 "" H 3350 6750 50  0001 C CNN
-F 3 "" H 3350 6750 50  0001 C CNN
-	1    3350 6750
-	1    0    0    -1  
-$EndComp
+	3950 7450 3450 7450
 Wire Wire Line
 	3000 4100 2400 4100
 Wire Wire Line
@@ -459,8 +325,6 @@ Wire Wire Line
 	3700 3500 4400 3500
 Wire Wire Line
 	3700 3900 4100 3900
-Text Label 4100 3900 2    50   ~ 0
-SafeGND
 Wire Wire Line
 	3700 4100 4100 4100
 Wire Wire Line
@@ -480,72 +344,68 @@ Wire Wire Line
 Text Label 4400 3600 2    50   ~ 0
 MCU_Reset
 Wire Wire Line
-	1500 5700 1500 5800
-Text Label 1500 5900 2    50   ~ 0
+	3950 7150 3950 7250
+Text Label 3950 7350 2    50   ~ 0
 SWIM
 Wire Wire Line
-	1000 6100 1500 6100
-Text Label 1500 6100 2    50   ~ 0
+	3450 7550 3950 7550
+Text Label 3950 7550 2    50   ~ 0
 MCU_Reset
-Text Notes 900  6450 0    50   ~ 0
+Text Notes 4150 7550 0    50   ~ 0
 Programming interface fo\nMicrocontroller. Uses the\nSingle Wire Interface Module (SWIM)\nbuilt into the STM8
 $Comp
 L Device:C C6
 U 1 1 5DD1E832
-P 5700 3100
-F 0 "C6" V 5850 3100 50  0000 C CNN
-F 1 "C" V 5850 3000 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5738 2950 50  0001 C CNN
-F 3 "~" H 5700 3100 50  0001 C CNN
-	1    5700 3100
+P 2850 5150
+F 0 "C6" V 3000 5150 50  0000 C CNN
+F 1 "C" V 3000 5050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2888 5000 50  0001 C CNN
+F 3 "~" H 2850 5150 50  0001 C CNN
+	1    2850 5150
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	3700 4000 4100 4000
 Text Label 4100 4000 2    50   ~ 0
 Ref_Cap
-Text Label 5700 2650 3    50   ~ 0
+Text Label 2850 4700 3    50   ~ 0
 Ref_Cap
 Wire Wire Line
-	5700 2650 5700 2950
+	2850 4700 2850 5000
 Wire Wire Line
-	5700 3250 5700 3550
-Text Label 5700 3550 1    50   ~ 0
-SafeGND
+	2850 5300 2850 5600
 $Comp
 L Device:C C9
 U 1 1 5DD4CA25
-P 5950 3100
-F 0 "C9" H 6065 3146 50  0000 L CNN
-F 1 "1uF" H 6065 3055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5988 2950 50  0001 C CNN
-F 3 "~" H 5950 3100 50  0001 C CNN
-	1    5950 3100
+P 3100 5150
+F 0 "C9" H 3215 5196 50  0000 L CNN
+F 1 "1uF" H 3215 5105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3138 5000 50  0001 C CNN
+F 3 "~" H 3100 5150 50  0001 C CNN
+	1    3100 5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 3250 5950 3550
-Text Label 5950 3550 1    50   ~ 0
-SafeGND
+	3100 5300 3100 5600
 Wire Wire Line
-	5950 2950 5950 2900
+	3100 5000 3100 4950
 $Comp
 L power:+3.3V #PWR0118
 U 1 1 5DD66BEA
-P 5950 2900
-F 0 "#PWR0118" H 5950 2750 50  0001 C CNN
-F 1 "+3.3V" H 5965 3073 50  0000 C CNN
-F 2 "" H 5950 2900 50  0001 C CNN
-F 3 "" H 5950 2900 50  0001 C CNN
-	1    5950 2900
+P 3100 4950
+F 0 "#PWR0118" H 3100 4800 50  0001 C CNN
+F 1 "+3.3V" H 3115 5123 50  0000 C CNN
+F 2 "" H 3100 4950 50  0001 C CNN
+F 3 "" H 3100 4950 50  0001 C CNN
+	1    3100 4950
 	1    0    0    -1  
 $EndComp
-Text Notes 5650 3700 0    50   ~ 0
+Text Notes 2800 5750 0    50   ~ 0
 Near MCU
 Text Label 4400 3300 2    50   ~ 0
 Balance_ctl
 Wire Wire Line
-	5850 1250 5850 1400
+	5850 1350 5850 1400
 Wire Wire Line
 	5850 1400 7050 1400
 Wire Wire Line
@@ -553,119 +413,117 @@ Wire Wire Line
 $Comp
 L Device:R R15
 U 1 1 5DED3513
-P 6550 2700
-F 0 "R15" H 6620 2746 50  0000 L CNN
-F 1 "R" H 6620 2655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6480 2700 50  0001 C CNN
-F 3 "~" H 6550 2700 50  0001 C CNN
-	1    6550 2700
+P 3900 5050
+F 0 "R15" H 3970 5096 50  0000 L CNN
+F 1 "R" H 3970 5005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3830 5050 50  0001 C CNN
+F 3 "~" H 3900 5050 50  0001 C CNN
+	1    3900 5050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D3
 U 1 1 5DED3760
-P 6550 3050
-F 0 "D3" V 6589 2933 50  0000 R CNN
-F 1 "LED" V 6498 2933 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 6550 3050 50  0001 C CNN
-F 3 "~" H 6550 3050 50  0001 C CNN
-	1    6550 3050
+P 3900 5400
+F 0 "D3" V 3939 5283 50  0000 R CNN
+F 1 "LED" V 3848 5283 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 3900 5400 50  0001 C CNN
+F 3 "~" H 3900 5400 50  0001 C CNN
+	1    3900 5400
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6550 2150 6550 2550
+	3900 4500 3900 4900
 Wire Wire Line
-	6550 3200 6550 3550
-Text Label 6550 3550 1    50   ~ 0
-SafeGND
+	3900 5550 3900 5900
 Wire Wire Line
-	6550 2850 6550 2900
+	3900 5200 3900 5250
 NoConn ~ 3000 3800
 NoConn ~ 3000 4000
 NoConn ~ 3700 4200
 $Comp
 L Connector:Conn_01x04_Male J1
 U 1 1 5DFC1377
-P 800 5900
-F 0 "J1" H 800 6250 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 1050 6150 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 800 5900 50  0001 C CNN
-F 3 "~" H 800 5900 50  0001 C CNN
-	1    800  5900
+P 3250 7350
+F 0 "J1" H 3250 7700 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 3500 7600 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3250 7350 50  0001 C CNN
+F 3 "~" H 3250 7350 50  0001 C CNN
+	1    3250 7350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Jumper JP1
 U 1 1 5DFFBCEF
-P 8700 3650
+P 8700 3250
 AR Path="/5DFFBCEF" Ref="JP1"  Part="1" 
 AR Path="/5FDA3FDE/5DFFBCEF" Ref="JP?"  Part="1" 
-F 0 "JP1" H 8900 3550 50  0000 C CNN
-F 1 "Jumper" H 8550 3550 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8700 3650 50  0001 C CNN
+F 0 "JP1" H 8900 3150 50  0000 C CNN
+F 1 "Jumper" H 8550 3150 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8700 3250 50  0001 C CNN
+F 3 "~" H 8700 3250 50  0001 C CNN
+	1    8700 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 3650 8300 3450
+Connection ~ 8300 3450
+Wire Wire Line
+	9100 3650 9100 3450
+Connection ~ 9100 3450
+Wire Wire Line
+	9100 3450 9250 3450
+Wire Wire Line
+	8300 3450 8300 3250
+Wire Wire Line
+	8300 3250 8400 3250
+Wire Wire Line
+	9000 3250 9100 3250
+Wire Wire Line
+	9100 3250 9100 3450
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5DFFBCFF
+P 8700 3650
+AR Path="/5FDA3FDE/5DFFBCFF" Ref="JP?"  Part="1" 
+AR Path="/5DFFBCFF" Ref="JP2"  Part="1" 
+F 0 "JP2" H 8700 3750 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 8700 3500 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8700 3650 50  0001 C CNN
 F 3 "~" H 8700 3650 50  0001 C CNN
 	1    8700 3650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8300 4050 8300 3850
-Connection ~ 8300 3850
+	8300 3650 8550 3650
 Wire Wire Line
-	9100 4050 9100 3850
-Connection ~ 9100 3850
+	8850 3650 9100 3650
 Wire Wire Line
-	9100 3850 9250 3850
+	8150 3450 8300 3450
 Wire Wire Line
-	8300 3850 8300 3650
+	8150 3450 8150 4100
 Wire Wire Line
-	8300 3650 8400 3650
-Wire Wire Line
-	9000 3650 9100 3650
-Wire Wire Line
-	9100 3650 9100 3850
-$Comp
-L Jumper:SolderJumper_2_Open JP?
-U 1 1 5DFFBCFF
-P 8700 4050
-AR Path="/5FDA3FDE/5DFFBCFF" Ref="JP?"  Part="1" 
-AR Path="/5DFFBCFF" Ref="JP2"  Part="1" 
-F 0 "JP2" H 8700 4150 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 8700 3900 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8700 4050 50  0001 C CNN
-F 3 "~" H 8700 4050 50  0001 C CNN
-	1    8700 4050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8300 4050 8550 4050
-Wire Wire Line
-	8850 4050 9100 4050
-Wire Wire Line
-	8150 3850 8300 3850
-Wire Wire Line
-	8150 3850 8150 4500
-Wire Wire Line
-	7950 4500 8150 4500
-Text Label 9700 4600 2    50   ~ 0
+	7950 4100 8150 4100
+Text Label 9700 4200 2    50   ~ 0
 Cell-
 Wire Wire Line
-	9250 4450 9250 3850
-Text Notes 8300 3400 0    50   ~ 0
+	9250 4050 9250 3450
+Text Notes 8400 3050 0    50   ~ 0
 Test Connector
 $Sheet
-S 6900 4250 1050 550 
+S 6900 3850 1050 550 
 U 5FDA3FDE
 F0 "voltage_measurement" 50
 F1 "voltage_measurement.sch" 50
-F2 "Prot_Cell-" I R 7950 4600 50 
-F3 "Prot_Cell+" I R 7950 4500 50 
-F4 "CellVoltage" I L 6900 4600 50 
-F5 "SafeGND" I L 6900 4700 50 
-F6 "Cell+(DIV)" I L 6900 4350 50 
-F7 "Cell-(DIV)" I L 6900 4450 50 
+F2 "Prot_Cell-" I R 7950 4200 50 
+F3 "Prot_Cell+" I R 7950 4100 50 
+F4 "CellVoltage" I L 6900 4200 50 
+F5 "Seg-" I L 6900 4300 50 
+F6 "Cell+(DIV)" I L 6900 3950 50 
+F7 "Cell-(DIV)" I L 6900 4050 50 
 $EndSheet
 Wire Wire Line
-	6550 4700 6900 4700
+	6550 4300 6900 4300
 Text Label 2250 1600 0    50   ~ 0
 Seg+
 Text Label 2250 2100 0    50   ~ 0
@@ -763,9 +621,9 @@ Wire Wire Line
 	1600 1600 1850 1600
 Wire Wire Line
 	1600 1700 1850 1700
-Text Label 1850 1600 2    50   ~ 0
+Text Label 900  1600 0    50   ~ 0
 Seg+
-Text Label 1850 1700 2    50   ~ 0
+Text Label 1850 1600 2    50   ~ 0
 Seg-
 Wire Wire Line
 	1100 1600 900  1600
@@ -774,30 +632,9 @@ Voltage Regulator\n24V -> 3.3V
 Wire Notes Line
 	550  6700 2600 6700
 Wire Wire Line
-	2850 7050 3150 7050
-Text Label 2850 7050 0    50   ~ 0
-Seg-
-Text Label 2850 7550 0    50   ~ 0
-Seg-
-Wire Wire Line
-	2850 7550 3200 7550
-Wire Notes Line
-	2700 6400 4700 6400
-Wire Notes Line
-	2700 7950 4700 7950
-Wire Wire Line
-	4350 7500 4350 7700
-Text Label 4350 7700 1    50   ~ 0
-Seg-
-Text Notes 3000 7250 0    50   ~ 0
-Reverse Polarity Protection
-Wire Wire Line
 	1100 1700 900  1700
-Text Label 900  1600 0    50   ~ 0
-SCL
-Text Label 900  1700 0    50   ~ 0
+Text Label 1850 1700 2    50   ~ 0
 SDA
-NoConn ~ 1100 1800
 Text Label 1950 3100 0    50   ~ 0
 SCL
 Text Label 1950 3200 0    50   ~ 0
@@ -805,13 +642,9 @@ SDA
 Text Notes 1250 3150 0    50   ~ 0
 From Connector
 Wire Wire Line
-	4950 4700 6050 4700
+	5350 4200 6900 4200
 Wire Wire Line
-	5050 4600 5050 3400
-Wire Wire Line
-	5050 4600 6900 4600
-Wire Wire Line
-	3700 3400 5050 3400
+	3700 3400 4400 3400
 Wire Wire Line
 	3700 3300 5050 3300
 Text Notes 900  1450 0    50   ~ 0
@@ -828,7 +661,6 @@ Wire Wire Line
 	2250 1600 2650 1600
 Wire Wire Line
 	2250 2100 2650 2100
-NoConn ~ 1600 1800
 $Comp
 L Lafayette_Electric_Car_Internals:SW_DIP_x04 SW1
 U 1 1 5E7551C1
@@ -842,9 +674,9 @@ F 4 "Z8443-ND" H 2050 7300 50  0001 C CNN "Digikey-Part"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	850  7350 850  7800
+	850  7350 850  7700
 NoConn ~ 1750 7450
-Text Label 6550 2150 3    50   ~ 0
+Text Label 3900 4500 3    50   ~ 0
 User_LED
 Text Label 2600 3600 0    50   ~ 0
 User_LED
@@ -873,47 +705,45 @@ Text Label 4100 3800 2    50   ~ 0
 Address_2
 Wire Wire Line
 	2600 3700 3000 3700
-Text Label 4350 6600 3    50   ~ 0
-Seg+
-Text Label 6450 4350 0    50   ~ 0
+Text Label 6450 3950 0    50   ~ 0
 Cell+(DIV)
 Wire Wire Line
-	6400 4350 6900 4350
-Text Label 6450 4450 0    50   ~ 0
+	6400 3950 6900 3950
+Text Label 6450 4050 0    50   ~ 0
 Cell-(DIV)
 Wire Wire Line
-	6450 4450 6900 4450
-Text Label 4400 3500 2    50   ~ 0
+	6450 4050 6900 4050
+Text Label 4400 3400 2    50   ~ 0
 Cell-(DIV)
 Wire Wire Line
 	2450 3300 3000 3300
-NoConn ~ 6400 4350
+NoConn ~ 6400 3950
 $Comp
 L Lafayette_Electric_Car_Internals:Fuse F1
 U 1 1 5E93167B
-P 9100 2200
-F 0 "F1" H 9150 2050 50  0000 C CNN
-F 1 "Fuse" H 9350 2050 50  0000 C CNN
-F 2 "Lafayette_Electric_Car_Footprints:fuse_holder_smd_littelfuse" H 9100 2200 50  0001 C CNN
-F 3 "" H 9100 2200 50  0001 C CNN
-	1    9100 2200
+P 8050 5450
+F 0 "F1" H 8100 5300 50  0000 C CNN
+F 1 "Fuse" H 8300 5300 50  0000 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:fuse_holder_smd_littelfuse" H 8050 5450 50  0001 C CNN
+F 3 "" H 8050 5450 50  0001 C CNN
+	1    8050 5450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Lafayette_Electric_Car_Internals:Fuse F2
 U 1 1 5E971C81
-P 9100 2650
-F 0 "F2" H 9150 2800 50  0000 C CNN
-F 1 "Fuse" H 9350 2800 50  0000 C CNN
-F 2 "Lafayette_Electric_Car_Footprints:fuse_holder_smd_littelfuse" H 9100 2650 50  0001 C CNN
-F 3 "" H 9100 2650 50  0001 C CNN
-	1    9100 2650
+P 8050 5900
+F 0 "F2" H 8100 6050 50  0000 C CNN
+F 1 "Fuse" H 8300 6050 50  0000 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:fuse_holder_smd_littelfuse" H 8050 5900 50  0001 C CNN
+F 3 "" H 8050 5900 50  0001 C CNN
+	1    8050 5900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9100 2200 8800 2200
+	8050 5450 7750 5450
 Wire Wire Line
-	9100 2650 8800 2650
+	8050 5900 7750 5900
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J2
 U 1 1 5E9FF901
@@ -927,12 +757,10 @@ F 3 "~" H 1300 1700 50  0001 C CNN
 $EndComp
 Text Label 4100 3700 2    50   ~ 0
 Address_1
-Text Notes 5650 7650 0    50   ~ 0
-Near U3
 Wire Wire Line
-	9250 4450 9700 4450
+	9250 4050 9700 4050
 Wire Wire Line
-	7950 4600 9700 4600
+	7950 4200 9700 4200
 Connection ~ 850  7350
 $Comp
 L power:+3.3V #PWR0102
@@ -954,29 +782,55 @@ Wire Wire Line
 	5050 1100 7050 1100
 Wire Wire Line
 	5050 1100 5050 3300
-Text Label 9450 2200 0    50   ~ 0
+Text Label 8400 5450 0    50   ~ 0
 Cell+(RAW)
-Text Label 9450 2650 0    50   ~ 0
+Text Label 8400 5900 0    50   ~ 0
 Cell-(RAW)
 $Comp
-L Device:Battery_Cell BT?
+L Device:Battery_Cell BT1
 U 1 1 5EC528A6
-P 10000 2450
-F 0 "BT?" H 10118 2546 50  0000 L CNN
-F 1 "Battery_Cell" H 10118 2455 50  0000 L CNN
-F 2 "" V 10000 2510 50  0001 C CNN
-F 3 "~" V 10000 2510 50  0001 C CNN
-	1    10000 2450
+P 8950 5700
+F 0 "BT1" H 9068 5796 50  0000 L CNN
+F 1 "Battery_Cell" H 9068 5705 50  0000 L CNN
+F 2 "Lafayette_Electric_Car_Footprints:CELL60AH" V 8950 5760 50  0001 C CNN
+F 3 "~" V 8950 5760 50  0001 C CNN
+	1    8950 5700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10000 2200 10000 2250
+	8950 5450 8950 5500
 Wire Wire Line
-	9350 2200 10000 2200
+	8300 5450 8950 5450
 Wire Wire Line
-	10000 2650 10000 2550
+	8950 5900 8950 5800
 Wire Wire Line
-	9350 2650 10000 2650
+	8300 5900 8950 5900
+Wire Wire Line
+	5900 5600 7300 5600
+Wire Wire Line
+	1600 1800 1850 1800
+Wire Wire Line
+	1100 1800 900  1800
+Text Label 900  1800 0    50   ~ 0
+Seg-
+Text Label 1850 1800 2    50   ~ 0
+Seg+
+Text Label 900  1700 0    50   ~ 0
+SCL
+Text Label 4100 3900 2    50   ~ 0
+Seg-
+Text Label 6300 1500 0    50   ~ 0
+Seg-
+Text Label 6550 4300 0    50   ~ 0
+Seg-
+Text Label 3950 7450 2    50   ~ 0
+Seg-
+Text Label 2850 5600 1    50   ~ 0
+Seg-
+Text Label 3100 5600 1    50   ~ 0
+Seg-
+Text Label 3900 5900 1    50   ~ 0
+Seg-
 Wire Bus Line
 	2300 3200 2300 4100
 $EndSCHEMATC
