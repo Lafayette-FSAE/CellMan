@@ -17,14 +17,14 @@ $EndDescr
 $Comp
 L Device:R R?
 U 1 1 5FDA64C9
-P 6550 3700
+P 6750 3700
 AR Path="/5FDA64C9" Ref="R?"  Part="1" 
 AR Path="/5FDA3FDE/5FDA64C9" Ref="R22"  Part="1" 
-F 0 "R22" V 6450 3700 50  0000 C CNN
-F 1 "R" V 6550 3700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6480 3700 50  0001 C CNN
-F 3 "~" H 6550 3700 50  0001 C CNN
-	1    6550 3700
+F 0 "R22" V 6650 3700 50  0000 C CNN
+F 1 "R" V 6750 3700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6680 3700 50  0001 C CNN
+F 3 "~" H 6750 3700 50  0001 C CNN
+	1    6750 3700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -43,14 +43,14 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 5FDA64D6
-P 6750 3700
+P 6850 3700
 AR Path="/5FDA64D6" Ref="R?"  Part="1" 
 AR Path="/5FDA3FDE/5FDA64D6" Ref="R23"  Part="1" 
-F 0 "R23" V 6850 3700 50  0000 C CNN
-F 1 "R" V 6750 3700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6680 3700 50  0001 C CNN
-F 3 "~" H 6750 3700 50  0001 C CNN
-	1    6750 3700
+F 0 "R23" V 6950 3700 50  0000 C CNN
+F 1 "R" V 6850 3700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6780 3700 50  0001 C CNN
+F 3 "~" H 6850 3700 50  0001 C CNN
+	1    6850 3700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -67,43 +67,41 @@ F 3 "~" H 7550 3450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6550 3350 6550 3550
+	6750 3350 6750 3550
 Wire Wire Line
-	6750 3550 6750 3450
-Wire Wire Line
-	6550 3850 6550 4000
+	6850 3550 6850 3450
 $Comp
 L Device:C C?
 U 1 1 5FDA64F6
-P 5850 3700
+P 6350 3700
 AR Path="/5FDA64F6" Ref="C?"  Part="1" 
 AR Path="/5FDA3FDE/5FDA64F6" Ref="C8"  Part="1" 
-F 0 "C8" H 5850 3800 50  0000 L CNN
-F 1 "C" H 5850 3600 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5888 3550 50  0001 C CNN
-F 3 "~" H 5850 3700 50  0001 C CNN
-	1    5850 3700
+F 0 "C8" H 6350 3800 50  0000 L CNN
+F 1 "C" H 6350 3600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6388 3550 50  0001 C CNN
+F 3 "~" H 6350 3700 50  0001 C CNN
+	1    6350 3700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5850 3550 5850 3450
+	6350 3550 6350 3450
 Wire Wire Line
-	5850 3850 5850 3950
+	6350 3850 6350 3950
 Wire Wire Line
-	5550 3850 5550 3950
+	6150 3850 6150 3950
 Wire Wire Line
-	5550 3550 5550 3350
+	6150 3550 6150 3350
 $Comp
 L Device:C C?
 U 1 1 5FDA6506
-P 5550 3700
+P 6150 3700
 AR Path="/5FDA6506" Ref="C?"  Part="1" 
 AR Path="/5FDA3FDE/5FDA6506" Ref="C7"  Part="1" 
-F 0 "C7" H 5450 3800 50  0000 L CNN
-F 1 "C" H 5450 3600 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5588 3550 50  0001 C CNN
-F 3 "~" H 5550 3700 50  0001 C CNN
-	1    5550 3700
+F 0 "C7" H 6050 3800 50  0000 L CNN
+F 1 "C" H 6050 3600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6188 3550 50  0001 C CNN
+F 3 "~" H 6150 3700 50  0001 C CNN
+	1    6150 3700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -112,8 +110,6 @@ Wire Wire Line
 	5200 3850 5200 3450
 Wire Wire Line
 	5200 3000 5200 3350
-Wire Wire Line
-	5200 3350 5550 3350
 Wire Wire Line
 	4250 3300 5000 3300
 Wire Wire Line
@@ -207,12 +203,11 @@ Wire Wire Line
 Text HLabel 2000 3300 0    50   Input ~ 0
 CellVoltage
 Wire Wire Line
-	5700 3950 5700 4300
+	6500 3950 6500 4300
 Wire Notes Line
 	7250 500  7250 6500
 Wire Wire Line
 	4250 2450 5000 2450
-Connection ~ 5550 3350
 Wire Wire Line
 	3100 3900 3100 4200
 Wire Wire Line
@@ -237,8 +232,11 @@ P 4650 2900
 F 0 "U3" H 4650 2533 50  0000 C CNN
 F 1 "MCP6004" H 4650 2624 50  0000 C CNN
 F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4600 3000 50  0001 C CNN
-F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 4700 3100 50  0001 C CNN
-F 4 "MCP6004T-I/STCT-ND" H 0   -1050 50  0001 C CNN "Digikey-Part"
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 4700 3100 50  0001 C CNN
+F 4 "Microchip Technology" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "MCP6004T-I/ST" H 0   0   50  0001 C CNN "Manufacturer Part"
+F 6 "Digikey" H 0   0   50  0001 C CNN "Vendor"
+F 7 "MCP6004T-I/STCT-ND" H 0   0   50  0001 C CNN "Vendor Part"
 	4    4650 2900
 	-1   0    0    1   
 $EndComp
@@ -249,8 +247,11 @@ P 4650 3750
 F 0 "U3" H 4650 3383 50  0000 C CNN
 F 1 "MCP6004" H 4650 3474 50  0000 C CNN
 F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4600 3850 50  0001 C CNN
-F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 4700 3950 50  0001 C CNN
-F 4 "MCP6004T-I/STCT-ND" H 0   -1050 50  0001 C CNN "Digikey-Part"
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 4700 3950 50  0001 C CNN
+F 4 "Microchip Technology" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "MCP6004T-I/ST" H 0   0   50  0001 C CNN "Manufacturer Part"
+F 6 "Digikey" H 0   0   50  0001 C CNN "Vendor"
+F 7 "MCP6004T-I/STCT-ND" H 0   0   50  0001 C CNN "Vendor Part"
 	3    4650 3750
 	-1   0    0    1   
 $EndComp
@@ -261,8 +262,11 @@ P 2700 3300
 F 0 "U3" H 2700 2933 50  0000 C CNN
 F 1 "MCP6004" H 2700 3024 50  0000 C CNN
 F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2650 3400 50  0001 C CNN
-F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 2750 3500 50  0001 C CNN
-F 4 "MCP6004T-I/STCT-ND" H 0   -1050 50  0001 C CNN "Digikey-Part"
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 2750 3500 50  0001 C CNN
+F 4 "Microchip Technology" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "MCP6004T-I/ST" H 0   0   50  0001 C CNN "Manufacturer Part"
+F 6 "Digikey" H 0   0   50  0001 C CNN "Vendor"
+F 7 "MCP6004T-I/STCT-ND" H 0   0   50  0001 C CNN "Vendor Part"
 	1    2700 3300
 	-1   0    0    1   
 $EndComp
@@ -273,8 +277,11 @@ P 2650 2150
 F 0 "U3" H 2650 1783 50  0000 C CNN
 F 1 "MCP6004" H 2650 1874 50  0000 C CNN
 F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2600 2250 50  0001 C CNN
-F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 2700 2350 50  0001 C CNN
-F 4 "MCP6004T-I/STCT-ND" H -450 -550 50  0001 C CNN "Digikey-Part"
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 2700 2350 50  0001 C CNN
+F 4 "Microchip Technology" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "MCP6004T-I/ST" H 0   0   50  0001 C CNN "Manufacturer Part"
+F 6 "Digikey" H 0   0   50  0001 C CNN "Vendor"
+F 7 "MCP6004T-I/STCT-ND" H 0   0   50  0001 C CNN "Vendor Part"
 	2    2650 2150
 	-1   0    0    1   
 $EndComp
@@ -285,8 +292,11 @@ P 6050 1800
 F 0 "U3" H 6008 1846 50  0000 L CNN
 F 1 "MCP6004" H 6008 1755 50  0000 L CNN
 F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 6000 1900 50  0001 C CNN
-F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 6100 2000 50  0001 C CNN
-F 4 "MCP6004T-I/STCT-ND" H 2250 -850 50  0001 C CNN "Digikey-Part"
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 6100 2000 50  0001 C CNN
+F 4 "Microchip Technology" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "MCP6004T-I/ST" H 0   0   50  0001 C CNN "Manufacturer Part"
+F 6 "Digikey" H 0   0   50  0001 C CNN "Vendor"
+F 7 "MCP6004T-I/STCT-ND" H 0   0   50  0001 C CNN "Vendor Part"
 	5    6050 1800
 	1    0    0    -1  
 $EndComp
@@ -353,7 +363,7 @@ L Device:C C3
 U 1 1 5EC9407B
 P 5600 1850
 F 0 "C3" H 5715 1896 50  0000 L CNN
-F 1 "1uF" H 5715 1805 50  0000 L CNN
+F 1 "C" H 5715 1805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5638 1700 50  0001 C CNN
 F 3 "~" H 5600 1850 50  0001 C CNN
 	1    5600 1850
@@ -378,86 +388,12 @@ Text Notes 5400 1900 2    50   ~ 0
 Near U3
 Wire Wire Line
 	5600 1500 5600 1700
-$Comp
-L Lafayette_Electric_Car_Internals:BSS138W Q1
-U 1 1 5DC4C093
-P 6550 4200
-F 0 "Q1" H 6450 4450 50  0000 L CNN
-F 1 "BSS138W" V 6700 4050 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-323_SC-70_Handsoldering" H 6250 4700 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/308/BSS138W-1305267.pdf" H 6550 4200 50  0001 C CNN
-F 4 "BSS138WH6327XTSA1CT-ND" H 5950 4600 50  0001 C CNN "Digikey-Part"
-	1    6550 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Lafayette_Electric_Car_Internals:BSS138W Q2
-U 1 1 5DC56A0B
-P 6750 4800
-F 0 "Q2" H 6600 5050 50  0000 L CNN
-F 1 "BSS138W" V 6900 4650 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-323_SC-70_Handsoldering" H 6450 5300 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/308/BSS138W-1305267.pdf" H 6750 4800 50  0001 C CNN
-F 4 "BSS138WH6327XTSA1CT-ND" H 6150 5200 50  0001 C CNN "Digikey-Part"
-	1    6750 4800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6750 3850 6750 4600
-$Comp
-L power:+3.3V #PWR0104
-U 1 1 5DC5E6EB
-P 6150 4050
-F 0 "#PWR0104" H 6150 3900 50  0001 C CNN
-F 1 "+3.3V" H 6165 4223 50  0000 C CNN
-F 2 "" H 6150 4050 50  0001 C CNN
-F 3 "" H 6150 4050 50  0001 C CNN
-	1    6150 4050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6150 4200 6250 4200
-Wire Wire Line
-	6550 4400 6550 4650
-Text Label 6550 4650 1    50   ~ 0
-Seg-
-Text Label 6750 5250 1    50   ~ 0
-Seg-
-Wire Wire Line
-	6750 5250 6750 5000
-Connection ~ 6750 3450
-Wire Wire Line
-	6750 3450 7400 3450
-Wire Wire Line
-	6150 4800 6450 4800
-Connection ~ 6550 3350
-Wire Wire Line
-	6550 3350 7400 3350
-Wire Wire Line
-	5550 3350 6550 3350
-Wire Wire Line
-	6150 4050 6150 4200
-Connection ~ 6150 4200
-Wire Wire Line
-	6150 4200 6150 4800
-Text Notes 7150 5150 1    50   ~ 0
-Mosfets turn off when AMS\nis not in use to prevent cell discharge
 Text Notes 7200 3000 1    50   ~ 0
 Segment Ground
 Text Notes 7350 3000 1    50   ~ 0
 Cell Ground
-Text Label 5700 4300 1    50   ~ 0
+Text Label 6500 4300 1    50   ~ 0
 Seg-
-Connection ~ 5700 3950
-Wire Wire Line
-	5700 3950 5850 3950
-Wire Wire Line
-	5550 3950 5700 3950
-Connection ~ 5850 3450
-Wire Wire Line
-	5850 3450 6750 3450
-Wire Wire Line
-	5200 3450 5850 3450
 Text Label 3100 4200 1    50   ~ 0
 Seg-
 Text Label 5950 2450 1    50   ~ 0
@@ -466,4 +402,35 @@ Text Label 5600 2450 1    50   ~ 0
 Seg-
 Text Label 2400 4400 2    50   ~ 0
 Seg-
+Connection ~ 6350 3450
+Wire Wire Line
+	6350 3450 6850 3450
+Wire Wire Line
+	6350 3950 6500 3950
+Wire Wire Line
+	6750 3950 6750 3850
+Connection ~ 6350 3950
+Wire Wire Line
+	6850 3950 6850 3850
+Connection ~ 6500 3950
+Wire Wire Line
+	6150 3950 6350 3950
+Connection ~ 6750 3950
+Wire Wire Line
+	6750 3950 6850 3950
+Wire Wire Line
+	6500 3950 6750 3950
+Connection ~ 6150 3350
+Connection ~ 6750 3350
+Wire Wire Line
+	6750 3350 7400 3350
+Connection ~ 6850 3450
+Wire Wire Line
+	6850 3450 7400 3450
+Wire Wire Line
+	5200 3450 6350 3450
+Wire Wire Line
+	5200 3350 6150 3350
+Wire Wire Line
+	6150 3350 6750 3350
 $EndSCHEMATC
