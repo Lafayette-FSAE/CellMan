@@ -833,6 +833,70 @@ Wire Wire Line
 	3000 4000 2800 4000
 Text Label 2800 4000 0    50   ~ 0
 A4
+$Comp
+L Lafayette_Electric_Car_Internals:SMT-Standoff M1
+U 1 1 5E04CBC9
+P 950 4900
+F 0 "M1" H 1050 4899 50  0000 L CNN
+F 1 "SMT-Standoff" H 1050 4808 50  0000 L CNN
+F 2 "Lafayette_Electric_Car_Footprints:standoff_smt_4" H 750 5400 50  0001 C CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=14255" H 750 5400 50  0001 C CNN
+F 4 "Digikey" H 650 5350 50  0001 C CNN "Vendor"
+F 5 "36-4883CT-ND" H 850 5400 50  0001 C CNN "Vendor Part"
+F 6 "Keystone Electronics" H 850 5400 50  0001 C CNN "Manufacturer"
+F 7 "4883" H 850 5400 50  0001 C CNN "Manufacturer Part"
+	1    950  4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Lafayette_Electric_Car_Internals:SMT-Standoff M2
+U 1 1 5E057362
+P 950 5200
+F 0 "M2" H 1050 5199 50  0000 L CNN
+F 1 "SMT-Standoff" H 1050 5108 50  0000 L CNN
+F 2 "Lafayette_Electric_Car_Footprints:standoff_smt_4" H 750 5700 50  0001 C CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=14255" H 750 5700 50  0001 C CNN
+F 4 "Digikey" H 650 5650 50  0001 C CNN "Vendor"
+F 5 "36-4883CT-ND" H 850 5700 50  0001 C CNN "Vendor Part"
+F 6 "Keystone Electronics" H 850 5700 50  0001 C CNN "Manufacturer"
+F 7 "4883" H 850 5700 50  0001 C CNN "Manufacturer Part"
+	1    950  5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Lafayette_Electric_Car_Internals:SMT-Standoff M4
+U 1 1 5E05779A
+P 1700 5200
+F 0 "M4" H 1800 5199 50  0000 L CNN
+F 1 "SMT-Standoff" H 1800 5108 50  0000 L CNN
+F 2 "Lafayette_Electric_Car_Footprints:standoff_smt_4" H 1500 5700 50  0001 C CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=14255" H 1500 5700 50  0001 C CNN
+F 4 "Digikey" H 1400 5650 50  0001 C CNN "Vendor"
+F 5 "36-4883CT-ND" H 1600 5700 50  0001 C CNN "Vendor Part"
+F 6 "Keystone Electronics" H 1600 5700 50  0001 C CNN "Manufacturer"
+F 7 "4883" H 1600 5700 50  0001 C CNN "Manufacturer Part"
+	1    1700 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Lafayette_Electric_Car_Internals:SMT-Standoff M3
+U 1 1 5E057A91
+P 1700 4900
+F 0 "M3" H 1800 4899 50  0000 L CNN
+F 1 "SMT-Standoff" H 1800 4808 50  0000 L CNN
+F 2 "Lafayette_Electric_Car_Footprints:standoff_smt_4" H 1500 5400 50  0001 C CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=14255" H 1500 5400 50  0001 C CNN
+F 4 "Digikey" H 1400 5350 50  0001 C CNN "Vendor"
+F 5 "36-4883CT-ND" H 1600 5400 50  0001 C CNN "Vendor Part"
+F 6 "Keystone Electronics" H 1600 5400 50  0001 C CNN "Manufacturer"
+F 7 "4883" H 1600 5400 50  0001 C CNN "Manufacturer Part"
+	1    1700 4900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 950  5050
+NoConn ~ 950  5350
+NoConn ~ 1700 5050
+NoConn ~ 1700 5350
 Wire Bus Line
 	2300 3200 2300 4100
 $EndSCHEMATC
