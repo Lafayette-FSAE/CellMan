@@ -739,7 +739,7 @@ Seg-
 Wire Wire Line
 	2050 7450 2050 7200
 Text Notes 1150 7750 0    50   ~ 0
-I2C Address Select\nPull Up for 1, Pull Down for 0
+I2C Address Select:\nPopulate for 0 or\nLeave Empty for 1
 Wire Wire Line
 	3400 6800 3900 6800
 Wire Wire Line
@@ -833,6 +833,70 @@ Wire Wire Line
 	3000 4000 2800 4000
 Text Label 2800 4000 0    50   ~ 0
 A4
+$Comp
+L Lafayette_Electric_Car_Internals:SMT-Standoff M1
+U 1 1 5E04CBC9
+P 850 4400
+F 0 "M1" H 950 4399 50  0000 L CNN
+F 1 "SMT-Standoff" H 950 4308 50  0000 L CNN
+F 2 "" H 650 4900 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Wurth%20Electronics%20PDFs/WA-SMSx_Performance_Flyer.pdf" H 650 4900 50  0001 C CNN
+F 4 "Digikey" H 550 4850 50  0001 C CNN "Vendor"
+F 5 "732-7069-2-ND" H 750 4900 50  0001 C CNN "Vendor Part"
+F 6 "Würth Elektronik" H 750 4900 50  0001 C CNN "Manufacturer"
+F 7 "9774015243R" H 750 4900 50  0001 C CNN "Manufacturer Part"
+	1    850  4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Lafayette_Electric_Car_Internals:SMT-Standoff M2
+U 1 1 5E057362
+P 850 4700
+F 0 "M2" H 950 4699 50  0000 L CNN
+F 1 "SMT-Standoff" H 950 4608 50  0000 L CNN
+F 2 "" H 650 5200 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Wurth%20Electronics%20PDFs/WA-SMSx_Performance_Flyer.pdf" H 650 5200 50  0001 C CNN
+F 4 "Digikey" H 550 5150 50  0001 C CNN "Vendor"
+F 5 "732-7069-2-ND" H 750 5200 50  0001 C CNN "Vendor Part"
+F 6 "Würth Elektronik" H 750 5200 50  0001 C CNN "Manufacturer"
+F 7 "9774015243R" H 750 5200 50  0001 C CNN "Manufacturer Part"
+	1    850  4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Lafayette_Electric_Car_Internals:SMT-Standoff M4
+U 1 1 5E05779A
+P 1600 4700
+F 0 "M4" H 1700 4699 50  0000 L CNN
+F 1 "SMT-Standoff" H 1700 4608 50  0000 L CNN
+F 2 "" H 1400 5200 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Wurth%20Electronics%20PDFs/WA-SMSx_Performance_Flyer.pdf" H 1400 5200 50  0001 C CNN
+F 4 "Digikey" H 1300 5150 50  0001 C CNN "Vendor"
+F 5 "732-7069-2-ND" H 1500 5200 50  0001 C CNN "Vendor Part"
+F 6 "Würth Elektronik" H 1500 5200 50  0001 C CNN "Manufacturer"
+F 7 "9774015243R" H 1500 5200 50  0001 C CNN "Manufacturer Part"
+	1    1600 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Lafayette_Electric_Car_Internals:SMT-Standoff M3
+U 1 1 5E057A91
+P 1600 4400
+F 0 "M3" H 1700 4399 50  0000 L CNN
+F 1 "SMT-Standoff" H 1700 4308 50  0000 L CNN
+F 2 "" H 1400 4900 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Wurth%20Electronics%20PDFs/WA-SMSx_Performance_Flyer.pdf" H 1400 4900 50  0001 C CNN
+F 4 "Digikey" H 1300 4850 50  0001 C CNN "Vendor"
+F 5 "732-7069-2-ND" H 1500 4900 50  0001 C CNN "Vendor Part"
+F 6 "Würth Elektronik" H 1500 4900 50  0001 C CNN "Manufacturer"
+F 7 "9774015243R" H 1500 4900 50  0001 C CNN "Manufacturer Part"
+	1    1600 4400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 850  4550
+NoConn ~ 850  4850
+NoConn ~ 1600 4550
+NoConn ~ 1600 4850
 Wire Bus Line
 	2300 3200 2300 4100
 $EndSCHEMATC

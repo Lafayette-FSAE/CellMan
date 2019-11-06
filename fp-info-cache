@@ -1,4 +1,4 @@
-16332464004888401
+16337183415090853
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -49651,6 +49651,13 @@ CELL60AH
 2
 2
 Lafayette_Electric_Car_Footprints
+CELL60AH_non_plated
+
+
+0
+0
+0
+Lafayette_Electric_Car_Footprints
 CellMan_Mount_InHouse
 
 
@@ -49686,7 +49693,14 @@ ECE_Logo_Jon
 0
 0
 Lafayette_Electric_Car_Footprints
-MOLEX_34830-0801
+MOLEX_34830-0801_STOCK
+
+
+0
+8
+8
+Lafayette_Electric_Car_Footprints
+Molex_MX150_Header
 
 
 0
@@ -49762,6 +49776,13 @@ segment
 0
 0
 0
+Lafayette_Electric_Car_Footprints
+standoff_smt_4
+
+
+0
+1
+1
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
