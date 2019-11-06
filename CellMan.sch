@@ -275,7 +275,7 @@ Seg-
 Wire Wire Line
 	1100 1700 900  1700
 Text Notes 2300 1400 0    50   ~ 0
-Voltage Regulator\n24V -> 3.3V
+Voltage Regulator\n24V -> 5V
 Wire Wire Line
 	1100 1800 900  1800
 Text Label 1850 1800 2    50   ~ 0
@@ -550,21 +550,6 @@ F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8700 3650 50  0001
 F 3 "~" H 8700 3650 50  0001 C CNN
 	1    8700 3650
 	1    0    0    -1  
-$EndComp
-$Comp
-L Lafayette_Electric_Car_Internals:L7833CD-TR U1
-U 1 1 5E31799D
-P 3300 1400
-F 0 "U1" H 3300 1465 50  0000 C CNN
-F 1 "L7833CD-TR" H 3300 1374 50  0000 C CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 3450 1350 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/389/l78l-974102.pdf" H 3450 1350 50  0001 C CNN
-F 4 "Digikey" H 3300 1400 50  0001 C CNN "Vendor"
-F 5 "STMicroelectronics" H 3300 1400 50  0001 C CNN "Manufacturer"
-F 6 "L78L33CD-TR" H 3300 1400 50  0001 C CNN "Manufacturer Part"
-F 7 "497-15652-1-ND" H 3300 1400 50  0001 C CNN "Vendor Part"
-	1    3300 1400
-	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:C C1
@@ -899,4 +884,19 @@ NoConn ~ 1700 5050
 NoConn ~ 1700 5350
 Wire Bus Line
 	2300 3200 2300 4100
+$Comp
+L Lafayette_Electric_Car_Internals:L78L05CD13TR U?
+U 1 1 5DC3807B
+P 3300 1400
+F 0 "U?" H 3300 1465 50  0000 C CNN
+F 1 "L78L05CD13TR" H 3300 1374 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 3450 1350 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/389/l78l-974102.pdf" H 3450 1350 50  0001 C CNN
+F 4 "Digikey" H 3300 1400 50  0001 C CNN "Vendor"
+F 5 "497-7267-1-ND" H 3300 1400 50  0001 C CNN "Vendor Part"
+F 6 "STMicroelectronics" H 3300 1400 50  0001 C CNN "Manufacturer"
+F 7 "L78L05CD13TR" H 3300 1400 50  0001 C CNN "Manufacturer Part"
+	1    3300 1400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
