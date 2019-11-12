@@ -30,7 +30,7 @@ Wire Wire Line
 	9650 5850 9650 5900
 Wire Wire Line
 	9650 6200 9650 6450
-Text Notes 10050 6450 1    50   ~ 0
+Text Notes 10000 6450 1    50   ~ 0
 Reverse Polarity Indicator\n(Make this an angry color)
 Text Label 9650 5350 3    50   ~ 0
 Cell-
@@ -337,22 +337,11 @@ Seg-
 Text Label 4650 6000 1    50   ~ 0
 Seg-
 $Comp
-L Device:LED D2
-U 1 1 5DB4E3D0
-P 9650 5700
-F 0 "D2" H 9800 5600 50  0000 C CNN
-F 1 "LED" H 9650 5600 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 9650 5700 50  0001 C CNN
-F 3 "~" H 9650 5700 50  0001 C CNN
-	1    9650 5700
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:R R16
 U 1 1 5DB4E3DA
 P 9650 6050
 F 0 "R16" V 9550 6050 50  0000 C CNN
-F 1 "R" V 9650 6050 50  0000 C CNN
+F 1 "250" V 9650 6050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9580 6050 50  0001 C CNN
 F 3 "~" H 9650 6050 50  0001 C CNN
 	1    9650 6050
@@ -406,10 +395,14 @@ $Comp
 L Device:C C6
 U 1 1 5DD1E832
 P 3600 5250
-F 0 "C6" V 3750 5250 50  0000 C CNN
-F 1 "C" V 3750 5150 50  0000 C CNN
+F 0 "C6" H 3500 5150 50  0000 C CNN
+F 1 "1uF" H 3500 5350 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3638 5100 50  0001 C CNN
 F 3 "~" H 3600 5250 50  0001 C CNN
+F 4 "KEMET" H 3600 5250 50  0001 C CNN "Manufacturer"
+F 5 "C0805C105K4RACTU" H 3600 5250 50  0001 C CNN "Manufacturer Part"
+F 6 "Digikey" H 3600 5250 50  0001 C CNN "Vendor"
+F 7 "399-1284-1-ND" H 3600 5250 50  0001 C CNN "Vendor Part"
 	1    3600 5250
 	-1   0    0    1   
 $EndComp
@@ -417,10 +410,14 @@ $Comp
 L Device:C C9
 U 1 1 5DD4CA25
 P 3850 5250
-F 0 "C9" H 3965 5296 50  0000 L CNN
-F 1 "C" H 3965 5205 50  0000 L CNN
+F 0 "C9" H 3900 5350 50  0000 L CNN
+F 1 "1uF" H 3900 5150 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3888 5100 50  0001 C CNN
 F 3 "~" H 3850 5250 50  0001 C CNN
+F 4 "KEMET" H 3850 5250 50  0001 C CNN "Manufacturer"
+F 5 "C0805C105K4RACTU" H 3850 5250 50  0001 C CNN "Manufacturer Part"
+F 6 "Digikey" H 3850 5250 50  0001 C CNN "Vendor"
+F 7 "399-1284-1-ND" H 3850 5250 50  0001 C CNN "Vendor Part"
 	1    3850 5250
 	1    0    0    -1  
 $EndComp
@@ -434,17 +431,6 @@ F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4580 5150 50  0
 F 3 "~" H 4650 5150 50  0001 C CNN
 	1    4650 5150
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D3
-U 1 1 5DED3760
-P 4650 5500
-F 0 "D3" V 4689 5383 50  0000 R CNN
-F 1 "LED" V 4598 5383 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 4650 5500 50  0001 C CNN
-F 3 "~" H 4650 5500 50  0001 C CNN
-	1    4650 5500
-	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:Jumper JP1
@@ -477,9 +463,13 @@ L Device:C C1
 U 1 1 5E32E0B8
 P 2850 2050
 F 0 "C1" H 2650 2150 50  0000 L CNN
-F 1 "C" H 2450 2050 50  0000 L CNN
+F 1 "0.33uF" H 2450 2050 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2888 1900 50  0001 C CNN
 F 3 "~" H 2850 2050 50  0001 C CNN
+F 4 "KEMET" H 2850 2050 50  0001 C CNN "Manufacturer"
+F 5 "C0805C334K5RACAUTO" H 2850 2050 50  0001 C CNN "Manufacturer Part"
+F 6 "Digikey" H 2850 2050 50  0001 C CNN "Vendor"
+F 7 "399-6959-1-ND" H 2850 2050 50  0001 C CNN "Vendor Part"
 	1    2850 2050
 	1    0    0    -1  
 $EndComp
@@ -488,9 +478,13 @@ L Device:C C2
 U 1 1 5E36A335
 P 4200 2050
 F 0 "C2" H 4300 2100 50  0000 L CNN
-F 1 "C" H 4300 2000 50  0000 L CNN
+F 1 "0.1uF" H 4300 2000 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4238 1900 50  0001 C CNN
 F 3 "~" H 4200 2050 50  0001 C CNN
+F 4 "KEMET" H 4200 2050 50  0001 C CNN "Manufacturer"
+F 5 "C0805C104Z5VACTU" H 4200 2050 50  0001 C CNN "Manufacturer Part"
+F 6 "Digikey" H 4200 2050 50  0001 C CNN "Vendor"
+F 7 "399-1177-1-ND" H 4200 2050 50  0001 C CNN "Vendor Part"
 	1    4200 2050
 	1    0    0    -1  
 $EndComp
@@ -792,10 +786,10 @@ Wire Wire Line
 Wire Wire Line
 	7300 4900 7300 4850
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0101
 U 1 1 5DC4C614
 P 4550 1700
-F 0 "#PWR?" H 4550 1550 50  0001 C CNN
+F 0 "#PWR0101" H 4550 1550 50  0001 C CNN
 F 1 "+5V" H 4565 1873 50  0000 C CNN
 F 2 "" H 4550 1700 50  0001 C CNN
 F 3 "" H 4550 1700 50  0001 C CNN
@@ -803,10 +797,10 @@ F 3 "" H 4550 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0102
 U 1 1 5DC4CAE2
 P 5850 1350
-F 0 "#PWR?" H 5850 1200 50  0001 C CNN
+F 0 "#PWR0102" H 5850 1200 50  0001 C CNN
 F 1 "+5V" H 5865 1523 50  0000 C CNN
 F 2 "" H 5850 1350 50  0001 C CNN
 F 3 "" H 5850 1350 50  0001 C CNN
@@ -814,10 +808,10 @@ F 3 "" H 5850 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0103
 U 1 1 5DC4D37A
 P 7300 4850
-F 0 "#PWR?" H 7300 4700 50  0001 C CNN
+F 0 "#PWR0103" H 7300 4700 50  0001 C CNN
 F 1 "+5V" H 7315 5023 50  0000 C CNN
 F 2 "" H 7300 4850 50  0001 C CNN
 F 3 "" H 7300 4850 50  0001 C CNN
@@ -825,10 +819,10 @@ F 3 "" H 7300 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0104
 U 1 1 5DC4D5FD
 P 3850 5050
-F 0 "#PWR?" H 3850 4900 50  0001 C CNN
+F 0 "#PWR0104" H 3850 4900 50  0001 C CNN
 F 1 "+5V" H 3865 5223 50  0000 C CNN
 F 2 "" H 3850 5050 50  0001 C CNN
 F 3 "" H 3850 5050 50  0001 C CNN
@@ -840,10 +834,10 @@ Wire Wire Line
 Wire Wire Line
 	3700 4100 4350 4100
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0105
 U 1 1 5DC52F64
 P 4350 3950
-F 0 "#PWR?" H 4350 3800 50  0001 C CNN
+F 0 "#PWR0105" H 4350 3800 50  0001 C CNN
 F 1 "+5V" H 4365 4123 50  0000 C CNN
 F 2 "" H 4350 3950 50  0001 C CNN
 F 3 "" H 4350 3950 50  0001 C CNN
@@ -851,10 +845,10 @@ F 3 "" H 4350 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0106
 U 1 1 5DC53F37
 P 3800 7000
-F 0 "#PWR?" H 3800 6850 50  0001 C CNN
+F 0 "#PWR0106" H 3800 6850 50  0001 C CNN
 F 1 "+5V" H 3815 7173 50  0000 C CNN
 F 2 "" H 3800 7000 50  0001 C CNN
 F 3 "" H 3800 7000 50  0001 C CNN
@@ -896,8 +890,8 @@ L Device:R R?
 U 1 1 5DC7FB82
 P 7500 3900
 AR Path="/5FDA3FDE/5DC7FB82" Ref="R?"  Part="1" 
-AR Path="/5DC7FB82" Ref="R?"  Part="1" 
-F 0 "R?" V 7400 3950 50  0000 C CNN
+AR Path="/5DC7FB82" Ref="R3"  Part="1" 
+F 0 "R3" V 7400 3950 50  0000 C CNN
 F 1 "R" V 7500 3900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7430 3900 50  0001 C CNN
 F 3 "~" H 7500 3900 50  0001 C CNN
@@ -909,8 +903,8 @@ L Device:R R?
 U 1 1 5DC7FB89
 P 7300 4100
 AR Path="/5FDA3FDE/5DC7FB89" Ref="R?"  Part="1" 
-AR Path="/5DC7FB89" Ref="R?"  Part="1" 
-F 0 "R?" V 7200 4100 50  0000 C CNN
+AR Path="/5DC7FB89" Ref="R2"  Part="1" 
+F 0 "R2" V 7200 4100 50  0000 C CNN
 F 1 "R" V 7300 4100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7230 4100 50  0001 C CNN
 F 3 "~" H 7300 4100 50  0001 C CNN
@@ -954,7 +948,9 @@ $Comp
 L power:+5V #PWR?
 U 1 1 5DC7FB9C
 P 6800 3000
-F 0 "#PWR?" H 6800 2850 50  0001 C CNN
+AR Path="/5FDA3FDE/5DC7FB9C" Ref="#PWR?"  Part="1" 
+AR Path="/5DC7FB9C" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 6800 2850 50  0001 C CNN
 F 1 "+5V" H 6815 3173 50  0000 C CNN
 F 2 "" H 6800 3000 50  0001 C CNN
 F 3 "" H 6800 3000 50  0001 C CNN
@@ -969,8 +965,8 @@ L Lafayette_Electric_Car_Internals:AD8479 U?
 U 1 1 5DC7FB7B
 P 7500 3200
 AR Path="/5FDA3FDE/5DC7FB7B" Ref="U?"  Part="1" 
-AR Path="/5DC7FB7B" Ref="U?"  Part="1" 
-F 0 "U?" H 7350 3500 50  0000 C CNN
+AR Path="/5DC7FB7B" Ref="U2"  Part="1" 
+F 0 "U2" H 7350 3500 50  0000 C CNN
 F 1 "AD8479" H 7700 3500 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7200 3450 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8479.PDF" H 7200 3450 50  0001 C CNN
@@ -989,10 +985,16 @@ $Comp
 L Device:C C?
 U 1 1 5DC7FB68
 P 6800 3450
-F 0 "C?" H 6915 3496 50  0000 L CNN
-F 1 "C" H 6915 3405 50  0000 L CNN
+AR Path="/5FDA3FDE/5DC7FB68" Ref="C?"  Part="1" 
+AR Path="/5DC7FB68" Ref="C3"  Part="1" 
+F 0 "C3" H 6915 3496 50  0000 L CNN
+F 1 "0.1uF" H 6915 3405 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6838 3300 50  0001 C CNN
 F 3 "~" H 6800 3450 50  0001 C CNN
+F 4 "KEMET" H 6800 3450 50  0001 C CNN "Manufacturer"
+F 5 "C0805C104Z5VACTU" H 6800 3450 50  0001 C CNN "Manufacturer Part"
+F 6 "Digikey" H 6800 3450 50  0001 C CNN "Vendor"
+F 7 "399-1177-1-ND" H 6800 3450 50  0001 C CNN "Vendor Part"
 	1    6800 3450
 	1    0    0    -1  
 $EndComp
@@ -1020,6 +1022,36 @@ Wire Wire Line
 	7300 3900 7350 3900
 Wire Wire Line
 	6300 3900 7300 3900
+$Comp
+L Lafayette_Electric_Car_Internals:LED_Red D?
+U 1 1 5DE85DFB
+P 9650 5700
+F 0 "D?" H 9700 5600 50  0000 R CNN
+F 1 "LED_Red" H 9800 5850 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10000 6150 50  0001 C CNN
+F 3 "https://vcclite.com/wp-content/uploads/wpallimport/files/files/CMD1721Seriesver3.pdf" H 9800 5850 50  0001 C CNN
+F 4 "Digikey" H 8950 6450 50  0001 C CNN "Vendor"
+F 5 "L62501CT-ND" H 9100 6350 50  0001 C CNN "Vendor Part"
+F 6 "Visual Communications Company - VCC" H 9600 6050 50  0001 C CNN "Manufacturer"
+F 7 "CMD17-21VRD/TR8" H 9200 6250 50  0001 C CNN "Manufacturer Part"
+	1    9650 5700
+	0    -1   -1   0   
+$EndComp
 Wire Bus Line
 	2300 3200 2300 4100
+$Comp
+L Lafayette_Electric_Car_Internals:LED_Green D?
+U 1 1 5DE93A83
+P 4650 5500
+F 0 "D?" V 4689 5382 50  0000 R CNN
+F 1 "LED_Green" V 4598 5382 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5000 5950 50  0001 C CNN
+F 3 "https://vcclite.com/wp-content/uploads/wpallimport/files/files/CMD1721Seriesver3.pdf" H 4800 5650 50  0001 C CNN
+F 4 "Digikey" H 3950 6250 50  0001 C CNN "Vendor"
+F 5 "L62405CT-ND" H 4100 6150 50  0001 C CNN "Vendor Part"
+F 6 "Visual Communications Company - VCC" H 4600 5850 50  0001 C CNN "Manufacturer"
+F 7 "CMD17-21VGC/TR8" H 4200 6050 50  0001 C CNN "Manufacturer Part"
+	1    4650 5500
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
