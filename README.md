@@ -5,6 +5,8 @@ A Cell Management Board for the Lafayette FSAE Accumulator Management System
 
 ![](https://sites.lafayette.edu/motorsports/files/2019/11/CellMan.png)
 
+[Link to PDF](https://sites.lafayette.edu/motorsports/files/2019/11/CellMan.pdf)
+
 ## Parts List
 
 |Reference    |Description                                                   |Part Number         |Datasheet                                                                                                                    | 
