@@ -28,6 +28,6 @@ A Cell Management Board for the Lafayette FSAE Accumulator Management System
 ## Non footprint Parts
 |Reference    |Description                                                   |Part Number         |Datasheet                                                                                                                    | 
 |-------------|--------------------------------------------------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------| 
-| N/A       | Unpolarized capacitor                                        | C0805C104Z5VACTU   | ~    
+| N/A       | 6 Position Rectangular Receptacle Connector IDC Gold 28-30 AWG                                        | 71600-006LF   | https://www.digikey.com/products/en?keywords=609-2841-ND    
 
 
