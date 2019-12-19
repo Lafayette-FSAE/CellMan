@@ -7,6 +7,12 @@ A Cell Management Board for the Lafayette FSAE Accumulator Management System
 
 [Link to PDF](https://sites.lafayette.edu/motorsports/files/2019/11/CellMan.pdf)
 
+## Errata
+ - CellMan should have the ability to measure its own power supply voltage
+ - Footprints of SOIC parts should have a silkscreen line on the side of the chamfer on the part
+ - Footprint of STM8 should better depict orientation
+ - Consider changing pin layout of IDC connector to make it more compatible with breadboard
+
 ## Parts List
 
 |Reference    |Description                                                   |Part Number         |Datasheet                                                                                                                    | 
