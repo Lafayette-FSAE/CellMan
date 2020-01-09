@@ -866,7 +866,7 @@ AR Path="/5DC7FB7B" Ref="U2"  Part="1"
 F 0 "U2" H 7350 4150 50  0000 C CNN
 F 1 "AD8479" H 7700 4150 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7200 4100 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8479.PDF" H 7200 4100 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8479.PDF" H 8000 4650 50  0000 C CNN
 F 4 "Digikey" H 7500 3850 50  0001 C CNN "Vendor"
 F 5 "AD8479ARZ-ND" H 7500 3850 50  0001 C CNN "Vendor Part"
 F 6 "Analog Devices Inc." H 7500 3850 50  0001 C CNN "Manufacturer"
