@@ -14,170 +14,334 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 4450 4550 0    50   ~ 0
-Temperature
 Wire Wire Line
-	5500 4900 5500 5100
-Connection ~ 5500 4550
+	8050 5850 8050 6100
+Connection ~ 8050 5500
 Wire Wire Line
-	5500 4550 5500 4600
+	8050 5500 8050 5550
 Wire Wire Line
-	4400 4550 5500 4550
+	7800 5500 8050 5500
 $Comp
 L Device:R R?
 U 1 1 5E5AAEE2
-P 5500 4750
-F 0 "R?" V 5400 4700 50  0000 L CNN
-F 1 "R" H 5550 4700 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5430 4750 50  0001 C CNN
-F 3 "~" H 5500 4750 50  0001 C CNN
-	1    5500 4750
+P 8050 5700
+AR Path="/5E5AAEE2" Ref="R?"  Part="1" 
+AR Path="/5E58D2C5/5E5AAEE2" Ref="R?"  Part="1" 
+F 0 "R?" V 7950 5650 50  0000 L CNN
+F 1 "R" H 8100 5650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7980 5700 50  0001 C CNN
+F 3 "~" H 8050 5700 50  0001 C CNN
+	1    8050 5700
 	-1   0    0    1   
 $EndComp
 $Comp
 L Lafayette_Electric_Car_Internals:NTCS0603 TH?
 U 1 1 5E5AAEEE
-P 5500 4300
-F 0 "TH?" V 5600 4250 50  0000 L CNN
-F 1 "NTCS0603" V 5350 4150 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5700 4100 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/29056/ntcs0603e3t.pdf" H 5450 4550 50  0001 C CNN
-F 4 "Digikey" H 5700 4650 50  0001 C CNN "Vendor"
-F 5 "BC2477CT-ND" H 6000 4550 50  0001 C CNN "Vendor Part"
-F 6 "Vishay BC Components" H 6000 4550 50  0001 C CNN "Manufacturer"
-F 7 "NTCS0603E3202JLT" H 6000 4550 50  0001 C CNN "Manufacturer Part"
-F 8 "3420" H 5150 4200 50  0001 C CNN "B 25/85"
-F 9 "2k" H 5800 4350 50  0001 C CNN "R 25"
-	1    5500 4300
+P 8050 5250
+AR Path="/5E5AAEEE" Ref="TH?"  Part="1" 
+AR Path="/5E58D2C5/5E5AAEEE" Ref="TH?"  Part="1" 
+F 0 "TH?" V 8150 5200 50  0000 L CNN
+F 1 "NTCS0603" V 7900 5100 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8250 5050 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/29056/ntcs0603e3t.pdf" H 8000 5500 50  0001 C CNN
+F 4 "Digikey" H 8250 5600 50  0001 C CNN "Vendor"
+F 5 "BC2477CT-ND" H 8550 5500 50  0001 C CNN "Vendor Part"
+F 6 "Vishay BC Components" H 8550 5500 50  0001 C CNN "Manufacturer"
+F 7 "NTCS0603E3202JLT" H 8550 5500 50  0001 C CNN "Manufacturer Part"
+F 8 "3420" H 7700 5150 50  0001 C CNN "B 25/85"
+F 9 "2k" H 8350 5300 50  0001 C CNN "R 25"
+	1    8050 5250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5500 4450 5500 4550
+	8050 5400 8050 5500
 Wire Wire Line
-	5500 4150 5500 4100
+	8050 5100 8050 5050
 $Comp
 L power:+5V #PWR?
 U 1 1 5E5AAEF6
-P 5500 4100
-F 0 "#PWR?" H 5500 3950 50  0001 C CNN
-F 1 "+5V" H 5515 4273 50  0000 C CNN
-F 2 "" H 5500 4100 50  0001 C CNN
-F 3 "" H 5500 4100 50  0001 C CNN
-	1    5500 4100
+P 8050 5050
+AR Path="/5E5AAEF6" Ref="#PWR?"  Part="1" 
+AR Path="/5E58D2C5/5E5AAEF6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8050 4900 50  0001 C CNN
+F 1 "+5V" H 8065 5223 50  0000 C CNN
+F 2 "" H 8050 5050 50  0001 C CNN
+F 3 "" H 8050 5050 50  0001 C CNN
+	1    8050 5050
 	1    0    0    -1  
 $EndComp
-Text Label 5500 5100 2    50   ~ 0
-TSV_RTN
 $Comp
 L Device:R R?
 U 1 1 5E5AAEFD
-P 6000 3100
+P 8400 3950
 AR Path="/5FDA3FDE/5E5AAEFD" Ref="R?"  Part="1" 
 AR Path="/5E5AAEFD" Ref="R?"  Part="1" 
-F 0 "R?" V 6100 3100 50  0000 C CNN
-F 1 "R" V 6000 3100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5930 3100 50  0001 C CNN
-F 3 "~" H 6000 3100 50  0001 C CNN
-	1    6000 3100
+AR Path="/5E58D2C5/5E5AAEFD" Ref="R?"  Part="1" 
+F 0 "R?" V 8500 3950 50  0000 C CNN
+F 1 "R" V 8400 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8330 3950 50  0001 C CNN
+F 3 "~" H 8400 3950 50  0001 C CNN
+	1    8400 3950
 	0    1    1    0   
 $EndComp
-Text Label 5000 3100 0    50   ~ 0
-TSV_RTN
+Text Label 7400 3950 0    50   ~ 0
+Seg-
 Wire Wire Line
-	5650 3100 5700 3100
+	8050 3950 8100 3950
 $Comp
 L Device:R R?
 U 1 1 5E5AAF05
-P 5500 3100
+P 7900 3950
 AR Path="/5FDA3FDE/5E5AAF05" Ref="R?"  Part="1" 
 AR Path="/5E5AAF05" Ref="R?"  Part="1" 
-F 0 "R?" V 5600 3100 50  0000 C CNN
-F 1 "R" V 5500 3100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5430 3100 50  0001 C CNN
-F 3 "~" H 5500 3100 50  0001 C CNN
-	1    5500 3100
+AR Path="/5E58D2C5/5E5AAF05" Ref="R?"  Part="1" 
+F 0 "R?" V 8000 3950 50  0000 C CNN
+F 1 "R" V 7900 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7830 3950 50  0001 C CNN
+F 3 "~" H 7900 3950 50  0001 C CNN
+	1    7900 3950
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5700 3100 5700 2950
+	8100 3950 8100 3800
 Wire Wire Line
-	5700 2950 4800 2950
-Connection ~ 5700 3100
+	8100 3800 7200 3800
+Connection ~ 8100 3950
 Wire Wire Line
-	5700 3100 5850 3100
+	8100 3950 8250 3950
 $Comp
 L Device:R R?
 U 1 1 5E5AAF0F
-P 6000 3600
+P 8400 4450
 AR Path="/5FDA3FDE/5E5AAF0F" Ref="R?"  Part="1" 
 AR Path="/5E5AAF0F" Ref="R?"  Part="1" 
-F 0 "R?" V 6100 3600 50  0000 C CNN
-F 1 "R" V 6000 3600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5930 3600 50  0001 C CNN
-F 3 "~" H 6000 3600 50  0001 C CNN
-	1    6000 3600
+AR Path="/5E58D2C5/5E5AAF0F" Ref="R?"  Part="1" 
+F 0 "R?" V 8500 4450 50  0000 C CNN
+F 1 "R" V 8400 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8330 4450 50  0001 C CNN
+F 3 "~" H 8400 4450 50  0001 C CNN
+	1    8400 4450
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5650 3600 5700 3600
+	8050 4450 8100 4450
 $Comp
 L Device:R R?
 U 1 1 5E5AAF16
-P 5500 3600
+P 7900 4450
 AR Path="/5FDA3FDE/5E5AAF16" Ref="R?"  Part="1" 
 AR Path="/5E5AAF16" Ref="R?"  Part="1" 
-F 0 "R?" V 5600 3600 50  0000 C CNN
-F 1 "R" V 5500 3600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5430 3600 50  0001 C CNN
-F 3 "~" H 5500 3600 50  0001 C CNN
-	1    5500 3600
+AR Path="/5E58D2C5/5E5AAF16" Ref="R?"  Part="1" 
+F 0 "R?" V 8000 4450 50  0000 C CNN
+F 1 "R" V 7900 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7830 4450 50  0001 C CNN
+F 3 "~" H 7900 4450 50  0001 C CNN
+	1    7900 4450
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5700 3600 5700 3450
-Connection ~ 5700 3600
+	8100 4450 8100 4300
+Connection ~ 8100 4450
 Wire Wire Line
-	5700 3600 5850 3600
-Text Label 4800 2950 0    50   ~ 0
+	8100 4450 8250 4450
+Text Label 7350 3800 0    50   ~ 0
 Divided_Cell-
-Text Label 4800 3450 0    50   ~ 0
+Text Label 7400 4300 0    50   ~ 0
 Divided_Cell+
 Wire Wire Line
-	4800 3450 5700 3450
+	7200 4300 8100 4300
 Wire Wire Line
-	5000 3100 5350 3100
-Text Label 5000 3600 0    50   ~ 0
-TSV_RTN
+	7400 3950 7750 3950
+Text Label 7400 4450 0    50   ~ 0
+Seg-
 Wire Wire Line
-	5000 3600 5350 3600
+	7400 4450 7750 4450
 $Comp
 L Lafayette_Electric_Car_Internals:MCP6004 U?
 U 1 1 5E5AAF29
-P 6850 4400
-F 0 "U?" H 6850 4767 50  0000 C CNN
-F 1 "MCP6004" H 6850 4676 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 6700 4900 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 6900 4600 50  0001 C CNN
-F 4 "Digikey" H 6850 4400 50  0001 C CNN "Vendor"
-F 5 "MCP6004T-I/STCT-ND" H 6350 4800 50  0001 C CNN "Vendor Part"
-F 6 "Microchip Technology" H 6350 4800 50  0001 C CNN "Manufacturer"
-F 7 "MCP6004T-I/ST" H 6250 4700 50  0001 C CNN "Manufacturer Part"
-	1    6850 4400
+P 5250 3050
+AR Path="/5E5AAF29" Ref="U?"  Part="1" 
+AR Path="/5E58D2C5/5E5AAF29" Ref="U?"  Part="1" 
+F 0 "U?" H 5250 3417 50  0000 C CNN
+F 1 "MCP6004" H 5250 3326 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5100 3550 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 5300 3250 50  0001 C CNN
+F 4 "Digikey" H 5250 3050 50  0001 C CNN "Vendor"
+F 5 "MCP6004T-I/STCT-ND" H 4750 3450 50  0001 C CNN "Vendor Part"
+F 6 "Microchip Technology" H 4750 3450 50  0001 C CNN "Manufacturer"
+F 7 "MCP6004T-I/ST" H 4650 3350 50  0001 C CNN "Manufacturer Part"
+	1    5250 3050
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Lafayette_Electric_Car_Internals:MCP6004 U?
 U 1 1 5E5AAF33
-P 6850 3550
-F 0 "U?" H 6850 3917 50  0000 C CNN
-F 1 "MCP6004" H 6850 3826 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 6700 4050 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 6900 3750 50  0001 C CNN
-F 4 "Digikey" H 6850 3550 50  0001 C CNN "Vendor"
-F 5 "MCP6004T-I/STCT-ND" H 6350 3950 50  0001 C CNN "Vendor Part"
-F 6 "Microchip Technology" H 6350 3950 50  0001 C CNN "Manufacturer"
-F 7 "MCP6004T-I/ST" H 6250 3850 50  0001 C CNN "Manufacturer Part"
-	1    6850 3550
+P 5250 2050
+AR Path="/5E5AAF33" Ref="U?"  Part="1" 
+AR Path="/5E58D2C5/5E5AAF33" Ref="U?"  Part="1" 
+F 0 "U?" H 5250 2417 50  0000 C CNN
+F 1 "MCP6004" H 5250 2326 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5100 2550 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 5300 2250 50  0001 C CNN
+F 4 "Digikey" H 5250 2050 50  0001 C CNN "Vendor"
+F 5 "MCP6004T-I/STCT-ND" H 4750 2450 50  0001 C CNN "Vendor Part"
+F 6 "Microchip Technology" H 4750 2450 50  0001 C CNN "Manufacturer"
+F 7 "MCP6004T-I/ST" H 4650 2350 50  0001 C CNN "Manufacturer Part"
+	1    5250 2050
 	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	4950 2050 4850 2050
+Wire Wire Line
+	4850 2050 4850 2400
+Wire Wire Line
+	4850 2400 5650 2400
+Wire Wire Line
+	5650 2400 5650 2150
+Wire Wire Line
+	5650 2150 5550 2150
+Wire Wire Line
+	4950 3050 4850 3050
+Wire Wire Line
+	5550 3150 5650 3150
+Wire Wire Line
+	5650 3150 5650 3400
+Wire Wire Line
+	5650 3400 4850 3400
+Wire Wire Line
+	4850 3400 4850 3050
+Wire Wire Line
+	5550 2950 6200 2950
+Wire Wire Line
+	5550 1950 6200 1950
+Text Label 6200 2950 2    50   ~ 0
+Divided_Cell-
+Text Label 6200 1950 2    50   ~ 0
+Divided_Cell+
+$Comp
+L Lafayette_Electric_Car_Internals:MCP6004 U?
+U 1 1 5E742E20
+P 3000 2550
+AR Path="/5E742E20" Ref="U?"  Part="1" 
+AR Path="/5E58D2C5/5E742E20" Ref="U?"  Part="1" 
+F 0 "U?" H 3300 2700 50  0000 C CNN
+F 1 "MCP6004" H 3200 2800 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2850 3050 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 3050 2750 50  0001 C CNN
+F 4 "Digikey" H 3000 2550 50  0001 C CNN "Vendor"
+F 5 "MCP6004T-I/STCT-ND" H 2500 2950 50  0001 C CNN "Vendor Part"
+F 6 "Microchip Technology" H 2500 2950 50  0001 C CNN "Manufacturer"
+F 7 "MCP6004T-I/ST" H 2400 2850 50  0001 C CNN "Manufacturer Part"
+	1    3000 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E7463D2
+P 3750 2450
+F 0 "R?" V 3650 2450 50  0000 C CNN
+F 1 "R" V 3750 2450 50  0000 C CNN
+F 2 "" V 3680 2450 50  0001 C CNN
+F 3 "~" H 3750 2450 50  0001 C CNN
+	1    3750 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E747003
+P 3750 2650
+F 0 "R?" V 3850 2650 50  0000 C CNN
+F 1 "R" V 3750 2650 50  0000 C CNN
+F 2 "" V 3680 2650 50  0001 C CNN
+F 3 "~" H 3750 2650 50  0001 C CNN
+	1    3750 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E748B16
+P 3000 2100
+F 0 "R?" V 2900 2100 50  0000 C CNN
+F 1 "R" V 3000 2100 50  0000 C CNN
+F 2 "" V 2930 2100 50  0001 C CNN
+F 3 "~" H 3000 2100 50  0001 C CNN
+	1    3000 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 2450 3400 2450
+Wire Wire Line
+	3300 2650 3400 2650
+Wire Wire Line
+	3150 2100 3400 2100
+Wire Wire Line
+	3400 2100 3400 2450
+Connection ~ 3400 2450
+Wire Wire Line
+	3400 2450 3600 2450
+Wire Wire Line
+	2700 2550 2600 2550
+Wire Wire Line
+	2850 2100 2600 2100
+Wire Wire Line
+	2600 2100 2600 2550
+Connection ~ 2600 2550
+Wire Wire Line
+	2600 2550 2250 2550
+$Comp
+L Device:R R?
+U 1 1 5E750BCE
+P 3400 3000
+F 0 "R?" V 3500 3000 50  0000 C CNN
+F 1 "R" V 3400 3000 50  0000 C CNN
+F 2 "" V 3330 3000 50  0001 C CNN
+F 3 "~" H 3400 3000 50  0001 C CNN
+	1    3400 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3400 2850 3400 2650
+Connection ~ 3400 2650
+Wire Wire Line
+	3400 2650 3600 2650
+Wire Wire Line
+	3400 3150 3400 3350
+Text Label 8050 6100 1    50   ~ 0
+Seg-
+Text Label 3400 3350 1    50   ~ 0
+Seg-
+Wire Wire Line
+	3900 2450 4300 2450
+Wire Wire Line
+	4300 2450 4300 2050
+Wire Wire Line
+	3900 2650 4300 2650
+Wire Wire Line
+	4300 2050 4850 2050
+Connection ~ 4850 2050
+Wire Wire Line
+	4300 3050 4850 3050
+Connection ~ 4850 3050
+Wire Wire Line
+	4300 2650 4300 3050
+Wire Notes Line
+	8200 500  8200 6500
+Text Notes 8300 3650 0    50   ~ 0
+Voltage Dividers\n 5 / 40
+Wire Wire Line
+	8550 3950 8800 3950
+Text HLabel 8800 3950 2    50   Input ~ 0
+Cell-
+Text HLabel 8800 4450 2    50   Input ~ 0
+Cell+
+Wire Wire Line
+	8800 4450 8550 4450
+Text HLabel 7800 5500 0    50   Input ~ 0
+CellTemp
+Text HLabel 7200 3800 0    50   Input ~ 0
+Divided_Cell-
+Text HLabel 7200 4300 0    50   Input ~ 0
+Divided_Cell+
+Text HLabel 2250 2550 0    50   Input ~ 0
+CellVoltage
 $EndSCHEMATC
