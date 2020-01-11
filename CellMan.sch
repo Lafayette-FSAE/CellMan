@@ -695,9 +695,9 @@ NoConn ~ 1250 2650
 Text Label 1250 2550 2    50   ~ 0
 Seg-
 Text Label 8450 3200 2    50   ~ 0
-Cell+(RAW)
+Cell+
 Text Label 8450 3300 2    50   ~ 0
-Cell-(RAW)
+Cell-
 Wire Wire Line
 	7950 3300 8450 3300
 Wire Wire Line
@@ -714,15 +714,15 @@ Wire Wire Line
 	6400 4500 6300 4500
 NoConn ~ 6300 4500
 Wire Wire Line
-	6400 3700 6000 3700
+	6400 3700 5650 3700
 Wire Wire Line
-	6400 3800 6000 3800
+	6400 3800 5650 3800
 Wire Wire Line
-	6400 4600 6000 4600
+	6400 4600 5650 4600
 Wire Wire Line
-	6400 4800 6000 4800
+	6400 4800 5650 4800
 Wire Wire Line
-	6400 4900 6000 4900
+	6400 4900 5650 4900
 $Comp
 L Connector:Conn_01x02_Female J3
 U 1 1 5E6616D5
@@ -793,22 +793,22 @@ Entry Wire Line
 Entry Wire Line
 	4150 3800 4250 3900
 Entry Wire Line
-	5900 3800 6000 3700
+	5550 3800 5650 3700
 Entry Wire Line
-	5900 3900 6000 3800
+	5550 3900 5650 3800
 Entry Wire Line
-	5900 4700 6000 4600
+	5550 4700 5650 4600
 Entry Wire Line
-	5900 4900 6000 4800
+	5550 4900 5650 4800
 Entry Wire Line
-	5900 5000 6000 4900
+	5550 5000 5650 4900
 Wire Bus Line
 	4700 5050 4700 4900
 Wire Bus Line
 	4700 4900 4800 4900
 Connection ~ 4700 5050
 Wire Bus Line
-	4700 5050 5900 5050
+	4700 5050 5550 5050
 Text GLabel 4800 4900 2    50   Input ~ 0
 ADC_channels
 Wire Wire Line
@@ -832,5 +832,15 @@ Wire Bus Line
 Wire Bus Line
 	1900 3700 1900 5050
 Wire Bus Line
-	5900 3800 5900 5050
+	5550 3800 5550 5050
+Text Label 5700 4600 0    50   ~ 0
+DividedCell-
+Text Label 5700 4900 0    50   ~ 0
+CellVoltage
+Text Label 5700 4800 0    50   ~ 0
+CellTemp
+Text Label 5700 3700 0    50   ~ 0
+Balance_feedback
+Text Label 5700 3800 0    50   ~ 0
+Balance_current
 $EndSCHEMATC

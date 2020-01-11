@@ -158,10 +158,10 @@ Wire Wire Line
 	7400 4450 7750 4450
 $Comp
 L Lafayette_Electric_Car_Internals:MCP6004 U?
-U 3 1 5E5AAF29
+U 2 1 5E5AAF29
 P 5250 3050
 AR Path="/5E5AAF29" Ref="U?"  Part="1" 
-AR Path="/5E58D2C5/5E5AAF29" Ref="U3"  Part="3" 
+AR Path="/5E58D2C5/5E5AAF29" Ref="U3"  Part="2" 
 F 0 "U3" H 5250 3417 50  0000 C CNN
 F 1 "MCP6004" H 5250 3326 50  0000 C CNN
 F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5100 3550 50  0001 C CNN
@@ -170,15 +170,15 @@ F 4 "Digikey" H 5250 3050 50  0001 C CNN "Vendor"
 F 5 "MCP6004T-I/STCT-ND" H 4750 3450 50  0001 C CNN "Vendor Part"
 F 6 "Microchip Technology" H 4750 3450 50  0001 C CNN "Manufacturer"
 F 7 "MCP6004T-I/ST" H 4650 3350 50  0001 C CNN "Manufacturer Part"
-	3    5250 3050
+	2    5250 3050
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Lafayette_Electric_Car_Internals:MCP6004 U?
-U 2 1 5E5AAF33
+U 3 1 5E5AAF33
 P 5250 2050
 AR Path="/5E5AAF33" Ref="U?"  Part="1" 
-AR Path="/5E58D2C5/5E5AAF33" Ref="U3"  Part="2" 
+AR Path="/5E58D2C5/5E5AAF33" Ref="U3"  Part="3" 
 F 0 "U3" H 5250 2417 50  0000 C CNN
 F 1 "MCP6004" H 5250 2326 50  0000 C CNN
 F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5100 2550 50  0001 C CNN
@@ -187,7 +187,7 @@ F 4 "Digikey" H 5250 2050 50  0001 C CNN "Vendor"
 F 5 "MCP6004T-I/STCT-ND" H 4750 2450 50  0001 C CNN "Vendor Part"
 F 6 "Microchip Technology" H 4750 2450 50  0001 C CNN "Manufacturer"
 F 7 "MCP6004T-I/ST" H 4650 2350 50  0001 C CNN "Manufacturer Part"
-	2    5250 2050
+	3    5250 2050
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -344,4 +344,77 @@ Text HLabel 7200 4300 0    50   Input ~ 0
 Divided_Cell+
 Text HLabel 2250 2550 0    50   Input ~ 0
 CellVoltage
+$Comp
+L power:GND #PWR?
+U 1 1 5E983742
+P 3400 5250
+AR Path="/5E3ED86C/5E983742" Ref="#PWR?"  Part="1" 
+AR Path="/5E58D2C5/5E983742" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 3400 5000 50  0001 C CNN
+F 1 "GND" H 3405 5077 50  0000 C CNN
+F 2 "" H 3400 5250 50  0001 C CNN
+F 3 "" H 3400 5250 50  0001 C CNN
+	1    3400 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 5250 3400 5000
+Text Label 3400 5000 3    50   ~ 0
+Seg-
+$Comp
+L power:+5V #PWR?
+U 1 1 5E98374A
+P 3550 5000
+AR Path="/5E3ED86C/5E98374A" Ref="#PWR?"  Part="1" 
+AR Path="/5E58D2C5/5E98374A" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 3550 4850 50  0001 C CNN
+F 1 "+5V" H 3565 5173 50  0000 C CNN
+F 2 "" H 3550 5000 50  0001 C CNN
+F 3 "" H 3550 5000 50  0001 C CNN
+	1    3550 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 5000 3550 5250
+Text Label 3550 5250 1    50   ~ 0
+Power
+$Comp
+L Lafayette_Electric_Car_Internals:MCP6004 U?
+U 5 1 5E984923
+P 3850 3850
+AR Path="/5E984923" Ref="U?"  Part="1" 
+AR Path="/5E58D2C5/5E984923" Ref="U3"  Part="5" 
+F 0 "U3" H 4150 4000 50  0000 C CNN
+F 1 "MCP6004" H 4050 4100 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 3700 4350 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 3900 4050 50  0001 C CNN
+F 4 "Digikey" H 3850 3850 50  0001 C CNN "Vendor"
+F 5 "MCP6004T-I/STCT-ND" H 3350 4250 50  0001 C CNN "Vendor Part"
+F 6 "Microchip Technology" H 3350 4250 50  0001 C CNN "Manufacturer"
+F 7 "MCP6004T-I/ST" H 3250 4150 50  0001 C CNN "Manufacturer Part"
+	5    3850 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5E985061
+P 3950 4150
+F 0 "#PWR0109" H 3950 3900 50  0001 C CNN
+F 1 "GND" H 3955 3977 50  0000 C CNN
+F 2 "" H 3950 4150 50  0001 C CNN
+F 3 "" H 3950 4150 50  0001 C CNN
+	1    3950 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0110
+U 1 1 5E9855A7
+P 3950 3550
+F 0 "#PWR0110" H 3950 3400 50  0001 C CNN
+F 1 "+5V" H 3965 3723 50  0000 C CNN
+F 2 "" H 3950 3550 50  0001 C CNN
+F 3 "" H 3950 3550 50  0001 C CNN
+	1    3950 3550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

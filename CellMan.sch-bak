@@ -504,7 +504,7 @@ F 5 "497-7267-1-ND" H 3400 900 50  0001 C CNN "Vendor Part"
 F 6 "STMicroelectronics" H 3400 900 50  0001 C CNN "Manufacturer"
 F 7 "L78L05CD13TR" H 3400 900 50  0001 C CNN "Manufacturer Part"
 	1    3400 900 
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0101
@@ -695,9 +695,9 @@ NoConn ~ 1250 2650
 Text Label 1250 2550 2    50   ~ 0
 Seg-
 Text Label 8450 3200 2    50   ~ 0
-Cell+(RAW)
+Cell+
 Text Label 8450 3300 2    50   ~ 0
-Cell-(RAW)
+Cell-
 Wire Wire Line
 	7950 3300 8450 3300
 Wire Wire Line
