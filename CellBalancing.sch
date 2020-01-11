@@ -373,7 +373,7 @@ U 1 1 5E84D1E8
 P 6050 3650
 F 0 "T1" H 5800 4100 50  0000 C CNN
 F 1 "FlybackTransformer" H 6500 3150 50  0000 C CNN
-F 2 "Lafayette_Electric_Car_Footprints:Diode_PMEG3020DEP" H 6050 4250 50  0001 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:Transformer" H 6050 4250 50  0001 C CNN
 F 3 "https://www.we-online.de/katalog/datasheet/750313457.pdf" H 6050 4250 50  0001 C CNN
 F 4 "Digikey" H 6250 2950 50  0001 C CNN "Vendor"
 F 5 "1297-1136-1-ND" H 6450 3050 50  0001 C CNN "Vendor Part"

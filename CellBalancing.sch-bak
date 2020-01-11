@@ -281,7 +281,7 @@ U 1 1 5E7EC513
 P 7100 4050
 F 0 "D5" V 7054 4129 50  0000 L CNN
 F 1 "D" V 7145 4129 50  0000 L CNN
-F 2 "" H 7100 4050 50  0001 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:Diode_PMEG3020DEP" H 7100 4050 50  0001 C CNN
 F 3 "~" H 7100 4050 50  0001 C CNN
 	1    7100 4050
 	0    1    1    0   
@@ -373,7 +373,7 @@ U 1 1 5E84D1E8
 P 6050 3650
 F 0 "T1" H 5800 4100 50  0000 C CNN
 F 1 "FlybackTransformer" H 6500 3150 50  0000 C CNN
-F 2 "" H 6050 4250 50  0001 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:Transformer" H 6050 4250 50  0001 C CNN
 F 3 "https://www.we-online.de/katalog/datasheet/750313457.pdf" H 6050 4250 50  0001 C CNN
 F 4 "Digikey" H 6250 2950 50  0001 C CNN "Vendor"
 F 5 "1297-1136-1-ND" H 6450 3050 50  0001 C CNN "Vendor Part"
@@ -420,7 +420,7 @@ U 1 1 5E87D3CD
 P 5400 3250
 F 0 "D4" H 5400 3400 50  0000 C CNN
 F 1 "PMEG3020DEP,115" H 5600 3450 50  0001 C CNN
-F 2 "" H 5425 3750 50  0001 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:Diode_PMEG3020DEP" H 5425 3750 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/PMEG3020DEP.pdf" H 5425 3750 50  0001 C CNN
 F 4 "Digikey" H 5400 3400 50  0001 C CNN "Vendor"
 F 5 "1727-5392-1-ND" H 5400 3400 50  0001 C CNN "Vendor Part"
@@ -435,7 +435,7 @@ U 1 1 5E88066D
 P 4400 3250
 F 0 "D3" H 4400 3400 50  0000 C CNN
 F 1 "PMEG3020DEP,115" H 4550 3450 50  0001 C CNN
-F 2 "" H 4425 3750 50  0001 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:Diode_PMEG3020DEP" H 4425 3750 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/PMEG3020DEP.pdf" H 4425 3750 50  0001 C CNN
 F 4 "Digikey" H 4400 3400 50  0001 C CNN "Vendor"
 F 5 "1727-5392-1-ND" H 4400 3400 50  0001 C CNN "Vendor Part"
@@ -459,10 +459,10 @@ Wire Wire Line
 Wire Wire Line
 	7200 3800 7100 3800
 $Comp
-L Device:C C?
+L Device:C C8
 U 1 1 5E8B5F7B
 P 9550 3200
-F 0 "C?" H 9600 3350 50  0000 L CNN
+F 0 "C8" H 9600 3350 50  0000 L CNN
 F 1 "1uF" H 9700 3200 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9588 3050 50  0001 C CNN
 F 3 "~" H 9550 3200 50  0001 C CNN

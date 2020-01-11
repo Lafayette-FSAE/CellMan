@@ -504,7 +504,7 @@ F 5 "497-7267-1-ND" H 3400 900 50  0001 C CNN "Vendor Part"
 F 6 "STMicroelectronics" H 3400 900 50  0001 C CNN "Manufacturer"
 F 7 "L78L05CD13TR" H 3400 900 50  0001 C CNN "Manufacturer Part"
 	1    3400 900 
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0101
