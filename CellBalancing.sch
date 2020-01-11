@@ -1,13 +1,12 @@
 EESchema Schematic File Version 4
-LIBS:CellMan-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 3
 Title ""
-Date ""
-Rev ""
+Date "2020-01-11"
+Rev "2.0"
 Comp ""
 Comment1 ""
 Comment2 ""

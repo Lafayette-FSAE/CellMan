@@ -1,13 +1,12 @@
 EESchema Schematic File Version 4
-LIBS:CellMan-cache
 EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
 Sheet 1 3
 Title "CellMan Prototype"
-Date "2019-11-03"
-Rev "1.4"
+Date "2020-01-11"
+Rev "2.0"
 Comp "Lafayette College"
 Comment1 "CellMan Prototype Board"
 Comment2 "Connor Winiarczyk"
@@ -827,12 +826,6 @@ Wire Wire Line
 	5600 1400 5600 1900
 Wire Wire Line
 	5700 1300 5700 1800
-Wire Bus Line
-	4250 3800 4250 5050
-Wire Bus Line
-	1900 3700 1900 5050
-Wire Bus Line
-	5550 3800 5550 5050
 Text Label 5700 4600 0    50   ~ 0
 DividedCell-
 Text Label 5700 4900 0    50   ~ 0
@@ -843,4 +836,10 @@ Text Label 5700 3700 0    50   ~ 0
 Balance_feedback
 Text Label 5700 3800 0    50   ~ 0
 Balance_current
+Wire Bus Line
+	4250 3800 4250 5050
+Wire Bus Line
+	1900 3700 1900 5050
+Wire Bus Line
+	5550 3800 5550 5050
 $EndSCHEMATC
