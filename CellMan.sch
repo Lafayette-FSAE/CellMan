@@ -306,7 +306,6 @@ Wire Wire Line
 	1600 7200 1600 7550
 Wire Wire Line
 	1900 7200 1900 7550
-NoConn ~ 3450 4100
 $Sheet
 S 6400 2950 1550 1050
 U 5E3ED86C
@@ -821,6 +820,94 @@ F 3 "~" H 9450 6200 50  0001 C CNN
 	1    9450 6200
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Lafayette_Electric_Car_Internals:ADM6320 U3
+U 1 1 5E25AC59
+P 1850 5600
+F 0 "U3" H 2150 5767 50  0000 C CNN
+F 1 "ADM6320" H 2150 5676 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 2150 5050 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADM6316_6318_6319_6320_6321_6322.pdf" H 1950 5750 50  0001 C CNN
+	1    1850 5600
+	1    0    0    -1  
+$EndComp
+Text Label 2850 5700 2    50   ~ 0
+Power
+Wire Wire Line
+	2550 5700 2850 5700
+Text Label 1500 5850 0    50   ~ 0
+Seg-
+Wire Wire Line
+	1500 5850 1750 5850
+Wire Wire Line
+	3450 4100 3900 4100
+Text Label 3900 4100 2    50   ~ 0
+Watchdog
+Text Label 2950 6000 2    50   ~ 0
+Watchdog
+Wire Wire Line
+	2950 6000 2550 6000
+Wire Wire Line
+	1750 5700 1500 5700
+Text Label 1500 5700 0    50   ~ 0
+Reset
+Wire Wire Line
+	1150 6000 1150 5900
+$Comp
+L Device:R R11
+U 1 1 5E28BC78
+P 1150 5750
+F 0 "R11" H 1220 5796 50  0000 L CNN
+F 1 "R" H 1220 5705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1080 5750 50  0001 C CNN
+F 3 "~" H 1150 5750 50  0001 C CNN
+	1    1150 5750
+	1    0    0    -1  
+$EndComp
+Text Label 1150 5300 3    50   ~ 0
+Power
+Wire Wire Line
+	1150 5300 1150 5600
+Wire Wire Line
+	1150 6000 1750 6000
+$Comp
+L Device:Jumper JP1
+U 1 1 5E2A773E
+P 7450 850
+F 0 "JP1" H 6950 1000 50  0000 C CNN
+F 1 "Jumper" H 7200 1000 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 7450 850 50  0001 C CNN
+F 3 "~" H 7450 850 50  0001 C CNN
+	1    7450 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper JP2
+U 1 1 5E2A8A26
+P 7450 1400
+F 0 "JP2" H 6950 1550 50  0000 C CNN
+F 1 "Jumper" H 7200 1550 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 7450 1400 50  0001 C CNN
+F 3 "~" H 7450 1400 50  0001 C CNN
+	1    7450 1400
+	1    0    0    -1  
+$EndComp
+Text Label 8000 850  2    50   ~ 0
+Cell+
+Wire Wire Line
+	8000 850  7750 850 
+Text Label 8000 1400 2    50   ~ 0
+Cell-
+Wire Wire Line
+	8000 1400 7750 1400
+Text Label 6900 850  0    50   ~ 0
+Seg+
+Wire Wire Line
+	6900 850  7150 850 
+Text Label 6950 1400 0    50   ~ 0
+Seg-
+Wire Wire Line
+	6950 1400 7150 1400
 Wire Bus Line
 	4250 3800 4250 5050
 Wire Bus Line
