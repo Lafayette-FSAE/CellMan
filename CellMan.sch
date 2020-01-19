@@ -63,9 +63,9 @@ Ref_Cap
 Wire Wire Line
 	4700 6550 4700 6850
 Wire Wire Line
-	4700 7150 4700 7550
+	4700 7150 4700 7250
 Wire Wire Line
-	4950 7150 4950 7550
+	4950 7150 4950 7250
 Wire Wire Line
 	4950 6850 4950 6800
 Text Notes 4650 7700 0    50   ~ 0
@@ -177,10 +177,6 @@ Wire Wire Line
 	1150 1500 800  1500
 Text Label 800  1400 0    50   ~ 0
 SCL
-Text Label 4700 7550 1    50   ~ 0
-TSV_RTN
-Text Label 4950 7550 1    50   ~ 0
-TSV_RTN
 Text Label 5400 7650 1    50   ~ 0
 TSV_RTN
 Text Label 850  6750 2    50   ~ 0
@@ -262,13 +258,13 @@ TSV_9V
 Text Label 2000 1500 2    50   ~ 0
 TSV_9V
 Text Label 800  1500 0    50   ~ 0
-TSV_RTN
+Seg-
 Text Label 2000 1300 2    50   ~ 0
-TSV_RTN
+Seg-
 Text Notes 750  1050 0    50   ~ 0
 Power and Ground Pins are\nradially symmetrical on connector
 Text Label 2350 1600 0    50   ~ 0
-TSV_RTN
+Seg-
 Text Label 2350 1100 0    50   ~ 0
 TSV_9V
 Wire Notes Line
@@ -908,6 +904,28 @@ Text Label 6950 1400 0    50   ~ 0
 Seg-
 Wire Wire Line
 	6950 1400 7150 1400
+$Comp
+L power:GND #PWR?
+U 1 1 5E2CEBF6
+P 4700 7250
+F 0 "#PWR?" H 4700 7000 50  0001 C CNN
+F 1 "GND" H 4705 7077 50  0000 C CNN
+F 2 "" H 4700 7250 50  0001 C CNN
+F 3 "" H 4700 7250 50  0001 C CNN
+	1    4700 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E2D82D5
+P 4950 7250
+F 0 "#PWR?" H 4950 7000 50  0001 C CNN
+F 1 "GND" H 4955 7077 50  0000 C CNN
+F 2 "" H 4950 7250 50  0001 C CNN
+F 3 "" H 4950 7250 50  0001 C CNN
+	1    4950 7250
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	4250 3800 4250 5050
 Wire Bus Line
