@@ -115,113 +115,6 @@ Text Label 7050 5850 1    50   ~ 0
 Seg-
 Text HLabel 6800 5250 0    50   Input ~ 0
 CellTemp
-$Comp
-L Amplifier_Operational:MCP6001-OT U4
-U 1 1 5E2BD3F6
-P 2150 1450
-F 0 "U4" H 2550 1850 50  0000 C CNN
-F 1 "MCP6001-OT" H 2400 1700 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2050 1250 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 2150 1650 50  0001 C CNN
-	1    2150 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R12
-U 1 1 5E2BFA53
-P 1150 1150
-F 0 "R12" H 1220 1196 50  0000 L CNN
-F 1 "R" H 1220 1105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1080 1150 50  0001 C CNN
-F 3 "~" H 1150 1150 50  0001 C CNN
-	1    1150 1150
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:R R13
-U 1 1 5E2BFEFD
-P 1150 1550
-F 0 "R13" H 1220 1596 50  0000 L CNN
-F 1 "R" H 1220 1505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1080 1550 50  0001 C CNN
-F 3 "~" H 1150 1550 50  0001 C CNN
-	1    1150 1550
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1150 1300 1150 1350
-Connection ~ 1150 1350
-Wire Wire Line
-	1150 1350 1150 1400
-$Comp
-L power:GND #PWR?
-U 1 1 5E2C21E1
-P 2050 1750
-AR Path="/5E3ED86C/5E2C21E1" Ref="#PWR?"  Part="1" 
-AR Path="/5E58D2C5/5E2C21E1" Ref="#PWR0107"  Part="1" 
-F 0 "#PWR0107" H 2050 1500 50  0001 C CNN
-F 1 "GND" H 2055 1577 50  0000 C CNN
-F 2 "" H 2050 1750 50  0001 C CNN
-F 3 "" H 2050 1750 50  0001 C CNN
-	1    2050 1750
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5E2C275F
-P 2050 1150
-AR Path="/5E3ED86C/5E2C275F" Ref="#PWR?"  Part="1" 
-AR Path="/5E58D2C5/5E2C275F" Ref="#PWR0108"  Part="1" 
-F 0 "#PWR0108" H 2050 1000 50  0001 C CNN
-F 1 "+5V" H 2065 1323 50  0000 C CNN
-F 2 "" H 2050 1150 50  0001 C CNN
-F 3 "" H 2050 1150 50  0001 C CNN
-	1    2050 1150
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	2450 1450 2550 1450
-Text Label 2800 1450 2    50   ~ 0
-Vref
-Wire Wire Line
-	2550 1450 2550 2000
-Wire Wire Line
-	2550 2000 1650 2000
-Wire Wire Line
-	1650 2000 1650 1550
-Wire Wire Line
-	1650 1550 1850 1550
-Connection ~ 2550 1450
-Wire Wire Line
-	2550 1450 2800 1450
-Wire Wire Line
-	1850 1350 1150 1350
-$Comp
-L power:+5V #PWR?
-U 1 1 5E2CF3F1
-P 1150 1000
-AR Path="/5E3ED86C/5E2CF3F1" Ref="#PWR?"  Part="1" 
-AR Path="/5E58D2C5/5E2CF3F1" Ref="#PWR0109"  Part="1" 
-F 0 "#PWR0109" H 1150 850 50  0001 C CNN
-F 1 "+5V" H 1165 1173 50  0000 C CNN
-F 2 "" H 1150 1000 50  0001 C CNN
-F 3 "" H 1150 1000 50  0001 C CNN
-	1    1150 1000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E2CF64E
-P 1150 1700
-AR Path="/5E3ED86C/5E2CF64E" Ref="#PWR?"  Part="1" 
-AR Path="/5E58D2C5/5E2CF64E" Ref="#PWR0110"  Part="1" 
-F 0 "#PWR0110" H 1150 1450 50  0001 C CNN
-F 1 "GND" H 1155 1527 50  0000 C CNN
-F 2 "" H 1150 1700 50  0001 C CNN
-F 3 "" H 1150 1700 50  0001 C CNN
-	1    1150 1700
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	6350 2750 6600 2750
 Wire Wire Line
@@ -275,8 +168,6 @@ Wire Wire Line
 	5650 2950 5300 2950
 Text HLabel 5300 2950 0    50   Input ~ 0
 CellVoltage
-Text Notes 1250 2400 0    50   ~ 0
-Voltage Reference\nGenerator
 Wire Notes Line
 	7250 550  7250 6550
 Wire Wire Line
@@ -393,45 +284,6 @@ Wire Wire Line
 	7800 2850 9550 2850
 Text Notes 9050 4100 0    50   ~ 0
 Test Connector for Judges\nUser Solder Bridge to ignore
-Text Notes 3000 1150 0    50   ~ 0
-Vref = 1V
-$Comp
-L Device:C C10
-U 1 1 5E3416CA
-P 3300 1800
-F 0 "C10" H 3415 1846 50  0000 L CNN
-F 1 "C" H 3415 1755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3338 1650 50  0001 C CNN
-F 3 "~" H 3300 1800 50  0001 C CNN
-	1    3300 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5E341F85
-P 3300 1650
-AR Path="/5E3ED86C/5E341F85" Ref="#PWR?"  Part="1" 
-AR Path="/5E58D2C5/5E341F85" Ref="#PWR0113"  Part="1" 
-F 0 "#PWR0113" H 3300 1500 50  0001 C CNN
-F 1 "+5V" H 3315 1823 50  0000 C CNN
-F 2 "" H 3300 1650 50  0001 C CNN
-F 3 "" H 3300 1650 50  0001 C CNN
-	1    3300 1650
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E342674
-P 3300 1950
-AR Path="/5E3ED86C/5E342674" Ref="#PWR?"  Part="1" 
-AR Path="/5E58D2C5/5E342674" Ref="#PWR0114"  Part="1" 
-F 0 "#PWR0114" H 3300 1700 50  0001 C CNN
-F 1 "GND" H 3305 1777 50  0000 C CNN
-F 2 "" H 3300 1950 50  0001 C CNN
-F 3 "" H 3300 1950 50  0001 C CNN
-	1    3300 1950
-	-1   0    0    -1  
-$EndComp
 $Comp
 L Device:C C11
 U 1 1 5E342B85
@@ -472,35 +324,97 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5E2C39FF
-P 3600 2950
+P 2050 4050
 AR Path="/5E3ED86C/5E2C39FF" Ref="#PWR?"  Part="1" 
 AR Path="/5E58D2C5/5E2C39FF" Ref="#PWR0117"  Part="1" 
-F 0 "#PWR0117" H 3600 2700 50  0001 C CNN
-F 1 "GND" H 3605 2777 50  0000 C CNN
-F 2 "" H 3600 2950 50  0001 C CNN
-F 3 "" H 3600 2950 50  0001 C CNN
-	1    3600 2950
+F 0 "#PWR0117" H 2050 3800 50  0001 C CNN
+F 1 "GND" H 2055 3877 50  0000 C CNN
+F 2 "" H 2050 4050 50  0001 C CNN
+F 3 "" H 2050 4050 50  0001 C CNN
+	1    2050 4050
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 5E2C3B97
-P 3850 2700
+P 2250 3750
 AR Path="/5E3ED86C/5E2C3B97" Ref="#PWR?"  Part="1" 
 AR Path="/5E58D2C5/5E2C3B97" Ref="#PWR0118"  Part="1" 
-F 0 "#PWR0118" H 3850 2550 50  0001 C CNN
-F 1 "+5V" H 3865 2873 50  0000 C CNN
-F 2 "" H 3850 2700 50  0001 C CNN
-F 3 "" H 3850 2700 50  0001 C CNN
-	1    3850 2700
+F 0 "#PWR0118" H 2250 3600 50  0001 C CNN
+F 1 "+5V" H 2265 3923 50  0000 C CNN
+F 2 "" H 2250 3750 50  0001 C CNN
+F 3 "" H 2250 3750 50  0001 C CNN
+	1    2250 3750
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3600 2950 3600 2700
-Text Label 3600 2700 3    50   ~ 0
+	2050 4050 2050 3800
+Text Label 2050 3800 3    50   ~ 0
 Seg-
 Wire Wire Line
-	3850 2700 3850 2950
-Text Label 3850 2950 1    50   ~ 0
+	2250 3750 2250 4000
+Text Label 2250 4000 1    50   ~ 0
 Power
+$Comp
+L Lafayette_Electric_Car_Internals:ADR510 VREF1
+U 1 1 5E2724E7
+P 3550 3700
+F 0 "VREF1" H 3422 3746 50  0000 R CNN
+F 1 "ADR510" H 3422 3655 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3500 3950 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADR510.pdf" H 3500 3950 50  0001 C CNN
+F 4 "Digikey" H 4250 3850 50  0001 C CNN "Vendor"
+F 5 "ADR510ARTZ-REEL7CT-ND" H 4250 3850 50  0001 C CNN "Vendor Part"
+F 6 "Analog Devices Inc." H 4250 3850 50  0001 C CNN "Manufacturer"
+F 7 "ADR510ARTZ-REEL7" H 4250 3850 50  0001 C CNN "Manufacturer Part"
+	1    3550 3700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3750 3700
+$Comp
+L Device:R R12
+U 1 1 5E273BF8
+P 3550 3200
+F 0 "R12" H 3620 3246 50  0000 L CNN
+F 1 "R" H 3620 3155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3480 3200 50  0001 C CNN
+F 3 "~" H 3550 3200 50  0001 C CNN
+	1    3550 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3350 3550 3400
+$Comp
+L power:+5V #PWR?
+U 1 1 5E274D05
+P 3550 3050
+AR Path="/5E3ED86C/5E274D05" Ref="#PWR?"  Part="1" 
+AR Path="/5E58D2C5/5E274D05" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 3550 2900 50  0001 C CNN
+F 1 "+5V" H 3565 3223 50  0000 C CNN
+F 2 "" H 3550 3050 50  0001 C CNN
+F 3 "" H 3550 3050 50  0001 C CNN
+	1    3550 3050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E275037
+P 3550 3950
+AR Path="/5E3ED86C/5E275037" Ref="#PWR?"  Part="1" 
+AR Path="/5E58D2C5/5E275037" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 3550 3700 50  0001 C CNN
+F 1 "GND" H 3555 3777 50  0000 C CNN
+F 2 "" H 3550 3950 50  0001 C CNN
+F 3 "" H 3550 3950 50  0001 C CNN
+	1    3550 3950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3400 4000 3400
+Connection ~ 3550 3400
+Wire Wire Line
+	3550 3400 3550 3450
+Text Label 4000 3400 2    50   ~ 0
+Vref
 $EndSCHEMATC

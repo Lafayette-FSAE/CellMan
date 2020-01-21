@@ -257,17 +257,6 @@ F 3 "~" H 7250 2000 50  0001 C CNN
 	1    7250 2000
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:D D5
-U 1 1 5E7EC513
-P 7150 2450
-F 0 "D5" V 7104 2529 50  0000 L CNN
-F 1 "D" V 7195 2529 50  0000 L CNN
-F 2 "Lafayette_Electric_Car_Footprints:Diode_PMEG3020DEP" H 7150 2450 50  0001 C CNN
-F 3 "~" H 7150 2450 50  0001 C CNN
-	1    7150 2450
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	7250 2150 7250 2200
 Wire Wire Line
@@ -614,4 +603,23 @@ F 7 "NRVTS260ESFT1G" H 4450 1800 50  0001 C CNN "Manufacturer part"
 	1    4450 1800
 	1    0    0    -1  
 $EndComp
+$Comp
+L Lafayette_Electric_Car_Internals:NRVTS260ESFT1G D5
+U 1 1 5E295DC0
+P 7150 2450
+F 0 "D5" H 7150 2600 50  0000 C CNN
+F 1 "60V 2A" H 7150 2350 50  0000 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:Diode_NTS260ESF" H 7450 2600 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NTS260ESF-D.PDF" H 7450 2600 50  0001 C CNN
+F 4 "Digikey" H 7150 2450 50  0001 C CNN "Vendor"
+F 5 "NRVTS260ESFT1GOSCT-ND" H 7150 2750 50  0001 C CNN "Vendor Part"
+F 6 "ON Semiconductor" H 7150 2450 50  0001 C CNN "Manufacturer"
+F 7 "NRVTS260ESFT1G" H 7150 2450 50  0001 C CNN "Manufacturer part"
+	1    7150 2450
+	0    1    1    0   
+$EndComp
+Text Label 8050 4100 0    50   ~ 0
+ThisNetNeedsAName
+Text Label 6350 2950 0    50   ~ 0
+ThisOneToo
 $EndSCHEMATC
