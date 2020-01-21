@@ -620,4 +620,6 @@ F 7 "NRVTS260ESFT1G" H 7150 2450 50  0001 C CNN "Manufacturer part"
 $EndComp
 Text Label 8050 4100 0    50   ~ 0
 ThisNetNeedsAName
+Text Label 6350 2950 0    50   ~ 0
+ThisOneToo
 $EndSCHEMATC

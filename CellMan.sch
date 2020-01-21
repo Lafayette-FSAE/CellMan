@@ -5,12 +5,12 @@ EELAYER END
 $Descr A 11000 8500
 encoding utf-8
 Sheet 1 3
-Title "CellMan Prototype"
-Date "2020-01-11"
-Rev "2.0"
+Title "CellMan"
+Date "2020-01-21"
+Rev "2.2"
 Comp "Lafayette College"
-Comment1 "CellMan Prototype Board"
-Comment2 "Connor Winiarczyk"
+Comment1 "Cell Management Board for Lafayette FSAE Accumulator"
+Comment2 "Designed by Connor Winiarczyk"
 Comment3 ""
 Comment4 ""
 $EndDescr
