@@ -5,9 +5,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 3
-Title ""
-Date "2020-01-11"
-Rev "2.0"
+Title "CellMan"
+Date "2020-01-21"
+Rev "2.2"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -27,75 +27,12 @@ F 3 "https://www.mouser.com/datasheet/2/678/ACHS-712x-DS101_2018-02-28-1386725.p
 	1    6100 3550
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Lafayette_Electric_Car_Internals:VOM617A ISO?
-U 1 1 5E4071C2
-P 6100 5250
-AR Path="/5E4071C2" Ref="ISO?"  Part="1" 
-AR Path="/5E3ED86C/5E4071C2" Ref="ISO1"  Part="1" 
-F 0 "ISO1" H 5850 5450 50  0000 C CNN
-F 1 "VOM617A" H 5900 5350 50  0000 C CNN
-F 2 "Package_SO:SOP-4_3.8x4.1mm_P2.54mm" H 6150 4850 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/427/vom617a-67135.pdf" H 6150 5250 50  0001 C CNN
-F 4 "Vishay Semiconductor Opto Division" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "VOM617AT" H 0   0   50  0001 C CNN "Manufacturer Part"
-F 6 "Digikey" H 0   0   50  0001 C CNN "Vendor"
-F 7 "VOM617A-3CT-ND" H 0   0   50  0001 C CNN "Vendor Part"
-	1    6100 5250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5E4071C8
-P 6500 5750
-AR Path="/5E4071C8" Ref="R?"  Part="1" 
-AR Path="/5E3ED86C/5E4071C8" Ref="R9"  Part="1" 
-F 0 "R9" H 6570 5796 50  0000 L CNN
-F 1 "5k" V 6500 5700 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6430 5750 50  0001 C CNN
-F 3 "~" H 6500 5750 50  0001 C CNN
-	1    6500 5750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6400 5500 6500 5500
-Wire Wire Line
-	6500 5500 6500 5600
-Wire Wire Line
-	6500 6000 6500 5900
-Text Label 8450 6300 1    50   ~ 0
+Text Label 7750 6300 1    50   ~ 0
 Cell-
 Wire Wire Line
 	7400 5700 7400 6000
 Wire Wire Line
-	8450 6300 8450 6000
-Wire Wire Line
-	6400 5300 6500 5300
-Wire Wire Line
-	6500 5300 6500 4900
-Text Label 6500 4900 3    50   ~ 0
-Cell+
-Wire Wire Line
-	5800 5500 5650 5500
-Wire Wire Line
-	5650 5500 5650 5850
-$Comp
-L Device:R R?
-U 1 1 5E4071DD
-P 5500 5300
-AR Path="/5E4071DD" Ref="R?"  Part="1" 
-AR Path="/5E3ED86C/5E4071DD" Ref="R4"  Part="1" 
-F 0 "R4" V 5400 5300 50  0000 C CNN
-F 1 "200" V 5500 5300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5430 5300 50  0001 C CNN
-F 3 "~" H 5500 5300 50  0001 C CNN
-	1    5500 5300
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5350 5300 5200 5300
-Text Label 5650 5850 1    50   ~ 0
-Seg-
+	7750 6300 7750 6000
 Wire Wire Line
 	6500 2400 6650 2400
 Wire Wire Line
@@ -165,7 +102,6 @@ Wire Wire Line
 	8100 6000 8100 5700
 Wire Wire Line
 	7800 5500 7100 5500
-Connection ~ 7100 5500
 Wire Wire Line
 	6250 3250 6250 3150
 Wire Wire Line
@@ -176,8 +112,8 @@ Text Label 6900 1300 3    50   ~ 0
 Cell+
 Text HLabel 4200 2600 0    50   Input ~ 0
 Vout-
-Text Label 4650 2600 0    50   ~ 0
-Seg-
+Text Label 4550 2600 0    50   ~ 0
+Balance-
 $Comp
 L Device:R R2
 U 1 1 5E7BBC4D
@@ -205,9 +141,7 @@ Wire Wire Line
 Text Label 2600 1350 3    50   ~ 0
 LocalVout
 Wire Wire Line
-	2600 2550 2600 2800
-Text Label 2600 2800 1    50   ~ 0
-Seg-
+	2600 2550 2600 2600
 Wire Wire Line
 	2600 2150 2450 2150
 Text HLabel 2450 2150 0    50   Input ~ 0
@@ -223,11 +157,9 @@ Wire Wire Line
 Wire Wire Line
 	5650 3700 5550 3700
 Wire Wire Line
-	5550 3700 5550 3900
+	5550 3700 5550 3750
 Wire Wire Line
 	5650 3600 5350 3600
-Wire Wire Line
-	5650 5300 5800 5300
 Wire Wire Line
 	7400 4900 7400 5200
 Wire Wire Line
@@ -261,12 +193,6 @@ Wire Wire Line
 	7250 2150 7250 2200
 Wire Wire Line
 	7150 2200 7150 2300
-Connection ~ 6500 5500
-Wire Wire Line
-	6500 5500 7100 5500
-Wire Wire Line
-	6500 6000 7400 6000
-Connection ~ 7400 6000
 Wire Wire Line
 	6650 2000 6650 1650
 Wire Wire Line
@@ -278,41 +204,35 @@ Wire Wire Line
 $Comp
 L Device:C C3
 U 1 1 5E82844D
-P 3350 3800
-F 0 "C3" H 3100 3850 50  0000 L CNN
-F 1 "0.1uF" H 3000 3750 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3388 3650 50  0001 C CNN
-F 3 "~" H 3350 3800 50  0001 C CNN
-	1    3350 3800
+P 1900 3550
+F 0 "C3" H 1650 3600 50  0000 L CNN
+F 1 "0.1uF" H 1550 3500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1938 3400 50  0001 C CNN
+F 3 "~" H 1900 3550 50  0001 C CNN
+	1    1900 3550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C4
 U 1 1 5E8286C3
-P 3600 3800
-F 0 "C4" H 3715 3846 50  0000 L CNN
-F 1 "1nF" H 3715 3755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3638 3650 50  0001 C CNN
-F 3 "~" H 3600 3800 50  0001 C CNN
-	1    3600 3800
+P 2150 3550
+F 0 "C4" H 2265 3596 50  0000 L CNN
+F 1 "1nF" H 2265 3505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2188 3400 50  0001 C CNN
+F 3 "~" H 2150 3550 50  0001 C CNN
+	1    2150 3550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3350 3650 3350 3400
-Text Label 3350 3400 3    50   ~ 0
+	1900 3400 1900 3150
+Text Label 1900 3150 3    50   ~ 0
 Power
-Text Label 3600 3400 3    50   ~ 0
+Text Label 2150 3150 3    50   ~ 0
 Filter
 Wire Wire Line
-	3600 3400 3600 3650
-Text Label 3350 4200 1    50   ~ 0
-Seg-
+	2150 3150 2150 3400
 Wire Wire Line
-	3350 4200 3350 3950
-Text Label 3600 4200 1    50   ~ 0
-Seg-
-Wire Wire Line
-	3600 4200 3600 3950
+	2150 3800 2150 3700
 Text Label 5350 3600 0    50   ~ 0
 Filter
 $Comp
@@ -355,11 +275,7 @@ Connection ~ 5150 2600
 Wire Wire Line
 	5150 2600 5700 2600
 Wire Wire Line
-	4200 2600 5150 2600
-Wire Wire Line
 	4600 1800 5150 1800
-Text Label 5550 3900 1    50   ~ 0
-Seg-
 Text Label 5550 3150 3    50   ~ 0
 Power
 Wire Wire Line
@@ -418,34 +334,30 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0105
 U 1 1 5E97328E
-P 2700 4000
-F 0 "#PWR0105" H 2700 3750 50  0001 C CNN
-F 1 "GND" H 2705 3827 50  0000 C CNN
-F 2 "" H 2700 4000 50  0001 C CNN
-F 3 "" H 2700 4000 50  0001 C CNN
-	1    2700 4000
+P 1900 3800
+F 0 "#PWR0105" H 1900 3550 50  0001 C CNN
+F 1 "GND" H 1905 3627 50  0000 C CNN
+F 2 "" H 1900 3800 50  0001 C CNN
+F 3 "" H 1900 3800 50  0001 C CNN
+	1    1900 3800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2700 4000 2700 3750
-Text Label 2700 3750 3    50   ~ 0
-Seg-
 $Comp
 L power:+5V #PWR0106
 U 1 1 5E97A9BC
-P 2850 3750
-F 0 "#PWR0106" H 2850 3600 50  0001 C CNN
-F 1 "+5V" H 2865 3923 50  0000 C CNN
-F 2 "" H 2850 3750 50  0001 C CNN
-F 3 "" H 2850 3750 50  0001 C CNN
-	1    2850 3750
+P 1400 3500
+F 0 "#PWR0106" H 1400 3350 50  0001 C CNN
+F 1 "+5V" H 1415 3673 50  0000 C CNN
+F 2 "" H 1400 3500 50  0001 C CNN
+F 3 "" H 1400 3500 50  0001 C CNN
+	1    1400 3500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2850 3750 2850 4000
-Text Label 2850 4000 1    50   ~ 0
+	1400 3500 1400 3750
+Text Label 1400 3750 1    50   ~ 0
 Power
-Text HLabel 5200 5300 0    50   Input ~ 0
+Text HLabel 5700 5500 0    50   Input ~ 0
 Balance_ctl
 Wire Wire Line
 	6650 1650 6900 1650
@@ -505,89 +417,8 @@ F 7 "NRVTS260ESFT1G" H 5450 1800 50  0001 C CNN "Manufacturer part"
 	1    5450 1800
 	1    0    0    -1  
 $EndComp
-$Comp
-L Lafayette_Electric_Car_Internals:SP8K24FRATB Q?
-U 1 1 5E362780
-P 8850 5500
-AR Path="/5E362780" Ref="Q?"  Part="1" 
-AR Path="/5E3ED86C/5E362780" Ref="Q2"  Part="1" 
-F 0 "Q2" H 8600 5700 50  0000 L CNN
-F 1 "SP8K24FRATB" V 9100 5250 50  0000 L CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 8550 6000 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/348/sp8k24fra-1266146.pdf" H 9000 5600 50  0001 C CNN
-F 4 "Rohm Semiconductor" H 1500 0   50  0001 C CNN "Manufacturer"
-F 5 "Digikey" H 1500 0   50  0001 C CNN "Vendor"
-F 6 "SP8K24FRATBCT-ND" H 1500 0   50  0001 C CNN "Vendor Part"
-F 7 "SP8K24FRATB" H 8850 5500 50  0001 C CNN "Manufacturer Part"
-	1    8850 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Lafayette_Electric_Car_Internals:SP8K24FRATB Q?
-U 2 1 5E363C7F
-P 9500 5500
-AR Path="/5E363C7F" Ref="Q?"  Part="1" 
-AR Path="/5E3ED86C/5E363C7F" Ref="Q2"  Part="2" 
-F 0 "Q2" H 9300 5700 50  0000 L CNN
-F 1 "SP8K24FRATB" V 9750 5250 50  0000 L CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 9200 6000 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/348/sp8k24fra-1266146.pdf" H 9650 5600 50  0001 C CNN
-F 4 "Rohm Semiconductor" H 9500 5500 50  0001 C CNN "Manufacturer"
-F 5 "Digikey" H 9500 5500 50  0001 C CNN "Vendor"
-F 6 "SP8K24FRATBCT-ND" H 9500 5500 50  0001 C CNN "Vendor Part"
-F 7 "SP8K24FRATB" H 9500 5500 50  0001 C CNN "Manufacturer Part"
-	2    9500 5500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	8900 5300 8900 5200
-Wire Wire Line
-	8900 4900 9250 4900
-Wire Wire Line
-	9550 4900 9550 5200
-Wire Wire Line
-	9000 5300 9000 5200
-Wire Wire Line
-	9000 5200 8900 5200
-Connection ~ 8900 5200
-Wire Wire Line
-	8900 5200 8900 4900
-Wire Wire Line
-	9650 5300 9650 5200
-Wire Wire Line
-	9650 5200 9550 5200
-Connection ~ 9550 5200
-Wire Wire Line
-	9550 5200 9550 5300
-Wire Wire Line
-	9250 4900 9250 4100
-Wire Wire Line
-	9250 4100 7750 4100
-Connection ~ 9250 4900
-Wire Wire Line
-	9250 4900 9550 4900
-Connection ~ 7750 4100
-Wire Wire Line
-	8600 5500 7800 5500
-Connection ~ 7800 5500
-Wire Wire Line
-	9250 5500 8600 5500
-Connection ~ 8600 5500
-Wire Wire Line
-	8100 6000 8450 6000
-Wire Wire Line
-	8900 6000 8900 5700
-Connection ~ 8100 6000
-Wire Wire Line
-	8900 6000 9550 6000
-Wire Wire Line
-	9550 6000 9550 5700
-Connection ~ 8900 6000
-Connection ~ 8450 6000
-Wire Wire Line
-	8450 6000 8900 6000
-Wire Wire Line
-	7400 6000 8100 6000
+	7400 6000 7750 6000
 $Comp
 L Lafayette_Electric_Car_Internals:NRVTS260ESFT1G D3
 U 1 1 5E360725
@@ -618,8 +449,109 @@ F 7 "NRVTS260ESFT1G" H 7150 2450 50  0001 C CNN "Manufacturer part"
 	1    7150 2450
 	0    1    1    0   
 $EndComp
-Text Label 8050 4100 0    50   ~ 0
+Text Label 6650 4100 0    50   ~ 0
 ThisNetNeedsAName
 Text Label 6350 2950 0    50   ~ 0
 ThisOneToo
+$Comp
+L Device:C C10
+U 1 1 5E4DA52C
+P 6100 5500
+F 0 "C10" V 6200 5200 50  0000 L CNN
+F 1 "C" V 6200 5350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6138 5350 50  0001 C CNN
+F 3 "~" H 6100 5500 50  0001 C CNN
+	1    6100 5500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D6
+U 1 1 5E4DABA2
+P 6700 5750
+F 0 "D6" V 6654 5829 50  0000 L CNN
+F 1 "D" V 6745 5829 50  0000 L CNN
+F 2 "Lafayette_Electric_Car_Footprints:Diode_NTS260ESF" H 6700 5750 50  0001 C CNN
+F 3 "~" H 6700 5750 50  0001 C CNN
+	1    6700 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 5E4DB907
+P 6400 5750
+F 0 "R13" V 6193 5750 50  0000 C CNN
+F 1 "R" V 6284 5750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6330 5750 50  0001 C CNN
+F 3 "~" H 6400 5750 50  0001 C CNN
+	1    6400 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 5500 6400 5500
+Wire Wire Line
+	6400 5500 6400 5600
+Wire Wire Line
+	6700 5500 6700 5600
+Connection ~ 6400 5500
+Wire Wire Line
+	5950 5500 5700 5500
+Wire Wire Line
+	6700 5900 6700 6000
+Wire Wire Line
+	6400 5900 6400 6000
+Wire Wire Line
+	4200 2600 5150 2600
+Wire Wire Line
+	1900 3700 1900 3800
+$Comp
+L power:GND #PWR0127
+U 1 1 5E57F30D
+P 2150 3800
+F 0 "#PWR0127" H 2150 3550 50  0001 C CNN
+F 1 "GND" H 2155 3627 50  0000 C CNN
+F 2 "" H 2150 3800 50  0001 C CNN
+F 3 "" H 2150 3800 50  0001 C CNN
+	1    2150 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0129
+U 1 1 5E58FBAB
+P 5550 3750
+F 0 "#PWR0129" H 5550 3500 50  0001 C CNN
+F 1 "GND" H 5555 3577 50  0000 C CNN
+F 2 "" H 5550 3750 50  0001 C CNN
+F 3 "" H 5550 3750 50  0001 C CNN
+	1    5550 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0130
+U 1 1 5E59454E
+P 2600 2600
+F 0 "#PWR0130" H 2600 2350 50  0001 C CNN
+F 1 "GND" H 2605 2427 50  0000 C CNN
+F 2 "" H 2600 2600 50  0001 C CNN
+F 3 "" H 2600 2600 50  0001 C CNN
+	1    2600 2600
+	1    0    0    -1  
+$EndComp
+Connection ~ 7750 6000
+Wire Wire Line
+	7750 6000 8100 6000
+Connection ~ 6700 5500
+Wire Wire Line
+	6400 5500 6700 5500
+Wire Wire Line
+	6400 6000 6550 6000
+Connection ~ 6550 6000
+Wire Wire Line
+	6550 6000 6700 6000
+Wire Wire Line
+	6700 5500 7100 5500
+Connection ~ 7100 5500
+Wire Wire Line
+	6550 6000 6550 6300
+Text Label 6550 6300 1    50   ~ 0
+Cell-
 $EndSCHEMATC

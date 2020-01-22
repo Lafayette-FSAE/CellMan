@@ -26,9 +26,9 @@ Text Label 10150 6200 2    50   ~ 0
 Cell-
 Text Label 9050 6200 0    50   ~ 0
 Cell+
-Text Label 8800 2050 0    50   ~ 0
+Text Label 8550 2050 0    50   ~ 0
 Cell+
-Text Label 8800 2500 0    50   ~ 0
+Text Label 8550 2500 0    50   ~ 0
 Cell-
 Text Label 4150 3800 2    50   ~ 0
 CellVoltage
@@ -144,8 +144,6 @@ Connection ~ 2750 1600
 Wire Wire Line
 	2750 1600 2950 1600
 Wire Wire Line
-	2350 1100 2750 1100
-Wire Wire Line
 	2350 1600 2750 1600
 Text Label 5400 6250 3    50   ~ 0
 User_LED
@@ -156,21 +154,21 @@ DividedCell-
 Wire Wire Line
 	2000 3600 2750 3600
 Wire Wire Line
-	9100 2050 8800 2050
+	8850 2050 8550 2050
 Wire Wire Line
-	9100 2500 8800 2500
-Text Label 9450 2050 0    50   ~ 0
+	8850 2500 8550 2500
+Text Label 9200 2050 0    50   ~ 0
 Cell+(RAW)
-Text Label 9450 2500 0    50   ~ 0
+Text Label 9200 2500 0    50   ~ 0
 Cell-(RAW)
 Wire Wire Line
-	10000 2050 10000 2100
+	9750 2050 9750 2100
 Wire Wire Line
-	9350 2050 10000 2050
+	9100 2050 9750 2050
 Wire Wire Line
-	10000 2500 10000 2400
+	9750 2500 9750 2400
 Wire Wire Line
-	9350 2500 10000 2500
+	9100 2500 9750 2500
 Wire Wire Line
 	1650 1500 2000 1500
 Wire Wire Line
@@ -193,25 +191,23 @@ Text Label 1450 6750 2    50   ~ 0
 A2
 Text Label 1750 6750 2    50   ~ 0
 A3
-Text Label 700  7550 1    50   ~ 0
-TSV_RTN
 Wire Wire Line
-	700  7550 700  7200
+	700  7250 700  7200
 Text Notes 950  7900 0    50   ~ 0
 I2C Address Select:\nPopulate for 0 or\nLeave Empty for 1
 Wire Wire Line
-	950  2350 1250 2350
+	950  2600 1250 2600
 Wire Wire Line
-	1250 2450 950  2450
+	1250 2700 950  2700
 Wire Wire Line
-	1250 2550 950  2550
-Text Label 1250 2450 2    50   ~ 0
+	1250 2800 950  2800
+Text Label 1250 2700 2    50   ~ 0
 SWIM
 Wire Wire Line
-	950  2650 1250 2650
-Text Label 1250 2350 2    50   ~ 0
+	950  2900 1250 2900
+Text Label 1250 2600 2    50   ~ 0
 Reset
-Text Notes 1400 2650 0    50   ~ 0
+Text Notes 1400 2900 0    50   ~ 0
 Programming interface for\nMicrocontroller. Uses the\nSingle Wire Interface Module (SWIM)\nbuilt into the STM8
 Text Label 2550 4000 0    50   ~ 0
 A2
@@ -253,23 +249,19 @@ Wire Notes Line
 	7450 500  7450 6750
 Text Label 800  1300 0    50   ~ 0
 TSV_9V
-Text Label 2000 1500 2    50   ~ 0
-TSV_9V
 Text Label 800  1500 0    50   ~ 0
 Seg-
 Text Label 2000 1300 2    50   ~ 0
 Seg-
-Text Notes 750  1050 0    50   ~ 0
-Power and Ground Pins are\nradially symmetrical on connector
 Text Label 2350 1600 0    50   ~ 0
 Seg-
 Text Label 2350 1100 0    50   ~ 0
 TSV_9V
 Wire Notes Line
-	450  1950 4750 1950
+	500  2250 4750 2250
 Wire Notes Line
-	4750 1950 4750 500 
-Text Label 1250 2750 2    50   ~ 0
+	4750 2250 4750 500 
+Text Label 1250 3000 2    50   ~ 0
 Power
 Wire Wire Line
 	4100 1600 4100 1700
@@ -284,22 +276,14 @@ Wire Notes Line
 	4000 8000 500  8000
 Wire Notes Line
 	500  8000 500  6500
-Text Label 1000 7550 1    50   ~ 0
-TSV_RTN
-Text Label 1300 7550 1    50   ~ 0
-TSV_RTN
-Text Label 1600 7550 1    50   ~ 0
-TSV_RTN
-Text Label 1900 7550 1    50   ~ 0
-TSV_RTN
 Wire Wire Line
-	1000 7200 1000 7550
+	1000 7200 1000 7250
 Wire Wire Line
-	1300 7200 1300 7550
+	1300 7200 1300 7250
 Wire Wire Line
-	1600 7200 1600 7550
+	1600 7200 1600 7250
 Wire Wire Line
-	1900 7200 1900 7550
+	1900 7200 1900 7250
 $Sheet
 S 6400 2950 1550 1050
 U 5E3ED86C
@@ -326,9 +310,9 @@ F6 "CellVoltage" I L 6400 4900 50
 F7 "CellTemp" I L 6400 4800 50 
 $EndSheet
 Wire Wire Line
-	950  2750 1250 2750
-NoConn ~ 1250 2650
-Text Label 1250 2550 2    50   ~ 0
+	950  3000 1250 3000
+NoConn ~ 1250 2900
+Text Label 1250 2800 2    50   ~ 0
 Seg-
 Text Label 8450 3200 2    50   ~ 0
 Cell+
@@ -359,23 +343,19 @@ Wire Wire Line
 	6400 4800 5650 4800
 Wire Wire Line
 	6400 4900 5650 4900
-Text Label 6000 1300 2    50   ~ 0
+Text Label 6150 1300 2    50   ~ 0
 Seg+
-Text Label 6000 1400 2    50   ~ 0
-Seg-
-Wire Wire Line
-	5450 1900 5600 1900
+Text Label 6150 1400 2    50   ~ 0
+Balance-
 Wire Wire Line
 	5600 1400 5450 1400
 Wire Wire Line
-	5450 1800 5700 1800
-Wire Wire Line
 	5700 1300 5450 1300
 Wire Wire Line
-	5600 1400 6000 1400
+	5600 1400 6150 1400
 Connection ~ 5600 1400
 Wire Wire Line
-	5700 1300 6000 1300
+	5700 1300 6150 1300
 Connection ~ 5700 1300
 Wire Bus Line
 	1900 5050 4250 5050
@@ -431,16 +411,6 @@ Wire Wire Line
 	5600 3300 6400 3300
 Wire Wire Line
 	5700 3200 6400 3200
-Connection ~ 5600 1900
-Wire Wire Line
-	5600 1900 5600 3300
-Connection ~ 5700 1800
-Wire Wire Line
-	5700 1800 5700 3200
-Wire Wire Line
-	5600 1400 5600 1900
-Wire Wire Line
-	5700 1300 5700 1800
 Text Label 5700 4600 0    50   ~ 0
 DividedCell-
 Text Label 5700 4900 0    50   ~ 0
@@ -452,36 +422,14 @@ Balance_feedback
 Text Label 5700 3800 0    50   ~ 0
 Balance_current
 $Comp
-L Connector:Conn_01x02_Female J4
-U 1 1 5E661F38
-P 5250 1900
-F 0 "J4" H 5350 1850 50  0000 C CNN
-F 1 "BalanceBusOut" H 5250 1650 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5250 1900 50  0001 C CNN
-F 3 "~" H 5250 1900 50  0001 C CNN
-	1    5250 1900
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x02_Female J3
-U 1 1 5E6616D5
-P 5250 1400
-F 0 "J3" H 5350 1350 50  0000 C CNN
-F 1 "BalanceBusIn" H 5300 1150 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5250 1400 50  0001 C CNN
-F 3 "~" H 5250 1400 50  0001 C CNN
-	1    5250 1400
-	-1   0    0    1   
-$EndComp
-$Comp
 L Connector:Conn_01x05_Male J1
 U 1 1 5E6061D9
-P 750 2550
-F 0 "J1" H 858 2931 50  0000 C CNN
-F 1 "Conn_01x05_Male" V 650 2550 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 750 2550 50  0001 C CNN
-F 3 "~" H 750 2550 50  0001 C CNN
-	1    750  2550
+P 750 2800
+F 0 "J1" H 858 3181 50  0000 C CNN
+F 1 "Conn_01x05_Male" V 650 2800 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 750 2800 50  0001 C CNN
+F 3 "~" H 750 2800 50  0001 C CNN
+	1    750  2800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -528,31 +476,31 @@ $EndComp
 $Comp
 L Lafayette_Electric_Car_Internals:LittelfuseHolder F2
 U 1 1 5DC77A37
-P 9200 2500
-F 0 "F2" H 9225 2725 50  0000 C CNN
-F 1 "LittelfuseHolder" H 9225 2634 50  0000 C CNN
-F 2 "Lafayette_Electric_Car_Footprints:0154.500DRL" H 9350 2800 50  0001 C CNN
-F 3 "https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_154_154t_154l_154tl_datasheet.pdf.pdf" H 9550 2650 50  0001 C CNN
-F 4 "Digikey" H 8350 2700 50  0001 C CNN "Vendor"
-F 5 "F6776CT-ND" H 8500 2700 50  0001 C CNN "Vendor Part"
-F 6 "Littelfuse Inc." H 8500 2700 50  0001 C CNN "Manufacturer"
-F 7 "0154.500DRL" H 8500 2700 50  0001 C CNN "Manufacturer Part"
-	1    9200 2500
+P 8950 2500
+F 0 "F2" H 8975 2725 50  0000 C CNN
+F 1 "LittelfuseHolder" H 8975 2634 50  0000 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:fuse_holder_smd_littelfuse" H 9100 2800 50  0001 C CNN
+F 3 "https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_154_154t_154l_154tl_datasheet.pdf.pdf" H 9300 2650 50  0001 C CNN
+F 4 "Digikey" H 8100 2700 50  0001 C CNN "Vendor"
+F 5 "F6776CT-ND" H 8250 2700 50  0001 C CNN "Vendor Part"
+F 6 "Littelfuse Inc." H 8250 2700 50  0001 C CNN "Manufacturer"
+F 7 "0154.500DRL" H 8250 2700 50  0001 C CNN "Manufacturer Part"
+	1    8950 2500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Lafayette_Electric_Car_Internals:LittelfuseHolder F1
 U 1 1 5DC76D71
-P 9200 2050
-F 0 "F1" H 9225 2275 50  0000 C CNN
-F 1 "LittelfuseHolder" H 9225 2184 50  0000 C CNN
-F 2 "Lafayette_Electric_Car_Footprints:0154.500DRL" H 9350 2350 50  0001 C CNN
-F 3 "https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_154_154t_154l_154tl_datasheet.pdf.pdf" H 9550 2200 50  0001 C CNN
-F 4 "Digikey" H 8350 2250 50  0001 C CNN "Vendor"
-F 5 "F6776CT-ND" H 8500 2250 50  0001 C CNN "Vendor Part"
-F 6 "Littelfuse Inc." H 8500 2250 50  0001 C CNN "Manufacturer"
-F 7 "0154.500DRL" H 8500 2250 50  0001 C CNN "Manufacturer Part"
-	1    9200 2050
+P 8950 2050
+F 0 "F1" H 8975 2275 50  0000 C CNN
+F 1 "LittelfuseHolder" H 8975 2184 50  0000 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:fuse_holder_smd_littelfuse" H 9100 2350 50  0001 C CNN
+F 3 "https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_154_154t_154l_154tl_datasheet.pdf.pdf" H 9300 2200 50  0001 C CNN
+F 4 "Digikey" H 8100 2250 50  0001 C CNN "Vendor"
+F 5 "F6776CT-ND" H 8250 2250 50  0001 C CNN "Vendor Part"
+F 6 "Littelfuse Inc." H 8250 2250 50  0001 C CNN "Manufacturer"
+F 7 "0154.500DRL" H 8250 2250 50  0001 C CNN "Manufacturer Part"
+	1    8950 2050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -708,7 +656,7 @@ F 3 "~" H 1000 7050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Lafayette_Electric_Car_Internals:IDC-Connector J2
+L Lafayette_Electric_Car_Internals:IDC-06pin J2
 U 1 1 5DD973BA
 P 1400 1150
 F 0 "J2" H 1500 1150 50  0000 C CNN
@@ -719,18 +667,20 @@ F 4 "Digikey" H 1400 1150 50  0001 C CNN "Vendor"
 F 5 "609-2845-ND" H 1400 1150 50  0001 C CNN "Vendor Part"
 F 6 "Amphenol ICC (FCI)" H 500 1500 50  0001 C CNN "Manufacturer"
 F 7 "75869-131LF" H 50  -300 50  0001 C CNN "Manufacturer Part"
+F 8 "71600-006LF" H 1200 1400 50  0000 L BNN "Mates With"
+F 9 "310J101-20" H 1200 1300 50  0000 L BNN "Use Cable"
 	1    1400 1150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Battery_Cell BT1
 U 1 1 5EC528A6
-P 10000 2300
-F 0 "BT1" H 10118 2396 50  0000 L CNN
-F 1 "Battery_Cell" H 10118 2305 50  0000 L CNN
-F 2 "Lafayette_Electric_Car_Footprints:CELL60AH" V 10000 2360 50  0001 C CNN
-F 3 "~" V 10000 2360 50  0001 C CNN
-	1    10000 2300
+P 9750 2300
+F 0 "BT1" H 9868 2396 50  0000 L CNN
+F 1 "Battery_Cell" H 9868 2305 50  0000 L CNN
+F 2 "Lafayette_Electric_Car_Footprints:CELL60AH" V 9750 2360 50  0001 C CNN
+F 3 "~" V 9750 2360 50  0001 C CNN
+	1    9750 2300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -814,56 +764,8 @@ F 3 "~" H 9450 6200 50  0001 C CNN
 	1    9450 6200
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Lafayette_Electric_Car_Internals:ADM6320 U3
-U 1 1 5E25AC59
-P 1850 5600
-F 0 "U3" H 2150 5767 50  0000 C CNN
-F 1 "ADM6320" H 2150 5676 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 2150 5050 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADM6316_6318_6319_6320_6321_6322.pdf" H 1950 5750 50  0001 C CNN
-	1    1850 5600
-	1    0    0    -1  
-$EndComp
-Text Label 2850 5700 2    50   ~ 0
-Power
-Wire Wire Line
-	2550 5700 2850 5700
-Text Label 1500 5850 0    50   ~ 0
-Seg-
-Wire Wire Line
-	1500 5850 1750 5850
 Wire Wire Line
 	3450 4100 3900 4100
-Text Label 3900 4100 2    50   ~ 0
-Watchdog
-Text Label 2950 6000 2    50   ~ 0
-Watchdog
-Wire Wire Line
-	2950 6000 2550 6000
-Wire Wire Line
-	1750 5700 1500 5700
-Text Label 1500 5700 0    50   ~ 0
-Reset
-Wire Wire Line
-	1150 6000 1150 5900
-$Comp
-L Device:R R11
-U 1 1 5E28BC78
-P 1150 5750
-F 0 "R11" H 1220 5796 50  0000 L CNN
-F 1 "R" H 1220 5705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1080 5750 50  0001 C CNN
-F 3 "~" H 1150 5750 50  0001 C CNN
-	1    1150 5750
-	1    0    0    -1  
-$EndComp
-Text Label 1150 5300 3    50   ~ 0
-Power
-Wire Wire Line
-	1150 5300 1150 5600
-Wire Wire Line
-	1150 6000 1750 6000
 $Comp
 L Device:Jumper JP1
 U 1 1 5E2A773E
@@ -894,14 +796,10 @@ Text Label 8000 1400 2    50   ~ 0
 Cell-
 Wire Wire Line
 	8000 1400 7750 1400
-Text Label 6900 850  0    50   ~ 0
+Text Label 6800 850  0    50   ~ 0
 Seg+
 Wire Wire Line
-	6900 850  7150 850 
-Text Label 6950 1400 0    50   ~ 0
-Seg-
-Wire Wire Line
-	6950 1400 7150 1400
+	6800 850  7150 850 
 $Comp
 L power:GND #PWR0107
 U 1 1 5E2CEBF6
@@ -935,6 +833,132 @@ F 3 "" H 5400 7350 50  0001 C CNN
 	1    5400 7350
 	1    0    0    -1  
 $EndComp
+Text Notes 1150 900  2    50   ~ 0
+Mates With:
+Text Notes 1150 1000 2    50   ~ 0
+Use Cable:
+$Comp
+L power:+9V #PWR0112
+U 1 1 5E366B8B
+P 2250 1050
+F 0 "#PWR0112" H 2250 900 50  0001 C CNN
+F 1 "+9V" H 2265 1223 50  0000 C CNN
+F 2 "" H 2250 1050 50  0001 C CNN
+F 3 "" H 2250 1050 50  0001 C CNN
+	1    2250 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 1050 2250 1100
+Wire Wire Line
+	2250 1100 2750 1100
+Text Label 2000 1500 2    50   ~ 0
+Reset
+Text Notes 5250 950  2    50   ~ 0
+Mates With:
+Text Notes 5250 1050 2    50   ~ 0
+Uses Cable:
+$Comp
+L power:GND #PWR0121
+U 1 1 5E45A83E
+P 700 7250
+F 0 "#PWR0121" H 700 7000 50  0001 C CNN
+F 1 "GND" H 705 7077 50  0000 C CNN
+F 2 "" H 700 7250 50  0001 C CNN
+F 3 "" H 700 7250 50  0001 C CNN
+	1    700  7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 5E472138
+P 1000 7250
+F 0 "#PWR0122" H 1000 7000 50  0001 C CNN
+F 1 "GND" H 1005 7077 50  0000 C CNN
+F 2 "" H 1000 7250 50  0001 C CNN
+F 3 "" H 1000 7250 50  0001 C CNN
+	1    1000 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0123
+U 1 1 5E4761C8
+P 1300 7250
+F 0 "#PWR0123" H 1300 7000 50  0001 C CNN
+F 1 "GND" H 1305 7077 50  0000 C CNN
+F 2 "" H 1300 7250 50  0001 C CNN
+F 3 "" H 1300 7250 50  0001 C CNN
+	1    1300 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0124
+U 1 1 5E47A1A7
+P 1600 7250
+F 0 "#PWR0124" H 1600 7000 50  0001 C CNN
+F 1 "GND" H 1605 7077 50  0000 C CNN
+F 2 "" H 1600 7250 50  0001 C CNN
+F 3 "" H 1600 7250 50  0001 C CNN
+	1    1600 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0125
+U 1 1 5E47E249
+P 1900 7250
+F 0 "#PWR0125" H 1900 7000 50  0001 C CNN
+F 1 "GND" H 1905 7077 50  0000 C CNN
+F 2 "" H 1900 7250 50  0001 C CNN
+F 3 "" H 1900 7250 50  0001 C CNN
+	1    1900 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5E53BB67
+P 6600 1900
+F 0 "R11" V 6500 1850 50  0000 C CNN
+F 1 "R" V 6600 1900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6530 1900 50  0001 C CNN
+F 3 "~" H 6600 1900 50  0001 C CNN
+	1    6600 1900
+	0    1    1    0   
+$EndComp
+Text Label 7000 1900 2    50   ~ 0
+Seg-
+Text Label 6050 1900 0    50   ~ 0
+Balance-
+Wire Wire Line
+	6050 1900 6450 1900
+Wire Wire Line
+	7000 1900 6750 1900
+Text Label 6800 1400 0    50   ~ 0
+Balance-
+Wire Wire Line
+	6800 1400 7150 1400
+Text Notes 6150 2150 0    50   ~ 0
+Net Tie Resistor,\nExpects No Current
+Wire Wire Line
+	5700 1300 5700 3200
+Wire Wire Line
+	5600 1400 5600 3300
+$Comp
+L Lafayette_Electric_Car_Internals:AVX-IDC J3
+U 1 1 5E602DE9
+P 5400 1350
+F 0 "J3" H 5442 1075 50  0000 C CNN
+F 1 "AVX-IDC" H 5442 1166 50  0000 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:AVX" H 5550 1550 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/AVX%20PDFs/00917600x7xxxx6%20dwg.pdf" H 5550 1550 50  0001 C CNN
+F 4 "Digikey" H 5400 1350 50  0001 C CNN "Vendor"
+F 5 "478-7790-1-ND" H 5400 1350 50  0001 C CNN "Vendor Part"
+F 6 "AVX Corporation" H 5400 1350 50  0001 C CNN "Manufacaturer"
+F 7 "009176002701106" H 5400 1350 50  0001 C CNN "Manufacturer Part"
+F 8 "" H 5400 1350 50  0000 C CNN "Uses Cable"
+	1    5400 1350
+	-1   0    0    1   
+$EndComp
+NoConn ~ 3900 4100
 Wire Bus Line
 	4250 3800 4250 5050
 Wire Bus Line
