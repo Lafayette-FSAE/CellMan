@@ -239,10 +239,6 @@ Wire Wire Line
 	2750 4300 2550 4300
 Text Label 2550 4300 0    50   ~ 0
 A4
-NoConn ~ 8950 1150
-NoConn ~ 8950 1450
-NoConn ~ 9700 1150
-NoConn ~ 9700 1450
 Wire Wire Line
 	3450 4400 3900 4400
 Wire Notes Line
@@ -539,66 +535,6 @@ F 6 "STMicroelectronics" H 3400 900 50  0001 C CNN "Manufacturer"
 F 7 "L78L05CD13TR" H 3400 900 50  0001 C CNN "Manufacturer Part"
 	1    3400 900 
 	-1   0    0    -1  
-$EndComp
-$Comp
-L Lafayette_Electric_Car_Internals:SMT-Standoff M3
-U 1 1 5E057A91
-P 9700 1000
-F 0 "M3" H 9800 999 50  0000 L CNN
-F 1 "SMT-Standoff" H 9800 908 50  0000 L CNN
-F 2 "Lafayette_Electric_Car_Footprints:standoff_smt_4" H 9500 1500 50  0001 C CNN
-F 3 "http://www.keyelco.com/product-pdf.cfm?p=14255" H 9500 1500 50  0001 C CNN
-F 4 "Digikey" H 9400 1450 50  0001 C CNN "Vendor"
-F 5 "36-4883CT-ND" H 9600 1500 50  0001 C CNN "Vendor Part"
-F 6 "Keystone Electronics" H 9600 1500 50  0001 C CNN "Manufacturer"
-F 7 "4883" H 9600 1500 50  0001 C CNN "Manufacturer Part"
-	1    9700 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Lafayette_Electric_Car_Internals:SMT-Standoff M4
-U 1 1 5E05779A
-P 9700 1300
-F 0 "M4" H 9800 1299 50  0000 L CNN
-F 1 "SMT-Standoff" H 9800 1208 50  0000 L CNN
-F 2 "Lafayette_Electric_Car_Footprints:standoff_smt_4" H 9500 1800 50  0001 C CNN
-F 3 "http://www.keyelco.com/product-pdf.cfm?p=14255" H 9500 1800 50  0001 C CNN
-F 4 "Digikey" H 9400 1750 50  0001 C CNN "Vendor"
-F 5 "36-4883CT-ND" H 9600 1800 50  0001 C CNN "Vendor Part"
-F 6 "Keystone Electronics" H 9600 1800 50  0001 C CNN "Manufacturer"
-F 7 "4883" H 9600 1800 50  0001 C CNN "Manufacturer Part"
-	1    9700 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Lafayette_Electric_Car_Internals:SMT-Standoff M2
-U 1 1 5E057362
-P 8950 1300
-F 0 "M2" H 9050 1299 50  0000 L CNN
-F 1 "SMT-Standoff" H 9050 1208 50  0000 L CNN
-F 2 "Lafayette_Electric_Car_Footprints:standoff_smt_4" H 8750 1800 50  0001 C CNN
-F 3 "http://www.keyelco.com/product-pdf.cfm?p=14255" H 8750 1800 50  0001 C CNN
-F 4 "Digikey" H 8650 1750 50  0001 C CNN "Vendor"
-F 5 "36-4883CT-ND" H 8850 1800 50  0001 C CNN "Vendor Part"
-F 6 "Keystone Electronics" H 8850 1800 50  0001 C CNN "Manufacturer"
-F 7 "4883" H 8850 1800 50  0001 C CNN "Manufacturer Part"
-	1    8950 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Lafayette_Electric_Car_Internals:SMT-Standoff M1
-U 1 1 5E04CBC9
-P 8950 1000
-F 0 "M1" H 9050 999 50  0000 L CNN
-F 1 "SMT-Standoff" H 9050 908 50  0000 L CNN
-F 2 "Lafayette_Electric_Car_Footprints:standoff_smt_4" H 8750 1500 50  0001 C CNN
-F 3 "http://www.keyelco.com/product-pdf.cfm?p=14255" H 8750 1500 50  0001 C CNN
-F 4 "Digikey" H 8650 1450 50  0001 C CNN "Vendor"
-F 5 "36-4883CT-ND" H 8850 1500 50  0001 C CNN "Vendor Part"
-F 6 "Keystone Electronics" H 8850 1500 50  0001 C CNN "Manufacturer"
-F 7 "4883" H 8850 1500 50  0001 C CNN "Manufacturer Part"
-	1    8950 1000
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R1
@@ -959,6 +895,28 @@ F 8 "" H 5400 1350 50  0000 C CNN "Uses Cable"
 	-1   0    0    1   
 $EndComp
 NoConn ~ 3900 4100
+$Comp
+L Lafayette_Electric_Car_Internals:LafECEDepLogo LOGO1
+U 1 1 5E76A3B5
+P 1500 5900
+F 0 "LOGO1" H 1497 6149 60  0000 C CNN
+F 1 "LafECEDepLogo" H 1500 6042 60  0001 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:ECE_Logo_Jon" H 1500 5900 50  0001 C CNN
+F 3 "" H 1500 5900 50  0001 C CNN
+	1    1500 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Lafayette_Electric_Car_Internals:LeopardPawLogo LOGO2
+U 1 1 5E76B0A3
+P 2350 5850
+F 0 "LOGO2" H 2499 5856 60  0000 L CNN
+F 1 "LeopardPawLogo" H 2350 5983 60  0001 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:Paw" H 2350 5850 50  0001 C CNN
+F 3 "" H 2350 5850 50  0001 C CNN
+	1    2350 5850
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	4250 3800 4250 5050
 Wire Bus Line

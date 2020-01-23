@@ -548,10 +548,10 @@ F 7 "NRVTS260ESFT1G" H 6700 5750 50  0001 C CNN "Manufacturer part"
 	0    1    1    0   
 $EndComp
 $Comp
-L Lafayette_Electric_Car_Internals:C1206C104KARECAUTO C?
+L Lafayette_Electric_Car_Internals:C1206C104KARECAUTO C10
 U 1 1 5E6ED2E4
 P 6100 5500
-F 0 "C?" V 5850 5150 50  0000 C CNN
+F 0 "C10" V 5850 5150 50  0000 C CNN
 F 1 "0.1uF 250V" V 5950 5250 50  0000 C CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6050 5700 50  0001 C CNN
 F 3 "https://content.kemet.com/datasheets/KEM_C1090_X7R_ESD.pdf" H 5800 5600 50  0001 C CNN

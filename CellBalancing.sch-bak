@@ -454,33 +454,11 @@ ThisNetNeedsAName
 Text Label 6350 2950 0    50   ~ 0
 ThisOneToo
 $Comp
-L Device:C C10
-U 1 1 5E4DA52C
-P 6100 5500
-F 0 "C10" V 6200 5200 50  0000 L CNN
-F 1 "C" V 6200 5350 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6138 5350 50  0001 C CNN
-F 3 "~" H 6100 5500 50  0001 C CNN
-	1    6100 5500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D D6
-U 1 1 5E4DABA2
-P 6700 5750
-F 0 "D6" V 6654 5829 50  0000 L CNN
-F 1 "D" V 6745 5829 50  0000 L CNN
-F 2 "Lafayette_Electric_Car_Footprints:Diode_NTS260ESF" H 6700 5750 50  0001 C CNN
-F 3 "~" H 6700 5750 50  0001 C CNN
-	1    6700 5750
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R R13
 U 1 1 5E4DB907
 P 6400 5750
-F 0 "R13" V 6193 5750 50  0000 C CNN
-F 1 "R" V 6284 5750 50  0000 C CNN
+F 0 "R13" V 6300 5750 50  0000 C CNN
+F 1 "R" V 6400 5750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6330 5750 50  0001 C CNN
 F 3 "~" H 6400 5750 50  0001 C CNN
 	1    6400 5750
@@ -554,4 +532,34 @@ Wire Wire Line
 	6550 6000 6550 6300
 Text Label 6550 6300 1    50   ~ 0
 Cell-
+$Comp
+L Lafayette_Electric_Car_Internals:NRVTS260ESFT1G D6
+U 1 1 5E6DFDC8
+P 6700 5750
+F 0 "D6" V 6700 5650 50  0000 C CNN
+F 1 "60V 2A" V 6700 6000 50  0000 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:Diode_NTS260ESF" H 7000 5900 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NTS260ESF-D.PDF" H 7000 5900 50  0001 C CNN
+F 4 "Digikey" H 6700 5750 50  0001 C CNN "Vendor"
+F 5 "NRVTS260ESFT1GOSCT-ND" H 6700 6050 50  0001 C CNN "Vendor Part"
+F 6 "ON Semiconductor" H 6700 5750 50  0001 C CNN "Manufacturer"
+F 7 "NRVTS260ESFT1G" H 6700 5750 50  0001 C CNN "Manufacturer part"
+	1    6700 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Lafayette_Electric_Car_Internals:C1206C104KARECAUTO C?
+U 1 1 5E6ED2E4
+P 6100 5500
+F 0 "C?" V 5850 5150 50  0000 C CNN
+F 1 "0.1uF 250V" V 5950 5250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6050 5700 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1090_X7R_ESD.pdf" H 5800 5600 50  0001 C CNN
+F 4 "Digikey" H 6100 5500 50  0001 C CNN "Vendor"
+F 5 "399-17175-1-ND" H 6100 5700 50  0001 C CNN "Vendor Part"
+F 6 "KEMET" H 6100 5500 50  0001 C CNN "Manufacturer"
+F 7 "C1206C104KARECAUTO" H 6100 5700 50  0001 C CNN "Manufactuer Part"
+	1    6100 5500
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
