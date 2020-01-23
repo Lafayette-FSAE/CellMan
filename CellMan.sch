@@ -6,7 +6,7 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 1 3
 Title "CellMan"
-Date "2020-01-21"
+Date "2020-01-22"
 Rev "2.2"
 Comp "Lafayette College"
 Comment1 "Cell Management Board for Lafayette FSAE Accumulator"
@@ -15,16 +15,16 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	10150 6200 9950 6200
+	9500 5950 9300 5950
 Wire Wire Line
-	9650 6200 9600 6200
+	9000 5950 8950 5950
 Wire Wire Line
-	9300 6200 9050 6200
-Text Notes 9050 6550 0    50   ~ 0
+	8650 5950 8400 5950
+Text Notes 8400 6300 0    50   ~ 0
 Reverse Polarity Indicator\n(Make this an angry color)
-Text Label 10150 6200 2    50   ~ 0
+Text Label 9500 5950 2    50   ~ 0
 Cell-
-Text Label 9050 6200 0    50   ~ 0
+Text Label 8400 5950 0    50   ~ 0
 Cell+
 Text Label 8550 2050 0    50   ~ 0
 Cell+
@@ -339,8 +339,6 @@ Wire Wire Line
 	6400 4800 5650 4800
 Wire Wire Line
 	6400 4900 5650 4900
-Text Label 6150 1300 2    50   ~ 0
-Seg+
 Text Label 6150 1400 2    50   ~ 0
 Balance-
 Wire Wire Line
@@ -457,16 +455,16 @@ $EndComp
 $Comp
 L Lafayette_Electric_Car_Internals:LED_Red D2
 U 1 1 5DE85DFB
-P 9800 6200
-F 0 "D2" H 9850 6100 50  0000 R CNN
-F 1 "LED_Red" H 9950 6350 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10150 6650 50  0001 C CNN
-F 3 "https://vcclite.com/wp-content/uploads/wpallimport/files/files/CMD1721Seriesver3.pdf" H 9950 6350 50  0001 C CNN
-F 4 "Digikey" H 9100 6950 50  0001 C CNN "Vendor"
-F 5 "L62501CT-ND" H 9250 6850 50  0001 C CNN "Vendor Part"
-F 6 "Visual Communications Company - VCC" H 9750 6550 50  0001 C CNN "Manufacturer"
-F 7 "CMD17-21VRD/TR8" H 9350 6750 50  0001 C CNN "Manufacturer Part"
-	1    9800 6200
+P 9150 5950
+F 0 "D2" H 9200 5850 50  0000 R CNN
+F 1 "LED_Red" H 9300 6100 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9500 6400 50  0001 C CNN
+F 3 "https://vcclite.com/wp-content/uploads/wpallimport/files/files/CMD1721Seriesver3.pdf" H 9300 6100 50  0001 C CNN
+F 4 "Digikey" H 8450 6700 50  0001 C CNN "Vendor"
+F 5 "L62501CT-ND" H 8600 6600 50  0001 C CNN "Vendor Part"
+F 6 "Visual Communications Company - VCC" H 9100 6300 50  0001 C CNN "Manufacturer"
+F 7 "CMD17-21VRD/TR8" H 8700 6500 50  0001 C CNN "Manufacturer Part"
+	1    9150 5950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -604,7 +602,7 @@ F 5 "609-2845-ND" H 1400 1150 50  0001 C CNN "Vendor Part"
 F 6 "Amphenol ICC (FCI)" H 500 1500 50  0001 C CNN "Manufacturer"
 F 7 "75869-131LF" H 50  -300 50  0001 C CNN "Manufacturer Part"
 F 8 "71600-006LF" H 1200 1400 50  0000 L BNN "Mates With"
-F 9 "310J101-20" H 1200 1300 50  0000 L BNN "Use Cable"
+F 9 "310J101-20" H 1200 1300 50  0000 L BNN "Uses Cable"
 	1    1400 1150
 	1    0    0    -1  
 $EndComp
@@ -692,12 +690,12 @@ $EndComp
 $Comp
 L Device:R R16
 U 1 1 5DB4E3DA
-P 9450 6200
-F 0 "R16" V 9350 6200 50  0000 C CNN
-F 1 "250" V 9450 6200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9380 6200 50  0001 C CNN
-F 3 "~" H 9450 6200 50  0001 C CNN
-	1    9450 6200
+P 8800 5950
+F 0 "R16" V 8700 5950 50  0000 C CNN
+F 1 "250" V 8800 5950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8730 5950 50  0001 C CNN
+F 3 "~" H 8800 5950 50  0001 C CNN
+	1    8800 5950
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -732,8 +730,6 @@ Text Label 8000 1400 2    50   ~ 0
 Cell-
 Wire Wire Line
 	8000 1400 7750 1400
-Text Label 6800 850  0    50   ~ 0
-Seg+
 Wire Wire Line
 	6800 850  7150 850 
 $Comp
@@ -772,7 +768,7 @@ $EndComp
 Text Notes 1150 900  2    50   ~ 0
 Mates With:
 Text Notes 1150 1000 2    50   ~ 0
-Use Cable:
+Uses Cable:
 $Comp
 L power:+9V #PWR0112
 U 1 1 5E366B8B
@@ -790,9 +786,9 @@ Wire Wire Line
 	2250 1100 2750 1100
 Text Label 2000 1500 2    50   ~ 0
 Reset
-Text Notes 5250 950  2    50   ~ 0
+Text Notes 6000 950  2    50   ~ 0
 Mates With:
-Text Notes 5250 1050 2    50   ~ 0
+Text Notes 6000 1050 2    50   ~ 0
 Uses Cable:
 $Comp
 L power:GND #PWR0121
@@ -866,13 +862,11 @@ Text Label 6050 1900 0    50   ~ 0
 Balance-
 Wire Wire Line
 	6050 1900 6450 1900
-Wire Wire Line
-	7000 1900 6750 1900
 Text Label 6800 1400 0    50   ~ 0
 Balance-
 Wire Wire Line
 	6800 1400 7150 1400
-Text Notes 6150 2150 0    50   ~ 0
+Text Notes 6100 2150 0    50   ~ 0
 Net Tie Resistor,\nExpects No Current
 Wire Wire Line
 	5700 1300 5700 3200
@@ -890,7 +884,7 @@ F 4 "Digikey" H 5400 1350 50  0001 C CNN "Vendor"
 F 5 "478-7790-1-ND" H 5400 1350 50  0001 C CNN "Vendor Part"
 F 6 "AVX Corporation" H 5400 1350 50  0001 C CNN "Manufacaturer"
 F 7 "009176002701106" H 5400 1350 50  0001 C CNN "Manufacturer Part"
-F 8 "" H 5400 1350 50  0000 C CNN "Uses Cable"
+F 8 "TODO" H 4550 1000 50  0000 L BNN "Uses Cable"
 	1    5400 1350
 	-1   0    0    1   
 $EndComp
@@ -898,25 +892,46 @@ NoConn ~ 3900 4100
 $Comp
 L Lafayette_Electric_Car_Internals:LafECEDepLogo LOGO1
 U 1 1 5E76A3B5
-P 1500 5900
-F 0 "LOGO1" H 1497 6149 60  0000 C CNN
-F 1 "LafECEDepLogo" H 1500 6042 60  0001 C CNN
-F 2 "Lafayette_Electric_Car_Footprints:ECE_Logo_Jon" H 1500 5900 50  0001 C CNN
-F 3 "" H 1500 5900 50  0001 C CNN
-	1    1500 5900
+P 1300 6150
+F 0 "LOGO1" H 1297 6399 60  0000 C CNN
+F 1 "LafECEDepLogo" H 1300 6292 60  0001 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:ECE_Logo_Jon" H 1300 6150 50  0001 C CNN
+F 3 "" H 1300 6150 50  0001 C CNN
+	1    1300 6150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Lafayette_Electric_Car_Internals:LeopardPawLogo LOGO2
 U 1 1 5E76B0A3
-P 2350 5850
-F 0 "LOGO2" H 2499 5856 60  0000 L CNN
-F 1 "LeopardPawLogo" H 2350 5983 60  0001 C CNN
-F 2 "Lafayette_Electric_Car_Footprints:Paw" H 2350 5850 50  0001 C CNN
-F 3 "" H 2350 5850 50  0001 C CNN
-	1    2350 5850
+P 2150 6100
+F 0 "LOGO2" H 2299 6106 60  0000 L CNN
+F 1 "LeopardPawLogo" H 2150 6233 60  0001 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:Paw" H 2150 6100 50  0001 C CNN
+F 3 "" H 2150 6100 50  0001 C CNN
+	1    2150 6100
 	1    0    0    -1  
 $EndComp
+Text Notes 8150 1200 0    50   ~ 0
+Jumpers connect ends of balance bus to\nCell terminals at each end of the segment.\nPopulate JP1 on the highest cell in the stack\nand JP2 on the lowest
+Text Label 6150 1300 2    50   ~ 0
+Balance+
+Text Label 6800 850  0    50   ~ 0
+Balance+
+$Comp
+L power:GND #PWR?
+U 1 1 5E78041F
+P 7050 1950
+F 0 "#PWR?" H 7050 1700 50  0001 C CNN
+F 1 "GND" H 7055 1777 50  0000 C CNN
+F 2 "" H 7050 1950 50  0001 C CNN
+F 3 "" H 7050 1950 50  0001 C CNN
+	1    7050 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 1950 7050 1900
+Wire Wire Line
+	6750 1900 7050 1900
 Wire Bus Line
 	4250 3800 4250 5050
 Wire Bus Line
