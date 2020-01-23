@@ -421,7 +421,7 @@ U 1 1 5E6061D9
 P 750 2800
 F 0 "J1" H 858 3181 50  0000 C CNN
 F 1 "Conn_01x05_Male" V 650 2800 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 750 2800 50  0001 C CNN
+F 2 "" H 750 2800 50  0001 C CNN
 F 3 "~" H 750 2800 50  0001 C CNN
 	1    750  2800
 	1    0    0    -1  
@@ -540,7 +540,7 @@ U 1 1 5DF7E8CA
 P 1900 7050
 F 0 "R1" V 2000 7000 50  0000 L CNN
 F 1 "R" V 1900 7050 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1830 7050 50  0001 C CNN
+F 2 "" V 1830 7050 50  0001 C CNN
 F 3 "~" H 1900 7050 50  0001 C CNN
 	1    1900 7050
 	-1   0    0    1   
@@ -551,7 +551,7 @@ U 1 1 5DE12C9C
 P 700 7050
 F 0 "R5" V 600 7000 50  0000 L CNN
 F 1 "R" V 700 7000 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 630 7050 50  0001 C CNN
+F 2 "" V 630 7050 50  0001 C CNN
 F 3 "~" H 700 7050 50  0001 C CNN
 	1    700  7050
 	1    0    0    -1  
@@ -562,7 +562,7 @@ U 1 1 5DE05174
 P 1600 7050
 F 0 "R8" V 1700 7000 50  0000 L CNN
 F 1 "R" V 1600 7050 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1530 7050 50  0001 C CNN
+F 2 "" V 1530 7050 50  0001 C CNN
 F 3 "~" H 1600 7050 50  0001 C CNN
 	1    1600 7050
 	-1   0    0    1   
@@ -573,7 +573,7 @@ U 1 1 5DE04CFC
 P 1300 7050
 F 0 "R7" V 1200 7000 50  0000 L CNN
 F 1 "R" V 1300 7000 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1230 7050 50  0001 C CNN
+F 2 "" V 1230 7050 50  0001 C CNN
 F 3 "~" H 1300 7050 50  0001 C CNN
 	1    1300 7050
 	1    0    0    -1  
@@ -584,7 +584,7 @@ U 1 1 5DE0484B
 P 1000 7050
 F 0 "R6" V 900 7000 50  0000 L CNN
 F 1 "R" V 1000 7000 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 930 7050 50  0001 C CNN
+F 2 "" V 930 7050 50  0001 C CNN
 F 3 "~" H 1000 7050 50  0001 C CNN
 	1    1000 7050
 	1    0    0    -1  
@@ -602,7 +602,7 @@ F 5 "609-2845-ND" H 1400 1150 50  0001 C CNN "Vendor Part"
 F 6 "Amphenol ICC (FCI)" H 500 1500 50  0001 C CNN "Manufacturer"
 F 7 "75869-131LF" H 50  -300 50  0001 C CNN "Manufacturer Part"
 F 8 "71600-006LF" H 1200 1400 50  0000 L BNN "Mates With"
-F 9 "310J101-20" H 1200 1300 50  0000 L BNN "Uses Cable"
+F 9 "310J101-20" H 0   0   50  0001 C CNN "Use Cable"
 	1    1400 1150
 	1    0    0    -1  
 $EndComp
@@ -612,7 +612,7 @@ U 1 1 5EC528A6
 P 9750 2300
 F 0 "BT1" H 9868 2396 50  0000 L CNN
 F 1 "Battery_Cell" H 9868 2305 50  0000 L CNN
-F 2 "Lafayette_Electric_Car_Footprints:CELL60AH" V 9750 2360 50  0001 C CNN
+F 2 "" V 9750 2360 50  0001 C CNN
 F 3 "~" V 9750 2360 50  0001 C CNN
 	1    9750 2300
 	1    0    0    -1  
@@ -638,7 +638,7 @@ U 1 1 5E36A335
 P 4100 1350
 F 0 "C2" H 4200 1400 50  0000 L CNN
 F 1 "0.1uF" H 4200 1300 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4138 1200 50  0001 C CNN
+F 2 "" H 4138 1200 50  0001 C CNN
 F 3 "~" H 4100 1350 50  0001 C CNN
 	1    4100 1350
 	1    0    0    -1  
@@ -649,7 +649,7 @@ U 1 1 5E32E0B8
 P 2750 1350
 F 0 "C1" H 2550 1450 50  0000 L CNN
 F 1 "0.33uF" H 2350 1350 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2788 1200 50  0001 C CNN
+F 2 "" H 2788 1200 50  0001 C CNN
 F 3 "~" H 2750 1350 50  0001 C CNN
 	1    2750 1350
 	1    0    0    -1  
@@ -660,7 +660,7 @@ U 1 1 5DED3513
 P 5400 6800
 F 0 "R15" H 5470 6846 50  0000 L CNN
 F 1 "R" H 5470 6755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5330 6800 50  0001 C CNN
+F 2 "" V 5330 6800 50  0001 C CNN
 F 3 "~" H 5400 6800 50  0001 C CNN
 	1    5400 6800
 	1    0    0    -1  
@@ -671,7 +671,7 @@ U 1 1 5DD4CA25
 P 4950 7000
 F 0 "C9" H 5000 7100 50  0000 L CNN
 F 1 "1uF" H 5000 6900 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4988 6850 50  0001 C CNN
+F 2 "" H 4988 6850 50  0001 C CNN
 F 3 "~" H 4950 7000 50  0001 C CNN
 	1    4950 7000
 	1    0    0    -1  
@@ -682,7 +682,7 @@ U 1 1 5DD1E832
 P 4700 7000
 F 0 "C6" H 4600 6900 50  0000 C CNN
 F 1 "1uF" H 4600 7100 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4738 6850 50  0001 C CNN
+F 2 "" H 4738 6850 50  0001 C CNN
 F 3 "~" H 4700 7000 50  0001 C CNN
 	1    4700 7000
 	-1   0    0    1   
@@ -693,7 +693,7 @@ U 1 1 5DB4E3DA
 P 8800 5950
 F 0 "R16" V 8700 5950 50  0000 C CNN
 F 1 "250" V 8800 5950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8730 5950 50  0001 C CNN
+F 2 "" V 8730 5950 50  0001 C CNN
 F 3 "~" H 8800 5950 50  0001 C CNN
 	1    8800 5950
 	0    -1   -1   0   
@@ -706,8 +706,9 @@ U 1 1 5E2A773E
 P 7450 850
 F 0 "JP1" H 6950 1000 50  0000 C CNN
 F 1 "Jumper" H 7200 1000 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 7450 850 50  0001 C CNN
+F 2 "" H 7450 850 50  0001 C CNN
 F 3 "~" H 7450 850 50  0001 C CNN
+F 4 "0015291025" H 8650 850 50  0000 L BNN "Mates With"
 	1    7450 850 
 	1    0    0    -1  
 $EndComp
@@ -717,8 +718,9 @@ U 1 1 5E2A8A26
 P 7450 1400
 F 0 "JP2" H 6950 1550 50  0000 C CNN
 F 1 "Jumper" H 7200 1550 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 7450 1400 50  0001 C CNN
+F 2 "" H 7450 1400 50  0001 C CNN
 F 3 "~" H 7450 1400 50  0001 C CNN
+F 4 "0015291025" H 7450 1400 50  0001 C CNN "Mates With:"
 	1    7450 1400
 	1    0    0    -1  
 $EndComp
@@ -851,7 +853,7 @@ U 1 1 5E53BB67
 P 6600 1900
 F 0 "R11" V 6500 1850 50  0000 C CNN
 F 1 "R" V 6600 1900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6530 1900 50  0001 C CNN
+F 2 "" V 6530 1900 50  0001 C CNN
 F 3 "~" H 6600 1900 50  0001 C CNN
 	1    6600 1900
 	0    1    1    0   
@@ -882,9 +884,9 @@ F 2 "Lafayette_Electric_Car_Footprints:AVX" H 5550 1550 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/AVX%20PDFs/00917600x7xxxx6%20dwg.pdf" H 5550 1550 50  0001 C CNN
 F 4 "Digikey" H 5400 1350 50  0001 C CNN "Vendor"
 F 5 "478-7790-1-ND" H 5400 1350 50  0001 C CNN "Vendor Part"
-F 6 "AVX Corporation" H 5400 1350 50  0001 C CNN "Manufacaturer"
-F 7 "009176002701106" H 5400 1350 50  0001 C CNN "Manufacturer Part"
-F 8 "TODO" H 4550 1000 50  0000 L BNN "Uses Cable"
+F 6 "009176002701106" H 5400 1350 50  0001 C CNN "Manufacturer Part"
+F 7 "" H 4550 1000 50  0000 L BNN "Uses Cable"
+F 8 "AVX Corporation" H 0   0   50  0001 C CNN "Manufacturer"
 	1    5400 1350
 	-1   0    0    1   
 $EndComp
@@ -911,7 +913,7 @@ F 3 "" H 2150 6100 50  0001 C CNN
 	1    2150 6100
 	1    0    0    -1  
 $EndComp
-Text Notes 8150 1200 0    50   ~ 0
+Text Notes 8150 1450 0    50   ~ 0
 Jumpers connect ends of balance bus to\nCell terminals at each end of the segment.\nPopulate JP1 on the highest cell in the stack\nand JP2 on the lowest
 Text Label 6150 1300 2    50   ~ 0
 Balance+
@@ -938,4 +940,6 @@ Wire Bus Line
 	1900 3700 1900 5050
 Wire Bus Line
 	5550 3800 5550 5050
+Text Notes 8150 850  0    50   ~ 0
+Mates With:
 $EndSCHEMATC

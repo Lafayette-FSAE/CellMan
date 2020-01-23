@@ -43,8 +43,8 @@ F 4 "Digikey" H 6400 5550 50  0001 C CNN "Vendor"
 F 5 "BC2477CT-ND" H 6700 5450 50  0001 C CNN "Vendor Part"
 F 6 "Vishay BC Components" H 6700 5450 50  0001 C CNN "Manufacturer"
 F 7 "NTCS0603E3202JLT" H 6700 5450 50  0001 C CNN "Manufacturer Part"
-F 8 "3420" H 6850 4950 50  0000 L CNN "B 25/85"
-F 9 "2k" H 6850 5050 50  0000 L CNN "R 25"
+F 8 "3420" H 6850 5200 50  0000 L CNN "B 25/85"
+F 9 "2k" H 6850 5300 50  0000 L CNN "R 25"
 F 10 "https://docs.google.com/spreadsheets/d/1xzh2DkGRcMngHCjEcCASSh_Z_XySEc_v28LqjC34Hjo/edit?usp=sharing" V 6200 5200 50  0001 C CNN "Calculations"
 	1    6200 5200
 	1    0    0    -1  
@@ -72,7 +72,7 @@ AR Path="/5FDA3FDE/5E5AAF0F" Ref="R?"  Part="1"
 AR Path="/5E5AAF0F" Ref="R?"  Part="1" 
 AR Path="/5E58D2C5/5E5AAF0F" Ref="R21"  Part="1" 
 F 0 "R21" V 6700 2200 50  0000 C CNN
-F 1 "10k" V 6600 2200 50  0000 C CNN
+F 1 "51k" V 6600 2200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6530 2200 50  0001 C CNN
 F 3 "~" H 6600 2200 50  0001 C CNN
 	1    6600 2200
@@ -88,7 +88,7 @@ AR Path="/5FDA3FDE/5E5AAF16" Ref="R?"  Part="1"
 AR Path="/5E5AAF16" Ref="R?"  Part="1" 
 AR Path="/5E58D2C5/5E5AAF16" Ref="R18"  Part="1" 
 F 0 "R18" V 6200 2200 50  0000 C CNN
-F 1 "51k" V 6100 2200 50  0000 C CNN
+F 1 "10k" V 6100 2200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6030 2200 50  0001 C CNN
 F 3 "~" H 6100 2200 50  0001 C CNN
 	1    6100 2200
@@ -145,7 +145,7 @@ Wire Notes Line
 	6400 500  6400 6750
 Wire Wire Line
 	6750 2200 6950 2200
-Text Notes 8750 2600 0    50   ~ 0
+Text Notes 8700 2700 0    50   ~ 0
 Protection Resistors
 $Comp
 L Lafayette_Electric_Car_Internals:AD8479 U5
@@ -171,7 +171,7 @@ L Device:R R14
 U 1 1 5E316E76
 P 8850 2950
 F 0 "R14" V 8750 2950 50  0000 C CNN
-F 1 "R" V 8850 2950 50  0000 C CNN
+F 1 "2k" V 8850 2950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8780 2950 50  0001 C CNN
 F 3 "~" H 8850 2950 50  0001 C CNN
 	1    8850 2950
@@ -186,7 +186,7 @@ L Device:R R17
 U 1 1 5E31702A
 P 8850 3050
 F 0 "R17" V 8950 3050 50  0000 C CNN
-F 1 "R" V 8850 3050 50  0000 C CNN
+F 1 "2k" V 8850 3050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8780 3050 50  0001 C CNN
 F 3 "~" H 8850 3050 50  0001 C CNN
 	1    8850 3050
@@ -207,10 +207,11 @@ $Comp
 L Device:Jumper JP4
 U 1 1 5E32C87C
 P 8000 3900
-F 0 "JP4" H 8050 4100 50  0000 C CNN
-F 1 "Jumper" H 8300 4100 50  0000 C CNN
+F 0 "JP4" H 8250 4000 50  0000 C CNN
+F 1 "Jumper" H 8500 4000 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 8000 3900 50  0001 C CNN
 F 3 "~" H 8000 3900 50  0001 C CNN
+F 4 "0015291025" H 7750 4200 50  0000 L BNN "Mates With"
 	1    8000 3900
 	-1   0    0    1   
 $EndComp
@@ -255,14 +256,14 @@ Wire Wire Line
 	8650 3050 8650 3750
 Wire Wire Line
 	6950 2950 8700 2950
-Text Notes 8200 4200 0    50   ~ 0
-Test Connector for Judges\nUser Solder Bridge to ignore
+Text Notes 8400 4150 0    50   ~ 0
+Test Connector for Judges.\nPlace solder bridge on JP3 to ignore
 $Comp
 L Device:C C11
 U 1 1 5E342B85
 P 1900 5700
 F 0 "C11" H 2015 5746 50  0000 L CNN
-F 1 "C" H 2015 5655 50  0000 L CNN
+F 1 "0.1uF" H 2015 5655 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1938 5550 50  0001 C CNN
 F 3 "~" H 1900 5700 50  0001 C CNN
 	1    1900 5700
@@ -363,7 +364,7 @@ L Device:R R23
 U 1 1 5E375C7E
 P 3600 3350
 F 0 "R23" H 3670 3396 50  0000 L CNN
-F 1 "R" H 3670 3305 50  0000 L CNN
+F 1 "2k" H 3670 3305 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3530 3350 50  0001 C CNN
 F 3 "~" H 3600 3350 50  0001 C CNN
 	1    3600 3350
@@ -374,7 +375,7 @@ L Device:R R24
 U 1 1 5E375F67
 P 3600 3750
 F 0 "R24" H 3670 3796 50  0000 L CNN
-F 1 "R" H 3670 3705 50  0000 L CNN
+F 1 "2k" H 3670 3705 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3530 3750 50  0001 C CNN
 F 3 "~" H 3600 3750 50  0001 C CNN
 	1    3600 3750
@@ -397,8 +398,8 @@ F 3 "" H 3600 3950 50  0001 C CNN
 	1    3600 3950
 	1    0    0    -1  
 $EndComp
-Text Notes 3900 3900 1    50   ~ 0
-1/2 Divider Ratio
+Text Notes 3400 3450 2    50   ~ 0
+Divider Ratio:\n1/2 
 $Comp
 L power:GND #PWR?
 U 1 1 5E388B4C
@@ -412,9 +413,9 @@ F 3 "" H 6200 5850 50  0001 C CNN
 	1    6200 5850
 	1    0    0    -1  
 $EndComp
-Text Notes 6800 5400 2    50   ~ 0
+Text Notes 6750 5150 2    50   ~ 0
 R at 25
-Text Notes 6800 5500 2    50   ~ 0
+Text Notes 6750 5250 2    50   ~ 0
 B 25/85
 Text HLabel 3300 3550 0    50   Input ~ 0
 CellVoltage
@@ -447,4 +448,10 @@ F 3 "" H 1900 5550 50  0001 C CNN
 $EndComp
 Text Notes 1750 6200 0    50   ~ 0
 Near U5
+Text Notes 7300 4250 0    50   ~ 0
+Mates With:
+Text Notes 6200 1850 2    50   ~ 0
+Divider Ratio:\n10 / (51 + 10 + 2) = 0.16
+Text Notes 5800 5200 2    50   ~ 0
+Expected CellTemp Value:\n\n1.45V at 25C\n3.07V at 65C
 $EndSCHEMATC
