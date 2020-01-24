@@ -14,8 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	6200 5800 6200 5850
 $Comp
 L Device:R R?
 U 1 1 5E5AAEE2
@@ -23,7 +21,7 @@ P 6200 5650
 AR Path="/5E5AAEE2" Ref="R?"  Part="1" 
 AR Path="/5E58D2C5/5E5AAEE2" Ref="R19"  Part="1" 
 F 0 "R19" V 6100 5600 50  0000 L CNN
-F 1 "820" V 6200 5650 50  0000 C CNN
+F 1 "R" V 6200 5650 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6130 5650 50  0001 C CNN
 F 3 "~" H 6200 5650 50  0001 C CNN
 	1    6200 5650
@@ -49,19 +47,17 @@ F 10 "https://docs.google.com/spreadsheets/d/1xzh2DkGRcMngHCjEcCASSh_Z_XySEc_v28
 	1    6200 5200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6200 5050 6200 5000
 $Comp
 L power:+5V #PWR?
 U 1 1 5E5AAEF6
-P 6200 5000
+P 6200 4650
 AR Path="/5E5AAEF6" Ref="#PWR?"  Part="1" 
 AR Path="/5E58D2C5/5E5AAEF6" Ref="#PWR0103"  Part="1" 
-F 0 "#PWR0103" H 6200 4850 50  0001 C CNN
-F 1 "+5V" H 6215 5173 50  0000 C CNN
-F 2 "" H 6200 5000 50  0001 C CNN
-F 3 "" H 6200 5000 50  0001 C CNN
-	1    6200 5000
+F 0 "#PWR0103" H 6200 4500 50  0001 C CNN
+F 1 "+5V" H 6215 4823 50  0000 C CNN
+F 2 "" H 6200 4650 50  0001 C CNN
+F 3 "" H 6200 4650 50  0001 C CNN
+	1    6200 4650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -364,7 +360,7 @@ L Device:R R23
 U 1 1 5E375C7E
 P 3600 3350
 F 0 "R23" H 3670 3396 50  0000 L CNN
-F 1 "1k" H 3670 3305 50  0000 L CNN
+F 1 "2k" H 3670 3305 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3530 3350 50  0001 C CNN
 F 3 "~" H 3600 3350 50  0001 C CNN
 	1    3600 3350
@@ -375,7 +371,7 @@ L Device:R R24
 U 1 1 5E375F67
 P 3600 3750
 F 0 "R24" H 3670 3796 50  0000 L CNN
-F 1 "1k" H 3670 3705 50  0000 L CNN
+F 1 "2k" H 3670 3705 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3530 3750 50  0001 C CNN
 F 3 "~" H 3600 3750 50  0001 C CNN
 	1    3600 3750
@@ -403,14 +399,14 @@ Divider Ratio:\n1/2
 $Comp
 L power:GND #PWR?
 U 1 1 5E388B4C
-P 6200 5850
+P 6200 5800
 AR Path="/5E3ED86C/5E388B4C" Ref="#PWR?"  Part="1" 
 AR Path="/5E58D2C5/5E388B4C" Ref="#PWR0120"  Part="1" 
-F 0 "#PWR0120" H 6200 5600 50  0001 C CNN
-F 1 "GND" H 6205 5677 50  0000 C CNN
-F 2 "" H 6200 5850 50  0001 C CNN
-F 3 "" H 6200 5850 50  0001 C CNN
-	1    6200 5850
+F 0 "#PWR0120" H 6200 5550 50  0001 C CNN
+F 1 "GND" H 6205 5627 50  0000 C CNN
+F 2 "" H 6200 5800 50  0001 C CNN
+F 3 "" H 6200 5800 50  0001 C CNN
+	1    6200 5800
 	1    0    0    -1  
 $EndComp
 Text Notes 6750 5150 2    50   ~ 0
@@ -426,12 +422,12 @@ Wire Wire Line
 Connection ~ 3600 3550
 Wire Wire Line
 	3600 3550 3600 3600
-Text HLabel 5850 5450 0    50   Input ~ 0
+Text HLabel 5600 5450 0    50   Input ~ 0
 CellTemp
 Wire Wire Line
 	6200 5350 6200 5450
 Wire Wire Line
-	5850 5450 6200 5450
+	5950 5450 6200 5450
 Connection ~ 6200 5450
 Wire Wire Line
 	6200 5450 6200 5500
@@ -452,6 +448,36 @@ Text Notes 7300 4250 0    50   ~ 0
 Mates With:
 Text Notes 6200 1850 2    50   ~ 0
 Divider Ratio:\n10 / (51 + 10 + 2) = 0.16
-Text Notes 5800 5200 2    50   ~ 0
-Expected CellTemp Value:\n\n1.45V at 25C\n3.07V at 65C
+Text Notes 5850 5050 2    50   ~ 0
+Expected CellTemp Value:\n\n1.45V at 25C -- TODO: update\n3.07V at 65C -- TODO: update
+$Comp
+L Device:R R?
+U 1 1 5E2E6B5A
+P 6200 4800
+AR Path="/5E2E6B5A" Ref="R?"  Part="1" 
+AR Path="/5E58D2C5/5E2E6B5A" Ref="R9"  Part="1" 
+F 0 "R9" V 6100 4750 50  0000 L CNN
+F 1 "R" V 6200 4800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6130 4800 50  0001 C CNN
+F 3 "~" H 6200 4800 50  0001 C CNN
+	1    6200 4800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6200 4950 6200 5050
+$Comp
+L Device:R R?
+U 1 1 5E2EC5B9
+P 5800 5450
+AR Path="/5E2EC5B9" Ref="R?"  Part="1" 
+AR Path="/5E58D2C5/5E2EC5B9" Ref="R4"  Part="1" 
+F 0 "R4" V 5700 5400 50  0000 L CNN
+F 1 "410" V 5800 5450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5730 5450 50  0001 C CNN
+F 3 "~" H 5800 5450 50  0001 C CNN
+	1    5800 5450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5600 5450 5650 5450
 $EndSCHEMATC
