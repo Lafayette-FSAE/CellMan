@@ -14,19 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Lafayette_Electric_Car_Internals:ACHS-7122 U?
-U 1 1 5E4071A2
-P 5250 3550
-AR Path="/5E4071A2" Ref="U?"  Part="1" 
-AR Path="/5E3ED86C/5E4071A2" Ref="U2"  Part="1" 
-F 0 "U2" H 4895 3596 50  0000 R CNN
-F 1 "ACHS-7122" H 4895 3505 50  0000 R CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" V 5100 3700 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/678/ACHS-712x-DS101_2018-02-28-1386725.pdf" V 5100 3700 50  0001 C CNN
-	1    5250 3550
-	-1   0    0    -1  
-$EndComp
 Text Label 6900 6300 1    50   ~ 0
 Cell-
 Wire Wire Line
@@ -209,6 +196,10 @@ F 0 "C3" H 2500 5700 50  0000 L CNN
 F 1 "0.1uF" H 2400 5600 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2788 5500 50  0001 C CNN
 F 3 "~" H 2750 5650 50  0001 C CNN
+F 4 "KEMET" H 2750 5650 50  0001 C CNN "Manufacturer"
+F 5 "C0805C104Z5VACTU" H 2750 5650 50  0001 C CNN "Manufacturer Part"
+F 6 "Digikey" H 2750 5650 50  0001 C CNN "Vendor"
+F 7 "399-1177-1-ND" H 2750 5650 50  0001 C CNN "Vendor Part"
 	1    2750 5650
 	1    0    0    -1  
 $EndComp
@@ -220,6 +211,10 @@ F 0 "C4" H 3115 5696 50  0000 L CNN
 F 1 "1nF" H 3115 5605 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3038 5500 50  0001 C CNN
 F 3 "~" H 3000 5650 50  0001 C CNN
+F 4 "KEMET" H 3000 5650 50  0001 C CNN "Manufacturer"
+F 5 "C0805C102J5GACTU" H 3000 5650 50  0001 C CNN "Manufacturer Part"
+F 6 "Digikey" H 3000 5650 50  0001 C CNN "Vendor"
+F 7 "399-1136-1-ND" H 3000 5650 50  0001 C CNN "Vendor Part"
 	1    3000 5650
 	1    0    0    -1  
 $EndComp
@@ -293,6 +288,10 @@ F 0 "C8" H 8400 2450 50  0000 L CNN
 F 1 "1uF" H 8500 2300 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8388 2150 50  0001 C CNN
 F 3 "~" H 8350 2300 50  0001 C CNN
+F 4 "KEMET" H 8350 2300 50  0001 C CNN "Manufacturer"
+F 5 "C0805C105K4RACTU" H 8350 2300 50  0001 C CNN "Manufacturer Part"
+F 6 "Digikey" H 8350 2300 50  0001 C CNN "Vendor"
+F 7 "399-1284-1-ND" H 8350 2300 50  0001 C CNN "Vendor Part"
 	1    8350 2300
 	1    0    0    -1  
 $EndComp
@@ -558,4 +557,19 @@ F 3 "" H 4700 3300 50  0001 C CNN
 $EndComp
 Text Notes 2750 6300 0    50   ~ 0
 Near U2
+$Comp
+L Lafayette_Electric_Car_Internals:ACHS-7121 U2
+U 1 1 5E2E5994
+P 5250 3550
+F 0 "U2" H 4872 3596 50  0000 R CNN
+F 1 "ACHS-7121" H 4872 3505 50  0000 R CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" V 5100 3700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/678/ACHS-712x-DS101_2018-02-28-1386725.pdf" V 5100 3700 50  0001 C CNN
+F 4 "Digikey" H 5550 3200 50  0001 C CNN "Vendor"
+F 5 "516-4080-ND" H 5250 3550 50  0001 C CNN "Vendor Part"
+F 6 "Broadcom Limited" H 5250 3550 50  0001 C CNN "Manufacturer"
+F 7 "ACHS-7121-000E" H 5250 3550 50  0001 C CNN "Manufacturer Part"
+	1    5250 3550
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

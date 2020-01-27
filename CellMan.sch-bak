@@ -468,36 +468,6 @@ F 7 "CMD17-21VRD/TR8" H 8700 6500 50  0001 C CNN "Manufacturer Part"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Lafayette_Electric_Car_Internals:LittelfuseHolder F2
-U 1 1 5DC77A37
-P 8950 2500
-F 0 "F2" H 8975 2725 50  0000 C CNN
-F 1 "LittelfuseHolder" H 8975 2634 50  0000 C CNN
-F 2 "Lafayette_Electric_Car_Footprints:fuse_holder_smd_littelfuse" H 9100 2800 50  0001 C CNN
-F 3 "https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_154_154t_154l_154tl_datasheet.pdf.pdf" H 9300 2650 50  0001 C CNN
-F 4 "Digikey" H 8100 2700 50  0001 C CNN "Vendor"
-F 5 "F6776CT-ND" H 8250 2700 50  0001 C CNN "Vendor Part"
-F 6 "Littelfuse Inc." H 8250 2700 50  0001 C CNN "Manufacturer"
-F 7 "0154.500DRL" H 8250 2700 50  0001 C CNN "Manufacturer Part"
-	1    8950 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Lafayette_Electric_Car_Internals:LittelfuseHolder F1
-U 1 1 5DC76D71
-P 8950 2050
-F 0 "F1" H 8975 2275 50  0000 C CNN
-F 1 "LittelfuseHolder" H 8975 2184 50  0000 C CNN
-F 2 "Lafayette_Electric_Car_Footprints:fuse_holder_smd_littelfuse" H 9100 2350 50  0001 C CNN
-F 3 "https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_154_154t_154l_154tl_datasheet.pdf.pdf" H 9300 2200 50  0001 C CNN
-F 4 "Digikey" H 8100 2250 50  0001 C CNN "Vendor"
-F 5 "F6776CT-ND" H 8250 2250 50  0001 C CNN "Vendor Part"
-F 6 "Littelfuse Inc." H 8250 2250 50  0001 C CNN "Manufacturer"
-F 7 "0154.500DRL" H 8250 2250 50  0001 C CNN "Manufacturer Part"
-	1    8950 2050
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR0104
 U 1 1 5DC4D5FD
 P 4950 6800
@@ -602,7 +572,7 @@ F 5 "609-2845-ND" H 1400 1150 50  0001 C CNN "Vendor Part"
 F 6 "Amphenol ICC (FCI)" H 500 1500 50  0001 C CNN "Manufacturer"
 F 7 "75869-131LF" H 50  -300 50  0001 C CNN "Manufacturer Part"
 F 8 "71600-006LF" H 1200 1400 50  0000 L BNN "Mates With"
-F 9 "310J101-20" H 1200 1300 50  0000 L BNN "Use Cable"
+F 9 "310J101-20" H 1200 1300 50  0000 L BNN "Uses Cable"
 	1    1400 1150
 	1    0    0    -1  
 $EndComp
@@ -640,6 +610,10 @@ F 0 "C2" H 4200 1400 50  0000 L CNN
 F 1 "0.1uF" H 4200 1300 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4138 1200 50  0001 C CNN
 F 3 "~" H 4100 1350 50  0001 C CNN
+F 4 "KEMET" H 4100 1350 50  0001 C CNN "Manufacturer"
+F 5 "C0805C104Z5VACTU" H 4100 1350 50  0001 C CNN "Manufacturer Part"
+F 6 "Digikey" H 4100 1350 50  0001 C CNN "Vendor"
+F 7 "399-1177-1-ND" H 4100 1350 50  0001 C CNN "Vendor Part"
 	1    4100 1350
 	1    0    0    -1  
 $EndComp
@@ -651,6 +625,10 @@ F 0 "C1" H 2550 1450 50  0000 L CNN
 F 1 "0.33uF" H 2350 1350 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2788 1200 50  0001 C CNN
 F 3 "~" H 2750 1350 50  0001 C CNN
+F 4 "KEMET" H 2750 1350 50  0001 C CNN "Manufacturer"
+F 5 "C0805C334K5RACAUTO" H 2750 1350 50  0001 C CNN "Manufacturer Part"
+F 6 "Digikey" H 2750 1350 50  0001 C CNN "Vendor"
+F 7 "399-6959-1-ND" H 2750 1350 50  0001 C CNN "Vendor Part"
 	1    2750 1350
 	1    0    0    -1  
 $EndComp
@@ -673,6 +651,10 @@ F 0 "C9" H 5000 7100 50  0000 L CNN
 F 1 "1uF" H 5000 6900 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4988 6850 50  0001 C CNN
 F 3 "~" H 4950 7000 50  0001 C CNN
+F 4 "KEMET" H 4950 7000 50  0001 C CNN "Manufacturer"
+F 5 "C0805C105K4RACTU" H 4950 7000 50  0001 C CNN "Manufacturer Part"
+F 6 "Digikey" H 4950 7000 50  0001 C CNN "Vendor"
+F 7 "399-1284-1-ND" H 4950 7000 50  0001 C CNN "Vendor Part"
 	1    4950 7000
 	1    0    0    -1  
 $EndComp
@@ -684,6 +666,10 @@ F 0 "C6" H 4600 6900 50  0000 C CNN
 F 1 "1uF" H 4600 7100 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4738 6850 50  0001 C CNN
 F 3 "~" H 4700 7000 50  0001 C CNN
+F 4 "KEMET" H 4700 7000 50  0001 C CNN "Manufacturer"
+F 5 "C0805C105K4RACTU" H 4700 7000 50  0001 C CNN "Manufacturer Part"
+F 6 "Digikey" H 4700 7000 50  0001 C CNN "Vendor"
+F 7 "399-1284-1-ND" H 4700 7000 50  0001 C CNN "Vendor Part"
 	1    4700 7000
 	-1   0    0    1   
 $EndComp
@@ -720,7 +706,7 @@ F 0 "JP2" H 6950 1550 50  0000 C CNN
 F 1 "Jumper" H 7200 1550 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 7450 1400 50  0001 C CNN
 F 3 "~" H 7450 1400 50  0001 C CNN
-F 4 "0015291025" H 7450 1400 50  0001 C CNN "Mates With:"
+F 4 "0015291025" H 7450 1400 50  0001 C CNN "Mates With"
 	1    7450 1400
 	1    0    0    -1  
 $EndComp
@@ -892,25 +878,14 @@ F 8 "AVX Corporation" H 0   0   50  0001 C CNN "Manufacturer"
 $EndComp
 NoConn ~ 3900 4100
 $Comp
-L Lafayette_Electric_Car_Internals:LafECEDepLogo LOGO1
-U 1 1 5E76A3B5
-P 1300 6150
-F 0 "LOGO1" H 1297 6399 60  0000 C CNN
-F 1 "LafECEDepLogo" H 1300 6292 60  0001 C CNN
-F 2 "Lafayette_Electric_Car_Footprints:ECE_Logo_Jon" H 1300 6150 50  0001 C CNN
-F 3 "" H 1300 6150 50  0001 C CNN
-	1    1300 6150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Lafayette_Electric_Car_Internals:LeopardPawLogo LOGO2
 U 1 1 5E76B0A3
-P 2150 6100
-F 0 "LOGO2" H 2299 6106 60  0000 L CNN
-F 1 "LeopardPawLogo" H 2150 6233 60  0001 C CNN
-F 2 "Lafayette_Electric_Car_Footprints:Paw" H 2150 6100 50  0001 C CNN
-F 3 "" H 2150 6100 50  0001 C CNN
-	1    2150 6100
+P 800 6200
+F 0 "LOGO2" H 949 6206 60  0000 L CNN
+F 1 "LeopardPawLogo" H 800 6333 60  0001 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:Paw" H 800 6200 50  0001 C CNN
+F 3 "" H 800 6200 50  0001 C CNN
+	1    800  6200
 	1    0    0    -1  
 $EndComp
 Text Notes 8150 1450 0    50   ~ 0
@@ -942,4 +917,36 @@ Wire Bus Line
 	1900 3700 1900 5050
 Wire Bus Line
 	5550 3800 5550 5050
+$Comp
+L Lafayette_Electric_Car_Internals:LittelfuseHolder F1
+U 1 1 5DC76D71
+P 8950 2050
+F 0 "F1" H 8900 2200 50  0000 C CNN
+F 1 "10A" H 9050 2200 50  0000 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:fuse_holder_smd_littelfuse" H 9100 2350 50  0001 C CNN
+F 3 "https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_154_154t_154l_154tl_datasheet.pdf.pdf" H 9300 2200 50  0001 C CNN
+F 4 "Digikey" H 8100 2250 50  0001 C CNN "Vendor"
+F 5 "F11011CT-ND" H 8250 2250 50  0001 C CNN "Vendor Part"
+F 6 "Littelfuse Inc." H 8250 2250 50  0001 C CNN "Manufacturer"
+F 7 "0154010.DRL" H 8250 2250 50  0001 C CNN "Manufacturer Part"
+F 8 "0451010.MRL" H 8950 2050 50  0001 C CNN "Mates With"
+	1    8950 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Lafayette_Electric_Car_Internals:LittelfuseHolder F2
+U 1 1 5E2F3E13
+P 8950 2500
+F 0 "F2" H 8900 2650 50  0000 C CNN
+F 1 "10A" H 9050 2650 50  0000 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:fuse_holder_smd_littelfuse" H 9100 2800 50  0001 C CNN
+F 3 "https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_154_154t_154l_154tl_datasheet.pdf.pdf" H 9300 2650 50  0001 C CNN
+F 4 "Digikey" H 8100 2700 50  0001 C CNN "Vendor"
+F 5 "F11011CT-ND" H 8250 2700 50  0001 C CNN "Vendor Part"
+F 6 "Littelfuse Inc." H 8250 2700 50  0001 C CNN "Manufacturer"
+F 7 "0154010.DRL" H 8250 2700 50  0001 C CNN "Manufacturer Part"
+F 8 "0451010.MRL" H 8950 2500 50  0001 C CNN "Mates With"
+	1    8950 2500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
