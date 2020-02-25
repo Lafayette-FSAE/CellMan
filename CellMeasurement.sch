@@ -21,7 +21,7 @@ P 6200 5650
 AR Path="/5E5AAEE2" Ref="R?"  Part="1" 
 AR Path="/5E58D2C5/5E5AAEE2" Ref="R19"  Part="1" 
 F 0 "R19" V 6100 5600 50  0000 L CNN
-F 1 "R" V 6200 5650 50  0000 C CNN
+F 1 "820" V 6200 5650 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6130 5650 50  0001 C CNN
 F 3 "~" H 6200 5650 50  0001 C CNN
 	1    6200 5650
@@ -303,7 +303,7 @@ L Device:R R12
 U 1 1 5E273BF8
 P 2700 5500
 F 0 "R12" H 2770 5546 50  0000 L CNN
-F 1 "R" H 2770 5455 50  0000 L CNN
+F 1 "2k" H 2770 5455 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2630 5500 50  0001 C CNN
 F 3 "~" H 2700 5500 50  0001 C CNN
 	1    2700 5500
@@ -453,7 +453,7 @@ Mates With:
 Text Notes 6200 1850 2    50   ~ 0
 Divider Ratio:\n10 / (51 + 10 + 2) = 0.16
 Text Notes 5850 5050 2    50   ~ 0
-Expected CellTemp Value:\n\n1.45V at 25C -- TODO: update\n3.07V at 65C -- TODO: update
+Expected CellTemp Value:\n\n1.36V at 25C\n2.67V at 65C
 $Comp
 L Device:R R?
 U 1 1 5E2E6B5A
@@ -461,7 +461,7 @@ P 6200 4800
 AR Path="/5E2E6B5A" Ref="R?"  Part="1" 
 AR Path="/5E58D2C5/5E2E6B5A" Ref="R9"  Part="1" 
 F 0 "R9" V 6100 4750 50  0000 L CNN
-F 1 "R" V 6200 4800 50  0000 C CNN
+F 1 "200" V 6200 4800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6130 4800 50  0001 C CNN
 F 3 "~" H 6200 4800 50  0001 C CNN
 	1    6200 4800
@@ -469,6 +469,8 @@ F 3 "~" H 6200 4800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6200 4950 6200 5050
+Wire Wire Line
+	5600 5450 5650 5450
 $Comp
 L Device:R R?
 U 1 1 5E2EC5B9
@@ -476,12 +478,10 @@ P 5800 5450
 AR Path="/5E2EC5B9" Ref="R?"  Part="1" 
 AR Path="/5E58D2C5/5E2EC5B9" Ref="R4"  Part="1" 
 F 0 "R4" V 5700 5400 50  0000 L CNN
-F 1 "410" V 5800 5450 50  0000 C CNN
+F 1 "2k" V 5800 5450 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5730 5450 50  0001 C CNN
 F 3 "~" H 5800 5450 50  0001 C CNN
 	1    5800 5450
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5600 5450 5650 5450
 $EndSCHEMATC

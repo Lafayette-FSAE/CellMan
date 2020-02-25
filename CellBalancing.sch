@@ -106,7 +106,7 @@ L Device:R R2
 U 1 1 5E7BBC4D
 P 2100 5450
 F 0 "R2" H 2170 5496 50  0000 L CNN
-F 1 "R" H 2170 5405 50  0000 L CNN
+F 1 "10k" V 2100 5450 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2030 5450 50  0001 C CNN
 F 3 "~" H 2100 5450 50  0001 C CNN
 	1    2100 5450
@@ -117,7 +117,7 @@ L Device:R R3
 U 1 1 5E7BBCB3
 P 2100 5950
 F 0 "R3" H 2170 5996 50  0000 L CNN
-F 1 "R" H 2170 5905 50  0000 L CNN
+F 1 "1k" V 2100 5900 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2030 5950 50  0001 C CNN
 F 3 "~" H 2100 5950 50  0001 C CNN
 	1    2100 5950
@@ -440,7 +440,7 @@ L Device:R R13
 U 1 1 5E4DB907
 P 5550 5750
 F 0 "R13" V 5450 5750 50  0000 C CNN
-F 1 "R" V 5550 5750 50  0000 C CNN
+F 1 "200k" V 5550 5750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5480 5750 50  0001 C CNN
 F 3 "~" H 5550 5750 50  0001 C CNN
 	1    5550 5750
@@ -572,4 +572,12 @@ F 7 "ACHS-7121-000E" H 5250 3550 50  0001 C CNN "Manufacturer Part"
 	1    5250 3550
 	-1   0    0    -1  
 $EndComp
+Text Notes 1100 5450 0    50   ~ 0
+Divider Ratio: 1/11
+Text Notes 6700 2100 0    50   ~ 0
+Leave C7 and R10\nunpopulated
+Text Notes 1100 5450 0    50   ~ 0
+Divider Ratio: 1/11
+Text Notes 6700 2100 0    50   ~ 0
+Leave C7 and R10\nunpopulated
 $EndSCHEMATC
