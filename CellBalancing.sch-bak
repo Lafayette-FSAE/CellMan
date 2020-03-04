@@ -106,7 +106,7 @@ L Device:R R2
 U 1 1 5E7BBC4D
 P 2100 5450
 F 0 "R2" H 2170 5496 50  0000 L CNN
-F 1 "10k" V 2100 5450 50  0000 C CNN
+F 1 "15k" V 2100 5450 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2030 5450 50  0001 C CNN
 F 3 "~" H 2100 5450 50  0001 C CNN
 	1    2100 5450
@@ -117,7 +117,7 @@ L Device:R R3
 U 1 1 5E7BBCB3
 P 2100 5950
 F 0 "R3" H 2170 5996 50  0000 L CNN
-F 1 "1k" V 2100 5900 50  0000 L CNN
+F 1 "2k" V 2100 5900 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2030 5950 50  0001 C CNN
 F 3 "~" H 2100 5950 50  0001 C CNN
 	1    2100 5950
@@ -557,7 +557,6 @@ F 3 "" H 4700 3300 50  0001 C CNN
 $EndComp
 Text Notes 2750 6300 0    50   ~ 0
 Near U2
-<<<<<<< Updated upstream
 $Comp
 L Lafayette_Electric_Car_Internals:ACHS-7121 U2
 U 1 1 5E2E5994
@@ -573,8 +572,12 @@ F 7 "ACHS-7121-000E" H 5250 3550 50  0001 C CNN "Manufacturer Part"
 	1    5250 3550
 	-1   0    0    -1  
 $EndComp
-=======
->>>>>>> Stashed changes
 Text Notes 1100 5450 0    50   ~ 0
 Divider Ratio: 1/11
+Text Notes 6700 2100 0    50   ~ 0
+Leave C7 and R10\nunpopulated
+Text Notes 1100 5450 0    50   ~ 0
+Divider Ratio: 1/11
+Text Notes 6700 2100 0    50   ~ 0
+Leave C7 and R10\nunpopulated
 $EndSCHEMATC
