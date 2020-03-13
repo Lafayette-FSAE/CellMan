@@ -572,12 +572,10 @@ F 7 "ACHS-7121-000E" H 5250 3550 50  0001 C CNN "Manufacturer Part"
 	1    5250 3550
 	-1   0    0    -1  
 $EndComp
-Text Notes 1100 5450 0    50   ~ 0
-Divider Ratio: 1/11
-Text Notes 6700 2100 0    50   ~ 0
-Leave C7 and R10\nunpopulated
-Text Notes 1100 5450 0    50   ~ 0
-Divider Ratio: 1/11
-Text Notes 6700 2100 0    50   ~ 0
-Leave C7 and R10\nunpopulated
+Text Notes 1150 5450 0    50   ~ 0
+Divider Ratio: 2/17
+Text Notes 6500 1750 0    50   ~ 0
+Do Not Populate\nC7 and R10
+Text Notes 4400 1450 0    50   ~ 0
+Do Not Populate T1
 $EndSCHEMATC

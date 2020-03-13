@@ -207,7 +207,7 @@ F 0 "JP4" H 8250 4000 50  0000 C CNN
 F 1 "Jumper" H 8500 4000 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 8000 3900 50  0001 C CNN
 F 3 "~" H 8000 3900 50  0001 C CNN
-F 4 "0015291025" H 7750 4200 50  0000 L BNN "Mates With"
+F 4 "0015291025" H 8050 4200 50  0000 L BNN "Mates With"
 	1    8000 3900
 	-1   0    0    1   
 $EndComp
@@ -252,7 +252,7 @@ Wire Wire Line
 	8650 3050 8650 3750
 Wire Wire Line
 	6950 2950 8700 2950
-Text Notes 8400 4150 0    50   ~ 0
+Text Notes 7000 4500 0    50   ~ 0
 Test Connector for Judges.\nPlace solder bridge on JP3 to ignore
 $Comp
 L Device:C C11
@@ -448,7 +448,7 @@ F 3 "" H 1900 5550 50  0001 C CNN
 $EndComp
 Text Notes 1750 6200 0    50   ~ 0
 Near U5
-Text Notes 7300 4250 0    50   ~ 0
+Text Notes 7000 4250 0    50   ~ 0
 Mates With:
 Text Notes 6200 1850 2    50   ~ 0
 Divider Ratio:\n10 / (51 + 10 + 2) = 0.16
@@ -484,4 +484,6 @@ F 3 "~" H 5800 5450 50  0001 C CNN
 	1    5800 5450
 	0    -1   -1   0   
 $EndComp
+Text Notes 8200 4100 0    50   ~ 0
+Do Not Populate JP4
 $EndSCHEMATC

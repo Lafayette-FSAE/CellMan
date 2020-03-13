@@ -193,7 +193,7 @@ Text Label 1750 6750 2    50   ~ 0
 A3
 Wire Wire Line
 	700  7250 700  7200
-Text Notes 950  7900 0    50   ~ 0
+Text Notes 2150 7650 0    50   ~ 0
 I2C Address Select:\nPopulate for 0 or\nLeave Empty for 1
 Wire Wire Line
 	1050 2350 1350 2350
@@ -262,7 +262,7 @@ Power
 Wire Wire Line
 	4100 1600 4100 1700
 Connection ~ 4100 1600
-Text Notes 2150 7250 0    50   ~ 0
+Text Notes 2150 7300 0    50   ~ 0
 To ensure uniqueness, Address Select\nResistors should correspond to the last 5 bits\nof the Serial Number, and determine\nthe last 5 bits of the I2C address
 Wire Notes Line
 	500  6500 4000 6500
@@ -774,10 +774,6 @@ Wire Wire Line
 	2250 1100 2750 1100
 Text Label 2000 1500 2    50   ~ 0
 Reset
-Text Notes 6000 950  2    50   ~ 0
-Mates With:
-Text Notes 6000 1050 2    50   ~ 0
-Uses Cable:
 $Comp
 L power:GND #PWR0121
 U 1 1 5E45A83E
@@ -943,6 +939,12 @@ F 8 "0451010.MRL" H 8950 2500 50  0001 C CNN "Mates With"
 	1    8950 2500
 	1    0    0    -1  
 $EndComp
+Text Notes 2250 6800 0    50   ~ 0
+Do Not Populate\nR5, R6, R7, R8, R1
+Text Notes 800  3000 0    50   ~ 0
+Do Not Populate J1\n
+Text Notes 6050 950  0    50   ~ 0
+Do Not Populate\nJP1, JP2
 Wire Bus Line
 	4250 3800 4250 5050
 Wire Bus Line
