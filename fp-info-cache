@@ -1,4 +1,4 @@
-16386088377721683
+16397170946430410
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -49665,6 +49665,13 @@ CELL60AH
 2
 2
 Lafayette_Electric_Car_Footprints
+CELL60AH-no-slots
+
+
+0
+2
+2
+Lafayette_Electric_Car_Footprints
 CELL60AH_non_plated
 
 
@@ -49812,6 +49819,13 @@ Molex_Mini-Fit_Jr_5566-12A2_2x06_P4.20mm_Vertical
 12
 12
 Lafayette_Electric_Car_Footprints
+MountingHole_#4_NoPad
+
+
+0
+0
+0
+Lafayette_Electric_Car_Footprints
 MountingHole_#4_Pad
 
 
@@ -49854,11 +49868,32 @@ Powerpole_PP45_FP_1x2
 2
 2
 Lafayette_Electric_Car_Footprints
+Powerpole_PP45_FP_1x2_NoSlot
+
+
+0
+2
+2
+Lafayette_Electric_Car_Footprints
 PushButton
 
 
 0
 4
+2
+Lafayette_Electric_Car_Footprints
+RaspberryPi3
+
+
+0
+44
+44
+Lafayette_Electric_Car_Footprints
+ScrewTerminal_0.2in
+
+
+0
+2
 2
 Lafayette_Electric_Car_Footprints
 SlottedHole
@@ -49967,6 +50002,20 @@ pacman_github_link
 0
 Lafayette_Electric_Car_Footprints
 paw_solder_mask
+
+
+0
+0
+0
+Lafayette_Electric_Car_Footprints
+paw_solder_mask_bigly
+
+
+0
+0
+0
+Lafayette_Electric_Car_Footprints
+paw_solder_mask_large
 
 
 0

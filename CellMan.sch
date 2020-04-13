@@ -193,7 +193,7 @@ Text Label 1750 6750 2    50   ~ 0
 A3
 Wire Wire Line
 	700  7250 700  7200
-Text Notes 950  7900 0    50   ~ 0
+Text Notes 2150 7650 0    50   ~ 0
 I2C Address Select:\nPopulate for 0 or\nLeave Empty for 1
 Wire Wire Line
 	1050 2350 1350 2350
@@ -262,7 +262,7 @@ Power
 Wire Wire Line
 	4100 1600 4100 1700
 Connection ~ 4100 1600
-Text Notes 2150 7250 0    50   ~ 0
+Text Notes 2150 7300 0    50   ~ 0
 To ensure uniqueness, Address Select\nResistors should correspond to the last 5 bits\nof the Serial Number, and determine\nthe last 5 bits of the I2C address
 Wire Notes Line
 	500  6500 4000 6500
@@ -509,7 +509,7 @@ L Device:R R1
 U 1 1 5DF7E8CA
 P 1900 7050
 F 0 "R1" V 2000 7000 50  0000 L CNN
-F 1 "R" V 1900 7050 50  0000 L CNN
+F 1 "30" V 1900 7050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1830 7050 50  0001 C CNN
 F 3 "~" H 1900 7050 50  0001 C CNN
 	1    1900 7050
@@ -520,7 +520,7 @@ L Device:R R5
 U 1 1 5DE12C9C
 P 700 7050
 F 0 "R5" V 600 7000 50  0000 L CNN
-F 1 "R" V 700 7000 50  0000 L CNN
+F 1 "30" V 700 7000 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 630 7050 50  0001 C CNN
 F 3 "~" H 700 7050 50  0001 C CNN
 	1    700  7050
@@ -531,7 +531,7 @@ L Device:R R8
 U 1 1 5DE05174
 P 1600 7050
 F 0 "R8" V 1700 7000 50  0000 L CNN
-F 1 "R" V 1600 7050 50  0000 L CNN
+F 1 "30" V 1600 7050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1530 7050 50  0001 C CNN
 F 3 "~" H 1600 7050 50  0001 C CNN
 	1    1600 7050
@@ -542,7 +542,7 @@ L Device:R R7
 U 1 1 5DE04CFC
 P 1300 7050
 F 0 "R7" V 1200 7000 50  0000 L CNN
-F 1 "R" V 1300 7000 50  0000 L CNN
+F 1 "30" V 1300 7000 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1230 7050 50  0001 C CNN
 F 3 "~" H 1300 7050 50  0001 C CNN
 	1    1300 7050
@@ -553,7 +553,7 @@ L Device:R R6
 U 1 1 5DE0484B
 P 1000 7050
 F 0 "R6" V 900 7000 50  0000 L CNN
-F 1 "R" V 1000 7000 50  0000 L CNN
+F 1 "30" V 1000 7000 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 930 7050 50  0001 C CNN
 F 3 "~" H 1000 7050 50  0001 C CNN
 	1    1000 7050
@@ -637,7 +637,7 @@ L Device:R R15
 U 1 1 5DED3513
 P 5400 6800
 F 0 "R15" H 5470 6846 50  0000 L CNN
-F 1 "R" H 5470 6755 50  0000 L CNN
+F 1 "200" H 5470 6755 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5330 6800 50  0001 C CNN
 F 3 "~" H 5400 6800 50  0001 C CNN
 	1    5400 6800
@@ -678,7 +678,7 @@ L Device:R R16
 U 1 1 5DB4E3DA
 P 8800 5950
 F 0 "R16" V 8700 5950 50  0000 C CNN
-F 1 "250" V 8800 5950 50  0000 C CNN
+F 1 "200" V 8800 5950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8730 5950 50  0001 C CNN
 F 3 "~" H 8800 5950 50  0001 C CNN
 	1    8800 5950
@@ -774,10 +774,6 @@ Wire Wire Line
 	2250 1100 2750 1100
 Text Label 2000 1500 2    50   ~ 0
 Reset
-Text Notes 6000 950  2    50   ~ 0
-Mates With:
-Text Notes 6000 1050 2    50   ~ 0
-Uses Cable:
 $Comp
 L power:GND #PWR0121
 U 1 1 5E45A83E
@@ -838,7 +834,7 @@ L Device:R R11
 U 1 1 5E53BB67
 P 6600 1900
 F 0 "R11" V 6500 1850 50  0000 C CNN
-F 1 "R" V 6600 1900 50  0000 C CNN
+F 1 "2k" V 6600 1900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6530 1900 50  0001 C CNN
 F 3 "~" H 6600 1900 50  0001 C CNN
 	1    6600 1900
@@ -911,12 +907,6 @@ Wire Wire Line
 	6750 1900 7050 1900
 Text Notes 8150 850  0    50   ~ 0
 Mates With:
-Wire Bus Line
-	4250 3800 4250 5050
-Wire Bus Line
-	1900 3700 1900 5050
-Wire Bus Line
-	5550 3800 5550 5050
 $Comp
 L Lafayette_Electric_Car_Internals:LittelfuseHolder F1
 U 1 1 5DC76D71
@@ -949,4 +939,16 @@ F 8 "0451010.MRL" H 8950 2500 50  0001 C CNN "Mates With"
 	1    8950 2500
 	1    0    0    -1  
 $EndComp
+Text Notes 2250 6800 0    50   ~ 0
+Do Not Populate\nR5, R6, R7, R8, R1
+Text Notes 800  3000 0    50   ~ 0
+Do Not Populate J1\n
+Text Notes 6050 950  0    50   ~ 0
+Do Not Populate\nJP1, JP2
+Wire Bus Line
+	4250 3800 4250 5050
+Wire Bus Line
+	1900 3700 1900 5050
+Wire Bus Line
+	5550 3800 5550 5050
 $EndSCHEMATC
