@@ -69,6 +69,7 @@ can be changed.
 to be used in the future. 
 
 |Address|Description      |
+|-------|-----------------|
 |0x11   |Balance Enabled  |
 |0x12   |Balance Duty Cycle|
 |0x13   |Balance Frequency|
@@ -79,6 +80,7 @@ to be used in the future.
 0x23 controls the board's green LED, used for Debugging and feedback.
 
 |Address|Description      |
+|-------|-----------------|
 |0x23   |Debug LED        |
 
 ## Schematic
