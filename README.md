@@ -48,7 +48,6 @@ Register addresses are organized as follows:
 #### Calibration Parameters
 
 While this feature is not currently supported, CellMan will eventually allow configuration of its many calibration functions for maximum accuracy.
-
 Addresses from 0x01 to 0x0F have been reserved for this purpose.
 
 |Address|Description      |
@@ -61,10 +60,8 @@ Addresses from 0x01 to 0x0F have been reserved for this purpose.
 #### Balance Circuit
 
 Addresses from 0x11 to 0x1F are reserved for registers which control the behavior of the Balance Circuit.
-
 Currently, the circuit can be enabled or disabled, and the duty cycle and frequency of its control signal
 can be changed.
-
 0x14 is reserved for a Target Voltage parameter in order to allow support for a closed loop control scheme
 to be used in the future. 
 
