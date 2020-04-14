@@ -7,13 +7,13 @@ and Temperature, which are used by PacMan to determine if a fault condition has 
 In addition, CellMan is capable of measuring the voltage of its Cell's negative terminal relative to the segment, used for determining its position, 
 and some properties of its balancing circuit.
 
+
+![Render of CellMan](https://sites.lafayette.edu/motorsports/files/2020/04/render_top.png)
+
 Each CellMan has also been equipped with an experimental Balancing Circuit, which can be used to allow active balancing of Cells within the same segment.
 This is done through an isolated flyback converter, which pulls current from the cell it sits on, steps it up to the full segment voltage through an isolated
 transformer, and outputs it back to the segment. A CellMan is capable of measuring the current being drawn from the cell by the flyback converter and the
 voltage on its output side, and can report these back to PacMan along with the measurements mentioned above.
-
-
-![](https://sites.lafayette.edu/motorsports/files/2020/04/render_top.png)
 
 ## Interface
 
@@ -35,6 +35,51 @@ Bytes are sent in the following order:
 |----|----------------|----------------|----------------|---------------|---------------|-------------|-------------|
 |Data|Firmware Version|Cell Voltage LSB|Cell Voltage MSB|Temperature LSB|Temperature MSB|Position LSB |Position MSB |
 |Unit|NA              |mV              |mV              |1/10 ºC        |1/10 ºC        |Raw ADC Value|Raw ADC Value|
+
+
+Additional data can be added to the end of this as needed.
+
+### Sending Commands
+
+PacMan is controlled by writing data to one or more 16 bit registers. Each write command should be 3 bytes long, a 1 byte address, followed by 2 bytes of data.
+
+Register addresses are organized as follows:
+
+#### Calibration Parameters
+
+While this feature is not currently supported, CellMan will eventually allow configuration of its many calibration functions for maximum accuracy.
+
+Addresses from 0x01 to 0x0F have been reserved for this purpose.
+
+|Address|Description      |
+|-------|-----------------|
+|0x01   |Temp Slope       |
+|0x02   |Temp Offset      |
+|0x03   |Balance Current Slope|
+|0x04   |Balance Voltage Slope|
+
+#### Balance Circuit
+
+Addresses from 0x11 to 0x1F are reserved for registers which control the behavior of the Balance Circuit.
+
+Currently, the circuit can be enabled or disabled, and the duty cycle and frequency of its control signal
+can be changed.
+
+0x14 is reserved for a Target Voltage parameter in order to allow support for a closed loop control scheme
+to be used in the future. 
+
+|Address|Description      |
+|0x11   |Balance Enabled  |
+|0x12   |Balance Duty Cycle|
+|0x13   |Balance Frequency|
+|0x14   |Target Voltage   |
+
+#### Debug
+
+0x23 controls the board's green LED, used for Debugging and feedback.
+
+|Address|Description      |
+|0x23   |Debug LED        |
 
 ## Schematic
 [Link to PDF](https://sites.lafayette.edu/motorsports/files/2019/11/CellMan.pdf)
